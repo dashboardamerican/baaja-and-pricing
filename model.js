@@ -4,11 +4,27 @@
 'use strict';
 const FIXED = Object.freeze({first:2027,last:2056,chargeStart:2030,loadFactor:0.80,
   coveredShare:0.75,incumbentMW:829000,life:40,finance:0.05,om:0.015,inflation:0.025});
-const CENTRAL = Object.freeze({growth:2,cost:0.65,nits:95.1});
+// EPRI US 2030 anchors; IEA GLOBAL 2030-35 multipliers are transferred as
+// an explicit US modelling assumption. The post-2035 taper is our assumption.
+const SCENARIOS = Object.freeze({
+  low:Object.freeze({label:'Low',twh2030:383,iea2030:833,iea2035:942,matureRate:0.005}),
+  medium:Object.freeze({label:'Medium',twh2030:596,iea2030:945,iea2035:1193,matureRate:0.015}),
+  high:Object.freeze({label:'High',twh2030:793,iea2030:1008,iea2035:1637,matureRate:0.025})
+});
+const CENTRAL = Object.freeze({growth:'medium',cost:0.65,nits:95.1});
 const JCT = Object.freeze([[2022,0],[2023,0],[2024,0],[2025,0.788],[2026,1.213],
   [2027,1.213],[2028,1.213],[2029,2.001],[2030,2.426],[2031,2.425]]);
 function demand(year,growth){
-  return year<=2030 ? 300*Math.pow(2,(year-2026)/4) : 600*Math.pow(1+growth/100,year-2030);
+  const p=SCENARIOS[growth];
+  if(!p)throw new RangeError('Choose low, medium, or high demand.');
+  if(year<=2030)return 300*Math.pow(p.twh2030/300,(year-2026)/4);
+  const bridge=Math.pow(p.iea2035/p.iea2030,1/5)-1;
+  let twh=p.twh2030;
+  for(let y=2031;y<=year;y++){
+    const rate=y<=2035?bridge:bridge+(p.matureRate-bridge)*Math.min(1,(y-2035)/5);
+    twh*=1+rate;
+  }
+  return twh;
 }
 function itc(){
   const profile=JCT.map(([year,value])=>value/Math.pow(1+FIXED.inflation,year-2026));
@@ -18,8 +34,8 @@ function itc(){
 }
 function calculate(input={}){
   const p={...CENTRAL,...input};
-  if(![p.growth,p.cost,p.nits].every(Number.isFinite)||p.growth<0||p.cost<0||p.nits<0)
-    throw new RangeError('Growth, capital cost, and NITS must be finite and nonnegative.');
+  if(!Object.hasOwn(SCENARIOS,p.growth)||![p.cost,p.nits].every(Number.isFinite)||p.cost<0||p.nits<0)
+    throw new RangeError('Choose a demand preset and finite, nonnegative capital cost and NITS.');
   const f=FIXED, rate=p.nits*1000, capital=p.cost*1e6;
   const crf=f.finance/(1-Math.pow(1+f.finance,-f.life));
   const unit=capital*(crf+f.om),base=f.incumbentMW*rate;
@@ -45,7 +61,7 @@ function calculate(input={}){
     andTotal:andTotal/1e9,firstTenNominalA:firstTenA/1e9,firstTenNominalB:firstTenB/1e9,
     endTWh:demand(f.last,p.growth),endCoveredGW:mw/1000,annualCostPerMW:unit,rows,itc:itc()};
 }
-const api={FIXED,CENTRAL,JCT,demand,itc,calculate};
+const api={FIXED,SCENARIOS,CENTRAL,JCT,demand,itc,calculate};
 root.Baaja=api;
 if(typeof module!=='undefined')module.exports=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

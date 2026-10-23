@@ -4,7 +4,7 @@ A buildless HTML dashboard and one-page brief for the transmission AND-pricing p
 
 **[Open dashboard](https://dashboardamerican.github.io/baaja-and-pricing/)** · **[One-page PDF](baaja-one-pager.pdf)**
 
-Choose **Low (1%), Standard (2%), or High (4%) annual DC growth after 2030**. Two sliders control attributable incremental network capital per MW and the assumed NITS-equivalent rate. Standard is the default and preserves the central case. The data-center load factor is fixed at **80%**. No installation, account, analytics, external script or API is required. Serve this folder or open `index.html` locally.
+Choose **Low, Medium, or High** data-center growth through 2056. EPRI supplies the U.S. 2030 endpoints; later years use an explicit, tapered extrapolation. Medium is the default. Two sliders control attributable incremental network capital per MW and the assumed NITS-equivalent rate. The data-center load factor is fixed at **80%**. No installation, account, analytics, external script or API is required. Serve this folder or open `index.html` locally.
 
 ## Central case
 
@@ -12,8 +12,8 @@ All 30-year figures are **constant 2026 dollars**, undiscounted, over **2027-205
 
 | Measure | 30-year central result |
 | --- | ---: |
-| A: Additional AND payments versus higher-of | **$62.7bn** |
-| B: AND payments above incremental transmission cost | **$125.1bn** |
+| A: Additional AND payments versus higher-of | **$74.6bn** |
+| B: AND payments above incremental transmission cost | **$148.9bn** |
 | BBB transmission ITC, repeated-program illustration | **$31.7bn** |
 
 **A is part of B. Never add them.** Existing ordinary transmission payments already contribute toward inherited grid costs. A isolates the additional money caused by AND pricing; B is the entire contribution above incremental transmission cost. Neither measure is a federal receipt. ITC budget cost is not an estimate of equivalent customer-bill savings.
@@ -22,8 +22,8 @@ All 30-year figures are **constant 2026 dollars**, undiscounted, over **2027-205
 
 | Item | Central assumption |
 | --- | --- |
-| Near-term DC facility demand | 300 TWh in 2026 to 600 TWh in 2030, geometric interpolation |
-| DC growth presets | Low 1%, Standard 2%, High 4% annually after 2030; Standard gives 1,004 TWh in 2056 |
+| Near-term DC facility demand | Selected 300 TWh baseline in 2026 to EPRI Medium 596 TWh in 2030, geometric interpolation |
+| DC growth presets | EPRI U.S. 2030 Low / Medium / High; IEA global multipliers through 2035; selected taper thereafter. Medium reaches 1,096 TWh in 2056 |
 | Capital slider | $0.65m/MW attributable incremental transmission network investment |
 | NITS slider | $95.1/kW-year = $95,100/MW-year, constant real |
 | DC load factor | 80% |
@@ -34,7 +34,25 @@ All 30-year figures are **constant 2026 dollars**, undiscounted, over **2027-205
 | Existing AND pricing | Zero; no overlap haircut |
 | Horizon | 2027-2056; no post-horizon terminal value |
 
-The growth presets change only 2031 onward, preserving the evidence-anchored near-term expansion. Low, Standard and High are illustrative scenarios, not forecast confidence bounds. The 2056 path is a scenario, not a published forecast. Capital excludes unrelated work and requires project-specific attribution; dedicated facilities, contributions and credits must be reconciled in real tariff comparisons. The model holds construction and demand fixed between pricing cases. It does not estimate demand response, relocation, generation or distribution costs, discretionary retail surcharges, or departures from the grid. Summing regional higher-of calculations can give less relief than applying higher-of once to a homogeneous national pool.
+Low, Medium and High are illustrative scenarios, not forecast confidence bounds. All post-2030 U.S. paths are analyst extrapolations. Capital excludes unrelated work and requires project-specific attribution; dedicated facilities, contributions and credits must be reconciled in real tariff comparisons. The model holds construction and demand fixed between pricing cases. It does not estimate demand response, relocation, generation or distribution costs, discretionary retail surcharges, or departures from the grid. Summing regional higher-of calculations can give less relief than applying higher-of once to a homogeneous national pool.
+
+## Demand basis and extrapolation
+
+[EPRI, Powering Intelligence 2026, Figure 5](https://powering-intelligence.epri.com/annual-peak-use.html) provides U.S. 2030 facility demand of **383 / 596 / 793 TWh**. It includes cryptocurrency and small and large data centers. The selected common 2026 baseline is **300 TWh**, not an observed annual total; new covered demand is measured above it. We interpolate geometrically to each EPRI endpoint.
+
+For 2031-2035, we transfer the growth multipliers from the **global** Headwinds / Base / Lift-Off scenarios in [IEA, Key Questions on Energy and AI, Table A.1, p.108](https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf#page=108). Global 2030/2035 TWh are **833/942, 945/1,193, 1,008/1,637**, implying about **2.5% / 4.8% / 10.2% annual growth**. This is an explicit geographic and scope transfer assumption, not an IEA U.S. forecast. IEA itself calls its 2035 figures exploratory. EPRI and IEA absolute levels are not averaged.
+
+During 2036-2040, the annual rates fall in five equal steps to selected mature growth rates of **0.5% / 1.5% / 2.5%**. Those rates hold through 2056. This allows a strong initial buildout to slow as the sector matures and efficiency improves, while preserving a broad high-growth case. The taper date and mature rates are judgment calls, not published EPRI or IEA projections. The long-run results are conditional on these choices.
+
+| Annual U.S. facility demand, TWh | Low | Medium | High |
+| --- | ---: | ---: | ---: |
+| 2030: EPRI | 383 | 596 | 793 |
+| 2035: extrapolated | 433 | 752 | 1,288 |
+| 2040: extrapolated | 462 | 864 | 1,687 |
+| 2050: extrapolated | 486 | 1,003 | 2,160 |
+| 2056: extrapolated | 500 | 1,096 | 2,505 |
+
+[Machine-readable annual paths and source notes](data/growth-scenarios.json) include every year and all scenario parameters. Holding the cost and rate sliders at their defaults, the three paths give approximately **$22bn / $75bn / $166bn** additional payments. This is a scenario range, not a statistical confidence interval.
 
 ## A national rate proxy, with PUDL reviewed
 
@@ -76,7 +94,7 @@ $bn nominal: 0    0    0    .788  1.213 1.213 1.213 2.001 2.426 2.425
 
 Normalize each amount to 2026 dollars using the **assumed common 2.5% inflation convention**, `cost[y]/1.025**(y-2026)`. The real ten-year total is $10.558bn. Repeat that real ten-year profile three times across 2027-2056: **$31.674bn**. This is our own **repeated-program illustration**. It is not an official 30-year JCT score, a forecast of the 2026 ITC proposal, a permanent-program score, or 30-year benefits from one ten-year credit. Resetting the historical ramp each decade is an illustrative scaling convention. No additional assumption about transmission investment growth is embedded in this comparison.
 
-The reference AND additional payment is about **2.0×** this ITC illustration: comparable as tens of billions of dollars, with different payers and fiscal treatment. This is a magnitude comparison, not a budget offset or welfare comparison.
+The reference AND additional payment is about **2.4×** this ITC illustration: comparable as tens of billions of dollars, with different payers and fiscal treatment. This is a magnitude comparison, not a budget offset or welfare comparison.
 
 ## Reproduce and verify
 
@@ -95,7 +113,7 @@ python3 -m http.server 8767
 - [JCT JCX-46-21, Nov.19,2021, p.2](https://www.govinfo.gov/content/pkg/GOVPUB-Y4_T19_4-PURL-gpo172711/pdf/GOVPUB-Y4_T19_4-PURL-gpo172711.pdf#page=2).
 - [EIA AEO2026 Table54](https://www.eia.gov/outlooks/aeo/supplement/excel/suptab_54.xlsx); [Electricity Market Module methodology, printed pp.160-163](https://www.eia.gov/outlooks/aeo/nems/documentation/electricity/pdf/EMM_AEO2025.pdf).
 - [Grid Strategies, Nov.2025 original FERC714 aggregation, p.33](https://gridstrategiesllc.com/wp-content/uploads/Grid-Strategies-National-Load-Growth-Report-2025.pdf#page=33).
-- [EPRI 2026 demand scenarios](https://powering-intelligence.epri.com/executive-summary.html); [LBNL 2025 Update, published2026](https://escholarship.org/content/qt33m6w3x0/qt33m6w3x0.pdf).
+- [EPRI 2026 U.S. demand scenarios](https://powering-intelligence.epri.com/annual-peak-use.html); [IEA 2026 global scenario multipliers, Table A.1](https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf#page=108).
 - [AEP Piketon planned transmission](https://www.aep.com/news/stories/view/10823/); [Wisconsin PSC Ozaukee application](https://psc.wi.gov/Pages/CommissionActions/CasePages/OzaukeeDIP.aspx).
 - [PUDL FERC1 documentation](https://docs.catalyst.coop/pudl/en/latest/data_sources/ferc1.html); [PUDL data](https://data.catalyst.coop/search).
 

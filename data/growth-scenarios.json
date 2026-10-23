@@ -1,0 +1,185 @@
+{
+  "as_of": "2026-10-23",
+  "unit": "TWh/year, total U.S. facility electricity use",
+  "status": "Published U.S. 2030 endpoints with analyst extrapolations after 2030; not confidence intervals.",
+  "baseline": {
+    "year": 2026,
+    "twh": 300,
+    "status": "Selected common modeling baseline, not an observed annual total."
+  },
+  "method": [
+    "2027-2030: geometric interpolation from selected 2026 baseline to each EPRI endpoint.",
+    "2031-2035: apply IEA GLOBAL 2030-2035 demand multiplier to each EPRI U.S. 2030 endpoint. This geographic and scope transfer is an analyst assumption.",
+    "2036-2040: annual growth rate declines in five equal steps from bridge rate to selected mature rate.",
+    "2041-2056: hold selected mature annual growth rate constant. No terminal value."
+  ],
+  "sources": [
+    {
+      "organization": "EPRI",
+      "title": "Powering Intelligence 2026, Annual and Peak Electricity Use",
+      "url": "https://powering-intelligence.epri.com/annual-peak-use.html",
+      "updated": "2026-02-24",
+      "locator": "Text accompanying Figure 5",
+      "us_2030_twh": {
+        "low": 383,
+        "medium": 596,
+        "high": 793
+      },
+      "scope": "Includes small and large data centers and cryptocurrency mining."
+    },
+    {
+      "organization": "IEA",
+      "title": "Key Questions on Energy and AI, 2026",
+      "url": "https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf#page=108",
+      "locator": "Table A.1, printed page 108, Total electricity consumption (TWh)",
+      "global_2030_2035_twh": {
+        "Headwinds": [
+          833,
+          942
+        ],
+        "Base": [
+          945,
+          1193
+        ],
+        "Lift-Off": [
+          1008,
+          1637
+        ]
+      },
+      "scope": "Global, scope differs from EPRI including cryptocurrency; 2035 figures are exploratory scenarios. Used only for growth multipliers, not U.S. absolute levels."
+    }
+  ],
+  "limitations": [
+    "IEA global scenario multipliers are not U.S. forecasts. EPRI and IEA absolute levels are not averaged.",
+    "Post-2035 taper and mature rates (0.5%, 1.5%, 2.5%) are selected assumptions to represent slower expansion after the initial buildout, not rates published by EPRI or IEA.",
+    "The three cases are sensitivities, not probabilities or a comprehensive forecast range. A different 2026 baseline or realized location and tariff coverage changes receipts."
+  ],
+  "scenarios": {
+    "low": {
+      "label": "Low",
+      "epri_2030_twh": 383,
+      "iea_bridge_scenario": "Headwinds",
+      "annual_growth_2031_2035": 0.024899261689490304,
+      "annual_growth_from_2040": 0.005,
+      "annual_twh": {
+        "2026": 300.0,
+        "2027": 318.88980469759423,
+        "2028": 338.9690251335659,
+        "2029": 360.31255407792236,
+        "2030": 383.0,
+        "2031": 392.53641722707476,
+        "2032": 402.31028420226664,
+        "2033": 412.3275132489921,
+        "2034": 422.5941639031555,
+        "2035": 433.1164465786315,
+        "2036": 442.17698682151683,
+        "2037": 449.6672690999234,
+        "2038": 455.4948241098301,
+        "2039": 459.58510037101325,
+        "2040": 461.88302587286825,
+        "2041": 464.19244100223256,
+        "2042": 466.51340320724364,
+        "2043": 468.8459702232798,
+        "2044": 471.19020007439616,
+        "2045": 473.54615107476803,
+        "2046": 475.9138818301419,
+        "2047": 478.2934512392926,
+        "2048": 480.684918495489,
+        "2049": 483.08834308796634,
+        "2050": 485.5037848034062,
+        "2051": 487.93130372742314,
+        "2052": 490.3709602460602,
+        "2053": 492.8228150472905,
+        "2054": 495.28692912252683,
+        "2055": 497.76336376813947,
+        "2056": 500.2521805869801
+      },
+      "A_billion": 21.591542969671014,
+      "B_billion": 43.109826652134515
+    },
+    "medium": {
+      "label": "Medium",
+      "epri_2030_twh": 596,
+      "iea_bridge_scenario": "Base",
+      "annual_growth_2031_2035": 0.04771153895364599,
+      "annual_growth_from_2040": 0.015,
+      "annual_twh": {
+        "2026": 300.0,
+        "2027": 356.16603862692443,
+        "2028": 422.8474902373195,
+        "2029": 502.01305180387726,
+        "2030": 596.0,
+        "2031": 624.4360772163731,
+        "2032": 654.228883438544,
+        "2033": 685.4431502953224,
+        "2034": 718.1466978611476,
+        "2035": 752.4105820105821,
+        "2036": 783.3867471908003,
+        "2037": 810.5130200565635,
+        "2038": 833.2759666486188,
+        "2039": 851.2266539967808,
+        "2040": 863.9950538067324,
+        "2041": 876.9549796138333,
+        "2042": 890.1093043080406,
+        "2043": 903.4609438726611,
+        "2044": 917.0128580307511,
+        "2045": 930.7680509012122,
+        "2046": 944.7295716647302,
+        "2047": 958.9005152397012,
+        "2048": 973.2840229682967,
+        "2049": 987.8832833128209,
+        "2050": 1002.7015325625132,
+        "2051": 1017.7420555509508,
+        "2052": 1033.008186384215,
+        "2053": 1048.503309179978,
+        "2054": 1064.2308588176775,
+        "2055": 1080.1943216999427,
+        "2056": 1096.3972365254417
+      },
+      "A_billion": 74.5925364538903,
+      "B_billion": 148.93198325785204
+    },
+    "high": {
+      "label": "High",
+      "epri_2030_twh": 793,
+      "iea_bridge_scenario": "Lift-Off",
+      "annual_growth_2031_2035": 0.10183770390118263,
+      "annual_growth_from_2040": 0.025,
+      "annual_twh": {
+        "2026": 300.0,
+        "2027": 382.524483894935,
+        "2028": 487.74993593028796,
+        "2029": 621.9209750384034,
+        "2030": 793.0000000000001,
+        "2031": 873.7572991936378,
+        "2032": 962.7387363104164,
+        "2033": 1060.7818386729953,
+        "2034": 1168.8094254635275,
+        "2035": 1287.8382936507937,
+        "2036": 1399.1978809761786,
+        "2037": 1498.684519487149,
+        "2038": 1582.2138234141833,
+        "2039": 1646.0839044539093,
+        "2040": 1687.236002065257,
+        "2041": 1729.4169021168882,
+        "2042": 1772.6523246698105,
+        "2043": 1816.9686327865554,
+        "2044": 1862.392848606219,
+        "2045": 1908.9526698213745,
+        "2046": 1956.6764865669086,
+        "2047": 2005.5933987310814,
+        "2048": 2055.7332336993577,
+        "2049": 2107.126564541842,
+        "2050": 2159.8047286553874,
+        "2051": 2213.7998468717724,
+        "2052": 2269.144843043566,
+        "2053": 2325.873464119655,
+        "2054": 2384.0203007226464,
+        "2055": 2443.6208082407124,
+        "2056": 2504.71132844673
+      },
+      "A_billion": 166.35273191162764,
+      "B_billion": 332.14103530686884
+    }
+  }
+}

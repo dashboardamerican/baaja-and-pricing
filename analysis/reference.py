@@ -1,4 +1,4 @@
-"""Independent reference arithmetic for the three-slider BAAJA comparison.
+"""Independent reference arithmetic for the three-control BAAJA comparison.
 
 No import from the shared model or dashboard. All BAAJA amounts are 2026 USD.
 Historical JCT amounts are nominal FY2022–31 cash flows, NOT 2021 dollars.
@@ -21,7 +21,7 @@ SPONSOR = "https://www.energy.senate.gov/press/dem/heinrich-introduces-legislati
 
 @dataclass(frozen=True)
 class Assumptions:
-    after_2030_growth: float = .02
+    growth_scenario: str = 'medium'
     capex_per_mw: float = 650_000.
     nits_per_mw_year: float = 95_100.
     load_factor: float = .80
@@ -38,13 +38,24 @@ class Assumptions:
 
 
 def facility_twh(year, p):
+    # Independently specified scenario arithmetic, not imported from model.js.
+    anchors = {'low': (383, 942 / 833, .005),
+               'medium': (596, 1193 / 945, .015),
+               'high': (793, 1637 / 1008, .025)}
+    endpoint, five_year_multiplier, terminal_rate = anchors[p.growth_scenario]
     if year <= 2030:
-        return 300 * (600 / 300) ** ((year - 2026) / 4)
-    return 600 * (1 + p.after_2030_growth) ** (year - 2030)
+        return 300 * (endpoint / 300) ** ((year - 2026) / 4)
+    bridge_rate = five_year_multiplier ** .2 - 1
+    result = endpoint * five_year_multiplier ** ((min(year, 2035) - 2030) / 5)
+    for step in range(1, min(max(year - 2035, 0), 5) + 1):
+        result *= 1 + bridge_rate * (1 - step / 5) + terminal_rate * step / 5
+    if year > 2040:
+        result *= (1 + terminal_rate) ** (year - 2040)
+    return result
 
 
 def reference_ledger(p=Assumptions()):
-    assert p.after_2030_growth >= 0
+    assert p.growth_scenario in ('low', 'medium', 'high')
     assert 0 < p.load_factor <= 1 and 0 <= p.effective_chargeable_fraction <= 1
     assert p.capex_per_mw >= 0 and p.nits_per_mw_year >= 0
     r = p.real_financing_rate
@@ -175,9 +186,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--nits", type=float, default=95_100.)
     parser.add_argument("--capex", type=float, default=650_000.)
-    parser.add_argument("--growth", type=float, default=.02)
+    parser.add_argument("--growth", choices=('low', 'medium', 'high'), default='medium')
     args = parser.parse_args()
-    p = Assumptions(after_2030_growth=args.growth, capex_per_mw=args.capex, nits_per_mw_year=args.nits)
+    p = Assumptions(growth_scenario=args.growth, capex_per_mw=args.capex, nits_per_mw_year=args.nits)
     ledger = reference_ledger(p)
     itc = normalized_itc(p)
     # Boundary checks distinguish additional policy payments from embedded contribution.

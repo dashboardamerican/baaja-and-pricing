@@ -11,8 +11,9 @@ DATA=json.loads((ROOT/'data/central-case.json').read_text())
 A=DATA['BAAJA']['metrics']['A_extra_AND_vs_higher_of_usd']['constant_2026_billion']
 B=DATA['BAAJA']['metrics']['B_above_incremental_transmission_cost_usd']['constant_2026_billion']
 ITC=DATA['ITC']['repeated_30yr_constant_2026_billion']
+GROWTH=json.loads((ROOT/'data/growth-scenarios.json').read_text())
 W,H=612,792
-PAPER='#F5F3ED'; INK='#172D36'; MUTED='#5F6C70'; TEAL='#126C60'; GOLD='#B27635'; LINE='#D9DED8'
+PAPER='#F6F4EE'; INK='#16284A'; MUTED='#4A5563'; TEAL='#16284A'; GOLD='#8A6D1F'; LINE='#DDD7C9'
 c=canvas.Canvas(str(ROOT/'baaja-one-pager.pdf'),pagesize=(W,H))
 c.setTitle('BAAJA AND Pricing | Thirty-Year Central Case')
 c.setAuthor('Dashboard American')
@@ -44,14 +45,16 @@ for x,amount,label,title,body,dark in [
     para(body,x+17,551,224,8.6,'#D3EBE3' if dark else MUTED,12)
 para('<b>2027-2056, constant 2026 dollars, undiscounted.</b> A is part of B; do not add them. Cost of service here means incremental <i>transmission</i> cost caused by new loads.',42,497,size=8.6,color=MUTED,leading=12)
 
-txt(42,451,'Three assumptions, with an 80% load factor',15,'Times-Roman')
-rows=[('DC growth after 2030','2.0% / year','600 TWh in 2030 becomes 1,004 TWh in 2056.'),
-      ('Incremental network capital','$0.65m / MW','A selected cost scenario; test $0.3m-$1.0m/MW.'),
-      ('NITS-equivalent rate','$95.1 / kW-year','National cost-to-peak proxy, not an observed tariff average.')]
-for i,(label,value,why) in enumerate(rows):
-    y=427-i*34
-    txt(42,y,label,8.6,'Helvetica-Bold');txt(254,y,value,9.6,'Helvetica-Bold',TEAL)
-    txt(42,y-14,why,8.2,'Helvetica',MUTED)
+txt(42,451,'Low / Medium / High demand paths',15,'Times-Roman')
+txt(42,432,'U.S. facility TWh/year',8.5,'Helvetica-Bold')
+for x,k in [(294,'low'),(390,'medium'),(486,'high')]:
+    txt(x,432,k.capitalize(),8.5,'Helvetica-Bold')
+for y,year in [(415,2030),(399,2035),(383,2056)]:
+    txt(42,y,f'{year}'+(' (EPRI)' if year==2030 else ' (extrapolated)'),8.4)
+    for x,k in [(294,'low'),(390,'medium'),(486,'high')]:
+        txt(x,y,f"{GROWTH['scenarios'][k]['annual_twh'][str(year)]:,.0f}",8.8,'Helvetica')
+para('After 2030, transfer IEA global scenario growth rates through 2035; taper to selected 0.5% / 1.5% / 2.5% annual growth by 2040, then hold to 2056. These are our U.S. extrapolations, not published long-run forecasts. Medium is the default.',42,372,size=7.8,color=MUTED,leading=10.3)
+txt(42,334,'Central: $0.65m/MW capital; $95.1/kW-year NITS proxy; 80% load factor.',8.7,'Helvetica-Bold')
 rule(329)
 
 txt(42,306,'A comparable policy scale',17,'Times-Roman')
@@ -66,7 +69,7 @@ para(f'<b>About {A/ITC:.1f} times the ITC illustration.</b> JCT officially score
 rule(134)
 para('<b>Mechanism and limits.</b> AND collects the full annual cost of attributable upgrades plus a contribution to the inherited grid. Incremental receipts are credited out of the shared revenue requirement. Fixed: 75% effective coverage; an 829 GW planning-peak proxy for the incumbent pool; charges from 2030, including prospective charges on 2027-2029 entrants; 40-year assets, 5% real financing and 1.5% O&amp;M. No existing-AND deduction. Growth, cost, coverage and national pooling are assumptions. PUDL v2026.10.0 was reviewed; it does not establish a matched national NITS rate or DC-attributable capital per MW.',42,122,size=7.5,color=MUTED,leading=10.3)
 
-source='Sources: BAAJA draft s.2107(a), pp.229-230; JCT JCX-46-21 p.2; EIA AEO2026 Table54; Grid Strategies Nov2025 p.33. Full calculations, PUDL review and linked sources accompany the dashboard.'
+source='Sources: EPRI Powering Intelligence 2026, Figure5; IEA Key Questions on Energy and AI, TableA.1; BAAJA draft s.2107(a); JCT JCX-46-21 p.2; EIA AEO2026 Table54; Grid Strategies Nov2025 p.33. Full source links and calculations accompany the dashboard.'
 para(source,42,56,size=7.1,color=MUTED,leading=9.3)
 txt(42,21,'dashboardamerican.github.io/baaja-and-pricing/',7.5,'Helvetica-Bold',TEAL)
 c.linkURL('https://dashboardamerican.github.io/baaja-and-pricing/',(42,17,320,30),relative=0,thickness=0)
