@@ -1,0 +1,49 @@
+[
+  {
+    "id": "official_historical_itc_score",
+    "kind": "official_historical_federal_score",
+    "display": "$11.279bn nominal over FY2022\u20132031",
+    "value_billion": 11.279,
+    "unit": "nominal fiscal-year USD, positive federal cost",
+    "window": "FY2022\u20132031",
+    "bill_version": "H.R.5376 Build Back Better Act as passed by House, November19,2021",
+    "source": "https://www.govinfo.gov/content/pkg/GOVPUB-Y4_T19_4-PURL-gpo172711/pdf/GOVPUB-Y4_T19_4-PURL-gpo172711.pdf",
+    "locator": "JCT JCX-46-21 page2, SubtitleF, Part1 item5; page8 footnote7",
+    "warning": "$3.024bn direct-pay outlay component is included, not additional. Publication in2021 does not make these2021constant dollars."
+  },
+  {
+    "id": "repeated_30yr_itc_illustration",
+    "kind": "analyst_normalized_repetition",
+    "display": "About$32bn over30years, in2026dollars",
+    "value_billion": 31.673927489147527,
+    "unit": "constant2026USD, undiscounted",
+    "window": "modelyears2027\u20132056",
+    "formula": "3\u00d7\u03a3(y=2022\u20262031)[JCTcost(y)/(1.025^(y\u22122026))]",
+    "warning": "Three identical real ten-year profiles. Not an official30-year score, not permanent-program steady-state estimate, and not a score of the2026bill. HistoricalFYtiming is shifted to modelyears solely to illustrate common-horizon magnitudes."
+  },
+  {
+    "id": "current_bill_score_missing",
+    "kind": "unobserved_current_official_score",
+    "bill_version": "S.5453 Grid Resiliency Tax Credit Act, introducedSeptember22,2026",
+    "value_billion": null,
+    "source": "https://www.govinfo.gov/content/pkg/BILLS-119s5453is/html/BILLS-119s5453is.htm",
+    "warning": "No publicJCT/CBOscore located as ofOctober23,2026.30%credit has different eligibility and construction-start sunsetDecember31,2036; historical11.279bn must not be labeled its score."
+  },
+  {
+    "id": "sponsor_economic_benefits",
+    "kind": "economic_benefit_claim_not_fiscal_score",
+    "source": "https://www.energy.senate.gov/press/dem/heinrich-introduces-legislation-to-supports-investments-to-build-a-more-resilient-reliable-grid/",
+    "value_billion_per_year": 27.7,
+    "warning": "Sponsor-cited transmission expansion electricity-bill savings claim, attributed toGridStrategies/ACEG. NotJCT/CBOcost and not ITCfunding."
+  },
+  {
+    "id": "comparison_scope",
+    "kind": "interpretation",
+    "warning": "BAAJAtransfers are private transmission-bill transfers, notTreasuryreceipts or a fiscalpay-for. ITCcost is federalbudgeteffect, not guaranteed ratepayerbenefit. LabelB aboveincremental TRANSMISSIONcost of service; much ofB is already collected through ordinarytariffs. Do not addAandB."
+  },
+  {
+    "id": "inflation_and_credit_basis",
+    "kind": "normalization_limitation",
+    "warning": "The uniform2.5%inflation adjustment is a common model convention, not actual observed/projected CPI for each historical andfutureyear. NetJCTbudgetcost is not an estimate ofgrosseligiblecapital or customer-bill pass-through.30-year utility benefits require separate investment,tax,rate-base,asset-life and pass-through assumptions."
+  }
+]

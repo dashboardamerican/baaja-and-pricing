@@ -1,0 +1,704 @@
+{
+  "BAAJA": {
+    "assumptions": {
+      "after_2030_growth": 0.02,
+      "capex_per_mw": 650000.0,
+      "nits_per_mw_year": 95100.0,
+      "load_factor": 0.8,
+      "effective_chargeable_fraction": 0.75,
+      "incumbent_pool_mw": 829000.0,
+      "asset_life": 40,
+      "real_financing_rate": 0.05,
+      "real_om_fraction": 0.015,
+      "charging_start": 2030,
+      "start": 2027,
+      "end": 2056,
+      "inflation": 0.025,
+      "real_discount": 0.03
+    },
+    "annual_incremental_cost_per_mw": 47630.804757922735,
+    "endpoint_2056_twh": 1004.0508686124151,
+    "effective_new_billing_gw_2056": 75.34790974019853,
+    "metrics": {
+      "A_extra_AND_vs_higher_of_usd": {
+        "constant_2026_billion": 62.65486348573706,
+        "nominal_billion": 101.47267118199893,
+        "pv_2026_billion": 36.85504173858244
+      },
+      "B_above_incremental_transmission_cost_usd": {
+        "constant_2026_billion": 125.09714139361631,
+        "nominal_billion": 202.60104943540645,
+        "pv_2026_billion": 73.58503571695788
+      }
+    },
+    "annual": [
+      {
+        "year": 2027,
+        "total_facility_twh": 356.76213450081633,
+        "effective_new_billing_gw": 6.074714736816815,
+        "share": 0.007274456560131065,
+        "incremental_cost_usd": 289343551.5893977,
+        "ordinary_payment_usd": 575607695.938948,
+        "higher_of_payment_usd": 575607695.938948,
+        "AND_payment_usd_if_in_force": 862846430.4313545,
+        "A_extra_AND_vs_higher_of_usd": 0,
+        "B_above_incremental_transmission_cost_usd": 0
+      },
+      {
+        "year": 2028,
+        "total_facility_twh": 424.26406871192853,
+        "effective_new_billing_gw": 13.298808723451254,
+        "share": 0.015788706556057353,
+        "incremental_cost_usd": 633432961.8196664,
+        "ordinary_payment_usd": 1254749555.752899,
+        "higher_of_payment_usd": 1254749555.752899,
+        "AND_payment_usd_if_in_force": 1878181430.4154603,
+        "A_extra_AND_vs_higher_of_usd": 0,
+        "B_above_incremental_transmission_cost_usd": 0
+      },
+      {
+        "year": 2029,
+        "total_facility_twh": 504.5378491522287,
+        "effective_new_billing_gw": 21.8897526918053,
+        "share": 0.02572572136702395,
+        "incremental_cost_usd": 1042626536.6625918,
+        "ordinary_payment_usd": 2054984168.3333447,
+        "higher_of_payment_usd": 2054984168.3333447,
+        "AND_payment_usd_if_in_force": 3070788385.2238894,
+        "A_extra_AND_vs_higher_of_usd": 0,
+        "B_above_incremental_transmission_cost_usd": 0
+      },
+      {
+        "year": 2030,
+        "total_facility_twh": 600.0,
+        "effective_new_billing_gw": 32.10616438356164,
+        "share": 0.0372847921795397,
+        "incremental_cost_usd": 1529242447.2791972,
+        "ordinary_payment_usd": 2996472204.210268,
+        "higher_of_payment_usd": 2996472204.210268,
+        "AND_payment_usd_if_in_force": 4468697164.65053,
+        "A_extra_AND_vs_higher_of_usd": 1472224960.4402618,
+        "B_above_incremental_transmission_cost_usd": 2939454717.3713326
+      },
+      {
+        "year": 2031,
+        "total_facility_twh": 612.0,
+        "effective_new_billing_gw": 33.390410958904106,
+        "share": 0.03871843950789856,
+        "incremental_cost_usd": 1590412145.170365,
+        "ordinary_payment_usd": 3114058738.5151615,
+        "higher_of_payment_usd": 3114058738.5151615,
+        "AND_payment_usd_if_in_force": 4642892607.250121,
+        "A_extra_AND_vs_higher_of_usd": 1528833868.7349596,
+        "B_above_incremental_transmission_cost_usd": 3052480462.079756
+      },
+      {
+        "year": 2032,
+        "total_facility_twh": 624.24,
+        "effective_new_billing_gw": 34.70034246575342,
+        "share": 0.040176367612276734,
+        "incremental_cost_usd": 1652805237.0193565,
+        "ordinary_payment_usd": 3233824162.973898,
+        "higher_of_payment_usd": 3233824162.973898,
+        "AND_payment_usd_if_in_force": 4820225689.199268,
+        "A_extra_AND_vs_higher_of_usd": 1586401526.2253704,
+        "B_above_incremental_transmission_cost_usd": 3167420452.1799116
+      },
+      {
+        "year": 2033,
+        "total_facility_twh": 636.7248000000001,
+        "effective_new_billing_gw": 36.03647260273973,
+        "share": 0.04165890542662605,
+        "incremental_cost_usd": 1716446190.705328,
+        "ordinary_payment_usd": 3355805889.662287,
+        "higher_of_payment_usd": 3355805889.662287,
+        "AND_payment_usd_if_in_force": 5000746810.83913,
+        "A_extra_AND_vs_higher_of_usd": 1644940921.1768432,
+        "B_above_incremental_transmission_cost_usd": 3284300620.1338024
+      },
+      {
+        "year": 2034,
+        "total_facility_twh": 649.459296,
+        "effective_new_billing_gw": 37.399325342465744,
+        "share": 0.04316638326984239,
+        "incremental_cost_usd": 1781359963.465018,
+        "ordinary_payment_usd": 3480041874.5139904,
+        "higher_of_payment_usd": 3480041874.5139904,
+        "AND_payment_usd_if_in_force": 5184506971.054525,
+        "A_extra_AND_vs_higher_of_usd": 1704465096.540535,
+        "B_above_incremental_transmission_cost_usd": 3403147007.589507
+      },
+      {
+        "year": 2035,
+        "total_facility_twh": 662.4484819200001,
+        "effective_new_billing_gw": 38.7894351369863,
+        "share": 0.044699132723208516,
+        "incremental_cost_usd": 1847572011.6799028,
+        "ordinary_payment_usd": 3606570622.284806,
+        "higher_of_payment_usd": 3606570622.284806,
+        "AND_payment_usd_if_in_force": 5371557767.398944,
+        "A_extra_AND_vs_higher_of_usd": 1764987145.1141381,
+        "B_above_incremental_transmission_cost_usd": 3523985755.719041
+      },
+      {
+        "year": 2036,
+        "total_facility_twh": 675.6974515584001,
+        "effective_new_billing_gw": 40.20734712739726,
+        "share": 0.04625748650224442,
+        "incremental_cost_usd": 1915108300.8590848,
+        "ordinary_payment_usd": 3735431191.492621,
+        "higher_of_payment_usd": 3735431191.492621,
+        "AND_payment_usd_if_in_force": 5561951395.9743805,
+        "A_extra_AND_vs_higher_of_usd": 1826520204.4817595,
+        "B_above_incremental_transmission_cost_usd": 3646843095.1152954
+      },
+      {
+        "year": 2037,
+        "total_facility_twh": 689.211400589568,
+        "effective_new_billing_gw": 41.65361735761643,
+        "share": 0.04784177832285676,
+        "incremental_cost_usd": 1983995315.8218503,
+        "ordinary_payment_usd": 3866663199.332684,
+        "higher_of_payment_usd": 3866663199.332684,
+        "AND_payment_usd_if_in_force": 5755740651.061399,
+        "A_extra_AND_vs_higher_of_usd": 1889077451.7287154,
+        "B_above_incremental_transmission_cost_usd": 3771745335.239549
+      },
+      {
+        "year": 2038,
+        "total_facility_twh": 702.9956286013595,
+        "effective_new_billing_gw": 43.12881299244001,
+        "share": 0.04945234276168086,
+        "incremental_cost_usd": 2054260071.0838718,
+        "ordinary_payment_usd": 4000306826.567994,
+        "higher_of_payment_usd": 4000306826.567994,
+        "AND_payment_usd_if_in_force": 5952978924.494991,
+        "A_extra_AND_vs_higher_of_usd": 1952672097.9269972,
+        "B_above_incremental_transmission_cost_usd": 3898718853.4111195
+      },
+      {
+        "year": 2039,
+        "total_facility_twh": 717.0555411733866,
+        "effective_new_billing_gw": 44.63351253996004,
+        "share": 0.05108951511051209,
+        "incremental_cost_usd": 2125930121.4511328,
+        "ordinary_payment_usd": 4136402822.394811,
+        "higher_of_payment_usd": 4136402822.394811,
+        "AND_payment_usd_if_in_force": 6153720204.782173,
+        "A_extra_AND_vs_higher_of_usd": 2017317382.387362,
+        "B_above_incremental_transmission_cost_usd": 4027790083.3310404
+      },
+      {
+        "year": 2040,
+        "total_facility_twh": 731.3966519968544,
+        "effective_new_billing_gw": 46.16830607843048,
+        "share": 0.05275363122472695,
+        "incremental_cost_usd": 2199033572.82574,
+        "ordinary_payment_usd": 4274992509.2835436,
+        "higher_of_payment_usd": 4274992509.2835436,
+        "AND_payment_usd_if_in_force": 6358019075.957641,
+        "A_extra_AND_vs_higher_of_usd": 2083026566.674097,
+        "B_above_incremental_transmission_cost_usd": 4158985503.131901
+      },
+      {
+        "year": 2041,
+        "total_facility_twh": 746.0245850367914,
+        "effective_new_billing_gw": 47.73379548767032,
+        "share": 0.05444502736559744,
+        "incremental_cost_usd": 2273599093.2278385,
+        "ordinary_payment_usd": 4416117787.795422,
+        "higher_of_payment_usd": 4416117787.795422,
+        "AND_payment_usd_if_in_force": 6565930716.174073,
+        "A_extra_AND_vs_higher_of_usd": 2149812928.3786516,
+        "B_above_incremental_transmission_cost_usd": 4292331622.9462347
+      },
+      {
+        "year": 2042,
+        "total_facility_twh": 760.9450767375273,
+        "effective_new_billing_gw": 49.330594685094965,
+        "share": 0.05616404003640713,
+        "incremental_cost_usd": 2349655924.037979,
+        "ordinary_payment_usd": 4559821141.375712,
+        "higher_of_payment_usd": 4559821141.375712,
+        "AND_payment_usd_if_in_force": 6777510896.024241,
+        "A_extra_AND_vs_higher_of_usd": 2217689754.648529,
+        "B_above_incremental_transmission_cost_usd": 4427854971.986262
+      },
+      {
+        "year": 2043,
+        "total_facility_twh": 776.163978272278,
+        "effective_new_billing_gw": 50.9593298664681,
+        "share": 0.0579110058122812,
+        "incremental_cost_usd": 2427233891.4643235,
+        "ordinary_payment_usd": 4706145641.124401,
+        "higher_of_payment_usd": 4706145641.124401,
+        "AND_payment_usd_if_in_force": 6992815976.592367,
+        "A_extra_AND_vs_higher_of_usd": 2286670335.467966,
+        "B_above_incremental_transmission_cost_usd": 4565582085.128044
+      },
+      {
+        "year": 2044,
+        "total_facility_twh": 791.6872578377235,
+        "effective_new_billing_gw": 52.62063975146869,
+        "share": 0.05968626116364811,
+        "incremental_cost_usd": 2506363418.2391934,
+        "ordinary_payment_usd": 4855134950.545612,
+        "higher_of_payment_usd": 4855134950.545612,
+        "AND_payment_usd_if_in_force": 7211902907.232767,
+        "A_extra_AND_vs_higher_of_usd": 2356767956.687155,
+        "B_above_incremental_transmission_cost_usd": 4705539488.993574
+      },
+      {
+        "year": 2045,
+        "total_facility_twh": 807.521002994478,
+        "effective_new_billing_gw": 54.315175834169295,
+        "share": 0.0614901422732561,
+        "incremental_cost_usd": 2587075535.5495615,
+        "ordinary_payment_usd": 5006833330.27734,
+        "higher_of_payment_usd": 5006833330.27734,
+        "AND_payment_usd_if_in_force": 7434829223.074299,
+        "A_extra_AND_vs_higher_of_usd": 2427995892.796959,
+        "B_above_incremental_transmission_cost_usd": 4847753687.524737
+      },
+      {
+        "year": 2046,
+        "total_facility_twh": 823.6714230543674,
+        "effective_new_billing_gw": 56.04360263852391,
+        "share": 0.06332298484667274,
+        "incremental_cost_usd": 2669401895.206136,
+        "ordinary_payment_usd": 5161285642.803319,
+        "higher_of_payment_usd": 5161285642.803319,
+        "AND_payment_usd_if_in_force": 7661653042.249638,
+        "A_extra_AND_vs_higher_of_usd": 2500367399.4463186,
+        "B_above_incremental_transmission_cost_usd": 4992251147.043501
+      },
+      {
+        "year": 2047,
+        "total_facility_twh": 840.1448515154549,
+        "effective_new_billing_gw": 57.806597978965634,
+        "share": 0.06518512391620339,
+        "incremental_cost_usd": 2753374782.0558434,
+        "ordinary_payment_usd": 5318537357.149311,
+        "higher_of_payment_usd": 5318537357.149311,
+        "AND_payment_usd_if_in_force": 7892433062.849094,
+        "A_extra_AND_vs_higher_of_usd": 2573895705.6997833,
+        "B_above_incremental_transmission_cost_usd": 5139058280.793251
+      },
+      {
+        "year": 2048,
+        "total_facility_twh": 856.9477485457641,
+        "effective_new_billing_gw": 59.60485322621619,
+        "share": 0.06707689363816957,
+        "incremental_cost_usd": 2839027126.6425447,
+        "ordinary_payment_usd": 5478634553.566329,
+        "higher_of_payment_usd": 5478634553.566329,
+        "AND_payment_usd_if_in_force": 8127228559.599194,
+        "A_extra_AND_vs_higher_of_usd": 2648594006.0328646,
+        "B_above_incremental_transmission_cost_usd": 5288201432.956649
+      },
+      {
+        "year": 2049,
+        "total_facility_twh": 874.0867035166792,
+        "effective_new_billing_gw": 61.43907357841174,
+        "share": 0.0689986270834974,
+        "incremental_cost_usd": 2926392518.120979,
+        "ordinary_payment_usd": 5641623928.203825,
+        "higher_of_payment_usd": 5641623928.203825,
+        "AND_payment_usd_if_in_force": 8366099380.267038,
+        "A_extra_AND_vs_higher_of_usd": 2724475452.0632133,
+        "B_above_incremental_transmission_cost_usd": 5439706862.146059
+      },
+      {
+        "year": 2050,
+        "total_facility_twh": 891.5684375870129,
+        "effective_new_billing_gw": 63.309978337651216,
+        "share": 0.07095065602157218,
+        "incremental_cost_usd": 3015505217.4289827,
+        "ordinary_payment_usd": 5807552797.776165,
+        "higher_of_payment_usd": 5807552797.776165,
+        "AND_payment_usd_if_in_force": 8609105941.792088,
+        "A_extra_AND_vs_higher_of_usd": 2801553144.0159225,
+        "B_above_incremental_transmission_cost_usd": 5593600724.363105
+      },
+      {
+        "year": 2051,
+        "total_facility_twh": 909.3998063387531,
+        "effective_new_billing_gw": 65.21830119207547,
+        "share": 0.07293331069732464,
+        "incremental_cost_usd": 3106400170.723146,
+        "ordinary_payment_usd": 5976469104.226184,
+        "higher_of_payment_usd": 5976469104.226184,
+        "AND_payment_usd_if_in_force": 8856309226.147757,
+        "A_extra_AND_vs_higher_of_usd": 2879840121.9215727,
+        "B_above_incremental_transmission_cost_usd": 5749909055.42461
+      },
+      {
+        "year": 2052,
+        "total_facility_twh": 927.5878024655283,
+        "effective_new_billing_gw": 67.16479050358821,
+        "share": 0.0749469196015231,
+        "incremental_cost_usd": 3199113023.0831933,
+        "ordinary_payment_usd": 6148421419.39012,
+        "higher_of_payment_usd": 6148421419.39012,
+        "AND_payment_usd_if_in_force": 9107770775.936111,
+        "A_extra_AND_vs_higher_of_usd": 2959349356.545992,
+        "B_above_incremental_transmission_cost_usd": 5908657752.852919
+      },
+      {
+        "year": 2053,
+        "total_facility_twh": 946.1395585148389,
+        "effective_new_billing_gw": 69.15020960133121,
+        "share": 0.0769918092342543,
+        "incremental_cost_usd": 3293680132.4904413,
+        "ordinary_payment_usd": 6323458949.668575,
+        "higher_of_payment_usd": 6323458949.668575,
+        "AND_payment_usd_if_in_force": 9363552689.719658,
+        "A_extra_AND_vs_higher_of_usd": 3040093740.0510826,
+        "B_above_incremental_transmission_cost_usd": 6069872557.229217
+      },
+      {
+        "year": 2054,
+        "total_facility_twh": 965.0623496851357,
+        "effective_new_billing_gw": 71.17533708102908,
+        "share": 0.07906830386158674,
+        "incremental_cost_usd": 3390138584.0858345,
+        "ordinary_payment_usd": 6501631540.708777,
+        "higher_of_payment_usd": 6501631540.708777,
+        "AND_payment_usd_if_in_force": 9623717617.095222,
+        "A_extra_AND_vs_higher_of_usd": 3122086076.386445,
+        "B_above_incremental_transmission_cost_usd": 6233579033.009388
+      },
+      {
+        "year": 2055,
+        "total_facility_twh": 984.3635966788383,
+        "effective_new_billing_gw": 73.24096711032088,
+        "share": 0.08117672526541947,
+        "incremental_cost_usd": 3488526204.713135,
+        "ordinary_payment_usd": 6682989682.103828,
+        "higher_of_payment_usd": 6682989682.103828,
+        "AND_payment_usd_if_in_force": 9888328753.515747,
+        "A_extra_AND_vs_higher_of_usd": 3205339071.4119186,
+        "B_above_incremental_transmission_cost_usd": 6399802548.802612
+      },
+      {
+        "year": 2056,
+        "total_facility_twh": 1004.0508686124151,
+        "effective_new_billing_gw": 75.34790974019853,
+        "share": 0.08331739248653156,
+        "incremental_cost_usd": 3588881577.752981,
+        "ordinary_payment_usd": 6867584512.115253,
+        "higher_of_payment_usd": 6867584512.115253,
+        "AND_payment_usd_if_in_force": 10157449834.866907,
+        "A_extra_AND_vs_higher_of_usd": 3289865322.7516537,
+        "B_above_incremental_transmission_cost_usd": 6568568257.113926
+      }
+    ]
+  },
+  "ITC": {
+    "status": "Own repeated-program illustration; not official30-year score or forecast of S.5453",
+    "normalization": "For each historical FY y, divide JCT nominal positive cost by1.025^(y\u22122026). Reset this ten-year REAL profile three times over modelyears2027\u20132036,2037\u20132046,2047\u20132056.",
+    "inflation_assumption": 0.025,
+    "historical_nominal_10yr_billion": 11.279,
+    "mechanical_3x_unharmonized_score_billion": 33.837,
+    "historical_10yr_profile_in_constant_2026_billion": 10.55797582971584,
+    "repeated_30yr_constant_2026_billion": 31.673927489147527,
+    "repeated_30yr_nominal_billion": 50.007143738101085,
+    "repeated_30yr_pv_2026_billion": 19.393071931228334,
+    "historical_block": [
+      {
+        "historical_fiscal_year": 2022,
+        "historical_nominal_cost_billion": 0.0,
+        "constant_2026_cost_billion": 0.0
+      },
+      {
+        "historical_fiscal_year": 2023,
+        "historical_nominal_cost_billion": 0.0,
+        "constant_2026_cost_billion": 0.0
+      },
+      {
+        "historical_fiscal_year": 2024,
+        "historical_nominal_cost_billion": 0.0,
+        "constant_2026_cost_billion": 0.0
+      },
+      {
+        "historical_fiscal_year": 2025,
+        "historical_nominal_cost_billion": 0.788,
+        "constant_2026_cost_billion": 0.8077
+      },
+      {
+        "historical_fiscal_year": 2026,
+        "historical_nominal_cost_billion": 1.213,
+        "constant_2026_cost_billion": 1.213
+      },
+      {
+        "historical_fiscal_year": 2027,
+        "historical_nominal_cost_billion": 1.213,
+        "constant_2026_cost_billion": 1.1834146341463416
+      },
+      {
+        "historical_fiscal_year": 2028,
+        "historical_nominal_cost_billion": 1.213,
+        "constant_2026_cost_billion": 1.1545508625817966
+      },
+      {
+        "historical_fiscal_year": 2029,
+        "historical_nominal_cost_billion": 2.001,
+        "constant_2026_cost_billion": 1.8581274212504177
+      },
+      {
+        "historical_fiscal_year": 2030,
+        "historical_nominal_cost_billion": 2.426,
+        "constant_2026_cost_billion": 2.197836264284206
+      },
+      {
+        "historical_fiscal_year": 2031,
+        "historical_nominal_cost_billion": 2.425,
+        "constant_2026_cost_billion": 2.1433466474530793
+      }
+    ],
+    "illustrative_repeated_annual": [
+      {
+        "illustrative_model_year": 2027,
+        "repeated_block": 1,
+        "mapped_historical_fiscal_year": 2022,
+        "constant_2026_cost_billion": 0.0,
+        "nominal_cost_billion": 0.0,
+        "pv_2026_cost_billion": 0.0
+      },
+      {
+        "illustrative_model_year": 2028,
+        "repeated_block": 1,
+        "mapped_historical_fiscal_year": 2023,
+        "constant_2026_cost_billion": 0.0,
+        "nominal_cost_billion": 0.0,
+        "pv_2026_cost_billion": 0.0
+      },
+      {
+        "illustrative_model_year": 2029,
+        "repeated_block": 1,
+        "mapped_historical_fiscal_year": 2024,
+        "constant_2026_cost_billion": 0.0,
+        "nominal_cost_billion": 0.0,
+        "pv_2026_cost_billion": 0.0
+      },
+      {
+        "illustrative_model_year": 2030,
+        "repeated_block": 1,
+        "mapped_historical_fiscal_year": 2025,
+        "constant_2026_cost_billion": 0.8077,
+        "nominal_cost_billion": 0.8915496717578121,
+        "pv_2026_cost_billion": 0.7176309886015018
+      },
+      {
+        "illustrative_model_year": 2031,
+        "repeated_block": 1,
+        "mapped_historical_fiscal_year": 2026,
+        "constant_2026_cost_billion": 1.213,
+        "nominal_cost_billion": 1.3723981622363275,
+        "pv_2026_cost_billion": 1.0463444554579908
+      },
+      {
+        "illustrative_model_year": 2032,
+        "repeated_block": 1,
+        "mapped_historical_fiscal_year": 2027,
+        "constant_2026_cost_billion": 1.1834146341463416,
+        "nominal_cost_billion": 1.3723981622363275,
+        "pv_2026_cost_billion": 0.9910911252266076
+      },
+      {
+        "illustrative_model_year": 2033,
+        "repeated_block": 1,
+        "mapped_historical_fiscal_year": 2028,
+        "constant_2026_cost_billion": 1.1545508625817966,
+        "nominal_cost_billion": 1.3723981622363275,
+        "pv_2026_cost_billion": 0.9387555057794056
+      },
+      {
+        "illustrative_model_year": 2034,
+        "repeated_block": 1,
+        "mapped_historical_fiscal_year": 2029,
+        "constant_2026_cost_billion": 1.8581274212504177,
+        "nominal_cost_billion": 2.2639478339941395,
+        "pv_2026_cost_billion": 1.4668229448670198
+      },
+      {
+        "illustrative_model_year": 2035,
+        "repeated_block": 1,
+        "mapped_historical_fiscal_year": 2030,
+        "constant_2026_cost_billion": 2.197836264284206,
+        "nominal_cost_billion": 2.7447963244726554,
+        "pv_2026_cost_billion": 1.6844584878990247
+      },
+      {
+        "illustrative_model_year": 2036,
+        "repeated_block": 1,
+        "mapped_historical_fiscal_year": 2031,
+        "constant_2026_cost_billion": 2.1433466474530793,
+        "nominal_cost_billion": 2.7436649162597644,
+        "pv_2026_cost_billion": 1.5948511978841324
+      },
+      {
+        "illustrative_model_year": 2037,
+        "repeated_block": 2,
+        "mapped_historical_fiscal_year": 2022,
+        "constant_2026_cost_billion": 0.0,
+        "nominal_cost_billion": 0.0,
+        "pv_2026_cost_billion": 0.0
+      },
+      {
+        "illustrative_model_year": 2038,
+        "repeated_block": 2,
+        "mapped_historical_fiscal_year": 2023,
+        "constant_2026_cost_billion": 0.0,
+        "nominal_cost_billion": 0.0,
+        "pv_2026_cost_billion": 0.0
+      },
+      {
+        "illustrative_model_year": 2039,
+        "repeated_block": 2,
+        "mapped_historical_fiscal_year": 2024,
+        "constant_2026_cost_billion": 0.0,
+        "nominal_cost_billion": 0.0,
+        "pv_2026_cost_billion": 0.0
+      },
+      {
+        "illustrative_model_year": 2040,
+        "repeated_block": 2,
+        "mapped_historical_fiscal_year": 2025,
+        "constant_2026_cost_billion": 0.8077,
+        "nominal_cost_billion": 1.1412589552005106,
+        "pv_2026_cost_billion": 0.5339848517596985
+      },
+      {
+        "illustrative_model_year": 2041,
+        "repeated_block": 2,
+        "mapped_historical_fiscal_year": 2026,
+        "constant_2026_cost_billion": 1.213,
+        "nominal_cost_billion": 1.7567856759622071,
+        "pv_2026_cost_billion": 0.7785785421922182
+      },
+      {
+        "illustrative_model_year": 2042,
+        "repeated_block": 2,
+        "mapped_historical_fiscal_year": 2027,
+        "constant_2026_cost_billion": 1.1834146341463416,
+        "nominal_cost_billion": 1.7567856759622071,
+        "pv_2026_cost_billion": 0.7374648753892666
+      },
+      {
+        "illustrative_model_year": 2043,
+        "repeated_block": 2,
+        "mapped_historical_fiscal_year": 2028,
+        "constant_2026_cost_billion": 1.1545508625817966,
+        "nominal_cost_billion": 1.7567856759622067,
+        "pv_2026_cost_billion": 0.698522259426253
+      },
+      {
+        "illustrative_model_year": 2044,
+        "repeated_block": 2,
+        "mapped_historical_fiscal_year": 2029,
+        "constant_2026_cost_billion": 1.8581274212504177,
+        "nominal_cost_billion": 2.8980446311627173,
+        "pv_2026_cost_billion": 1.0914540275064435
+      },
+      {
+        "illustrative_model_year": 2045,
+        "repeated_block": 2,
+        "mapped_historical_fiscal_year": 2030,
+        "constant_2026_cost_billion": 2.197836264284206,
+        "nominal_cost_billion": 3.5135713519244143,
+        "pv_2026_cost_billion": 1.253395310741803
+      },
+      {
+        "illustrative_model_year": 2046,
+        "repeated_block": 2,
+        "mapped_historical_fiscal_year": 2031,
+        "constant_2026_cost_billion": 2.1433466474530793,
+        "nominal_cost_billion": 3.5121230537579153,
+        "pv_2026_cost_billion": 1.1867190715113354
+      },
+      {
+        "illustrative_model_year": 2047,
+        "repeated_block": 3,
+        "mapped_historical_fiscal_year": 2022,
+        "constant_2026_cost_billion": 0.0,
+        "nominal_cost_billion": 0.0,
+        "pv_2026_cost_billion": 0.0
+      },
+      {
+        "illustrative_model_year": 2048,
+        "repeated_block": 3,
+        "mapped_historical_fiscal_year": 2023,
+        "constant_2026_cost_billion": 0.0,
+        "nominal_cost_billion": 0.0,
+        "pv_2026_cost_billion": 0.0
+      },
+      {
+        "illustrative_model_year": 2049,
+        "repeated_block": 3,
+        "mapped_historical_fiscal_year": 2024,
+        "constant_2026_cost_billion": 0.0,
+        "nominal_cost_billion": 0.0,
+        "pv_2026_cost_billion": 0.0
+      },
+      {
+        "illustrative_model_year": 2050,
+        "repeated_block": 3,
+        "mapped_historical_fiscal_year": 2025,
+        "constant_2026_cost_billion": 0.8077,
+        "nominal_cost_billion": 1.4609079494778556,
+        "pv_2026_cost_billion": 0.3973348788414213
+      },
+      {
+        "illustrative_model_year": 2051,
+        "repeated_block": 3,
+        "mapped_historical_fiscal_year": 2026,
+        "constant_2026_cost_billion": 1.213,
+        "nominal_cost_billion": 2.2488341912647702,
+        "pv_2026_cost_billion": 0.5793355555143926
+      },
+      {
+        "illustrative_model_year": 2052,
+        "repeated_block": 3,
+        "mapped_historical_fiscal_year": 2027,
+        "constant_2026_cost_billion": 1.1834146341463416,
+        "nominal_cost_billion": 2.2488341912647702,
+        "pv_2026_cost_billion": 0.5487431262272248
+      },
+      {
+        "illustrative_model_year": 2053,
+        "repeated_block": 3,
+        "mapped_historical_fiscal_year": 2028,
+        "constant_2026_cost_billion": 1.1545508625817966,
+        "nominal_cost_billion": 2.24883419126477,
+        "pv_2026_cost_billion": 0.5197661626589862
+      },
+      {
+        "illustrative_model_year": 2054,
+        "repeated_block": 3,
+        "mapped_historical_fiscal_year": 2029,
+        "constant_2026_cost_billion": 1.8581274212504177,
+        "nominal_cost_billion": 3.709742140742626,
+        "pv_2026_cost_billion": 0.8121443002570673
+      },
+      {
+        "illustrative_model_year": 2055,
+        "repeated_block": 3,
+        "mapped_historical_fiscal_year": 2030,
+        "constant_2026_cost_billion": 2.197836264284206,
+        "nominal_cost_billion": 4.4976683825295405,
+        "pv_2026_cost_billion": 0.9326438236830652
+      },
+      {
+        "illustrative_model_year": 2056,
+        "repeated_block": 3,
+        "mapped_historical_fiscal_year": 2031,
+        "constant_2026_cost_billion": 2.1433466474530793,
+        "nominal_cost_billion": 4.495814438431218,
+        "pv_2026_cost_billion": 0.883030439803476
+      }
+    ]
+  },
+  "dollar_basis": "constant 2026 USD; undiscounted",
+  "rate_note": "95.1 $/kW-year is a rounded national cost-to-peak proxy, not an observed tariff average."
+}

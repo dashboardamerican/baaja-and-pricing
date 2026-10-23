@@ -1,0 +1,473 @@
+{
+  "review_date": "2026-10-23",
+  "pudl_release": "2026.10.0",
+  "scope": "Local parquet contents, not inferred tariff revenue requirements",
+  "queries": [
+    {
+      "table": "core_ferc1__yearly_operating_expenses_sched320",
+      "sql": "SELECT report_year AS report_year,count(*) AS n_rows,count(distinct utility_id_ferc1) AS entities FROM SOURCE GROUP BY 1 ORDER BY 1 DESC LIMIT 3",
+      "meaning": "Recent-year table coverage; counts are reporting entities, not national population shares.",
+      "rows": [
+        {
+          "report_year": 2025,
+          "n_rows": 18784,
+          "entities": 223
+        },
+        {
+          "report_year": 2024,
+          "n_rows": 15950,
+          "entities": 221
+        },
+        {
+          "report_year": 2023,
+          "n_rows": 15617,
+          "entities": 219
+        }
+      ]
+    },
+    {
+      "table": "core_ferc1__yearly_plant_in_service_sched204",
+      "sql": "SELECT report_year AS report_year,count(*) AS n_rows,count(distinct utility_id_ferc1) AS entities FROM SOURCE GROUP BY 1 ORDER BY 1 DESC LIMIT 3",
+      "meaning": "Recent-year table coverage; counts are reporting entities, not national population shares.",
+      "rows": [
+        {
+          "report_year": 2025,
+          "n_rows": 16660,
+          "entities": 219
+        },
+        {
+          "report_year": 2024,
+          "n_rows": 11189,
+          "entities": 219
+        },
+        {
+          "report_year": 2023,
+          "n_rows": 9357,
+          "entities": 214
+        }
+      ]
+    },
+    {
+      "table": "core_ferc1__yearly_depreciation_by_function_sched219",
+      "sql": "SELECT report_year AS report_year,count(*) AS n_rows,count(distinct utility_id_ferc1) AS entities FROM SOURCE GROUP BY 1 ORDER BY 1 DESC LIMIT 3",
+      "meaning": "Recent-year table coverage; counts are reporting entities, not national population shares.",
+      "rows": [
+        {
+          "report_year": 2025,
+          "n_rows": 2893,
+          "entities": 210
+        },
+        {
+          "report_year": 2024,
+          "n_rows": 2246,
+          "entities": 205
+        },
+        {
+          "report_year": 2023,
+          "n_rows": 2166,
+          "entities": 203
+        }
+      ]
+    },
+    {
+      "table": "core_ferc1__yearly_depreciation_summary_sched336",
+      "sql": "SELECT report_year AS report_year,count(*) AS n_rows,count(distinct utility_id_ferc1) AS entities FROM SOURCE GROUP BY 1 ORDER BY 1 DESC LIMIT 3",
+      "meaning": "Recent-year table coverage; counts are reporting entities, not national population shares.",
+      "rows": [
+        {
+          "report_year": 2025,
+          "n_rows": 7137,
+          "entities": 214
+        },
+        {
+          "report_year": 2024,
+          "n_rows": 6300,
+          "entities": 211
+        },
+        {
+          "report_year": 2023,
+          "n_rows": 6054,
+          "entities": 206
+        }
+      ]
+    },
+    {
+      "table": "core_ferc1__yearly_operating_revenues_sched300",
+      "sql": "SELECT report_year AS report_year,count(*) AS n_rows,count(distinct utility_id_ferc1) AS entities FROM SOURCE GROUP BY 1 ORDER BY 1 DESC LIMIT 3",
+      "meaning": "Recent-year table coverage; counts are reporting entities, not national population shares.",
+      "rows": [
+        {
+          "report_year": 2025,
+          "n_rows": 2523,
+          "entities": 222
+        },
+        {
+          "report_year": 2024,
+          "n_rows": 2545,
+          "entities": 222
+        },
+        {
+          "report_year": 2023,
+          "n_rows": 2535,
+          "entities": 216
+        }
+      ]
+    },
+    {
+      "table": "core_eia861__yearly_operational_data_misc",
+      "sql": "SELECT year(report_date) AS report_year,count(*) AS n_rows,count(distinct utility_id_eia) AS entities FROM SOURCE GROUP BY 1 ORDER BY 1 DESC LIMIT 3",
+      "meaning": "Recent-year table coverage; counts are reporting entities, not national population shares.",
+      "rows": [
+        {
+          "report_year": 2025,
+          "n_rows": 1727,
+          "entities": 1726
+        },
+        {
+          "report_year": 2024,
+          "n_rows": 1710,
+          "entities": 1709
+        },
+        {
+          "report_year": 2023,
+          "n_rows": 1722,
+          "entities": 1721
+        }
+      ]
+    },
+    {
+      "table": "core_eia861__yearly_operational_data_revenue",
+      "sql": "SELECT year(report_date) AS report_year,count(*) AS n_rows,count(distinct utility_id_eia) AS entities FROM SOURCE GROUP BY 1 ORDER BY 1 DESC LIMIT 3",
+      "meaning": "Recent-year table coverage; counts are reporting entities, not national population shares.",
+      "rows": [
+        {
+          "report_year": 2025,
+          "n_rows": 12089,
+          "entities": 1726
+        },
+        {
+          "report_year": 2024,
+          "n_rows": 11970,
+          "entities": 1709
+        },
+        {
+          "report_year": 2023,
+          "n_rows": 12054,
+          "entities": 1721
+        }
+      ]
+    },
+    {
+      "table": "core_ferc714__yearly_planning_area_demand_forecast",
+      "sql": "SELECT report_year AS report_year,count(*) AS n_rows,count(distinct respondent_id_ferc714) AS entities FROM SOURCE GROUP BY 1 ORDER BY 1 DESC LIMIT 3",
+      "meaning": "Recent-year table coverage; counts are reporting entities, not national population shares.",
+      "rows": [
+        {
+          "report_year": 2025,
+          "n_rows": 898,
+          "entities": 88
+        },
+        {
+          "report_year": 2024,
+          "n_rows": 904,
+          "entities": 89
+        },
+        {
+          "report_year": 2023,
+          "n_rows": 904,
+          "entities": 89
+        }
+      ]
+    },
+    {
+      "table": "core_ferc1__yearly_operating_expenses_sched320",
+      "sql": "SELECT expense_type,count(*) AS n_rows,count(distinct utility_id_ferc1) AS entities,sum(dollar_value) AS dollars FROM SOURCE WHERE report_year=2025 AND expense_type IN ('transmission_expenses','transmission_operation_expense','transmission_maintenance_expense_electric','transmission_of_electricity_by_others') GROUP BY 1",
+      "meaning": "Subtotals overlap. Transmission-by-others is purchased service, not own-network operating cost. These are not complete capital-inclusive revenue requirements.",
+      "rows": [
+        {
+          "expense_type": "transmission_of_electricity_by_others",
+          "n_rows": 111,
+          "entities": 111,
+          "dollars": 13779023905.0
+        },
+        {
+          "expense_type": "transmission_maintenance_expense_electric",
+          "n_rows": 199,
+          "entities": 199,
+          "dollars": 2979060173.0
+        },
+        {
+          "expense_type": "transmission_expenses",
+          "n_rows": 213,
+          "entities": 213,
+          "dollars": 22289799880.0
+        },
+        {
+          "expense_type": "transmission_operation_expense",
+          "n_rows": 211,
+          "entities": 211,
+          "dollars": 19310739705.0
+        }
+      ]
+    },
+    {
+      "table": "core_ferc1__yearly_plant_in_service_sched204",
+      "sql": "SELECT plant_status,count(distinct utility_id_ferc1) AS entities,sum(ending_balance) AS gross_plant_dollars,sum(additions) AS additions_dollars FROM SOURCE WHERE report_year=2025 AND ferc_account_label='transmission_plant' AND utility_type='electric' GROUP BY 1",
+      "meaning": "Book gross plant/additions, not allowed rate base, annual revenue requirement, or data-center-attributable net investment.",
+      "rows": [
+        {
+          "plant_status": "in_service",
+          "entities": 202,
+          "gross_plant_dollars": 446094135063.25,
+          "additions_dollars": 35596312732.0
+        }
+      ]
+    },
+    {
+      "table": "core_ferc1__yearly_depreciation_by_function_sched219",
+      "sql": "SELECT plant_status,count(distinct utility_id_ferc1) AS entities,sum(ending_balance) AS accumulated_depreciation_dollars FROM SOURCE WHERE report_year=2025 AND plant_function='transmission' AND utility_type='electric' AND depreciation_type='accumulated_depreciation' GROUP BY 1",
+      "meaning": "Accumulated depreciation stock, not annual depreciation expense; total and statuses overlap.",
+      "rows": [
+        {
+          "plant_status": "leased",
+          "entities": 5,
+          "accumulated_depreciation_dollars": 108821375.0
+        },
+        {
+          "plant_status": "future",
+          "entities": 20,
+          "accumulated_depreciation_dollars": 4297397.0
+        },
+        {
+          "plant_status": "in_service",
+          "entities": 190,
+          "accumulated_depreciation_dollars": 98790291688.0
+        },
+        {
+          "plant_status": "total",
+          "entities": 195,
+          "accumulated_depreciation_dollars": 98903410460.0
+        }
+      ]
+    },
+    {
+      "table": "core_ferc1__yearly_depreciation_summary_sched336",
+      "sql": "SELECT ferc_account_label,count(distinct utility_id_ferc1) AS entities,sum(dollar_value) AS annual_dollars FROM SOURCE WHERE report_year=2025 AND plant_function='transmission' GROUP BY 1",
+      "meaning": "Annual functional depreciation exists. Reported total and component sums do not exactly reconcile in the snapshot; do not add totals to components.",
+      "rows": [
+        {
+          "ferc_account_label": "amortization_other_electric_plant",
+          "entities": 188,
+          "annual_dollars": 2499656.0
+        },
+        {
+          "ferc_account_label": "amortization_limited_term_electric_plant",
+          "entities": 188,
+          "annual_dollars": 30116052.0
+        },
+        {
+          "ferc_account_label": "depreciation_expense_asset_retirement",
+          "entities": 188,
+          "annual_dollars": -1753981.0
+        },
+        {
+          "ferc_account_label": "depreciation_expense",
+          "entities": 188,
+          "annual_dollars": 10316432894.0
+        },
+        {
+          "ferc_account_label": "depreciation_amortization_total",
+          "entities": 188,
+          "annual_dollars": 10166414579.0
+        }
+      ]
+    },
+    {
+      "table": "out_ferc1__yearly_detailed_income_statements",
+      "sql": "SELECT revenue_requirement_category,in_revenue_requirement,plant_function,count(distinct utility_id_ferc1) AS entities,sum(dollar_value) AS signed_dollars FROM SOURCE WHERE report_year=2025 AND (plant_function='transmission' OR revenue_requirement_category ILIKE '%return%' OR revenue_requirement_category ILIKE '%tax%') GROUP BY 1,2,3",
+      "meaning": "Useful reconciled accounting categories, but flags do not establish an authorized transmission RR. Tax items are not functionally assigned; signs reflect income-statement convention.",
+      "rows": [
+        {
+          "revenue_requirement_category": "maintenance",
+          "in_revenue_requirement": true,
+          "plant_function": "transmission",
+          "entities": 187,
+          "signed_dollars": -2979060171.0
+        },
+        {
+          "revenue_requirement_category": null,
+          "in_revenue_requirement": null,
+          "plant_function": "transmission",
+          "entities": 1,
+          "signed_dollars": 360170.0
+        },
+        {
+          "revenue_requirement_category": "depreciation_arc",
+          "in_revenue_requirement": true,
+          "plant_function": "transmission",
+          "entities": 188,
+          "signed_dollars": 1753981.0
+        },
+        {
+          "revenue_requirement_category": "investment_tax_credit",
+          "in_revenue_requirement": true,
+          "plant_function": null,
+          "entities": 105,
+          "signed_dollars": -157885560.0
+        },
+        {
+          "revenue_requirement_category": "depreciation_amortization_depletion",
+          "in_revenue_requirement": true,
+          "plant_function": "transmission",
+          "entities": 188,
+          "signed_dollars": -10349048602.0
+        },
+        {
+          "revenue_requirement_category": "non_fuel_operation",
+          "in_revenue_requirement": true,
+          "plant_function": "transmission",
+          "entities": 207,
+          "signed_dollars": -19311099871.0
+        },
+        {
+          "revenue_requirement_category": "taxes",
+          "in_revenue_requirement": true,
+          "plant_function": null,
+          "entities": 219,
+          "signed_dollars": -36553230707.57
+        }
+      ]
+    },
+    {
+      "table": "core_ferc1__yearly_operating_revenues_sched300",
+      "sql": "SELECT revenue_type,count(distinct utility_id_ferc1) AS entities,sum(dollar_value) AS dollars FROM SOURCE WHERE report_year=2025 AND revenue_type LIKE '%transmission%' GROUP BY 1",
+      "meaning": "Transmission-of-others and regional-service receipts do not encompass transmission recovered through bundled retail rates and may include interutility transactions.",
+      "rows": [
+        {
+          "revenue_type": "regional_transmission_service_revenues",
+          "entities": 21,
+          "dollars": 1869216833.0
+        },
+        {
+          "revenue_type": "revenues_from_transmission_of_electricity_of_others",
+          "entities": 169,
+          "dollars": 24648106317.1
+        }
+      ]
+    },
+    {
+      "table": "core_eia861__yearly_operational_data_misc",
+      "sql": "SELECT count(*) AS n_rows,count(distinct utility_id_eia) AS utilities,count(summer_peak_demand_mw) AS reported_summer_peak_rows,count(winter_peak_demand_mw) AS reported_winter_peak_rows,sum(summer_peak_demand_mw) AS raw_summer_peak_sum_mw,sum(winter_peak_demand_mw) AS raw_winter_peak_sum_mw FROM SOURCE WHERE year(report_date)=2025",
+      "meaning": "Utility noncoincident peaks include full/partial wholesale requirements customers and losses. Raw sum overlaps utility service scopes; not national tariff billing demand.",
+      "rows": [
+        {
+          "n_rows": 1727,
+          "utilities": 1726,
+          "reported_summer_peak_rows": 1462,
+          "reported_winter_peak_rows": 1462,
+          "raw_summer_peak_sum_mw": 1126205.8999999992,
+          "raw_winter_peak_sum_mw": 1012528.4999999997
+        }
+      ]
+    },
+    {
+      "table": "core_eia861__yearly_operational_data_revenue",
+      "sql": "SELECT revenue_class,count(revenue) AS nonnull_rows,count(distinct CASE WHEN revenue>0 THEN utility_id_eia END) AS positive_utilities,sum(revenue) AS dollars FROM SOURCE WHERE year(report_date)=2025 GROUP BY 1",
+      "meaning": "Transmission revenue class is not all transmission revenue embedded in bundled retail or delivery charges; no matching NITS denominator is supplied.",
+      "rows": [
+        {
+          "revenue_class": "credits_or_adjustments",
+          "nonnull_rows": 454,
+          "positive_utilities": 79,
+          "dollars": -2500020700.0
+        },
+        {
+          "revenue_class": "retail_sales",
+          "nonnull_rows": 1544,
+          "positive_utilities": 1527,
+          "dollars": 490753515000.0
+        },
+        {
+          "revenue_class": "transmission",
+          "nonnull_rows": 580,
+          "positive_utilities": 299,
+          "dollars": 29595594600.0
+        },
+        {
+          "revenue_class": "other",
+          "nonnull_rows": 1137,
+          "positive_utilities": 1053,
+          "dollars": 15955507000.0
+        },
+        {
+          "revenue_class": "sales_for_resale",
+          "nonnull_rows": 719,
+          "positive_utilities": 464,
+          "dollars": 168152553500.0
+        },
+        {
+          "revenue_class": "unbundled",
+          "nonnull_rows": 0,
+          "positive_utilities": 0,
+          "dollars": null
+        },
+        {
+          "revenue_class": "delivery_customers",
+          "nonnull_rows": 175,
+          "positive_utilities": 76,
+          "dollars": 55715294400.0
+        }
+      ]
+    }
+  ],
+  "metadata_resources_scanned": 378,
+  "demand_or_RR_named_fields": [
+    {
+      "table": "core_ferc1__yearly_purchased_power_and_exchanges_sched326",
+      "fields": [
+        "billing_demand_mw",
+        "non_coincident_peak_demand_mw",
+        "coincident_peak_demand_mw"
+      ]
+    },
+    {
+      "table": "out_ferc1__yearly_detailed_income_statements",
+      "fields": [
+        "revenue_requirement_technology",
+        "in_revenue_requirement",
+        "revenue_requirement_category"
+      ]
+    },
+    {
+      "table": "out_ferc1__yearly_purchased_power_and_exchanges_sched326",
+      "fields": [
+        "billing_demand_mw",
+        "coincident_peak_demand_mw",
+        "non_coincident_peak_demand_mw"
+      ]
+    }
+  ],
+  "findings": {
+    "complete_transmission_RR_available": false,
+    "matching_national_NITS_billing_demand_available": false,
+    "national_observed_NITS_rate_computed": false,
+    "important_exception": "Schedule326 has coincident/noncoincident/billing demand fields, but for purchased power contracts, not national network transmission rate-zone billing determinants.",
+    "why_RR_incomplete": [
+      "Authorized functional return and tariff rate base, ADIT/working-capital adjustments, allocated taxes/general costs, revenue credits and tariff true-ups are not assembled into NITS-zone ARR by this dataset.",
+      "Form1 accounting coverage is not all US transmission providers.",
+      "Detailed income statement in_revenue_requirement categories are accounting classifications, not complete filed transmission formula rates."
+    ],
+    "why_capex_per_MW_unidentified": [
+      "Book additions have no reliable project-level causal match to data-center MW.",
+      "Additions include replacement, reliability and other loads.",
+      "Dedicated facilities, network upgrades, customer contributions and tariff baseline overlap require project/tariff records."
+    ],
+    "conclusion": "PUDL materially strengthens empirical accounting checks but does not replace the explicitly labeled national cost-to-peak NITS-equivalent proxy in this bounded review.",
+    "pool_comment": "Using829GW reproduces the peak denominator of the existing EIA/GridStrategies proxy. It is a2025 national planning-peak benchmark, not measured2026 incumbent tariff billing demand. National homogeneous pooling and future DC geographic weighting remain assumptions."
+  },
+  "sources": [
+    "https://docs.catalyst.coop/pudl/en/latest/_modules/pudl/metadata/resources/ferc1.html",
+    "https://data.catalyst.coop/search",
+    "https://www.eia.gov/electricity/data/eia861/index.php"
+  ]
+}
