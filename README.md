@@ -4,7 +4,7 @@ A buildless HTML dashboard and one-page brief for the transmission AND-pricing p
 
 **[Open dashboard](https://dashboardamerican.github.io/baaja-and-pricing/)** · **[One-page PDF](baaja-one-pager.pdf)**
 
-Exactly three sliders: annual DC growth **after 2030**, attributable incremental network capital per MW, and the assumed NITS-equivalent rate. The data-center load factor is fixed at **80%**. No installation, account, analytics, external script or API is required. Serve this folder or open `index.html` locally.
+Choose **Low (1%), Standard (2%), or High (4%) annual DC growth after 2030**. Two sliders control attributable incremental network capital per MW and the assumed NITS-equivalent rate. Standard is the default and preserves the central case. The data-center load factor is fixed at **80%**. No installation, account, analytics, external script or API is required. Serve this folder or open `index.html` locally.
 
 ## Central case
 
@@ -23,7 +23,7 @@ All 30-year figures are **constant 2026 dollars**, undiscounted, over **2027-205
 | Item | Central assumption |
 | --- | --- |
 | Near-term DC facility demand | 300 TWh in 2026 to 600 TWh in 2030, geometric interpolation |
-| DC growth slider | 2.0% annually after 2030; gives 1,004 TWh in 2056 |
+| DC growth presets | Low 1%, Standard 2%, High 4% annually after 2030; Standard gives 1,004 TWh in 2056 |
 | Capital slider | $0.65m/MW attributable incremental transmission network investment |
 | NITS slider | $95.1/kW-year = $95,100/MW-year, constant real |
 | DC load factor | 80% |
@@ -34,7 +34,7 @@ All 30-year figures are **constant 2026 dollars**, undiscounted, over **2027-205
 | Existing AND pricing | Zero; no overlap haircut |
 | Horizon | 2027-2056; no post-horizon terminal value |
 
-The growth slider changes only 2031 onward, preserving the evidence-anchored near-term expansion. The 2056 path is a scenario, not a published forecast. Capital excludes unrelated work and requires project-specific attribution; dedicated facilities, contributions and credits must be reconciled in real tariff comparisons. The model holds construction and demand fixed between pricing cases. It does not estimate demand response, relocation, generation or distribution costs, discretionary retail surcharges, or departures from the grid. Summing regional higher-of calculations can give less relief than applying higher-of once to a homogeneous national pool.
+The growth presets change only 2031 onward, preserving the evidence-anchored near-term expansion. Low, Standard and High are illustrative scenarios, not forecast confidence bounds. The 2056 path is a scenario, not a published forecast. Capital excludes unrelated work and requires project-specific attribution; dedicated facilities, contributions and credits must be reconciled in real tariff comparisons. The model holds construction and demand fixed between pricing cases. It does not estimate demand response, relocation, generation or distribution costs, discretionary retail surcharges, or departures from the grid. Summing regional higher-of calculations can give less relief than applying higher-of once to a homogeneous national pool.
 
 ## A national rate proxy, with PUDL reviewed
 

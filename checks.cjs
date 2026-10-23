@@ -30,7 +30,8 @@ close(m.itc().officialTenYear,11.279,'JCT main row includes direct-pay outlays')
 close(m.itc().realThirtyYear,31.673927489147527,'Annual-flow normalized repeated ITC');
 assert.equal(m.FIXED.loadFactor,.8);assert.equal(m.FIXED.incumbentMW,829000);
 const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
-assert.equal((html.match(/type="range"/g)||[]).length,3,'Exactly three sliders');
+assert.equal((html.match(/type="range"/g)||[]).length,2,'Two cost sliders');
+assert.equal((html.match(/name="growth" type="radio"/g)||[]).length,3,'Low, Standard and High growth presets');
 assert(!/https?:\/\/[^"']+\.js/.test(html),'No external runtime scripts');
 for(const file of ['baaja-one-pager.pdf','data/central-case.json','data/national-rate.json','data/pudl-review.json'])assert(fs.existsSync(path.join(__dirname,file)),'Artifact exists: '+file);
 console.log(`PASS: ${cases.length} independent Python cases, ${count} annual rows, payment conservation, A/B boundaries, ITC normalization, and three-control HTML.`);
