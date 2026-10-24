@@ -1,0 +1,105 @@
+{
+  "status": "Research cross-checks, not new nationally calibrated score",
+  "published_UCS_source": "https://github.com/ucsusa/eer_load_shapes/blob/7b980999a8f6e63172b834494b785f452b95fffb/UCS_load_profile_scaling/scaling_inputs_MWh.csv",
+  "scope": "UCS data-center IT and cooling inputs; no presumption of identical crypto coverage to EPRI.",
+  "baseline_model": {
+    "A_billion_2026_USD": 74.59253645389029,
+    "B_billion_2026_USD": 148.93198325785207,
+    "incremental_cost_billion_2026_USD": 80.53471859238877
+  },
+  "UCS_path_sensitivities": [
+    {
+      "source_scenario": "current policy",
+      "source_points_TWh": {
+        "2025": 287.75272,
+        "2030": 544.790243,
+        "2035": 697.557752,
+        "2040": 781.683818,
+        "2045": 875.967044,
+        "2050": 981.61219
+      },
+      "interpolated_source_2026_TWh": 339.1602246,
+      "tail_after_2050": "Selected 1.5% per year, not UCS forecast; common to all scenarios.",
+      "source_2026_baseline_case": {
+        "A_billion_2026_USD": 63.865150462714745,
+        "B_billion_2026_USD": 127.51360888971573,
+        "incremental_cost_billion_2026_USD": 68.32987855699959
+      },
+      "common_300_TWh_2026_baseline_case": {
+        "A_billion_2026_USD": 68.60756446363791,
+        "B_billion_2026_USD": 136.98234606054376,
+        "incremental_cost_billion_2026_USD": 73.7195715502972
+      }
+    },
+    {
+      "source_scenario": "central",
+      "source_points_TWh": {
+        "2025": 288.163186,
+        "2030": 545.502851,
+        "2035": 698.46903,
+        "2040": 782.705489,
+        "2045": 877.111399,
+        "2050": 982.895863
+      },
+      "interpolated_source_2026_TWh": 339.631119,
+      "tail_after_2050": "Selected 1.5% per year, not UCS forecast; common to all scenarios.",
+      "source_2026_baseline_case": {
+        "A_billion_2026_USD": 63.93984025016172,
+        "B_billion_2026_USD": 127.66273504499082,
+        "incremental_cost_billion_2026_USD": 68.41540333266548
+      },
+      "common_300_TWh_2026_baseline_case": {
+        "A_billion_2026_USD": 68.73829830686775,
+        "B_billion_2026_USD": 137.24337017202677,
+        "incremental_cost_billion_2026_USD": 73.86990637938308
+      }
+    },
+    {
+      "source_scenario": "central high data center",
+      "source_points_TWh": {
+        "2025": 301.322002,
+        "2030": 729.516635,
+        "2035": 1059.521001,
+        "2040": 1241.979001,
+        "2045": 1455.842664,
+        "2050": 1706.562404
+      },
+      "interpolated_source_2026_TWh": 386.9609286,
+      "tail_after_2050": "Selected 1.5% per year, not UCS forecast; common to all scenarios.",
+      "source_2026_baseline_case": {
+        "A_billion_2026_USD": 118.207011858563,
+        "B_billion_2026_USD": 236.01295180467167,
+        "incremental_cost_billion_2026_USD": 134.76494712524283
+      },
+      "common_300_TWh_2026_baseline_case": {
+        "A_billion_2026_USD": 127.58920693918803,
+        "B_billion_2026_USD": 254.74550853349808,
+        "incremental_cost_billion_2026_USD": 146.73353801953704
+      }
+    }
+  ],
+  "WIRES_reported_gross_capital_USD_per_MW": 1165000.0,
+  "WIRES_ratio_caution": "23.3bn planned upgrades /20GW projected load; source authors estimate, not verified same-cohort, but-for, net newly assignable capital. Generator costs are not data-center observations.",
+  "synthetic_two_zone_project_allocation": [
+    {
+      "incremental_cost_assigned_to_host_zone_share": 1,
+      "baseline_new_load_incremental_charge": 50.0,
+      "additional_after_direct_assignment": 50.0,
+      "other_customers_relief": 50.0
+    },
+    {
+      "incremental_cost_assigned_to_host_zone_share": 0.5,
+      "baseline_new_load_incremental_charge": 25.0,
+      "additional_after_direct_assignment": 75.0,
+      "other_customers_relief": 75.0
+    },
+    {
+      "incremental_cost_assigned_to_host_zone_share": 0,
+      "baseline_new_load_incremental_charge": 0.0,
+      "additional_after_direct_assignment": 100.0,
+      "other_customers_relief": 100.0
+    }
+  ],
+  "project_allocation_caution": "Existing PJM zonal model places each zones selected incremental capital entirely in that zone. It does not replay actual Schedule12 hybrid LRS/DFAX project allocation.",
+  "B_caution": "B measures transmission payment minus selected incremental transmission cost. It is not payment above fully allocated cost of service, profit, federal revenue, or policy-additional relief."
+}

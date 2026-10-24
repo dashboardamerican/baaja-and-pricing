@@ -10643,6 +10643,7 @@
   ],
   "ITC_repeated_30_year_billion": 31.673927489147527,
   "cautions": [
+    "Incremental capital is assigned entirely to the host zone in this synthetic regional scenario; actual Schedule12 hybrid LRS/DFAX project allocation is not replayed.",
     "All capital values are scenarios; no national mean inferred from the matched convenience sample.",
     "Prior-recovery share is the fraction of modeled uplift already collected beyond embedded charges; it is not the prevalence of a tariff named AND. No national measured share is available.",
     "The synthetic nominal-rate-base sensitivity assumes 40-year straight-line depreciation, 50% equity, 10% nominal ROE, 5% debt, 21% federal income tax, 1.5% real O&M and 2.5% inflation. No ADIT or state-tax model; not an actual utility formula rate.",

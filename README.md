@@ -104,7 +104,7 @@ The reference AND additional payment is about **2.4×** this ITC illustration: c
 
 Measured PJM rates weighted by published 2026 NSPL average **$82.8/kW-year**. Weighting by positive net new large-load forecast demand through 2030 gives **$94.7/kW-year**. This supports the order of magnitude of the dashboard proxy in PJM; it does not validate a national tariff average.
 
-The conditional PJM zonal model produces **$44.2bn** above embedded pricing versus **$50.3bn** if the same inputs are pooled nationally within PJM. This approximately **14% pooling overstatement** is an illustration using fixed real rates, $0.65m/MW, 75% coverage, published load through 2046 and a selected 1.5% tail to 2056. It is not a PJM forecast of BAAJA receipts.
+The conditional PJM zonal model produces **$44.2bn** above embedded pricing versus **$50.3bn** if the same inputs are pooled across PJM. This approximately **14% pooling overstatement** is an illustration using fixed real rates, $0.65m/MW, 75% coverage, published load through 2046 and a selected 1.5% tail to 2056. It is not a PJM forecast of BAAJA receipts.
 
 Newly identified existing funding and contractual obligations mean that zero use of an AND tariff does not imply zero prior incremental-cost recovery. [Existing-obligation evidence](data/evidence/existing-obligations.json). The national central benchmark remains $74.6bn at selected inputs; assuming 25% or 50% of that uplift is already collected beyond embedded charges leaves $55.9bn or $37.3bn of policy-additional receipts. Those percentages are sensitivities, not measured national shares.
 
@@ -145,3 +145,16 @@ python3 -m http.server 8767
 - [PUDL FERC1 documentation](https://docs.catalyst.coop/pudl/en/latest/data_sources/ferc1.html); [PUDL data](https://data.catalyst.coop/search).
 
 As of October23,2026. Source-year estimates and scenarios retain their stated limitations.
+
+## October 24 source reconciliation
+
+See [OPC, UCS and related literature](literature-review.html). The regional comparison assigns selected incremental cost entirely to each host zone; it does not reproduce actual PJM Schedule12 hybrid LRS/DFAX allocations. Consequently its 14% difference is not an empirical correction to the national result. B measures a contribution above modeled incremental transmission cost, not an overcharge above fully allocated cost of service.
+
+The archived [UCS IT-plus-cooling inputs](data/evidence/ucs-demand-inputs-MWh.csv) permit a U.S.-specific demand cross-check through 2050. With selected 1.5% growth thereafter and unchanged central capital/finance inputs, the source current-policy path gives $63.9bn with its interpolated 2026 baseline or $68.6bn with our common 300TWh baseline. These are model sensitivities, not UCS BAAJA scores or a confidence interval; crypto coverage is not presumed identical to EPRI.
+
+```sh
+python3 analysis/literature_crosschecks.py
+python3 analysis/build_literature_review.py
+```
+
+The review distinguishes customer refunds/credits in OPC's proposed remedy from credits to the utility's annual transmission revenue requirement in BAAJA. It includes contrary Virginia JLARC and E3 case-study evidence, not only sources favoring direct assignment. The requested independent Claude review remains incomplete and no Claude conclusions are claimed.

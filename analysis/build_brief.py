@@ -36,14 +36,14 @@ para('A 30-year estimate of data-center transmission payments under AND pricing'
 # Two distinct measures. Metric B includes, rather than adds to, metric A.
 for x,amount,label,title,body,dark in [
     (42,A,'A / ADDITIONAL PAYMENTS','Conditional additional payments','Above the embedded-price baseline; matched by lower bills for other customers.',True),
-    (312,B,'B / ABOVE COST OF SERVICE','Total inherited-grid contribution','Above incremental transmission cost; includes payments already made under the baseline.',False)]:
+    (312,B,'B / ABOVE INCREMENTAL COST','Total inherited-grid contribution','Above incremental transmission cost; includes payments already made under the baseline.',False)]:
     c.setFillColor(HexColor(TEAL if dark else '#FFFEFA'));c.setStrokeColor(HexColor(TEAL if dark else LINE));c.roundRect(x,510,258,160,9,fill=1,stroke=1)
     col='#FFFFFF' if dark else INK
     txt(x+17,647,label,7.5,'Helvetica-Bold',col)
     txt(x+17,626,title,10,'Helvetica',col)
     txt(x+17,575,f'${amount:.0f}bn',39,'Times-Roman',col)
     para(body,x+17,551,224,8.6,'#D3EBE3' if dark else MUTED,12)
-para('<b>2027-2056, constant 2026 dollars, undiscounted.</b> In this central case, A is part of B; do not add them. Cost of service here means incremental <i>transmission</i> cost caused by new loads.',42,497,size=8.6,color=MUTED,leading=12)
+para('<b>2027-2056, constant 2026 dollars, undiscounted.</b> In this central case, A is part of B; do not add them. B excludes modeled incremental transmission cost; it is not an overcharge above fully allocated cost of service.',42,497,size=8.6,color=MUTED,leading=12)
 
 txt(42,451,'Low / Medium / High demand paths',15,'Times-Roman')
 txt(42,432,'U.S. facility TWh/year',8.5,'Helvetica-Bold')
@@ -73,6 +73,6 @@ source='Sources: EPRI Powering Intelligence 2026, Figure5; IEA Key Questions on 
 para(source,42,56,size=7.1,color=MUTED,leading=9.3)
 txt(42,21,'dashboardamerican.github.io/baaja-and-pricing/',7.5,'Helvetica-Bold',TEAL)
 c.linkURL('https://dashboardamerican.github.io/baaja-and-pricing/',(42,17,320,30),relative=0,thickness=0)
-txt(501,21,'23 OCT 2026',7.2,'Helvetica',MUTED)
+txt(501,21,'24 OCT 2026',7.2,'Helvetica',MUTED)
 c.showPage();c.save()
 print(ROOT/'baaja-one-pager.pdf')

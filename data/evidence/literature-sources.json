@@ -1,0 +1,120 @@
+[
+  {
+    "id": "peskoe_martin_2025",
+    "title": "Extracting Profits from the Public: How Utility Ratepayers Are Paying for Big Tech's Power",
+    "url": "https://eelp.law.harvard.edu/wp-content/uploads/2025/03/Harvard-ELI-Extracting-Profits-from-the-Public.pdf",
+    "publication_date": "2025-03-05",
+    "sha256": "1f8b335358954b24289856e2855b0324ede11c4fc859002d412ce2f934522180",
+    "original_source_path": "baaja_reference/transmission_pricing/originals/Harvard-ELI-Extracting-Profits-from-the-Public.pdf"
+  },
+  {
+    "id": "peskoe_reply_wires_2026",
+    "title": "Comment of the Harvard Electricity Law Initiative, RM26-4",
+    "url": "https://eelp.law.harvard.edu/wp-content/uploads/2026/05/Harvard-ELI-RM26-4-Reply-to-WIRES.pdf",
+    "publication_date": "2026-04-15",
+    "sha256": "b96f612e59e6137072fd0df6e0e6031a48eb68d471011b8a12f245bdf3b9cb3d",
+    "original_source_path": "baaja_reference/transmission_pricing/originals/Peskoe-RM26-4-Reply-to-WIRES-2026-04-15.pdf"
+  },
+  {
+    "id": "wires_concentric_2026",
+    "title": "The Risks of Cost Shifts in Serving Large Loads Under a Framework with Direct Allocation of Transmission Costs",
+    "url": "https://wiresgroup.com/wp-content/uploads/2026/04/Competitive-Transmission-Report-2026-by-CEA.pdf",
+    "publication_date": "2026-03-30",
+    "sha256": "3acb010844e97b797490da9588cfb5c01ddb1fc641e47b82f1745eb6f74183d3",
+    "original_source_path": "baaja_reference/transmission_pricing/originals/Concentric-WIRES-Large-Load-Cost-Shifts-2026-03.pdf"
+  },
+  {
+    "id": "opc_transmission_2026",
+    "title": "PJM Transmission Cost Impacts on Electricity Customers in Maryland",
+    "url": "https://opc.maryland.gov/Portals/0/Files/Publications/Rising%20Transmission%20Costs%202026-03-25%20CORRECTED%20FINAL.pdf",
+    "publication_date": "2026-03-25",
+    "sha256": "83ed6ac919dcb9b82ace97073a72f352377273c0880faec5a3e1d995568ae7d5",
+    "original_source_path": "baaja_reference/transmission_pricing/originals/Maryland-OPC-Transmission-Costs-Corrected-2026-03-25.pdf"
+  },
+  {
+    "id": "opc_complaint_2026",
+    "title": "Maryland OPC complaint concerning PJM regional transmission cost allocation",
+    "url": "https://opc.maryland.gov/Portals/0/Files/Publications/Others/20260507%20-%20RTEP%20complaint%20-%20FINAL%20932.pdf",
+    "publication_date": "2026-05-07",
+    "sha256": "603d41b13f28c6338f65abe2cd95e36b745fc73068e1678ec1dd89b2fb368d94",
+    "original_source_path": "baaja_reference/transmission_pricing/originals/Maryland-OPC-RTEP-Complaint-2026-05-07.pdf"
+  },
+  {
+    "id": "baaja_draft_2026",
+    "title": "Bipartisan American Affordability and Jobs Act of 2026, KAT26639",
+    "url": "https://www.energy.senate.gov/wp-content/uploads/2026/09/Bipartisan-American-Affordability-and-Jobs-Act.pdf",
+    "publication_date": "2026-09",
+    "sha256": "dd743c3ddbcc169f3e8bf06ee36dbda61ad58b2254c74e243fe1d4fd9839ca76",
+    "original_source_path": "baaja_reference/transmission_pricing/originals/BAAJA-Senate-Discussion-Draft-KAT26639.pdf"
+  },
+  {
+    "id": "grid_strategies_vol1_2026",
+    "title": "Federal Transmission Pricing Volume 1: The Evolution of Current Policies and Practices",
+    "url": "https://gridstrategiesllc.com/wp-content/uploads/GS_Federal-Transmission-Pricing-Vol-1.pdf",
+    "publication_date": "2026-05",
+    "sha256": "76afc5cacaf008b269b0ba3f2d8a84c7acec8d9e2189681c55c3b042647bfafa",
+    "original_source_path": "baaja_reference/transmission_pricing/originals/Grid-Strategies-Federal-Transmission-Pricing-Vol-1-2026-05.pdf"
+  },
+  {
+    "id": "grid_strategies_vol2_2026",
+    "title": "Federal Transmission Pricing Volume 2: Options for Ensuring Affordability and Reliability in an Era of High Load Growth",
+    "url": "https://gridstrategiesllc.com/wp-content/uploads/Federal-Transmission-Pricing-Vol-2_Report_FINAL.pdf",
+    "publication_date": "2026-06",
+    "sha256": "fdbb7fd035f424abb31702c08b4ce69ade0b51ba7950fe40b144e23c5050ea3f",
+    "original_source_path": "baaja_reference/transmission_pricing/originals/Grid-Strategies-Federal-Transmission-Pricing-Vol-2-2026-06.pdf"
+  },
+  {
+    "id": "ucs-report",
+    "url": "https://www.ucs.org/sites/default/files/2026-01/Data-Center-Power-Play-report-final.pdf",
+    "local_original_path": "research/independent-review-2026-10-24/ucs-report.pdf",
+    "bytes": 836492,
+    "sha256": "2d5bb152cfbf998fa9fa38cb869f2c2f1984efec31af31d76847d13c096b446a",
+    "retrieved_at": "2026-10-24"
+  },
+  {
+    "id": "ucs-appendix",
+    "url": "https://www.ucs.org/sites/default/files/2026-01/Data-Center-Power-Play-appendix.pdf",
+    "local_original_path": "research/independent-review-2026-10-24/ucs-appendix.pdf",
+    "bytes": 792168,
+    "sha256": "c2fd944586c54eb2f2f131ade64087ad51540ca1524fdaa0e63f72abd168da23",
+    "retrieved_at": "2026-10-24"
+  },
+  {
+    "id": "jlarc-2024",
+    "url": "https://jlarc.virginia.gov/pdfs/reports/Rpt598-2.pdf",
+    "local_original_path": "research/independent-review-2026-10-24/jlarc-2024.pdf",
+    "bytes": 10148941,
+    "sha256": "19c7e0e5fc5fe60c8158f24ad1dc7c109fffe61c4fae67e788f38135fd1bbd55",
+    "retrieved_at": "2026-10-24"
+  },
+  {
+    "id": "e3-amazon-2025",
+    "url": "https://www.ethree.com/wp-content/uploads/2025/12/RatepayerStudy.pdf",
+    "local_original_path": "research/independent-review-2026-10-24/e3-amazon-2025.pdf",
+    "bytes": 2142397,
+    "sha256": "5df5917b5d8a810eb5eae15066719136ce5bfed9292e02896584af78c3deaad7",
+    "retrieved_at": "2026-10-24"
+  },
+  {
+    "id": "imm-opc-comments",
+    "url": "https://www.monitoringanalytics.com/filings/2026/IMM_Comments_re_Complaint_Docket_No_EL26-63_20260727.pdf",
+    "local_original_path": "research/independent-review-2026-10-24/imm-opc-comments.pdf",
+    "bytes": 169292,
+    "sha256": "5c739fb8e679db08d20dcc1ef0f9832267529df26fe273b9d39c157e39ac5263",
+    "retrieved_at": "2026-10-24"
+  },
+  {
+    "id": "pjm-answer",
+    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260727-5242&optimized=false",
+    "local_original_path": "research/independent-review-2026-10-24/pjm-answer.pdf",
+    "bytes": 528537,
+    "sha256": "c5f6bf8e8689852aa23d4720ab0b277b0817875ced49fb3221a627edbfbae690",
+    "retrieved_at": "2026-10-24"
+  },
+  {
+    "id": "ucs-demand-inputs",
+    "url": "https://github.com/ucsusa/eer_load_shapes/blob/7b980999a8f6e63172b834494b785f452b95fffb/UCS_load_profile_scaling/scaling_inputs_MWh.csv",
+    "sha256": "39a6892a06a551da69d0e67467bf7c6dc60d14ada94ae3a184dbc44a84482384",
+    "retrieved_at": "2026-10-24"
+  }
+]
