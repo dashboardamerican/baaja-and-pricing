@@ -1,0 +1,912 @@
+{
+  "source_archive": "https://cdn.misoenergy.org/MTEP26%20-%20Draft784746.zip",
+  "card_count": 90,
+  "unique_project_count": 90,
+  "latest_cards": [
+    {
+      "project_id": "50628",
+      "document": "20250805 EPR-TSTF Item02abc Pre-EPR Cycle Process EPR Results711718.pdf",
+      "document_date": "20250805",
+      "pdf_page": 3,
+      "project_name": "Upgrade LEAP Transmission Network Phase 2",
+      "cost_USD": 345000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50614",
+      "document": "20250805 EPR-TSTF Item02abc Pre-EPR Cycle Process EPR Results711718.pdf",
+      "document_date": "20250805",
+      "pdf_page": 6,
+      "project_name": "New [HE] Marble Hill 345 kV Station and Load",
+      "cost_USD": 20500000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50698",
+      "document": "20250805 EPR-TSTF Item02abc Pre-EPR Cycle Process EPR Results711718.pdf",
+      "document_date": "20250805",
+      "pdf_page": 8,
+      "project_name": "New [HE] Scotland 345/69 kV Substation",
+      "cost_USD": 38000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50696",
+      "document": "20250805 EPR-TSTF Item02d Ameren EPR Huster-McClay 138 kV Load Addition711716.pdf",
+      "document_date": "20250805",
+      "pdf_page": 3,
+      "project_name": "New Huster-McClay 138 kV line tap for Hayford load addition",
+      "cost_USD": 500000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50732",
+      "document": "20250909 EPRTSTF Item 02a CECT EPR Leemon 69 kV Load Addition717392.pdf",
+      "document_date": "20250909",
+      "pdf_page": 3,
+      "project_name": "New Leemon 69 KV substation for load addition",
+      "cost_USD": 2750000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50695",
+      "document": "20251007 EPRTSTF Item 02 EPR Results and MISO Recommendation721221.pdf",
+      "document_date": "20251007",
+      "pdf_page": 4,
+      "project_name": "New Hayford 345 KV substation for load addition",
+      "cost_USD": 12000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50743",
+      "document": "20251007 EPRTSTF Item 02 EPR Results and MISO Recommendation721221.pdf",
+      "document_date": "20251007",
+      "pdf_page": 6,
+      "project_name": "New Elkhorn 280 MVAR Cap Bank",
+      "cost_USD": 12000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "Corrective Action Plans (CAPs) New MTEP26 BRP project 6"
+    },
+    {
+      "project_id": "50730",
+      "document": "20251007 EPRTSTF Item 02 EPR Results and MISO Recommendation721221.pdf",
+      "document_date": "20251007",
+      "pdf_page": 8,
+      "project_name": "Cortland 120 kV Station Expansion",
+      "cost_USD": 42700000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50746",
+      "document": "20251007 EPRTSTF Item 02 EPR Results and MISO Recommendation721221.pdf",
+      "document_date": "20251007",
+      "pdf_page": 14,
+      "project_name": "1803 - 2025 Age and Condition Program",
+      "cost_USD": 730000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50747",
+      "document": "20251007 EPRTSTF Item 02 EPR Results and MISO Recommendation721221.pdf",
+      "document_date": "20251007",
+      "pdf_page": 16,
+      "project_name": "New Sub \u2013 138kV Fish Lake",
+      "cost_USD": 10000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50780",
+      "document": "20251202 EPR-TSTF Item 02 EPR Results and MISO Recommendation729010.pdf",
+      "document_date": "20251202",
+      "pdf_page": 4,
+      "project_name": "West Glencoe",
+      "cost_USD": 6500000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51086",
+      "document": "20251202 EPR-TSTF Item 02 EPR Results and MISO Recommendation729010.pdf",
+      "document_date": "20251202",
+      "pdf_page": 7,
+      "project_name": "New Load on Existing HUC Plant 2 69 kV sub",
+      "cost_USD": 0.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51087",
+      "document": "20251202 EPR-TSTF Item 02 EPR Results and MISO Recommendation729010.pdf",
+      "document_date": "20251202",
+      "pdf_page": 10,
+      "project_name": "Indian Creek West 161 kV Substation & Associated Upgrades",
+      "cost_USD": 103100000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50796",
+      "document": "20251202 EPR-TSTF Item 02 EPR Results and MISO Recommendation729010.pdf",
+      "document_date": "20251202",
+      "pdf_page": 13,
+      "project_name": "Repair Wittenberg 138 kV Switching Station Access Road",
+      "cost_USD": 1500000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50797",
+      "document": "20251202 EPR-TSTF Item 02 EPR Results and MISO Recommendation729010.pdf",
+      "document_date": "20251202",
+      "pdf_page": 15,
+      "project_name": "Remediate Grand Tower 138 kV Foundation Erosion",
+      "cost_USD": 1500000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50734",
+      "document": "20251202 EPR-TSTF Item 02 EPR Results and MISO Recommendation729010.pdf",
+      "document_date": "20251202",
+      "pdf_page": 17,
+      "project_name": "New Load Addition at New Truett 345 kV Substation",
+      "cost_USD": 102200000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51121",
+      "document": "20251202 EPR-TSTF Item 02 EPR Results and MISO Recommendation729010.pdf",
+      "document_date": "20251202",
+      "pdf_page": 19,
+      "project_name": "Reconductor Stallings-Canteen 138 kV and Kren-Porter Road 138 kV Lines",
+      "cost_USD": 2000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "50734 Corrective Action Plan (CAP) New MTEP26 BRP project 19"
+    },
+    {
+      "project_id": "50791",
+      "document": "20251202 EPR-TSTF Item 02 EPR Results and MISO Recommendation729010.pdf",
+      "document_date": "20251202",
+      "pdf_page": 21,
+      "project_name": "New Project Point 345 kV BAAH substation",
+      "cost_USD": 98800000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50885",
+      "document": "20251202 EPR-TSTF Item 02 EPR Results and MISO Recommendation729010.pdf",
+      "document_date": "20251202",
+      "pdf_page": 24,
+      "project_name": "New Load Addition at New CADC 138 kV Ring bus",
+      "cost_USD": 24100000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51123",
+      "document": "20251202 EPR-TSTF Item 02 EPR Results and MISO Recommendation729010.pdf",
+      "document_date": "20251202",
+      "pdf_page": 26,
+      "project_name": "New 300 MVAR Cap Bank at Truett 345 kV Substation",
+      "cost_USD": 12000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "50885 Corrective Action Plan (CAP) New MTEP26 BRP project 26"
+    },
+    {
+      "project_id": "51128",
+      "document": "20251202 EPR-TSTF Item 02 EPR Results and MISO Recommendation729010.pdf",
+      "document_date": "20251202",
+      "pdf_page": 27,
+      "project_name": "Upgrade Sioux-Roxford 138 kV Lines",
+      "cost_USD": 8000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "50885 Corrective Action Plan (CAP) New MTEP26 BRP project 27"
+    },
+    {
+      "project_id": "50775",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 4,
+      "project_name": "Linn County 620 MW Load Addition",
+      "cost_USD": 11260000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51174",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 6,
+      "project_name": "MidAmerican Energy Upgrades for MTEP 50775 Linn County 620 MW Load Addition",
+      "cost_USD": 1200000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "6 51174 Corrective Action Plan (CAP) New MTEP26 BRP project October 2025 Cycle"
+    },
+    {
+      "project_id": "51051",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 8,
+      "project_name": "New Greensburg 138 kV Load Addition",
+      "cost_USD": 11100000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51088",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 11,
+      "project_name": "New Morgan County 345/69 kV Transmission Station and 69 kV Line",
+      "cost_USD": 44300000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51089",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 14,
+      "project_name": "New Jennings County 161/69 kV Transmission Station and 69 kV Line",
+      "cost_USD": 56900000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51090",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 17,
+      "project_name": "New Speed to Northside 138 kV Line and 138/12 kV Station",
+      "cost_USD": 27200000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51093",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 20,
+      "project_name": "New Gill 345 kV Station and 345 kV Lines",
+      "cost_USD": 75300000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51152",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 22,
+      "project_name": "New Merom to Gill 345 KV Line addition",
+      "cost_USD": 2000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "22 50193 Corrective Action Plan (CAP) New MTEP26 BRP project October 2025 Cycle"
+    },
+    {
+      "project_id": "51092",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 24,
+      "project_name": "New Customer A 138 kV Substation for Load Addition",
+      "cost_USD": 25000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51124",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 26,
+      "project_name": "Sheffield Substation Battery and Trip Coil Monitoring",
+      "cost_USD": null,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "26 51092 Corrective Action Plan (CAP) New MTEP26 BRP project October 2025 Cycle"
+    },
+    {
+      "project_id": "51079",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 28,
+      "project_name": "New Project Raider Load 345 kV Substation",
+      "cost_USD": 29900000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51149",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 30,
+      "project_name": "New Project Raider Cap Banks 69 kV",
+      "cost_USD": 5100000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "30 51079 Corrective Action Plan (CAP) New MTEP26 BRP project October 2025 Cycle"
+    },
+    {
+      "project_id": "50700",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 32,
+      "project_name": "New Antioch 345 kV Station and Load",
+      "cost_USD": 68800000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50768",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 34,
+      "project_name": "Uprate Sunnyside Autotransformer",
+      "cost_USD": 2000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "34 50768 Corrective Action Plan (CAP) New MTEP26 BRP project October 2025 Cycle"
+    },
+    {
+      "project_id": "50789",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 35,
+      "project_name": "Replace Guion South Autotransformer",
+      "cost_USD": 11700000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "35 50789 Corrective Action Plan (CAP) New MTEP26 BRP project October 2025 Cycle"
+    },
+    {
+      "project_id": "50790",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 36,
+      "project_name": "Expand Blue Bluff 138 kV switchyard",
+      "cost_USD": 30300000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "36 50790 Corrective Action Plan (CAP) New MTEP26 BRP project October 2025 Cycle"
+    },
+    {
+      "project_id": "50795",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 37,
+      "project_name": "Uprate Guion - Whitestown 345-09",
+      "cost_USD": 15000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "37 50795 Corrective Action Plan (CAP) New MTEP26 BRP project October 2025 Cycle"
+    },
+    {
+      "project_id": "51103",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 38,
+      "project_name": "New Westwood-LEAP-Hortonville 345kV Line",
+      "cost_USD": 250300000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "38 51103 Corrective Action Plan (CAP) New MTEP26 BRP project October 2025 Cycle"
+    },
+    {
+      "project_id": "51063",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 40,
+      "project_name": "ANGIE 230/69KV SUBSTATION - 230KV LINE BREAKER ADDITIONS",
+      "cost_USD": 1900000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51064",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 43,
+      "project_name": "HOLTON 115/69KV SUBSTATION - 115KV LINE BREAKER AND 69KV BUS TIE BREAKER ADDITIONS",
+      "cost_USD": 2900000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51065",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 46,
+      "project_name": "TALISHEEK 230KV LINE BREAKER ADDITIONS AND 69KV BUS TIE BREAKER ADDITION",
+      "cost_USD": 4700000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51070",
+      "document": "20260106 EPR-TSTF Item 02 EPR Results and MISO Recommendation734123.pdf",
+      "document_date": "20260106",
+      "pdf_page": 49,
+      "project_name": "EAST MANDEVILLE 230/69KV SUBSTATION",
+      "cost_USD": 16900000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51057",
+      "document": "20260203 EPR-TSTF Item 02 EPR Results and MISO Recommendation_UPDATED739040.pdf",
+      "document_date": "20260203",
+      "pdf_page": 3,
+      "project_name": "Ozaukee County, DIC, New Substations",
+      "cost_USD": 1300000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50744",
+      "document": "20260203 EPR-TSTF Item 02 EPR Results and MISO Recommendation_UPDATED739040.pdf",
+      "document_date": "20260203",
+      "pdf_page": 5,
+      "project_name": "Juban Trails 230 kV Station",
+      "cost_USD": null,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50740",
+      "document": "20260203 EPR-TSTF Item 02 EPR Results and MISO Recommendation_UPDATED739040.pdf",
+      "document_date": "20260203",
+      "pdf_page": 7,
+      "project_name": "Indian Bayou 230 kV Station",
+      "cost_USD": 68100000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50713",
+      "document": "20260203 EPR-TSTF Item 02 EPR Results and MISO Recommendation_UPDATED739040.pdf",
+      "document_date": "20260203",
+      "pdf_page": 9,
+      "project_name": "Mount Olive to Cargas 500 kV Project and Load Addition",
+      "cost_USD": 270500000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50779",
+      "document": "20260203 EPR-TSTF Item 02 EPR Results and MISO Recommendation_UPDATED739040.pdf",
+      "document_date": "20260203",
+      "pdf_page": 11,
+      "project_name": "Riddle 230 kV Station and Line Upgrade",
+      "cost_USD": 27700000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51146",
+      "document": "20260203 EPR-TSTF Item 02 EPR Results and MISO Recommendation_UPDATED739040.pdf",
+      "document_date": "20260203",
+      "pdf_page": 13,
+      "project_name": "CCS 115 kV Station",
+      "cost_USD": 8199999.999999999,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51148",
+      "document": "20260303 EPR-TSTF Item 02 EPR Results and MISO Recommendation743859.pdf",
+      "document_date": "20260303",
+      "pdf_page": 3,
+      "project_name": "New Trail Creek 138 kV Load Addition",
+      "cost_USD": 12000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51142",
+      "document": "20260303 EPR-TSTF Item 02 EPR Results and MISO Recommendation743859.pdf",
+      "document_date": "20260303",
+      "pdf_page": 5,
+      "project_name": "New Schahfer 345 kV Load Addition",
+      "cost_USD": 31000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51141",
+      "document": "20260303 EPR-TSTF Item 02 EPR Results and MISO Recommendation743859.pdf",
+      "document_date": "20260303",
+      "pdf_page": 7,
+      "project_name": "New Hobart 345 kV Load Addition",
+      "cost_USD": 60000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51175",
+      "document": "20260407 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation_updated749105.pdf",
+      "document_date": "20260407",
+      "pdf_page": 4,
+      "project_name": "Rebuild Carbide Tap-Viele 161 kV line (JUA AECI/NE Power)",
+      "cost_USD": 0.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51134",
+      "document": "20260407 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation_updated749105.pdf",
+      "document_date": "20260407",
+      "pdf_page": 6,
+      "project_name": "Project Benton",
+      "cost_USD": 92000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51167",
+      "document": "20260407 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation_updated749105.pdf",
+      "document_date": "20260407",
+      "pdf_page": 8,
+      "project_name": "Upgrade Sag on Lark-Washtenaw Jct. 138 kV",
+      "cost_USD": 2800000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "51134 Corrective Action Plan (CAP) Existing MTEP26 BRP project 8"
+    },
+    {
+      "project_id": "18208",
+      "document": "20260407 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation_updated749105.pdf",
+      "document_date": "20260407",
+      "pdf_page": 9,
+      "project_name": "Airport - WDHVN Tap 120 kV Sag Remediation",
+      "cost_USD": 500000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "51134 Corrective Action Plan (CAP) New MTEP26 BRP project 9"
+    },
+    {
+      "project_id": "51219",
+      "document": "20260407 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation_updated749105.pdf",
+      "document_date": "20260407",
+      "pdf_page": 11,
+      "project_name": "Wishek NW Data Center Load Addition",
+      "cost_USD": 2210000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51216",
+      "document": "20260407 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation_updated749105.pdf",
+      "document_date": "20260407",
+      "pdf_page": 14,
+      "project_name": "Van Meter 161 kV Substation and Associated 161 kV Upgrades",
+      "cost_USD": 42500000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51177",
+      "document": "20260505 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation755476.pdf",
+      "document_date": "20260505",
+      "pdf_page": 4,
+      "project_name": "New Stallings-Roxford 345 kV Temporary Tap (Truett Phase 0.5)",
+      "cost_USD": 250000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51178",
+      "document": "20260505 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation755476.pdf",
+      "document_date": "20260505",
+      "pdf_page": 7,
+      "project_name": "New Load Addition at New Truett 345 kV Substation (Truett Phase 1)",
+      "cost_USD": 34900000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51179",
+      "document": "20260505 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation755476.pdf",
+      "document_date": "20260505",
+      "pdf_page": 10,
+      "project_name": "New 345 kV Lines for New Truett Load Addition (Truett Phase 2)",
+      "cost_USD": 87300000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51207",
+      "document": "20260505 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation755476.pdf",
+      "document_date": "20260505",
+      "pdf_page": 13,
+      "project_name": "New Gallagher 230 kV Load Addition",
+      "cost_USD": 1800000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51145",
+      "document": "20260505 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation755476.pdf",
+      "document_date": "20260505",
+      "pdf_page": 16,
+      "project_name": "New Crossroads 345 kV Transmission Station and Load",
+      "cost_USD": 86000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51237",
+      "document": "20260505 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation755476.pdf",
+      "document_date": "20260505",
+      "pdf_page": 18,
+      "project_name": "Rebuild Gill to Sullivan 345kV transmission line",
+      "cost_USD": 64000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "51237 Corrective Action Plan (CAP) New MTEP26 BRP project 18"
+    },
+    {
+      "project_id": "51205",
+      "document": "20260505 EPR-TSTF Item 02 Expedited Project Review Results and Recommendation755476.pdf",
+      "document_date": "20260505",
+      "pdf_page": 20,
+      "project_name": "Garant Bayou 161kV: New Station",
+      "cost_USD": 14500000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51303",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 4,
+      "project_name": "New RECC Load Addition at Mogul 345 kV Substation (Phase 3)",
+      "cost_USD": 18600000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51313",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 7,
+      "project_name": "New Prairie Link 345 kV Temporary Connection",
+      "cost_USD": 2000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51304",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 10,
+      "project_name": "New Prairie Link 345 kV Load Addition",
+      "cost_USD": 387500000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "50798",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 12,
+      "project_name": "Upgrade Disco 138/69 kV Transformer",
+      "cost_USD": 600000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "51303, 51313, 51304 Corrective Action Plan (CAP) New MTEP26 BRP project 12"
+    },
+    {
+      "project_id": "50805",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 13,
+      "project_name": "New Hopewell 138/69 kV Substation and Lines",
+      "cost_USD": 10800000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "51304 Corrective Action Plan (CAP) New MTEP26 BRP project 13"
+    },
+    {
+      "project_id": "50809",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 14,
+      "project_name": "Rebuild Winchester-Wolf Run 69 kV Line",
+      "cost_USD": 10000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "51304 Corrective Action Plan (CAP) New MTEP26 BRP project 14"
+    },
+    {
+      "project_id": "51405",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 15,
+      "project_name": "New [PPI] Riverside - [AMIL] Jerseyville 138 kV line",
+      "cost_USD": 25000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "51304 Corrective Action Plan (CAP) New MTEP26 BRP project 15"
+    },
+    {
+      "project_id": "51406",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 16,
+      "project_name": "New [PPI] Alsey - [AMIL] Ballard 138 kV second circuit line",
+      "cost_USD": 2800000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "51304 Corrective Action Plan (CAP) New MTEP26 BRP project 16"
+    },
+    {
+      "project_id": "51220",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 18,
+      "project_name": "Project Cannoli",
+      "cost_USD": 308000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "18201",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 20,
+      "project_name": "Upgrade Hunters Creek - Stratford 120 kV Line",
+      "cost_USD": 500000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "51220 Corrective Action Plan (CAP) New MTEP26 BRP project 20"
+    },
+    {
+      "project_id": "51293",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 22,
+      "project_name": "Hannover Data Center Load Addition",
+      "cost_USD": 107300000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51404",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 24,
+      "project_name": "Center upgrades for Hannover data center",
+      "cost_USD": 1000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "51293 Corrective Action Plan (CAP) New MTEP26 BRP project 24"
+    },
+    {
+      "project_id": "51301",
+      "document": "20260707 EPR-TSTF Item 02 EPR Results and MISO Recommendation766826.pdf",
+      "document_date": "20260707",
+      "pdf_page": 26,
+      "project_name": "Crown 230 kV Station - Jeff Davis Electric Co-op, Inc.",
+      "cost_USD": null,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51366",
+      "document": "20260804 EPR-TSTF Item 02 EPR Results and MISO Recommendation772139.pdf",
+      "document_date": "20260804",
+      "pdf_page": 4,
+      "project_name": "Project Skyway Large Load",
+      "cost_USD": 79300000.0,
+      "reported_spot_load_MW": 780.0,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51299",
+      "document": "20260804 EPR-TSTF Item 02 EPR Results and MISO Recommendation772139.pdf",
+      "document_date": "20260804",
+      "pdf_page": 7,
+      "project_name": "Macaw 230 kV New Substation",
+      "cost_USD": 91900000.0,
+      "reported_spot_load_MW": 200.0,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51259",
+      "document": "20260908 EPR-TSTF Item 02 EPR Results and MISO Recommendation779534.pdf",
+      "document_date": "20260908",
+      "pdf_page": 4,
+      "project_name": "Big Cedar 370 MW Load Addition",
+      "cost_USD": 21800000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51416",
+      "document": "20260908 EPR-TSTF Item 02 EPR Results and MISO Recommendation779534.pdf",
+      "document_date": "20260908",
+      "pdf_page": 5,
+      "project_name": "MidAmerican Energy Upgrades for MTEP 51259 Big Cedar 370 MW Load Addition",
+      "cost_USD": 6500000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51323",
+      "document": "20260908 EPR-TSTF Item 02 EPR Results and MISO Recommendation779534.pdf",
+      "document_date": "20260908",
+      "pdf_page": 8,
+      "project_name": "New Project Point 345 kV Temporary Tap",
+      "cost_USD": 3000000.0,
+      "reported_spot_load_MW": 600.0,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51320",
+      "document": "20260908 EPR-TSTF Item 02 EPR Results and MISO Recommendation779534.pdf",
+      "document_date": "20260908",
+      "pdf_page": 10,
+      "project_name": "Temporary Tap for Truett 500 MW (Truett Phase 1.5)",
+      "cost_USD": 1500000.0,
+      "reported_spot_load_MW": 500.0,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51390",
+      "document": "20260908 EPR-TSTF Item 02 EPR Results and MISO Recommendation779534.pdf",
+      "document_date": "20260908",
+      "pdf_page": 11,
+      "project_name": "Re-route Montgomery-Burns 345 kV Line to Nightingale 345 kV Substation",
+      "cost_USD": 5000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": "AMMO: Corrective Action Plan (CAP) New MTEP26 BRP Project 11 June 2026 Cycle"
+    },
+    {
+      "project_id": "51238",
+      "document": "20260908 EPR-TSTF Item 02 EPR Results and MISO Recommendation779534.pdf",
+      "document_date": "20260908",
+      "pdf_page": 14,
+      "project_name": "Galet 230kV: Phase 2 Expand Substation",
+      "cost_USD": 28000000.0,
+      "reported_spot_load_MW": 250.0,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51262",
+      "document": "20260908 EPR-TSTF Item 02 EPR Results and MISO Recommendation779534.pdf",
+      "document_date": "20260908",
+      "pdf_page": 16,
+      "project_name": "West Fork Creek 500-230 kV Station",
+      "cost_USD": 1100000000.0,
+      "reported_spot_load_MW": 1.0,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51263",
+      "document": "20260908 EPR-TSTF Item 02 EPR Results and MISO Recommendation779534.pdf",
+      "document_date": "20260908",
+      "pdf_page": 18,
+      "project_name": "West Fork Creek to St Landry 500 KV Project",
+      "cost_USD": 1480000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51264",
+      "document": "20260908 EPR-TSTF Item 02 EPR Results and MISO Recommendation779534.pdf",
+      "document_date": "20260908",
+      "pdf_page": 20,
+      "project_name": "El Dorado to Smalling 500 kV Project",
+      "cost_USD": 900000000.0,
+      "reported_spot_load_MW": null,
+      "CAP_parent_context": ""
+    },
+    {
+      "project_id": "51298",
+      "document": "20260908 EPR-TSTF Item 02 EPR Results and MISO Recommendation779534.pdf",
+      "document_date": "20260908",
+      "pdf_page": 23,
+      "project_name": "Marquette 230 kV New Substation",
+      "cost_USD": 27900000.0,
+      "reported_spot_load_MW": 116.0,
+      "CAP_parent_context": ""
+    }
+  ],
+  "limitations": [
+    "Latest available individual card may differ from the draft portfolio cost table.",
+    "CAP parents need manual review; costs are not necessarily all attributable to a single load.",
+    "MW omissions and conflicting reported MW are preserved, not filled with zero."
+  ]
+}

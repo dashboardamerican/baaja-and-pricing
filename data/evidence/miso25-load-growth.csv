@@ -1,0 +1,243 @@
+Planning Region,MTEP Project ID,Project Name,Project Description,State(s),Submitting TO,Project Type,Other Type,Expected ISD,Max kV,Current Cost
+"Central
+",50628,Upgrade LEAP Transmission Network Phase 2,"Additional load has committed to the LEAP District, an innovation district west of Lebanon, IN in Boone County. The total demand in the district is estimated to be 1200MW. This represents a 600MW increase to a prior approved submission. To meet the additional load requirements, WVPA will connect into the Qualitech-Whitestown 345kV line and construct a new 345kV ring bus and approx. 12 miles of 345kV line to the west side of Lebanon where WVPA will construct a 345/138kV substation. Approx. 15 miles of 345kV line will be built to network this 345/138kV station to a planned 345/138kV station on the north side of the LEAP district.  WVPA will also connect into the Nucor-Whitestown 345kV line and construct a new 345kV ring and approx. 6 miles of new 345kV line to the new step down substation.",IN,"WABASH VALLEY POWER ASSOCIATION, INC.",Other,Load Growth,2029-06-30 00:00:00,345,345000000
+"South
+",50528,Benoit 230 kV Station,"Entergy is proposing to construct a new 230 kV station named Benoit to serve a new customer cut into the existing Mud Lake to Big Lake 230 kV line south of Lake Charles, LA.
+
+The Benoit 230 kV station will be a 5 bay breaker and a half substation, including two 64.8 MVAR capacitor banks.",LA,"ENTERGY SERVICES, LLC.",Other,Load Growth,2027-07-01 00:00:00,230,51800001
+"Central
+",50531,New AECI Load Addition at Ameren Fredericktown 138 kV,"Description of the load:  
+At full capacity, it is expected that the customer will consume up to 75 MW.
+Overview of Ameren Fredericktown:
+In the Fall of 2025, Ameren will expand its 138kV ring bus at Ameren-Fredericktown. This substation is located about 3 miles from the customer load.",MO,AMEREN MISSOURI,Other,Load Growth,2027-12-01 00:00:00,161,1200000
+"South
+",50539,Cargas 500 kV and Smalling 500-230 kV stations,"Entergy is proposing to construct two new 500/230 kV stations to serve a new customer cut into the existing Perryville (Cargas) to Baxter Wilson 500 kV line in Holly Ridge, LA.
+
+Cargas 500 kV station will be cut into the Perryville to Sterlington 500 kV lines 1 and 2 and Perryville to Baxter Wilson 500 kV line.
+
+Smalling 500/230 kV station will be cut into the Cargas to Baxter Wilson 500 kV line.  Two additional 27 mile 500 kV lines from Smalling to Cargas.  The Smalling 230 kV station will be a breaker and a half substation, including four 1,500 MVA 500/230 kV autotransformers and eight 230 kV lines going to six 230 kV stations which will feed the new load. 
+
+Upgrade Sterlington 500 kV Line trap on the El Dorado line, due to the loss of Grand Gulf Generation overloading the Sterlington to El Dorado 500 kV line.",LA,"ENTERGY SERVICES, LLC.",Other,Load Growth,2026-12-01 00:00:00,500,1210000001
+"West
+",50543,"Racine County, DIC, Cosmos Substation","Install a new 345/138 kV breaker-and-a half substation with 4 –500 MVA 345/138 kV transformers, 138 kV capacitor banks, and 4 – 345 kV line terminals, and 1 – 138 kV line terminals with a series reactor.",WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2028-04-01 00:00:00,345,195000000
+"South
+",50546,Bluepoint 230 kV New Substation and line Cut-ins,"Entergy is proposing to construct a new 230 kV four breaker ring bus station named Bluepoint to serve a new customer cut into the new Commodore to Waterford 230 kV line (~10.4 miles in and out) near Donaldsonville, LA.
+
+The Bluepoint 230 kV station will also include (2) 150MVA transformers, (4) 3000A breakers.",LA,"ENTERGY SERVICES, LLC.",Other,Load Growth,2027-08-01 00:00:00,230,59600000
+"West
+",50547,"East Beloit SS, DIC, Sub Rebuild","In support of a distribution substation relocation/rebuild, ATC will extend COR-BEG 138kV (X-41) line approximately 0.15 mile (double circuit transmission) to the new East Beloit substation and install 2 sets of bus-tie disconnect switches.  ATC will retire COR-ESB 69kV (Y-140) line (Approx. 0.5 miles) and the existing East Beloit SS location and install 2 line circuit breakers and 2 line disconnects at Dickinson SS.",WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2028-12-30 00:00:00,138,7200000
+"West
+",50548,"Juneau Industrial SS, DIC, Transformer Addition","In support of a distribution transformer addition, ATC will rebuild Juneau Industrial and will install 1 bus-side load break disconnect switch, 1 bus side air break 2 bus-tie disconnect switches.",WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2027-06-01 00:00:00,69,4800000
+"West
+",50549,"Waupun Business Park SS, DIC, Transformer Addition","To support a new distribution substation and associated station retirements, ATC will loop through the existing WAN-WANT 69kV (Y-306) line for new Waupun Business Park SS.  ATC will install 2 line disconnect switches and 2 bus-tie disconnect switches.  ATC to retire portion of WAN-WANT 69kV (Y-306) line to Waupun Westside (WAW), Waupun Southside (WSS) and Comtech (COMH).",WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2028-12-31 00:00:00,69,3200000
+"South
+",50581,Fort Mountain 161kV: Build New Substation,"Build 1 mile of in and out cut-in transmission line to a new 161 kV substation called Fort Mountain on the Berryville - Green Forest 161kV line section in Berryville, AR. Entergy will construct and operate the high-side through bus of the station only.",AR,"ENTERGY ARKANSAS, LLC",Other,Load Growth,2026-03-31 00:00:00,161,5727876
+"West
+",50587,Darnen Substation,Tap the Great River Energy (GRE) owned 'AG-MB' 115 kV line between Morris and Walden to serve a new distribution substation with an 'in-and-out' configuration.,MN,GREAT RIVER ENERGY,Other,Load Growth,2026-09-15 00:00:00,115,2362888
+"South
+",50594,Helena Harbor Load Addition,"A member cooperative has a new customer that will be adding a 250MW load. A new 230kV station (Helena Harbor) will be constructed and served on a new, approximately 6-mile radial off Entergy's existing Ritchie 230kV station. Entergy will add a new 230kV position at their Ritchie station to accommodate this new 230kV radial.",AR,ARKANSAS ELECTRIC COOPERATIVE CORPORATION,Other,Load Growth,2028-12-01 00:00:00,230,18200000
+"East
+",50597,DTE New Hudson Interconnection,"DTE interconnection for 120kV service in Lion Township. Cut in New Hudson (formerly Walbridge) 120kV station on the Cody – Proud 120kV line about 0.15 mile from Tamarack 120kV Tap. ITC will construct New Hudson as a new 4-breaker ring bus configuration, 120 kV station and allow enough space for future breaker and a half station configuration once DTE’s future positions are needed. Also cut in Cody – Proud 120 kV line about 0.15 mile from Tamarack 120 kV Tap into New Hudson 120 kV station. We want to reserve 4 additional rows for future connections. Install two 120/13.2 kV transformers with circuit switchers for high side protection. DTE want to build a substation with at least five connection points to 120 kV. DTE will want three connection points for a general-purpose substation and at least two extra positions if industrial substation(s) are needed.",MI,ITC,Other,Load Growth,2028-03-31 00:00:00,120,12163500
+"West
+",50598,"Progress SS, DIC, Substation Rebuild",ATC will install a 138 kV loop through substation on the Aviation - Ellinwood 138 kV (X-50) line with line switches to support a distribution substation rebuild.,WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2027-06-30 00:00:00,138,2500000
+"Central
+",50599,New Merom 345 kV Substation Load Addition,"Extend a new 345kV line from Merom Transmission Station, approximately 1-mile, to a new data center.
+
+The data center has a total estimated load of 620 MW at 95% PF (653 MVA, 204 MVAR).",IN,HOOSIER ENERGY,Other,Load Growth,2026-07-01 00:00:00,345,12790684
+"South
+",50600,Oak Bend  230 kV station,The Oak Bend 230 kV breaker and a half substation will be fed out of a new Baxter Wilson 230 kV substation. The existing Baxter Wilson 500 kV substation will expanded to include a new Baxter Wilson 230 kV substation fed from 2-500/230 kV Auto Transformers.  Two bays to connect to (2) 3-mile 230 kV lines to the Oak Bend 230 kV substation. Customer load will be fed out of (3) 150 MVA 230/34.5 kV transformers.,MS,"ENTERGY MISSISSIPPI, LLC.",Other,Load Growth,2029-12-01 00:00:00,500,150000002
+"South
+",50601,Andes 230 kV Expansion,"Expansion of the 230 kV Andes substation to include 3 additional bays, 9 breakers to allow for customer load addition and reactive resource installation.",MS,"ENTERGY MISSISSIPPI, LLC.",Other,Load Growth,2028-04-01 00:00:00,230,40000000
+"South
+",50602,Green Acres 500/230 kV New Substation,"Construct a new 500/230 kV Green Acres Substation to serve a new customer.  Green Acres 500 kV substation will be 4 bay breaker and a half substation.  500 kV will be cut in on Lakeover – Ray Braswell 500 kV and Lakeover  - McAdams 500 kV lines.  The Green Acres 230 kV station will be a 6 breaker ring expandable breaker and half scheme, including two 1200 MVA 500/230 kV autotransformers and 6 breakers with 5 nodes.  3-1 mile 230 lines supplying the new 230 kV County Line substation to support customer load.  Construct County Line 230 kV substation breaker and a half station with 8 bays to support customer load and reactive resources",MS,"ENTERGY MISSISSIPPI, LLC.",Other,Load Growth,2029-12-01 00:00:00,500,312000002
+"West
+",50603,OTP Big Stone South Load Addition,"OTP has a new customer requesting to be served near Big Stone, SD. OTP will serve the new customer by building a new 230/34.5 kV distribution substation connecting to the Big Stone South to Crowned Ridge 230 kV line right near the Big Stone South substation.",SD,OTTER TAIL POWER COMPANY,Other,Load Growth,2025-09-19 00:00:00,230,0
+"South
+",50608,Riparian 115 kV Station,"Entergy is proposing to construct a new 115 kV station named Riparian to serve a new customer cut into the existing Alliance to Happy Jack 115 kV line in Point Celeste, LA.",LA,"ENTERGY SERVICES, LLC.",Other,Load Growth,2026-12-30 00:00:00,115,38200000
+"West
+",50613,"Central SS, DIC, New Substation","Construct a new substation with one new 69/12.47 kV, 3.75/5.25 MVA transformer with high-side switch. Install 3-way MOD with supervisory control near Y-71 structure 99. Route approx. 0.5 miles of new 69kV line to new SS location.",WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2026-04-01 00:00:00,69,3200000
+"Central
+",50614,New Marble Hill 345 kV Station and Load,"Construct a new 345kV ring-bus station on the 08TRIMBL (249532) – 7GHENT (324105)   transmission line, approximately 4 line-miles from LGEE’s Trimble County Generator Station. 
+
+New customer will construct substation adjacent to ring-bus station. 
+
+The station will serve a new data center with a total estimated load of 310 MW at 95% PF (344 MVA, 150 MVAR).",IN,HOOSIER ENERGY,Other,Load Growth,2027-10-01 00:00:00,345,20500000
+"Central
+",50615,New Central 138 kV Substation Load Addition,Add a 138 kV position at Central substation for a new load.,MO,AMEREN MISSOURI,Other,Load Growth,2028-06-01 00:00:00,138,1000000
+"Central
+",50616,New Rootbeer 345 kV Substation Load Addition,"To serve the load proposed, Ameren will add a position at Rootbeer substation.",MO,AMEREN MISSOURI,Other,Load Growth,2026-12-01 00:00:00,345,2000000
+"Central
+",50617,New 345 kV Lumberjack substation for Load Connection,"Construct a new 345 kV substation called Lumberjack 8 position ultimate BAAH bus arrangement for the connection of Load Addition at New Florence, MO",MO,AMEREN MISSOURI,Other,Load Growth,2027-12-01 00:00:00,345,38500000
+"West
+",25187,Load Interconnection Program 2026,Load Interconnection Project life cycles are customer need driven and typically have shorter project life cycles.    These Load Interconnections typically require limited infrastructure modifications and additions.    These projects have limited scope and cost. Initial capital spend for this program expected in 2026.,MI; WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2027-12-31 00:00:00,345,19000000
+"West
+",50157,Big Cedar Load Expansion,"Interstate Power and Light Company (IPL) has requested to interconnect two new loads to the transmission system the Cedar Rapids, Iowa area.  ITC Midwest is proposing to serve the new load from the Big Cedar Switching Station which requires expansion to serve the two new loads.  In addition to expanding the Big Cedar Switching Station, ITC Midwest will be installing reactive compensation at the Big Cedar Switching Station to support this load addition.  ITC Midwest will also add a 2nd Big Cedar – Morgan Valley 345 kV line on the existing structures of the Big Cedar – Morgan Valley 345 kV line and construct a new Beverly – Hills 345 kV line to support the load addition.  The LRTP Tranche 1 Marshalltown (Twinkle) - Morgan Valley 345 kV line is required to support the first phase of the load addition, and the LRTP Tranche 1 Beverly – Sub 92 345 kV line is required to support the second phase of the load addition.",IA,ITC MIDWEST,Other,Load Growth,2028-09-30 00:00:00,345,380549625
+"West
+",50165,"Racine County, DIC, Stratus Substation","A new 138/24.9 kV breaker-and-a-half substation named Stratus, 138 kV capacitor banks, and construct short transmission lines to cut into the Mount Pleasant-Nimbus 138 kV lines (X-171, X-172) and loop in and out of the Stratus Substation.",WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2026-07-31 00:00:00,138,68500000
+"West
+",50166,"Racine County, DIC, Mount Pleasant Substation Expansion","Install a new 500 MVA, 345/138 kV transformer, +/- 350 Mvar STATCOM, 138 kV capacitor banks, and associated 345 kV and 138 kV substation facilities.",WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2027-01-01 00:00:00,345,117000000
+"West
+",50167,"Racine County, DIC, Jupiter Substation","Install a new 345/138 kV breaker-and-a half substation with 4 –500 MVA 345/138 kV transformers, +/- 350 Mvar STATCOM, 138 kV capacitor banks, 4 – 345 kV line terminal.",WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2027-01-01 00:00:00,345,295000000
+"West
+",50168,Racine County Western Feed Transmission Line Project,Construct two new 345 kV double circuit lines from the existing Arcadian – Pleasant Prairie (PLPL81)/Arcadian – Paris (W-30) 345 kV double circuit line to loop in and out of the Jupiter and Mount Pleasant. Construct a new Jupiter – Mount Pleasant 345 kV line.,WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2027-01-01 00:00:00,345,124000000
+"Central
+",50696,New Huster-McClay 138 kV line tap for Hayford load,Temporary line tap on Huster-McClay 138 kV for new customer load,MO,AMEREN MISSOURI,Other,Load Growth,2027-06-01 00:00:00,138,500000
+"Central
+",50698,New Scotland 345/69kV Substation,"Construct a new 345kV ring-bus with 345/69kV transformation on the 16PETE (254529) – 16W_BLOOMGTN (254526) transmission line, approximately 35 line-miles from IPL’s Petersburg station and 19 line-miles from DEI’s planned 16W_Bloomington station. 
+
+Extend a 69kV line from the new station to serve a new 20 MW customer. 
+
+Bring the Hoosier Scotland-Bloomfield 69kV transmission line into the new 69kV station. Open 69kV branch 248537- 248538.",IN,HOOSIER ENERGY,Other,Load Growth,2029-12-01 00:00:00,345,38000000
+"Central
+",50190,New Peru-Princeton 138 kV line,"Rebuild the existing Princeton substation as a 4-position 138 kV substation in a ring bus configuration with two additional positions available for future expansion. Construct a new 4-position 138 kV substation in a ring bus configuration with two additional positions available for future expansion. 
+ Construct a new 23-mile 138 kV Transmission line from Ameren's Princeton substation to the new substation near the City of Peru.",IL,AMEREN ILLINOIS,Other,Load Growth,2029-06-01 00:00:00,138,90000000
+"South
+",50196,Admiral 138 kV New Substation and Transmission Line,"The Admiral 138 kV station will be designed as a 138kV six breaker ring bus.  The substation will include six (6) breakers, one (1) Cap Bank, two (2) 67MVA power transformers, and two (2) main/feeder breakers. Construction and installation of a new line from Moril substation to Admiral will also be part of the permanent scope of work, along with the installation of a new 138kV breaker at Moril.",LA,"ENTERGY SERVICES, LLC.",Other,Load Growth,2025-09-01 00:00:00,138,54400001
+"Central
+",50198,New Wieland Metals 138 kV Load Addition,"Construct a new 138 kV substation, four position ultimate in a ring bus arrangement, 3000 Amps minimum continuous capability. The substation will be located approximately 1 mile east from the existing Wood River 138 kV substation. Split the existing Granite City 23rd Street-Wood River-1452 138 kV line and route into the new substation. Provide two positions at the new ring bus for the connection of Wieland Metals (Falls)",IL,AMEREN ILLINOIS,Other,Load Growth,2026-12-01 00:00:00,138,10700000
+"South
+",50199,Rhodair 230 kV New Substation and Transmission Lines,"Entergy is proposing to construct new 230 kV transmission lines sourced from the existing Garden 230 kV station to serve new load at the new Rhodair 230 kV station near Port Arthur, TX.
+
+The Garden to Rhodair 230 kV circuits 1 and 2 are a combined ~4.5 miles long.",TX,"ENTERGY SERVICES, LLC.",Other,Load Growth,2025-08-26 00:00:00,230,85000000
+"West
+",50204,Clinton Rail and Air Park 161 kV Interconnection,IPL has requested a new substation interconnection in the Clinton area for a new load in the Clinton Rail and Air Park. To facilitate the request ITC Midwest will be building a new 161 kV 2 row 4 position breaker and ½ substation with 2 line positions and 2 transformer positions. The new substation will be expandable to 4 rows. All new 161 kV equipment will be capable of 2000A or greater. The new substation will be a PD substation and the common facilities and substation naming will be owned by IPL.,IA,ITC MIDWEST,Other,Load Growth,2026-06-01 00:00:00,161,8760389
+"West
+",50207,Spirit Lake Anchor 69 kV Interconnection,"IPL is to build a new 69/25 kV substation to be named Sprit Lake Anchor. ITCMW is to build the 69 kV portion of the substation. This substation will be located nearby the existing Spirit Lake South substation and is intended to take the load from the Spirit Lake South, Orleans, and Spirit Lake West substations. The new substation will support two IPL owned 69/25 kV 33/50 MVA transformers and one ITC owned capacitor bank rated at 13.2 Mvar(rated)/11.225 Mvar(effective).",IA,ITC MIDWEST,Other,Load Growth,2028-12-31 00:00:00,69,5398911
+"Central
+",50208,New LEAP Transmission Network,"A large customer has committed to the LEAP District, an innovation district west of Lebanon, IN in Boone County. This data center customer will be ramping to 600 MW of total demand.  To meet the load requirements, WVPA will connect into the Whitestown-Hortonville 345kV line and construct a new 345/138kV substation, approximately 10 miles of double circuit 345kV, two 138kV stations and approximately 25 miles of 138kV transmission.",IN,"WABASH VALLEY POWER ASSOCIATION, INC.",Other,Load Growth,2026-12-31 00:00:00,345,222200000
+"South
+",50209,South China 138 kV New Substation,South China 138 kV station will be interconnected on the Cheek - Petry Woods 138 kV line.,TX,"ENTERGY SERVICES, LLC.",Other,Load Growth,2025-05-12 00:00:00,138,5800000
+"East
+",50212,Avery - New DTE Interconnection,"DTE interconnection for 120 kV service in Detroit City. Cut the Frisbie – Waterman 120 kV line about 2 miles from Frisbie 120 kV to loop in the new ITCT’s Avery Substation. ITC will build a new Avery 120 kV station as a five (5) breaker ring bus configuration. DTE will install capacitor banks connected to 13.2 kV side, two 120/13.2 kV transformers with breakers for high side protection.",MI,ITC,Other,Load Growth,2027-09-30 00:00:00,120,16713000
+"West
+",50223,"Whitewater – Sugar Creek 138 kV (WHIG53), Flow Control Device","The Whitewater – Sugar Creek (WHIG53) 138 kV, flow control device is needed to control power flow on WHIG52 and 6541 supporting load additions in south-east Wisconsin. The project will install three single-phase 20-ohm series reactors at the Sugar Creek terminal of WHIG53.",WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2027-01-01 00:00:00,138,3358000
+"Central
+",50226,New Vulcan 138/34 kV Substation,Build a new 138-34.5 kV bulk substation on property adjacent to the MSD Lemay Pump. (fka Germania),MO,AMEREN MISSOURI,Other,Load Growth,2030-12-01 00:00:00,138,12000000
+"West
+",50145,"Beloit Area DIC, New Substation","- WPL will construct a new substation with two new 138/12.47 kV, 20/33 MVA transformers.
+- WPL will install a high side circuit breaker for transformer protection and low side bus.
+- ATC will install two 138kV feeds from the line section between BOC Gas Tap
+and Tripp Road (X-111) to the new Beloit LNG substation to support the new loop through configuration.
+- ATC will remove a section of the conductor from X-111.
+- ATC will install a new loop through configuration at the New Beloit LNG substation with space
+provision for a future bus tie breaker.
+- ATC will construct a 138 kV loop through bus at the new Beloit LNG substation and install two 138
+kV line circuit breakers with associated line and bus side disconnect switches.
+- ATC will install two bus-tie disconnect switches and allow space provision for a future bus-tie
+breaker.",WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2027-06-30 00:00:00,138,9000000
+"South
+",50176,Audubon 230 kV Load Addition and Line upgrades,"Entergy is proposing to construct new 230 kV facilities at the planned Audubon 230 kV station to serve new load near Geismar, LA.  There will be two ~2.8 mile new 230 kV lines from Audubon to the customer station.
+
+Also part of this addition are small partial upgrade of the Willow Glen to Point Pleasant 230 kV line and station equipment upgrades on the Willow Glen to Wise 230 kv line.",LA,"ENTERGY SERVICES, LLC.",Other,Load Growth,2026-01-01 00:00:00,230,5900000
+"Central
+",50256,New Tibbe 138/34.5 kV Substation,"Tibbe 138/34.5 kV Substation - Utilize 9.6 miles of existing 34.5 kV line in the Saddle Creek-73 feeder, at 138 kV. In addition, construct 6.1 miles of new 138 kV line to establish the Gray Summit-Prairie Dell and Franklin-Prairie Dell 138 kV lines. Establish a new 138 kV ring bus at the Tibbe 138-34.5 kV Substation. (fka Prairie Dell)",MO,AMEREN MISSOURI,Other,Load Growth,2029-12-01 00:00:00,138,33000000
+"West
+",50261,Blue Earth - North Transmission Substation Add 84/140 MVA transformer,North Transmission Substation Add 2nd 161/69 Transformer 45-60-75 MVA.,MN,Central Minnesota Municipal Power Agency,Other,Load Growth,2026-12-31 00:00:00,161,11200000
+"West
+",50268,Blue Earth Rice Street Transformer Replacement,Rice Street Transformer Upgrade to 12/20 MVA,MN,Central Minnesota Municipal Power Agency,Other,Load Growth,2026-05-31 00:00:00,69,2400000
+"West
+",50269,Blue Earth Northeast Add 2nd Transformer 20-37.3 MVA,Northeast Add 2nd Transformer 20-37.3 MVA,MN,Central Minnesota Municipal Power Agency,Other,Load Growth,2026-05-31 00:00:00,69,4800000
+"West
+",50275,Blue Earth West Sub Transformer Upgrade,Add 2nd 10-14 MVA,MN,Central Minnesota Municipal Power Agency,Other,Load Growth,2029-05-31 00:00:00,69,2900000
+"Central
+",50280,New Neuron - Lafayette 27MW load,Project Neuron (fka Mars) - Lafayette new load 27MWs - 13806 line very near Tipmont Co Farm,IN,"DUKE ENERGY INDIANA, LLC",Other,Load Growth,2029-12-31 00:00:00,138,24970000
+"Central
+",50282,New Radbourn 345 kV and Leghorn 345 kV Shunt Reactors,"Install (1) 50 Mvar shunt reactor, (1) 345 kV circuit breaker, and (1) motor-operated disconnect switch at Radbourn 345 kV substation.  Install (1) 50 Mvar shunt reactor, (1) 345 kV circuit breaker, and (1) motor-operated disconnect switch at Leghorn 345 kV substation.",IL,AMEREN ILLINOIS,Other,Load Growth,2026-12-01 00:00:00,345,4800000
+"Central
+",50285,New HE Shadow Lake 138/12kV Sub,New HE Shadow Lake 138/12kV distribution substation for Clark Co REMC to be inserted in the 13898 Speed – Jeffersonville 138kV line between River Ridge Central and Stoney Point Jct.; looped through with ATO; loop in/out with 954ACSS/TW20x7@200C conductor,IN,"DUKE ENERGY INDIANA, LLC",Other,Load Growth,2026-06-01 00:00:00,138,2974000
+"Central
+",50289,New Wabash Industrial 69/12kV Sub,Wabash Industrial 69/12kV new sub to serve new 20+MW customer in the 69132 ckt - near Chippewa; includes 14.4MVAR capacitor,IN,"DUKE ENERGY INDIANA, LLC",Other,Load Growth,2026-10-16 00:00:00,69,2968000
+"Central
+",50292,Fishback Creek 69/12kV Substation,New substation near Whitestown Parkway to alliveiate heavy loading on existing Royalton substation,IN,"WABASH VALLEY POWER ASSOCIATION, INC.",Other,Load Growth,2028-12-31 00:00:00,69,6000000
+"Central
+",50296,Dover 69/12kV Substation,Build new substation next to existing Dover substation to serve construction power for the LEAP district and other expected growth in the area. The sub will be built with a single transformer with provisions for a 2nd and the line will be looped through the station. Construction power requests have been between 6-12MW of load.,IN,"WABASH VALLEY POWER ASSOCIATION, INC.",Other,Load Growth,2027-12-31 00:00:00,69,5500000
+"Central
+",50297,Milnon 69/12kV Substation,Construct new 69/12kV substation between the NIPSCO Monon and Milroy delivery points and retire member meter points,IN,"WABASH VALLEY POWER ASSOCIATION, INC.",Other,Load Growth,2027-11-24 00:00:00,69,6649226
+"Central
+",50298,Four Corners 69/12kV Substation,"Build a new 69kV substation to serve load near Hanna, IN",IN,"WABASH VALLEY POWER ASSOCIATION, INC.",Other,Load Growth,2027-12-01 00:00:00,69,14052130
+"Central
+",50299,New Wakefield 138 kV switching station,"Construct a three (3) position 138 kV substation in a ring bus configuration, with one (1) additional position available for future expansion, all with a 3000 A minimum continuous capability. Route the existing South Bloomington-Tabor-1445 138 kV line in and out of the new Wakefield substation.",IL,AMEREN ILLINOIS,Other,Load Growth,2027-12-01 00:00:00,138,10700000
+"Central
+",50300,Hayworth 69/12kV Substation,Build a new 69kV substation to retire the Morocco meter point and provide reliability to existing Berthaville & Colfax South substation,IN,"WABASH VALLEY POWER ASSOCIATION, INC.",Other,Load Growth,2027-12-01 00:00:00,69,10249426
+"Central
+",50302,Lacrosse 69/12kV Substation,"Install new 14 MVA substation in LaCrosse, IN, near Dome substation to support the Lena Park and Kouts substations during switching orders and outages.",IN,"WABASH VALLEY POWER ASSOCIATION, INC.",Other,Load Growth,2029-12-31 00:00:00,69,12500000
+"East
+",50317,New Hagensville Junction Interconnection (METC),"Wolverine has requested to further integrate their Northeast Transmission System with METC’s around the Hagensville Tap location. To accommodate this request, METC proposes adding an additional row (row 6) on the parcel where future generators J1914 and J2875 will be located to terminate Wolverine’s 138kV lines. METC will install 5 new 138kV, 40kA breakers and associated switches.",MI,METC,Other,Load Growth,2028-12-31 00:00:00,138,5010000
+"West
+",50324,88th Street Substation bus expansion and 161-13 kV transformer installation,Expand 88th St Substation steel to ring bus and add a third 161-13 kV transformer,IA,MIDAMERICAN ENERGY CO.,Other,Load Growth,2027-12-31 00:00:00,161,9000000
+"West
+",50334,Eagle Grove-Goldfield 69 kV Interconnection and Clarion-Latimer 69 kV Line Rebuild,Install two line switches on a steel pole and rebuild the Clarion-Latimer 69 kV line sections.,IA,MIDAMERICAN ENERGY CO.,Other,Load Growth,2028-06-01 00:00:00,69,12000000
+"West
+",50335,Johnson Creek Add 161 kV Breakers,Install two 161 kV breakers and associated equipment at Johnson Creek Substation.,IA,MIDAMERICAN ENERGY CO.,Other,Load Growth,2027-08-01 00:00:00,161,2000000
+"Central
+",50349,Crane Naval Base load expansion,Crane South Substation: expand 138kV bus into (4) CB Ring; Install 100MVA 138/69kV Transformer Bank 2; Add (2) 69kV breakers to the existing ring; construct new 69kV line to Crane Naval Base NW; reconductor 69193 line from Crane South to Crane Naval Base,IN,"DUKE ENERGY INDIANA, LLC",Other,Load Growth,2027-12-07 00:00:00,138,28966000
+"Central
+",50371,Lee Hanna 69/12kV Rebuild,"Rebuild the existing Lee Hanna 69/12kV Substation to increase the capacity of the station to two 33.6MVA transformers for load growth, back-feeding, and construction power.",IN,"WABASH VALLEY POWER ASSOCIATION, INC.",Other,Load Growth,2027-11-01 00:00:00,69,10000000
+"Central
+",50376,Rebuild HE Bethany to Charlestown Jct 69kV Line,6955 ckt. Rebuild HE Bethany to Charlestown Jct - 954 ACSR at 120C,IN,"DUKE ENERGY INDIANA, LLC",Other,Load Growth,2025-11-15 00:00:00,69,3305000
+"West
+",50379,ITC Midwest Load interconnection blanket,"Projects of significant size (greater than $1 Million) will be reported individually. Since these projects are being done at the request of interconnection customers and do not address any specific ITCM reliability concerns, only one alternative was identified for each project. Unless any reliability concerns on the ITCM system are identified, the identified alternative typically matches the one requested by the customer to accommodate the customer’s site location or desired level of service/reliability. Only those projects as determined by ITC as having no significant impact on the transmission system are included.",IA; IL; MN,ITC MIDWEST,Other,Load Growth,2027-12-31 00:00:00,345,3750000
+"South
+",50400,Ovett 69kV Delivery Point,Tap Line 114A (Ellisville - NW Perry 69kV) with a 69kV GOAB and build a new transmission line to the delivery point.,MS,SOUTH MISSISSIPPI ELECTRIC POWER ASSOCIATION,Other,Load Growth,2026-10-01 00:00:00,69,2100000
+"South
+",50404,Lake Walthall 115kV Delivery Point,Tap the Entergy owned 115kV line (Tylertown - Dexter) with a 115kV switching station and build a new transmission line to the delivery point.,MS,SOUTH MISSISSIPPI ELECTRIC POWER ASSOCIATION,Other,Load Growth,2026-12-01 00:00:00,115,2830000
+"West
+",50424,Maple Street Substation,Install new distribution substation to meet load growth in area,SD,NORTHERN STATES POWER COMPANY,Other,Load Growth,2027-06-01 00:00:00,115,13000000
+"West
+",50426,Thunder Substation,Install new distribution substation to meet load growth in area,ND,NORTHERN STATES POWER COMPANY,Other,Load Growth,2027-10-15 00:00:00,115,7300000
+"West
+",50428,Replace Cass County TR1,Upgrade transformer to support load growth,ND,NORTHERN STATES POWER COMPANY,Other,Load Growth,2028-06-01 00:00:00,115,12200000
+"West
+",50429,West Byron TR 2,Install new distribution transformer to meet load growth in area,MN,NORTHERN STATES POWER COMPANY,Other,Load Growth,2026-10-15 00:00:00,69,7535000
+"West
+",50433,Install Pine Island Island Area Substation,Install new distribution substation to meet load growth in area,MN,NORTHERN STATES POWER COMPANY,Other,Load Growth,2026-12-30 00:00:00,69,8900000
+"West
+",50434,Replace Meire Grove TR1,Upgrade transformer 1 at Meire Grove to support load growth,MN,NORTHERN STATES POWER COMPANY,Other,Load Growth,2027-05-03 00:00:00,69,6200000
+"West
+",50435,Install East Mankato Area Substation,Install new distribution substation in East Mankato to meet load growth in area,MN,NORTHERN STATES POWER COMPANY,Other,Load Growth,2027-12-31 00:00:00,115,6700000
+"West
+",50440,West Maple Grove Substation,Build new Substation in Northwest Maple Grove to accommodate load growth,MN,NORTHERN STATES POWER COMPANY,Other,Load Growth,2028-09-01 00:00:00,115,25000000
+"South
+",50441,Wrightsville 115kV: Build two 115kV lines,Build two 3.5 mile new radial 115kV transmission lines from Wrightsville 115kV substation to a new customer station to serve new load.,AR,"ENTERGY ARKANSAS, LLC",Other,Load Growth,2027-04-28 00:00:00,115,17800000
+"West
+",50445,Sioux Falls 115kV Conversion,"Rebuild lines 0730 and 0729 Lawrence - South Sioux Falls, West Sioux Falls - South Sioux Falls, South Sioux Falls - Lincoln to 115kV. Convert remaining 69kV substations to 115kV.",SD,NORTHERN STATES POWER COMPANY,Other,Load Growth,2029-06-01 00:00:00,115,60000000
+"West
+",50449,Roughrider Substation,Install new distribution substation to meet load growth in area,ND,NORTHERN STATES POWER COMPANY,Other,Load Growth,2029-10-15 00:00:00,115,7500000
+"West
+",50457,Install Montrose TR2,Install new distribution transformer to meet load growth in area,MN,NORTHERN STATES POWER COMPANY,Other,Load Growth,2026-12-31 00:00:00,69,7450000
+"West
+",50458,Install Avon Area Substation,Install new distribution substation to meet load growth in area,MN,NORTHERN STATES POWER COMPANY,Other,Load Growth,2027-12-31 00:00:00,69,10000000
+"West
+",50459,Install Stewart TR2,Install new distribution transformer to meet load growth in area,MN,NORTHERN STATES POWER COMPANY,Other,Load Growth,2027-12-31 00:00:00,69,15000000
+"East
+",50466,METC Customer Interconnections - 2028,"METC will individually evaluate each request to ensure it does not adversely impact reliability. Projects that result in a system solution where the cost estimate is less than $2.5 Million that have an in-service date within the year 2028 will be associated with this project. When Customer Interconnection projects are evaluated to amount in a cost greater than $2.5 Million, a separate project will be submitted for approval.",MI,METC,Other,Load Growth,2028-12-31 00:00:00,345,2500000
+"East
+",50468,ITCT Customer Interconnections - 2028,"ITCT will individually evaluate each request to ensure it does not adversely impact reliability. Projects that result in a system solution where the cost estimate is less than $2.5 Million that have an in-service date within the year 2028 will be associated with this project. When Customer Interconnection projects are evaluated to amount in a cost greater than $2.5 Million, a separate project will be submitted for approval.",MI,ITC,Other,Load Growth,2028-12-31 00:00:00,345,2500000
+"West
+",50481,LG - 2,Install new facilities to meet load growth in the area.,MN,GREAT RIVER ENERGY,Other,Load Growth,2030-12-31 00:00:00,345,120000000
+"West
+",50482,LG - 3,Install new facilities to meet load growth in the area.,MN,GREAT RIVER ENERGY,Other,Load Growth,2026-12-31 00:00:00,115,25000000
+"Central
+",50490,Merom Station 345kV Expansion and New 345kV line,Expand Merom 345kV station with additional 345kV position for new line. Extend a new 1.5-mile 345KV line to new customer substation.,IN,HOOSIER ENERGY,Other,Load Growth,2030-12-01 00:00:00,345,14000000
+"Central
+",50491,New Ellettsville 345kV Station,Construct new 345kV transmission station ring-bus along existing Worthington-Bloomington 345kV transmission line.,IN,HOOSIER ENERGY,Other,Load Growth,2035-01-01 00:00:00,345,20000000
+"West
+",50494,Knight Substation,Install new 115/34.5kV substation in the Dayton area to meet area load growth.,MN,NORTHERN STATES POWER COMPANY,Other,Load Growth,2026-12-01 00:00:00,115,29600
+"West
+",24474,"Winnebago County, New DIC",WPS is proposing to construct a new T-D substation with two new 69/12.47 kV transformers with circuit breakers. ATC will construct a 69 kV loop-through straight bus with two line switches with load breaks. ATC will also install two manual bus-tie switches and make provisions for a future bus-tie breaker. ATC will loop through the new substation from the Sunset Point – Oshkosh 69 kV (E-5) line on the line section between Sunset Point and Bowen St.,WI,AMERICAN TRANSMISSION COMPANY,Other,Load Growth,2027-07-15 00:00:00,69,2900000
+"Central
+",50636,New Diamond Core Load Addition (RECC Territory) at Mogul 345 kV substation,"This new load will connect to MOGL-DBDS-4566 345 kV line that feeds (J1464) Double Black Diamond Solar and will be separately metered.  RECC will install, own, and operate the metering at the data center.",IL; MO,AMEREN TRANSMISSION COMPANY OF ILLINOIS,Other,Load Growth,2027-12-01 00:00:00,138,0
+"South
+",50671,RiverPlex 500-230 kV Station,"Entergy is proposing to construct a new 500-230 kV station named RiverPlex to serve a new customer cut into the new Commodore to Churchill 500 kV line and the Commodore to Blue Point, Blue Point to Waterford, and Donaldsonville to Evergreen 230 kV lines near Donaldsonville, LA.
+
+Two new 230 kV lines will be constructed between RiverPlex 230 kV and the new Mulberry Road 230 kV station which will serve the new load. One new 230 kV line will be constructed between Blue Point and Mulberry Road 230 kV stations.
+
+The RiverPlex 500 kV station will be configured as a ring bus, while the RiverPlex 230 kV station will be configured as a breaker and a half bus.  Two 500-230 kV 1200 MVA autotransformers will also be installed at the station. The new station has a target ISD in August 2028.",LA,"ENTERGY SERVICES, LLC.",Other,Load Growth,2028-08-30 00:00:00,500,284000000
+"South
+",50675,Cove Ridge 138 kV Station,"Entergy is proposing to construct a new 138 kV station named Cove Ridge to serve a new customer cut into the existing Hollywood-Orange 138 kV line near Vinton, LA.
+
+The Cove Ridge 138 kV station will be equipped with two breakers and a Capacitor Bank.",LA,"ENTERGY SERVICES, LLC.",Other,Load Growth,2027-12-01 00:00:00,138,24100000
+"Central
+",50502,New Brownsburg East 138 kV Substation,In conjunction with MTEP 24274's phase 1. New 138 kV WVPA Brownsburg East substation with 2 138 kV feeds from Maloney Road.,IN,INDIANAPOLIS POWER & LIGHT COMPANY,Other,Load Growth,2025-12-31 00:00:00,138,8600000
+"Central
+",50503,New Pleasant Acres Substation Feed 2 138 kV line,Second 138 kV feed and 1 22.4 MVA transformer for Pleasant Acres substation. In conjunction with MTEP 24293. Project required to match MOD submission.,IN,INDIANAPOLIS POWER & LIGHT COMPANY,Other,Load Growth,2025-12-31 00:00:00,138,2000000

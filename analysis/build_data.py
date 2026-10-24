@@ -15,10 +15,10 @@ central={'BAAJA':reference_ledger(p),'ITC':itc,
 cases=[]
 for name,overrides in [('central',{}),('zero_cost',{'capex_per_mw':0}),
     ('zero_rate',{'nits_per_mw_year':0}),('high_cost_low_rate',{'capex_per_mw':1500000,'nits_per_mw_year':20000}),
-    ('low_growth',{'growth_scenario':'low'}),('high_growth',{'growth_scenario':'high'}),
+    ('higher_of_high_cost',{'baseline':'higher_of','capex_per_mw':1500000}),('low_growth',{'growth_scenario':'low'}),('high_growth',{'growth_scenario':'high'}),
     ('high_rate',{'nits_per_mw_year':180000}),('low_cost',{'capex_per_mw':300000})]:
     q=replace(p,**overrides)
-    cases.append({'name':name,'input':{'growth':q.growth_scenario,'cost':q.capex_per_mw/1e6,'nits':q.nits_per_mw_year/1000},'reference':reference_ledger(q)})
+    cases.append({'name':name,'input':{'growth':q.growth_scenario,'cost':q.capex_per_mw/1e6,'nits':q.nits_per_mw_year/1000,'baseline':q.baseline},'reference':reference_ledger(q)})
 (ROOT/'data/golden.json').write_text(json.dumps(cases,indent=2)+'\n')
 growth={
     'as_of':'2026-10-23','unit':'TWh/year, total U.S. facility electricity use',
@@ -53,9 +53,9 @@ for key,anchor,a,b,tail,iea in [('low',383,833,942,.005,'Headwinds'),('medium',5
     growth['scenarios'][key]={'label':key.capitalize(),'epri_2030_twh':anchor,'iea_bridge_scenario':iea,
         'annual_growth_2031_2035':(b/a)**.2-1,'annual_growth_from_2040':tail,
         'annual_twh':{str(y):facility_twh(y,q) for y in range(2026,2057)},
-        'A_billion':ledger['metrics']['A_extra_AND_vs_higher_of_usd']['constant_2026_billion'],
+        'A_billion':ledger['metrics']['A_extra_AND_vs_baseline_usd']['constant_2026_billion'],
         'B_billion':ledger['metrics']['B_above_incremental_transmission_cost_usd']['constant_2026_billion']}
 (ROOT/'data/growth-scenarios.json').write_text(json.dumps(growth,indent=2)+'\n')
-print(json.dumps({'A':central['BAAJA']['metrics']['A_extra_AND_vs_higher_of_usd'],
+print(json.dumps({'A':central['BAAJA']['metrics']['A_extra_AND_vs_baseline_usd'],
                   'B':central['BAAJA']['metrics']['B_above_incremental_transmission_cost_usd'],
                   'ITC30':itc['repeated_30yr_constant_2026_billion']},indent=2))

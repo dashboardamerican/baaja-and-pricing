@@ -16,60 +16,55 @@
 </head>
 <body>
 <main class="shell">
-<header><div><h1>BAAJA · Transmission payments</h1><p>2027–2056 · 2026 dollars · undiscounted</p></div><button class="plain" id="methodOpen">Details</button></header>
+<header><div><h1>BAAJA · Transmission payments</h1><p>2027–2056 · 2026 dollars</p></div><button class="plain" id="methodOpen">Details</button></header>
 <div class="workspace">
-<form class="controls" aria-label="Scenario assumptions" onsubmit="return false">
+<form id="scenarioForm" class="controls" aria-label="Scenario assumptions" onsubmit="return false">
 <fieldset class="control"><legend>Data-center growth</legend><div class="growth-options"><label><input id="growthLow" name="growth" type="radio" value="low"><span class="growth-choice">Low</span></label><label><input id="growthMedium" name="growth" type="radio" value="medium" checked><span class="growth-choice">Medium</span></label><label><input id="growthHigh" name="growth" type="radio" value="high"><span class="growth-choice">High</span></label></div></fieldset>
 <div class="control"><label for="cost">Incremental network capital</label><output class="readout" id="costOut" for="cost">$0.65m<small>/ MW</small></output><input id="cost" name="cost" type="range" min="0" max="1.5" step="0.05" value="0.65" aria-describedby="costHelp"><span class="sr-only" id="costHelp">Assigned capital per new covered MW; selected assumption.</span></div>
 <div class="control"><label for="nits">NITS-equivalent rate</label><output class="readout" id="nitsOut" for="nits">$95.1<small>/ kW-year</small></output><input id="nits" name="nits" type="range" min="20" max="180" step="0.1" value="95.1" aria-describedby="nitsHelp"><span class="sr-only" id="nitsHelp">National transmission cost-to-peak proxy; not an observed tariff average.</span></div>
-<div class="fixed"><span>Load factor 80%</span><button class="plain" type="reset">Reset</button></div>
+<div class="fixed"><span></span><button class="plain" type="reset">Reset</button></div>
 </form>
 <section class="results" aria-label="Thirty-year results">
 <div class="cards" aria-live="polite" aria-atomic="true">
-<article class="metric a"><h2>A · Additional payments</h2><div class="money" id="valueA">—<span>bn</span></div><p>Other customers’ bill relief</p></article>
-<article class="metric"><h2>B · Above incremental cost</h2><div class="money" id="valueB">—<span>bn</span></div><p>Includes A</p></article>
+<article class="metric a"><h2>Conditional bill relief</h2><div class="money" id="valueA">—<span>bn</span></div></article>
+<article class="metric"><h2>Paid above incremental cost</h2><div class="money" id="valueB">—<span>bn</span></div><p>Existing-grid contribution</p></article>
 </div>
 <section class="comparison" aria-labelledby="comparisonTitle">
 <div class="comparison-head"><h2 id="comparisonTitle">30-year comparison</h2><span class="ratio" id="ratio">—</span></div>
-<div class="bars" role="img" id="comparisonChart" aria-label="Additional AND payments and a thirty-year transmission ITC illustration">
-<div class="barrow"><div class="barlabel">AND pricing<small>Additional payments</small></div><div class="bartrack"><div class="bar" id="barA"></div></div><div class="barvalue" id="barValueA"></div></div>
-<div class="barrow"><div class="barlabel">Transmission ITC<small>30-year extrapolation</small></div><div class="bartrack"><div class="bar itc" id="barITC"></div></div><div class="barvalue" id="barValueITC"></div></div>
+<div class="bars" role="img" id="comparisonChart" aria-label="AND pricing bill relief and a thirty-year transmission ITC illustration">
+<div class="barrow"><div class="barlabel">AND pricing</div><div class="bartrack"><div class="bar" id="barA"></div></div><div class="barvalue" id="barValueA"></div></div>
+<div class="barrow"><div class="barlabel">Transmission ITC<small>Extrapolated, not scored</small></div><div class="bartrack"><div class="bar itc" id="barITC"></div></div><div class="barvalue" id="barValueITC"></div></div>
 </div>
-<p class="comparison-note">Private bill relief vs. federal cost. ITC extrapolation is not an official JCT score.</p>
 </section>
 </section>
 </div>
 </main>
 <dialog id="method" aria-labelledby="methodTitle">
 <div class="details-head"><h2 id="methodTitle">Assumptions &amp; sources</h2><button class="close" id="methodClose">Close</button></div>
-<h3>Demand through 2056</h3>
-<p><a href="https://powering-intelligence.epri.com/annual-peak-use.html">EPRI’s 2026 U.S. projections</a> supply the 2030 endpoints. Later years are our extrapolations. All cases start from a selected 300 TWh baseline in 2026, with geometric interpolation to 2030.</p>
+<h3>Demand</h3>
+<p><a href="https://powering-intelligence.epri.com/annual-peak-use.html">EPRI 2026</a> supplies the 2030 endpoints; 300 TWh in 2026 is our selected baseline. From 2031 to 2035, demand grows at the rates in <a href="https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf#page=108">IEA’s global scenarios</a>, then tapers by 2040 to 0.5%, 1.5% or 2.5% a year. Values after 2030 are our extrapolation.</p>
 <table aria-label="Annual U.S. data-center electricity use, TWh"><thead><tr><th>TWh / year</th><th>Low</th><th>Medium</th><th>High</th></tr></thead><tbody id="demandTable"></tbody></table>
-<p><b>2031–2035:</b> apply the 2030–2035 growth multipliers in IEA’s global Headwinds, Base and Lift-Off scenarios: about 2.5%, 4.8% and 10.2% a year. Transferring these global rates to the U.S. is our assumption. <b>2036–2040:</b> taper the annual rate in equal steps to 0.5%, 1.5% and 2.5%; hold those rates through 2056. These selected mature rates allow continued expansion as the buildout slows. They are not published forecasts.</p>
-<p><a href="https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf#page=108">IEA, <i>Key Questions on Energy and AI</i>, Table A.1</a>: global 2030/2035 TWh are 833/942, 945/1,193 and 1,008/1,637. EPRI includes cryptocurrency; IEA’s scope differs. We use the IEA growth shape, not its absolute demand. These cases span plausible outcomes; they are not probability bounds. <a href="data/growth-scenarios.json">Full annual paths and source notes</a>.</p>
-<h3>What A and B mean</h3>
-<p><b>A</b> is the increase over a modeled higher-of tariff: the greater of ordinary network charges and incremental transmission cost. It equals the reduction in other customers’ bills when receipts are credited. <b>B</b> is the entire contribution above incremental transmission cost, including contributions already collected without AND pricing. A is part of B.</p>
-<p>With inherited revenue requirement <code>B₀</code>, incremental annual cost <code>I</code> and new-load billing share <code>s</code>: ordinary payment = <code>s(B₀ + I)</code>; baseline = <code>max[ordinary, I]</code>; credited AND payment = <code>sB₀ + I</code>. A = AND − baseline. B = AND − I. Both cases collect the same total revenue requirement.</p>
-<h3>Fixed assumptions</h3>
-<p>80% load factor; 75% effective coverage of new demand beyond 2026; 829 GW incumbent planning-peak proxy held flat. Charges start in 2030, including prospective charges on 2027–2029 entrants. Annual incremental cost is 7.3278% of capital: 40-year recovery at 5% real financing plus 1.5% O&amp;M. No existing-AND deduction or post-2056 terminal value. The same grid and demand are assumed under both pricing cases.</p>
-<p><b>Capital:</b> $0.65m/MW is a selected scenario, not a measured national average. Only attributable network investment belongs here; funding credits, dedicated facilities and refunds require reconciliation. <a href="https://www.aep.com/news/stories/view/10823/">AEP Piketon</a> and <a href="https://psc.wi.gov/Pages/CommissionActions/CasePages/OzaukeeDIP.aspx">Wisconsin PSC Ozaukee</a> illustrate project-specific scope. Regional tariff aggregation can give lower relief than this homogeneous national pool.</p>
-<h3>National rate and PUDL</h3>
-<p>The $95.1/kW-year default is a cost-to-peak proxy, not an observed weighted national NITS tariff. <a href="https://www.eia.gov/outlooks/aeo/supplement/excel/suptab_54.xlsx">EIA AEO2026 Table 54</a> implies $76.71bn of 2025 transmission expenditure. Divide by <a href="https://gridstrategiesllc.com/wp-content/uploads/Grid-Strategies-National-Load-Growth-Report-2025.pdf#page=33">829 GW of utility planning peaks</a>, then adjust to 2026 dollars with EIA’s 1.02754 deflator. Planning peaks differ from tariff billing determinants.</p>
-<p>PUDL v2026.10.0 was reviewed. It does not establish a national tariff revenue requirement matched to billing demand, or data-center-attributable capital per MW. <a href="data/pudl-review.json">PUDL review</a> · <a href="data/national-rate.json">Rate arithmetic</a>.</p>
-<h3>ITC comparison</h3>
-<p><a href="https://www.govinfo.gov/content/pkg/GOVPUB-Y4_T19_4-PURL-gpo172711/pdf/GOVPUB-Y4_T19_4-PURL-gpo172711.pdf#page=2">JCT JCX-46-21, p. 2</a> scored BBB’s transmission ITC at $11.279bn nominal over FY2022–2031, including direct-pay outlays. We normalize each annual flow to 2026 dollars at an assumed 2.5% inflation rate, then repeat that real ten-year profile three times: $31.674bn. This is our 30-year illustration, not an official score, a current-bill forecast or guaranteed customer savings. Compare it with A for policy scale; B includes existing payments. BAAJA transfers private bills and is not a federal budget offset.</p>
-<p><a href="https://www.energy.senate.gov/wp-content/uploads/2026/09/Bipartisan-American-Affordability-and-Jobs-Act.pdf#page=229">BAAJA draft, section 2107(a)</a> · <a href="data/central-case.json">Medium-case ledger</a></p>
+<h3>Measures</h3>
+<p>Baseline: <label><input name="baseline" type="radio" value="embedded" form="scenarioForm" checked> Embedded</label> &nbsp; <label><input name="baseline" type="radio" value="higher_of" form="scenarioForm"> Higher-of</label></p>
+<p><b>Bill relief</b> is what credited AND pricing collects above the selected baseline. Embedded uses ordinary shared-network charges; higher-of uses the greater of those charges and incremental cost. It equals the reduction in other customers’ bills. <b>Paid above incremental cost</b> is everything new load pays above its incremental cost, including payments already collected under the baseline. The measures overlap: do not add them. With an embedded baseline, bill relief can exceed the contribution above incremental cost when the baseline shifts part of incremental cost to others.</p>
+<p><a href="evidence.html">Regional evidence and model audit</a>: project-cost matches, measured PJM rates, and sensitivity tests.</p>
+<h3>Assumptions</h3>
+<p>80% load factor. 75% of new demand above 2026 participates in the modeled grid; the other 25% is excluded from both investment and billing demand. This represents grid participation, not a tariff exemption. 829 GW of incumbent peak, held flat. Charges start in 2030. Annual cost is 7.33% of capital (40 years, 5% real, 1.5% O&amp;M). The rate is <a href="https://www.eia.gov/outlooks/aeo/supplement/excel/suptab_54.xlsx">EIA AEO2026</a> transmission spending of $76.7bn divided by <a href="https://gridstrategiesllc.com/wp-content/uploads/Grid-Strategies-National-Load-Growth-Report-2025.pdf#page=33">829 GW</a>, in 2026 dollars. It is a proxy, not a tariff average. Capital remains a selected assumption. The central case assumes no additional payments beyond the selected baseline; existing direct funding and special contracts must be netted out in a project-specific estimate. A tariff need not be called AND to collect those payments.</p>
+<h3>ITC</h3>
+<p><a href="https://www.govinfo.gov/content/pkg/GOVPUB-Y4_T19_4-PURL-gpo172711/pdf/GOVPUB-Y4_T19_4-PURL-gpo172711.pdf#page=2">JCT</a> scored the 2021 Build Back Better transmission ITC at $11.3bn over FY2022–2031. We convert it to 2026 dollars and repeat it three times: $31.7bn. Holding it at its final scored level instead gives $53bn. This is not an official score. Bill relief is a private transfer; the ITC is a federal cost.</p>
+<p><a href="https://www.energy.senate.gov/wp-content/uploads/2026/09/Bipartisan-American-Affordability-and-Jobs-Act.pdf#page=229">BAAJA section 2107(a)</a> · <a href="data/central-case.json">Medium-case ledger</a> · <a href="data/national-rate.json">Rate arithmetic</a> · <a href="data/pudl-review.json">PUDL review</a> · <a href="data/growth-scenarios.json">Demand paths</a></p>
 <div class="download-links"><a href="baaja-one-pager.pdf">One-page brief</a><button class="plain" id="csvDownload">Annual CSV</button><a href="https://github.com/dashboardamerican/baaja-and-pricing">Source code</a></div>
 </dialog>
 <noscript>This calculator needs JavaScript. <a href="baaja-one-pager.pdf">Read the one-page brief.</a></noscript>
-<script src="model.js?v=20261023-demand-v2"></script>
+<script src="model.js?v=20261023-embedded-v3"></script>
 <script>
 'use strict';
 const el=id=>document.getElementById(id),fmt=x=>x.toLocaleString('en-US',{maximumFractionDigits:0});
 let current;
 function update(){
- const p={growth:document.querySelector('input[name="growth"]:checked').value,...Object.fromEntries(['cost','nits'].map(k=>[k,Number(el(k).value)]))};
+ const p={baseline:document.querySelector('input[name="baseline"]:checked').value,growth:document.querySelector('input[name="growth"]:checked').value,...Object.fromEntries(['cost','nits'].map(k=>[k,Number(el(k).value)]))};
  current=Baaja.calculate(p);
+
  el('costOut').innerHTML='$'+p.cost.toFixed(2)+'m<small>/ MW</small>';
  el('nitsOut').innerHTML='$'+p.nits.toFixed(1)+'<small>/ kW-year</small>';
  for(const k of ['A','B'])el('value'+k).innerHTML='$'+fmt(current[k])+'<span>bn</span>';
@@ -77,16 +72,17 @@ function update(){
  el('barA').style.width=(100*current.A/max)+'%';el('barITC').style.width=(100*t/max)+'%';
  el('barValueA').textContent='$'+fmt(current.A)+'bn';el('barValueITC').textContent='$'+fmt(t)+'bn';
  el('ratio').textContent=(current.A/t).toFixed(1)+'× ITC';
- el('comparisonChart').setAttribute('aria-label',`Additional AND payments ${current.A.toFixed(1)} billion dollars; ITC illustration ${t.toFixed(1)} billion dollars, constant 2026 dollars over 2027 to 2056.`);
+ el('comparisonChart').setAttribute('aria-label',`AND pricing bill relief ${current.A.toFixed(1)} billion dollars; ITC illustration ${t.toFixed(1)} billion dollars, constant 2026 dollars over 2027 to 2056.`);
  for(const k of ['cost','nits'])el(k).setAttribute('aria-valuetext',k==='cost'?'$'+p.cost.toFixed(2)+' million per MW':'$'+p.nits.toFixed(1)+' per kW-year');
 }
 document.querySelector('form').addEventListener('input',update);
+ document.querySelectorAll('input[name="baseline"]').forEach(r=>r.addEventListener('input',update));
 document.querySelector('form').addEventListener('reset',()=>setTimeout(update,0));
 el('methodOpen').addEventListener('click',()=>el('method').showModal());el('methodClose').addEventListener('click',()=>el('method').close());
 el('demandTable').innerHTML=[2030,2035,2040,2050,2056].map(y=>'<tr><th scope="row">'+y+'</th>'+Object.keys(Baaja.SCENARIOS).map(k=>'<td>'+fmt(Baaja.demand(y,k))+'</td>').join('')+'</tr>').join('');
 el('csvDownload').addEventListener('click',()=>{
  const keys=Object.keys(current.rows[0]),lines=[keys.join(','),...current.rows.map(row=>keys.map(k=>row[k]).join(','))];
- const a=document.createElement('a'),url=URL.createObjectURL(new Blob([lines.join('\n')+'\n'],{type:'text/csv;charset=utf-8'}));a.href=url;a.download='baaja-'+current.params.growth+'-annual-scenario.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ const a=document.createElement('a'),url=URL.createObjectURL(new Blob([lines.join('\n')+'\n'],{type:'text/csv;charset=utf-8'}));a.href=url;a.download='baaja-'+current.params.growth+'-'+current.params.baseline+'-annual-scenario.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });update();
 </script>
 </body></html>

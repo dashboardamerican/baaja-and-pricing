@@ -1,0 +1,38 @@
+{
+  "status": "Descriptive convenience sample, not national calibration. Estimated project costs, not realized expenditures.",
+  "scope": "February, April and June 2026 EPR cycles with published matching MW and reviewed cost/CAP cards. Conflicted and overlapping cases excluded.",
+  "included_cases": 11,
+  "included_load_MW": 5011,
+  "documented_package_cost_USD": 1176010000.0,
+  "sample_MW_weighted_package_USD_per_MW": 234685.69147874677,
+  "computational_cases": 4,
+  "computational_load_MW": 1630,
+  "computational_MW_weighted_package_USD_per_MW": 258165.64417177913,
+  "excluded_cases": [
+    {
+      "case": "West Fork Creek / St Landry / El Dorado-Smalling",
+      "ids": [
+        "51262",
+        "51263",
+        "51264"
+      ],
+      "cost_USD": 3480000000.0,
+      "reason": "September statistics p5 reports 4500 MW while September cost card p16 reports 1.0 MW. Visually confirmed source conflict; excluded from sample mean.",
+      "conditional_USD_per_MW_if_4500_MW_is_correct": 773333.3333333334
+    },
+    {
+      "case": "Truett phases and temporary connection",
+      "reason": "Temporary 500 MW request overlaps phase sequence; capacity and cost package cannot be added blindly."
+    },
+    {
+      "case": "Ozaukee",
+      "reason": "Changing PSC scope and dedicated customer-funded E-STATCOM; first-phase versus ultimate load denominator not matched in this sample."
+    }
+  ],
+  "limitations": [
+    "Sample favors projects with disclosed MW and separable packages; it is not random or exhaustive.",
+    "Existing infrastructure, customer-owned facilities, earlier phases, acceleration of shared projects, and prior contractual payments remain incompletely measured.",
+    "Reported cost vintage is 2026 study estimates with source-specific price bases; no unverified inflation harmonization applied.",
+    "Do not replace the national capital slider with the sample weighted mean."
+  ]
+}

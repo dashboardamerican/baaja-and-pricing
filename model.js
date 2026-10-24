@@ -11,7 +11,7 @@ const SCENARIOS = Object.freeze({
   medium:Object.freeze({label:'Medium',twh2030:596,iea2030:945,iea2035:1193,matureRate:0.015}),
   high:Object.freeze({label:'High',twh2030:793,iea2030:1008,iea2035:1637,matureRate:0.025})
 });
-const CENTRAL = Object.freeze({growth:'medium',cost:0.65,nits:95.1});
+const CENTRAL = Object.freeze({growth:'medium',cost:0.65,nits:95.1,baseline:'embedded'});
 const JCT = Object.freeze([[2022,0],[2023,0],[2024,0],[2025,0.788],[2026,1.213],
   [2027,1.213],[2028,1.213],[2029,2.001],[2030,2.426],[2031,2.425]]);
 function demand(year,growth){
@@ -29,12 +29,13 @@ function demand(year,growth){
 function itc(){
   const profile=JCT.map(([year,value])=>value/Math.pow(1+FIXED.inflation,year-2026));
   return {officialTenYear:JCT.reduce((s,r)=>s+r[1],0),realTenYear:profile.reduce((s,x)=>s+x,0),
-    realThirtyYear:3*profile.reduce((s,x)=>s+x,0),profile,
+    realThirtyYear:3*profile.reduce((s,x)=>s+x,0),
+    realThirtyYearTerminalRunRate:profile.reduce((s,x)=>s+x,0)+20*profile[profile.length-1],profile,
     annual:Array.from({length:30},(_,i)=>({year:2027+i,billion:profile[i%10]}))};
 }
 function calculate(input={}){
   const p={...CENTRAL,...input};
-  if(!Object.hasOwn(SCENARIOS,p.growth)||![p.cost,p.nits].every(Number.isFinite)||p.cost<0||p.nits<0)
+  if(!Object.hasOwn(SCENARIOS,p.growth)||!['embedded','higher_of'].includes(p.baseline)||![p.cost,p.nits].every(Number.isFinite)||p.cost<0||p.nits<0)
     throw new RangeError('Choose a demand preset and finite, nonnegative capital cost and NITS.');
   const f=FIXED, rate=p.nits*1000, capital=p.cost*1e6;
   const crf=f.finance/(1-Math.pow(1+f.finance,-f.life));
@@ -47,15 +48,15 @@ function calculate(input={}){
     // Every cohort's 40-year asset life exceeds its age inside this 30-year window.
     const I=mw*unit,s=mw/(f.incumbentMW+mw);
     const ordinary=s*(base+I),higher=Math.max(ordinary,I),and=s*base+I;
-    const on=year>=f.chargeStart;
-    const a=on?and-higher:0,b=on?s*base:0;
+    const baseline=p.baseline==='embedded'?ordinary:higher,on=year>=f.chargeStart;
+    const a=on?and-baseline:0,b=on?s*base:0;
     A+=a;B+=b;
-    if(on){incremental+=I;before+=higher;andTotal+=and;}
+    if(on){incremental+=I;before+=baseline;andTotal+=and;}
     if(year<=2036){firstTenA+=a*Math.pow(1+f.inflation,year-2026);firstTenB+=b*Math.pow(1+f.inflation,year-2026);}
     rows.push({year,twh:demand(year,p.growth),coveredMW:mw,addedMW:added,share:s,policyOn:on,
       inheritedRequirement:base,incrementalCost:I,ordinaryPayment:ordinary,higherOfPayment:higher,
-      ANDPayment:on?and:higher,existingPaymentBefore:base+I-higher,
-      existingPaymentAND:base+I-(on?and:higher),A:a,B:b,cumulativeA:A,cumulativeB:B});
+      baselinePayment:baseline,ANDPayment:on?and:baseline,existingPaymentBefore:base+I-baseline,
+      existingPaymentAND:base+I-(on?and:baseline),A:a,B:b,cumulativeA:A,cumulativeB:B});
   }
   return {params:p,A:A/1e9,B:B/1e9,incremental:incremental/1e9,before:before/1e9,
     andTotal:andTotal/1e9,firstTenNominalA:firstTenA/1e9,firstTenNominalB:firstTenB/1e9,

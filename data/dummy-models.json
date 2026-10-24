@@ -1,0 +1,195 @@
+{
+  "status": "Synthetic mechanism tests and conditional sensitivity runs; not a national forecast.",
+  "units": "Toy cases: annual million USD. Horizon cases: cumulative billion constant 2026 USD, 2027-2056; policy on from 2030.",
+  "assumptions": {
+    "annualFactor": 0.07327816116603497,
+    "toyIncumbentMW": 10000,
+    "toyNewMW": 1000,
+    "toyNitsKWYear": 95.1
+  },
+  "interpretation": [
+    "Additional payments must always name their counterfactual: embedded or higher-of.",
+    "With an embedded baseline, additional payments can exceed total payments above incremental cost when the baseline fails to recover incremental costs.",
+    "Pooling heterogeneous regions can overstate AND uplift versus region-specific higher-of tariffs.",
+    "Financial examples cannot identify the cost, necessity, or attribution of actual transmission upgrades. Engineering models and empirical matching are separate tasks."
+  ],
+  "toyCases": [
+    {
+      "name": "Low-cost connection",
+      "inputs": {
+        "incumbentMW": 10000,
+        "newMW": 1000,
+        "nitsKWYear": 95.1,
+        "capitalMillionMW": 0.25
+      },
+      "annualMillion": {
+        "incremental": 18.31954029150874,
+        "embedded": 88.11995820831898,
+        "higherOf": 88.11995820831898,
+        "AND": 104.7740857460542,
+        "additionalVsEmbedded": 16.654127537735224,
+        "additionalVsHigherOf": 16.654127537735224,
+        "aboveIncrementalCost": 86.45454545454547,
+        "incrementalCostShiftToOthersUnderEmbedded": -69.80041791681025
+      }
+    },
+    {
+      "name": "Dashboard capital assumption",
+      "inputs": {
+        "incumbentMW": 10000,
+        "newMW": 1000,
+        "nitsKWYear": 95.1,
+        "capitalMillionMW": 0.65
+      },
+      "annualMillion": {
+        "incremental": 47.63080475792273,
+        "embedded": 90.78461861435662,
+        "higherOf": 90.78461861435662,
+        "AND": 134.08535021246817,
+        "additionalVsEmbedded": 43.300731598111554,
+        "additionalVsHigherOf": 43.300731598111554,
+        "aboveIncrementalCost": 86.45454545454544,
+        "incrementalCostShiftToOthersUnderEmbedded": -43.15381385643389
+      }
+    },
+    {
+      "name": "Expensive connection",
+      "inputs": {
+        "incumbentMW": 10000,
+        "newMW": 1000,
+        "nitsKWYear": 95.1,
+        "capitalMillionMW": 2
+      },
+      "annualMillion": {
+        "incremental": 146.55632233206993,
+        "embedded": 99.77784748473363,
+        "higherOf": 146.55632233206993,
+        "AND": 233.01086778661536,
+        "additionalVsEmbedded": 133.23302030188174,
+        "additionalVsHigherOf": 86.45454545454544,
+        "aboveIncrementalCost": 86.45454545454544,
+        "incrementalCostShiftToOthersUnderEmbedded": 46.778474847336305
+      }
+    }
+  ],
+  "aggregation": {
+    "regionalSumAnnualMillion": {
+      "incremental": 164.87586262357866,
+      "embedded": 187.8978056930526,
+      "higherOf": 234.67628054038892,
+      "AND": 337.78495353266953,
+      "additionalVsEmbedded": 149.88714783961697,
+      "additionalVsHigherOf": 103.10867299228066,
+      "aboveIncrementalCost": 172.9090909090909,
+      "incrementalCostShiftToOthersUnderEmbedded": -23.02194306947394
+    },
+    "pooledAnnualMillion": {
+      "incremental": 164.87586262357868,
+      "embedded": 187.89780569305262,
+      "higherOf": 187.89780569305262,
+      "AND": 337.7849535326696,
+      "additionalVsEmbedded": 149.88714783961697,
+      "additionalVsHigherOf": 149.88714783961697,
+      "aboveIncrementalCost": 172.9090909090909,
+      "incrementalCostShiftToOthersUnderEmbedded": -23.021943069473924
+    }
+  },
+  "horizonCases": [
+    {
+      "growth": "low",
+      "capitalMillionMW": 0.25,
+      "nitsKWYear": 95.1,
+      "additionalVsEmbeddedBillion": 8.304439603719628,
+      "additionalVsHigherOfBillion": 8.304439603719626,
+      "aboveIncrementalCostBillion": 43.10982665213455
+    },
+    {
+      "growth": "low",
+      "capitalMillionMW": 0.65,
+      "nitsKWYear": 95.1,
+      "additionalVsEmbeddedBillion": 21.59154296967103,
+      "additionalVsHigherOfBillion": 21.591542969671032,
+      "aboveIncrementalCostBillion": 43.10982665213455
+    },
+    {
+      "growth": "low",
+      "capitalMillionMW": 1.3,
+      "nitsKWYear": 95.1,
+      "additionalVsEmbeddedBillion": 43.18308593934207,
+      "additionalVsHigherOfBillion": 43.10982665213455,
+      "aboveIncrementalCostBillion": 43.10982665213455
+    },
+    {
+      "growth": "low",
+      "capitalMillionMW": 2,
+      "nitsKWYear": 95.1,
+      "additionalVsEmbeddedBillion": 66.43551682975702,
+      "additionalVsHigherOfBillion": 43.10982665213456,
+      "aboveIncrementalCostBillion": 43.10982665213455
+    },
+    {
+      "growth": "medium",
+      "capitalMillionMW": 0.25,
+      "nitsKWYear": 95.1,
+      "additionalVsEmbeddedBillion": 28.689437097650142,
+      "additionalVsHigherOfBillion": 28.689437097650142,
+      "aboveIncrementalCostBillion": 148.93198325785218
+    },
+    {
+      "growth": "medium",
+      "capitalMillionMW": 0.65,
+      "nitsKWYear": 95.1,
+      "additionalVsEmbeddedBillion": 74.59253645389036,
+      "additionalVsHigherOfBillion": 74.59253645389035,
+      "aboveIncrementalCostBillion": 148.93198325785218
+    },
+    {
+      "growth": "medium",
+      "capitalMillionMW": 1.3,
+      "nitsKWYear": 95.1,
+      "additionalVsEmbeddedBillion": 149.1850729077807,
+      "additionalVsHigherOfBillion": 148.93198325785215,
+      "aboveIncrementalCostBillion": 148.93198325785218
+    },
+    {
+      "growth": "medium",
+      "capitalMillionMW": 2,
+      "nitsKWYear": 95.1,
+      "additionalVsEmbeddedBillion": 229.51549678120102,
+      "additionalVsHigherOfBillion": 148.93198325785218,
+      "aboveIncrementalCostBillion": 148.93198325785218
+    },
+    {
+      "growth": "high",
+      "capitalMillionMW": 0.25,
+      "nitsKWYear": 95.1,
+      "additionalVsEmbeddedBillion": 63.98181996601066,
+      "additionalVsHigherOfBillion": 63.981819966010676,
+      "aboveIncrementalCostBillion": 332.14103530686896
+    },
+    {
+      "growth": "high",
+      "capitalMillionMW": 0.65,
+      "nitsKWYear": 95.1,
+      "additionalVsEmbeddedBillion": 166.35273191162776,
+      "additionalVsHigherOfBillion": 166.35273191162767,
+      "aboveIncrementalCostBillion": 332.14103530686896
+    },
+    {
+      "growth": "high",
+      "capitalMillionMW": 1.3,
+      "nitsKWYear": 95.1,
+      "additionalVsEmbeddedBillion": 332.70546382325546,
+      "additionalVsHigherOfBillion": 332.14103530686896,
+      "aboveIncrementalCostBillion": 332.14103530686896
+    },
+    {
+      "growth": "high",
+      "capitalMillionMW": 2,
+      "nitsKWYear": 95.1,
+      "additionalVsEmbeddedBillion": 511.8545597280852,
+      "additionalVsHigherOfBillion": 332.14103530686896,
+      "aboveIncrementalCostBillion": 332.14103530686896
+    }
+  ]
+}

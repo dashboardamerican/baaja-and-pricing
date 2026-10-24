@@ -3,3 +3,6 @@ __pycache__/
 tmp/
 output/
 .DS_Store
+
+# Downloaded public source archives are retained locally; publish curated extracts.
+research/

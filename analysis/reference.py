@@ -22,6 +22,7 @@ SPONSOR = "https://www.energy.senate.gov/press/dem/heinrich-introduces-legislati
 @dataclass(frozen=True)
 class Assumptions:
     growth_scenario: str = 'medium'
+    baseline: str = 'embedded'
     capex_per_mw: float = 650_000.
     nits_per_mw_year: float = 95_100.
     load_factor: float = .80
@@ -56,6 +57,7 @@ def facility_twh(year, p):
 
 def reference_ledger(p=Assumptions()):
     assert p.growth_scenario in ('low', 'medium', 'high')
+    assert p.baseline in ('embedded', 'higher_of')
     assert 0 < p.load_factor <= 1 and 0 <= p.effective_chargeable_fraction <= 1
     assert p.capex_per_mw >= 0 and p.nits_per_mw_year >= 0
     r = p.real_financing_rate
@@ -73,12 +75,14 @@ def reference_ledger(p=Assumptions()):
         ordinary = share * (base + incremental)
         higher_of = max(ordinary, incremental)
         and_payment = share * base + incremental
-        extra = and_payment - higher_of
+        baseline_payment = ordinary if p.baseline == 'embedded' else higher_of
+        extra = and_payment - baseline_payment
         above_incremental = and_payment - incremental
-        old_higher = base + incremental - higher_of
+        old_higher = base + incremental - baseline_payment
         old_and = base + incremental - and_payment
         assert isclose(extra, old_higher - old_and, abs_tol=.0001)
-        assert isclose(extra, min(share * base, (1 - share) * incremental), abs_tol=.0001)
+        expected_extra = (1-share)*incremental if p.baseline == 'embedded' else min(share*base,(1-share)*incremental)
+        assert isclose(extra, expected_extra, abs_tol=.0001)
         assert isclose(above_incremental, share * base, abs_tol=.0001)
         if year < p.charging_start:
             extra = above_incremental = 0
@@ -88,11 +92,13 @@ def reference_ledger(p=Assumptions()):
             "share": share, "incremental_cost_usd": incremental,
             "ordinary_payment_usd": ordinary, "higher_of_payment_usd": higher_of,
             "AND_payment_usd_if_in_force": and_payment,
-            "A_extra_AND_vs_higher_of_usd": extra,
+            "baseline_payment_usd": baseline_payment,
+            "A_extra_AND_vs_baseline_usd": extra,
+            "A_extra_AND_vs_higher_of_usd": and_payment-higher_of if year>=p.charging_start else 0,
             "B_above_incremental_transmission_cost_usd": above_incremental,
         })
     summary = {}
-    for key in ("A_extra_AND_vs_higher_of_usd", "B_above_incremental_transmission_cost_usd"):
+    for key in ("A_extra_AND_vs_baseline_usd", "A_extra_AND_vs_higher_of_usd", "B_above_incremental_transmission_cost_usd"):
         summary[key] = {
             "constant_2026_billion": sum(row[key] for row in rows) / 1e9,
             "nominal_billion": sum(row[key] * (1 + p.inflation) ** (row["year"] - 2026) for row in rows) / 1e9,
@@ -185,16 +191,18 @@ def notes_array(p, itc):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--nits", type=float, default=95_100.)
+    parser.add_argument("--baseline", choices=("embedded", "higher_of"), default="embedded")
     parser.add_argument("--capex", type=float, default=650_000.)
     parser.add_argument("--growth", choices=('low', 'medium', 'high'), default='medium')
     args = parser.parse_args()
-    p = Assumptions(growth_scenario=args.growth, capex_per_mw=args.capex, nits_per_mw_year=args.nits)
+    p = Assumptions(growth_scenario=args.growth, baseline=args.baseline, capex_per_mw=args.capex, nits_per_mw_year=args.nits)
     ledger = reference_ledger(p)
     itc = normalized_itc(p)
     # Boundary checks distinguish additional policy payments from embedded contribution.
     assert isclose(reference_ledger(replace(p, capex_per_mw=0))["metrics"]["A_extra_AND_vs_higher_of_usd"]["constant_2026_billion"], 0, abs_tol=1e-10)
     zero_rate = reference_ledger(replace(p, nits_per_mw_year=0))
-    assert all(isclose(x["constant_2026_billion"], 0, abs_tol=1e-10) for x in zero_rate["metrics"].values())
+    assert isclose(zero_rate['metrics']['B_above_incremental_transmission_cost_usd']['constant_2026_billion'],0,abs_tol=1e-10)
+    assert isclose(zero_rate['metrics']['A_extra_AND_vs_higher_of_usd']['constant_2026_billion'],0,abs_tol=1e-10)
     target = Path(__file__).resolve().parent
     (target / "itc_comparison_reference_2026_10_23.json").write_text(json.dumps({"BAAJA": ledger, "ITC": itc}, indent=2) + "\n")
     (target / "itc_comparison_notes_2026_10_23.json").write_text(json.dumps(notes_array(p, itc), indent=2) + "\n")

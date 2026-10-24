@@ -4,11 +4,13 @@
     "input": {
       "growth": "medium",
       "cost": 0.65,
-      "nits": 95.1
+      "nits": 95.1,
+      "baseline": "embedded"
     },
     "reference": {
       "assumptions": {
         "growth_scenario": "medium",
+        "baseline": "embedded",
         "capex_per_mw": 650000.0,
         "nits_per_mw_year": 95100.0,
         "load_factor": 0.8,
@@ -27,6 +29,11 @@
       "endpoint_2056_twh": 1096.3972365254417,
       "effective_new_billing_gw_2056": 85.2308686350002,
       "metrics": {
+        "A_extra_AND_vs_baseline_usd": {
+          "constant_2026_billion": 74.5925364538903,
+          "nominal_billion": 120.45586760379632,
+          "pv_2026_billion": 43.94514277994051
+        },
         "A_extra_AND_vs_higher_of_usd": {
           "constant_2026_billion": 74.5925364538903,
           "nominal_billion": 120.45586760379632,
@@ -48,6 +55,8 @@
           "ordinary_payment_usd": 569584508.1578457,
           "higher_of_payment_usd": 569584508.1578457,
           "AND_payment_usd_if_in_force": 853828477.4543214,
+          "baseline_payment_usd": 569584508.1578457,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -60,6 +69,8 @@
           "ordinary_payment_usd": 1240556307.1277292,
           "higher_of_payment_usd": 1240556307.1277292,
           "AND_payment_usd_if_in_force": 1856992169.0699482,
+          "baseline_payment_usd": 1240556307.1277292,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -72,6 +83,8 @@
           "ordinary_payment_usd": 2029935236.0480652,
           "higher_of_payment_usd": 2029935236.0480652,
           "AND_payment_usd_if_in_force": 3033519148.543126,
+          "baseline_payment_usd": 2029935236.0480652,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -84,6 +97,8 @@
           "ordinary_payment_usd": 2957239278.7975187,
           "higher_of_payment_usd": 2957239278.7975187,
           "AND_payment_usd_if_in_force": 4410557061.785371,
+          "baseline_payment_usd": 2957239278.7975187,
+          "A_extra_AND_vs_baseline_usd": 1453317782.987852,
           "A_extra_AND_vs_higher_of_usd": 1453317782.987852,
           "B_above_incremental_transmission_cost_usd": 2901704513.8032293
         },
@@ -96,6 +111,8 @@
           "ordinary_payment_usd": 3235741314.667925,
           "higher_of_payment_usd": 3235741314.667925,
           "AND_payment_usd_if_in_force": 4823063618.075338,
+          "baseline_payment_usd": 3235741314.667925,
+          "A_extra_AND_vs_baseline_usd": 1587322303.4074135,
           "A_extra_AND_vs_higher_of_usd": 1587322303.4074135,
           "B_above_incremental_transmission_cost_usd": 3169258882.3819084
         },
@@ -108,6 +125,8 @@
           "ordinary_payment_usd": 3526525299.1591268,
           "higher_of_payment_usd": 3526525299.1591268,
           "AND_payment_usd_if_in_force": 5253236448.468852,
+          "baseline_payment_usd": 3526525299.1591268,
+          "A_extra_AND_vs_baseline_usd": 1726711149.3097253,
           "A_extra_AND_vs_higher_of_usd": 1726711149.3097253,
           "B_above_incremental_transmission_cost_usd": 3447563633.1137304
         },
@@ -120,6 +139,8 @@
           "ordinary_payment_usd": 3830091099.8729033,
           "higher_of_payment_usd": 3830091099.8729033,
           "AND_payment_usd_if_in_force": 5701745898.747276,
+          "baseline_payment_usd": 3830091099.8729033,
+          "A_extra_AND_vs_baseline_usd": 1871654798.874373,
           "A_extra_AND_vs_higher_of_usd": 1871654798.874373,
           "B_above_incremental_transmission_cost_usd": 3736959143.9318686
         },
@@ -132,6 +153,8 @@
           "ordinary_payment_usd": 4146955633.243834,
           "higher_of_payment_usd": 4146955633.243834,
           "AND_payment_usd_if_in_force": 6169280673.52854,
+          "baseline_payment_usd": 4146955633.243834,
+          "A_extra_AND_vs_baseline_usd": 2022325040.2847056,
           "A_extra_AND_vs_higher_of_usd": 2022325040.2847056,
           "B_above_incremental_transmission_cost_usd": 4037788408.332218
         },
@@ -144,6 +167,8 @@
           "ordinary_payment_usd": 4477653217.677878,
           "higher_of_payment_usd": 4477653217.677878,
           "AND_payment_usd_if_in_force": 6656547790.053461,
+          "baseline_payment_usd": 4477653217.677878,
+          "A_extra_AND_vs_baseline_usd": 2178894572.3755827,
           "A_extra_AND_vs_higher_of_usd": 2178894572.3755827,
           "B_above_incremental_transmission_cost_usd": 4350396238.023899
         },
@@ -156,6 +181,8 @@
           "ordinary_payment_usd": 4775501106.884856,
           "higher_of_payment_usd": 4775501106.884856,
           "AND_payment_usd_if_in_force": 7094819800.030209,
+          "baseline_payment_usd": 4775501106.884856,
+          "A_extra_AND_vs_baseline_usd": 2319318693.1453524,
           "A_extra_AND_vs_higher_of_usd": 2319318693.1453524,
           "B_above_incremental_transmission_cost_usd": 4630768025.842241
         },
@@ -168,6 +195,8 @@
           "ordinary_payment_usd": 5035468366.953824,
           "higher_of_payment_usd": 5035468366.953824,
           "AND_payment_usd_if_in_force": 7476893128.422108,
+          "baseline_payment_usd": 5035468366.953824,
+          "A_extra_AND_vs_baseline_usd": 2441424761.4682837,
           "A_extra_AND_vs_higher_of_usd": 2441424761.4682837,
           "B_above_incremental_transmission_cost_usd": 4874565861.224797
         },
@@ -180,6 +209,8 @@
           "ordinary_payment_usd": 5253003942.438264,
           "higher_of_payment_usd": 5253003942.438264,
           "AND_payment_usd_if_in_force": 7796276297.237157,
+          "baseline_payment_usd": 5253003942.438264,
+          "A_extra_AND_vs_baseline_usd": 2543272354.798893,
           "A_extra_AND_vs_higher_of_usd": 2543272354.798893,
           "B_above_incremental_transmission_cost_usd": 5077915482.860779
         },
@@ -192,6 +223,8 @@
           "ordinary_payment_usd": 5424158092.353803,
           "higher_of_payment_usd": 5424158092.353803,
           "AND_payment_usd_if_in_force": 8047352593.045565,
+          "baseline_payment_usd": 5424158092.353803,
+          "A_extra_AND_vs_baseline_usd": 2623194500.691762,
           "A_extra_AND_vs_higher_of_usd": 2623194500.691762,
           "B_above_incremental_transmission_cost_usd": 5237488601.833696
         },
@@ -204,6 +237,8 @@
           "ordinary_payment_usd": 5545691330.005862,
           "higher_of_payment_usd": 5545691330.005862,
           "AND_payment_usd_if_in_force": 8225524645.123659,
+          "baseline_payment_usd": 5545691330.005862,
+          "A_extra_AND_vs_baseline_usd": 2679833315.117797,
           "A_extra_AND_vs_higher_of_usd": 2679833315.117797,
           "B_above_incremental_transmission_cost_usd": 5350574057.334426
         },
@@ -216,6 +251,8 @@
           "ordinary_payment_usd": 5668870461.990102,
           "higher_of_payment_usd": 5668870461.990102,
           "AND_payment_usd_if_in_force": 8406014466.563974,
+          "baseline_payment_usd": 5668870461.990102,
+          "A_extra_AND_vs_baseline_usd": 2737144004.5738726,
           "A_extra_AND_vs_higher_of_usd": 2737144004.5738726,
           "B_above_incremental_transmission_cost_usd": 5465000983.248714
         },
@@ -228,6 +265,8 @@
           "ordinary_payment_usd": 5793715674.774983,
           "higher_of_payment_usd": 5793715674.774983,
           "AND_payment_usd_if_in_force": 8588847804.686966,
+          "baseline_payment_usd": 5793715674.774983,
+          "A_extra_AND_vs_baseline_usd": 2795132129.9119825,
           "A_extra_AND_vs_higher_of_usd": 2795132129.9119825,
           "B_above_incremental_transmission_cost_usd": 5580780482.41279
         },
@@ -240,6 +279,8 @@
           "ordinary_payment_usd": 5920247354.861168,
           "higher_of_payment_usd": 5920247354.861168,
           "AND_payment_usd_if_in_force": 8774050587.143368,
+          "baseline_payment_usd": 5920247354.861168,
+          "A_extra_AND_vs_baseline_usd": 2853803232.2822,
           "A_extra_AND_vs_higher_of_usd": 2853803232.2822,
           "B_above_incremental_transmission_cost_usd": 5697923618.325892
         },
@@ -252,6 +293,8 @@
           "ordinary_payment_usd": 6048486089.902167,
           "higher_of_payment_usd": 6048486089.902167,
           "AND_payment_usd_if_in_force": 8961648920.853106,
+          "baseline_payment_usd": 6048486089.902167,
+          "A_extra_AND_vs_baseline_usd": 2913162830.950938,
           "A_extra_AND_vs_higher_of_usd": 2913162830.950938,
           "B_above_incremental_transmission_cost_usd": 5816441410.79418
         },
@@ -264,6 +307,8 @@
           "ordinary_payment_usd": 6178452669.826018,
           "higher_of_payment_usd": 6178452669.826018,
           "AND_payment_usd_if_in_force": 9151669090.896626,
+          "baseline_payment_usd": 6178452669.826018,
+          "A_extra_AND_vs_baseline_usd": 2973216421.070607,
           "A_extra_AND_vs_higher_of_usd": 2973216421.070607,
           "B_above_incremental_transmission_cost_usd": 5936344831.477629
         },
@@ -276,6 +321,8 @@
           "ordinary_payment_usd": 6310168087.958674,
           "higher_of_payment_usd": 6310168087.958674,
           "AND_payment_usd_if_in_force": 9344137559.359344,
+          "baseline_payment_usd": 6310168087.958674,
+          "A_extra_AND_vs_baseline_usd": 3033969471.40067,
           "A_extra_AND_vs_higher_of_usd": 3033969471.40067,
           "B_above_incremental_transmission_cost_usd": 6057644799.339876
         },
@@ -288,6 +335,8 @@
           "ordinary_payment_usd": 6443653542.149827,
           "higher_of_payment_usd": 6443653542.149827,
           "AND_payment_usd_if_in_force": 9539080964.129883,
+          "baseline_payment_usd": 6443653542.149827,
+          "A_extra_AND_vs_baseline_usd": 3095427421.980056,
           "A_extra_AND_vs_higher_of_usd": 3095427421.980056,
           "B_above_incremental_transmission_cost_usd": 6180352176.000934
         },
@@ -300,6 +349,8 @@
           "ordinary_payment_usd": 6578930435.9019785,
           "higher_of_payment_usd": 6578930435.9019785,
           "AND_payment_usd_if_in_force": 9736526117.652956,
+          "baseline_payment_usd": 6578930435.9019785,
+          "A_extra_AND_vs_baseline_usd": 3157595681.7509775,
           "A_extra_AND_vs_higher_of_usd": 3157595681.7509775,
           "B_above_incremental_transmission_cost_usd": 6304477760.992886
         },
@@ -312,6 +363,8 @@
           "ordinary_payment_usd": 6716020379.503644,
           "higher_of_payment_usd": 6716020379.503644,
           "AND_payment_usd_if_in_force": 9936500005.637861,
+          "baseline_payment_usd": 6716020379.503644,
+          "A_extra_AND_vs_baseline_usd": 3220479626.1342173,
           "A_extra_AND_vs_higher_of_usd": 3220479626.1342173,
           "B_above_incremental_transmission_cost_usd": 6430032286.918702
         },
@@ -324,6 +377,8 @@
           "ordinary_payment_usd": 6854945191.167546,
           "higher_of_payment_usd": 6854945191.167546,
           "AND_payment_usd_if_in_force": 10139029785.723597,
+          "baseline_payment_usd": 6854945191.167546,
+          "A_extra_AND_vs_baseline_usd": 3284084594.5560503,
           "A_extra_AND_vs_higher_of_usd": 3284084594.5560503,
           "B_above_incremental_transmission_cost_usd": 6557026414.514462
         },
@@ -336,6 +391,8 @@
           "ordinary_payment_usd": 6995726898.174809,
           "higher_of_payment_usd": 6995726898.174809,
           "AND_payment_usd_if_in_force": 10344142786.101738,
+          "baseline_payment_usd": 6995726898.174809,
+          "A_extra_AND_vs_baseline_usd": 3348415887.9269285,
           "A_extra_AND_vs_higher_of_usd": 3348415887.9269285,
           "B_above_incremental_transmission_cost_usd": 6685470727.615279
         },
@@ -348,6 +405,8 @@
           "ordinary_payment_usd": 7138387738.026193,
           "higher_of_payment_usd": 7138387738.026193,
           "AND_payment_usd_if_in_force": 10551866504.098381,
+          "baseline_payment_usd": 7138387738.026193,
+          "A_extra_AND_vs_baseline_usd": 3413478766.0721884,
           "A_extra_AND_vs_higher_of_usd": 3413478766.0721884,
           "B_above_incremental_transmission_cost_usd": 6815375728.025438
         },
@@ -360,6 +419,8 @@
           "ordinary_payment_usd": 7282950159.601436,
           "higher_of_payment_usd": 7282950159.601436,
           "AND_payment_usd_if_in_force": 10762228604.716473,
+          "baseline_payment_usd": 7282950159.601436,
+          "A_extra_AND_vs_baseline_usd": 3479278445.115037,
           "A_extra_AND_vs_higher_of_usd": 3479278445.115037,
           "B_above_incremental_transmission_cost_usd": 6946751830.293248
         },
@@ -372,6 +433,8 @@
           "ordinary_payment_usd": 7429436824.327887,
           "higher_of_payment_usd": 7429436824.327887,
           "AND_payment_usd_if_in_force": 10975256919.140043,
+          "baseline_payment_usd": 7429436824.327887,
+          "A_extra_AND_vs_baseline_usd": 3545820094.8121567,
           "A_extra_AND_vs_higher_of_usd": 3545820094.8121567,
           "B_above_incremental_transmission_cost_usd": 7079609356.391283
         },
@@ -384,6 +447,8 @@
           "ordinary_payment_usd": 7577870607.35967,
           "higher_of_payment_usd": 7577870607.35967,
           "AND_payment_usd_if_in_force": 11190979443.20198,
+          "baseline_payment_usd": 7577870607.35967,
+          "A_extra_AND_vs_baseline_usd": 3613108835.842311,
           "A_extra_AND_vs_higher_of_usd": 3613108835.842311,
           "B_above_incremental_transmission_cost_usd": 7213958530.302801
         },
@@ -396,6 +461,8 @@
           "ordinary_payment_usd": 7728274598.768636,
           "higher_of_payment_usd": 7728274598.768636,
           "AND_payment_usd_if_in_force": 11409424335.817009,
+          "baseline_payment_usd": 7728274598.768636,
+          "A_extra_AND_vs_baseline_usd": 3681149737.048373,
           "A_extra_AND_vs_higher_of_usd": 3681149737.048373,
           "B_above_incremental_transmission_cost_usd": 7349809472.515155
         }
@@ -407,11 +474,13 @@
     "input": {
       "growth": "medium",
       "cost": 0.0,
-      "nits": 95.1
+      "nits": 95.1,
+      "baseline": "embedded"
     },
     "reference": {
       "assumptions": {
         "growth_scenario": "medium",
+        "baseline": "embedded",
         "capex_per_mw": 0,
         "nits_per_mw_year": 95100.0,
         "load_factor": 0.8,
@@ -430,6 +499,11 @@
       "endpoint_2056_twh": 1096.3972365254417,
       "effective_new_billing_gw_2056": 85.2308686350002,
       "metrics": {
+        "A_extra_AND_vs_baseline_usd": {
+          "constant_2026_billion": 0.0,
+          "nominal_billion": 0.0,
+          "pv_2026_billion": 0.0
+        },
         "A_extra_AND_vs_higher_of_usd": {
           "constant_2026_billion": 0.0,
           "nominal_billion": 0.0,
@@ -451,6 +525,8 @@
           "ordinary_payment_usd": 567523509.5749352,
           "higher_of_payment_usd": 567523509.5749352,
           "AND_payment_usd_if_in_force": 567523509.5749352,
+          "baseline_payment_usd": 567523509.5749352,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -463,6 +539,8 @@
           "ordinary_payment_usd": 1230780180.3611956,
           "higher_of_payment_usd": 1230780180.3611956,
           "AND_payment_usd_if_in_force": 1230780180.3611956,
+          "baseline_payment_usd": 1230780180.3611956,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -475,6 +553,8 @@
           "ordinary_payment_usd": 2003762702.8001244,
           "higher_of_payment_usd": 2003762702.8001244,
           "AND_payment_usd_if_in_force": 2003762702.8001244,
+          "baseline_payment_usd": 2003762702.8001244,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -487,6 +567,8 @@
           "ordinary_payment_usd": 2901704513.8032293,
           "higher_of_payment_usd": 2901704513.8032293,
           "AND_payment_usd_if_in_force": 2901704513.8032293,
+          "baseline_payment_usd": 2901704513.8032293,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 2901704513.8032293
         },
@@ -499,6 +581,8 @@
           "ordinary_payment_usd": 3169258882.381909,
           "higher_of_payment_usd": 3169258882.381909,
           "AND_payment_usd_if_in_force": 3169258882.381909,
+          "baseline_payment_usd": 3169258882.381909,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 3169258882.381909
         },
@@ -511,6 +595,8 @@
           "ordinary_payment_usd": 3447563633.1137304,
           "higher_of_payment_usd": 3447563633.1137304,
           "AND_payment_usd_if_in_force": 3447563633.1137304,
+          "baseline_payment_usd": 3447563633.1137304,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 3447563633.1137304
         },
@@ -523,6 +609,8 @@
           "ordinary_payment_usd": 3736959143.9318686,
           "higher_of_payment_usd": 3736959143.9318686,
           "AND_payment_usd_if_in_force": 3736959143.9318686,
+          "baseline_payment_usd": 3736959143.9318686,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 3736959143.9318686
         },
@@ -535,6 +623,8 @@
           "ordinary_payment_usd": 4037788408.332218,
           "higher_of_payment_usd": 4037788408.332218,
           "AND_payment_usd_if_in_force": 4037788408.332218,
+          "baseline_payment_usd": 4037788408.332218,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 4037788408.332218
         },
@@ -547,6 +637,8 @@
           "ordinary_payment_usd": 4350396238.0239,
           "higher_of_payment_usd": 4350396238.0239,
           "AND_payment_usd_if_in_force": 4350396238.0239,
+          "baseline_payment_usd": 4350396238.0239,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 4350396238.0239
         },
@@ -559,6 +651,8 @@
           "ordinary_payment_usd": 4630768025.842241,
           "higher_of_payment_usd": 4630768025.842241,
           "AND_payment_usd_if_in_force": 4630768025.842241,
+          "baseline_payment_usd": 4630768025.842241,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 4630768025.842241
         },
@@ -571,6 +665,8 @@
           "ordinary_payment_usd": 4874565861.224797,
           "higher_of_payment_usd": 4874565861.224797,
           "AND_payment_usd_if_in_force": 4874565861.224797,
+          "baseline_payment_usd": 4874565861.224797,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 4874565861.224797
         },
@@ -583,6 +679,8 @@
           "ordinary_payment_usd": 5077915482.860779,
           "higher_of_payment_usd": 5077915482.860779,
           "AND_payment_usd_if_in_force": 5077915482.860779,
+          "baseline_payment_usd": 5077915482.860779,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 5077915482.860779
         },
@@ -595,6 +693,8 @@
           "ordinary_payment_usd": 5237488601.833696,
           "higher_of_payment_usd": 5237488601.833696,
           "AND_payment_usd_if_in_force": 5237488601.833696,
+          "baseline_payment_usd": 5237488601.833696,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 5237488601.833696
         },
@@ -607,6 +707,8 @@
           "ordinary_payment_usd": 5350574057.334426,
           "higher_of_payment_usd": 5350574057.334426,
           "AND_payment_usd_if_in_force": 5350574057.334426,
+          "baseline_payment_usd": 5350574057.334426,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 5350574057.334426
         },
@@ -619,6 +721,8 @@
           "ordinary_payment_usd": 5465000983.248714,
           "higher_of_payment_usd": 5465000983.248714,
           "AND_payment_usd_if_in_force": 5465000983.248714,
+          "baseline_payment_usd": 5465000983.248714,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 5465000983.248714
         },
@@ -631,6 +735,8 @@
           "ordinary_payment_usd": 5580780482.41279,
           "higher_of_payment_usd": 5580780482.41279,
           "AND_payment_usd_if_in_force": 5580780482.41279,
+          "baseline_payment_usd": 5580780482.41279,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 5580780482.41279
         },
@@ -643,6 +749,8 @@
           "ordinary_payment_usd": 5697923618.325892,
           "higher_of_payment_usd": 5697923618.325892,
           "AND_payment_usd_if_in_force": 5697923618.325892,
+          "baseline_payment_usd": 5697923618.325892,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 5697923618.325892
         },
@@ -655,6 +763,8 @@
           "ordinary_payment_usd": 5816441410.79418,
           "higher_of_payment_usd": 5816441410.79418,
           "AND_payment_usd_if_in_force": 5816441410.79418,
+          "baseline_payment_usd": 5816441410.79418,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 5816441410.79418
         },
@@ -667,6 +777,8 @@
           "ordinary_payment_usd": 5936344831.477628,
           "higher_of_payment_usd": 5936344831.477628,
           "AND_payment_usd_if_in_force": 5936344831.477628,
+          "baseline_payment_usd": 5936344831.477628,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 5936344831.477628
         },
@@ -679,6 +791,8 @@
           "ordinary_payment_usd": 6057644799.339875,
           "higher_of_payment_usd": 6057644799.339875,
           "AND_payment_usd_if_in_force": 6057644799.339875,
+          "baseline_payment_usd": 6057644799.339875,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 6057644799.339875
         },
@@ -691,6 +805,8 @@
           "ordinary_payment_usd": 6180352176.000935,
           "higher_of_payment_usd": 6180352176.000935,
           "AND_payment_usd_if_in_force": 6180352176.000935,
+          "baseline_payment_usd": 6180352176.000935,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 6180352176.000935
         },
@@ -703,6 +819,8 @@
           "ordinary_payment_usd": 6304477760.992886,
           "higher_of_payment_usd": 6304477760.992886,
           "AND_payment_usd_if_in_force": 6304477760.992886,
+          "baseline_payment_usd": 6304477760.992886,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 6304477760.992886
         },
@@ -715,6 +833,8 @@
           "ordinary_payment_usd": 6430032286.918702,
           "higher_of_payment_usd": 6430032286.918702,
           "AND_payment_usd_if_in_force": 6430032286.918702,
+          "baseline_payment_usd": 6430032286.918702,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 6430032286.918702
         },
@@ -727,6 +847,8 @@
           "ordinary_payment_usd": 6557026414.514462,
           "higher_of_payment_usd": 6557026414.514462,
           "AND_payment_usd_if_in_force": 6557026414.514462,
+          "baseline_payment_usd": 6557026414.514462,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 6557026414.514462
         },
@@ -739,6 +861,8 @@
           "ordinary_payment_usd": 6685470727.615279,
           "higher_of_payment_usd": 6685470727.615279,
           "AND_payment_usd_if_in_force": 6685470727.615279,
+          "baseline_payment_usd": 6685470727.615279,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 6685470727.615279
         },
@@ -751,6 +875,8 @@
           "ordinary_payment_usd": 6815375728.025439,
           "higher_of_payment_usd": 6815375728.025439,
           "AND_payment_usd_if_in_force": 6815375728.025439,
+          "baseline_payment_usd": 6815375728.025439,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 6815375728.025439
         },
@@ -763,6 +889,8 @@
           "ordinary_payment_usd": 6946751830.293249,
           "higher_of_payment_usd": 6946751830.293249,
           "AND_payment_usd_if_in_force": 6946751830.293249,
+          "baseline_payment_usd": 6946751830.293249,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 6946751830.293249
         },
@@ -775,6 +903,8 @@
           "ordinary_payment_usd": 7079609356.391284,
           "higher_of_payment_usd": 7079609356.391284,
           "AND_payment_usd_if_in_force": 7079609356.391284,
+          "baseline_payment_usd": 7079609356.391284,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 7079609356.391284
         },
@@ -787,6 +917,8 @@
           "ordinary_payment_usd": 7213958530.3028,
           "higher_of_payment_usd": 7213958530.3028,
           "AND_payment_usd_if_in_force": 7213958530.3028,
+          "baseline_payment_usd": 7213958530.3028,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 7213958530.3028
         },
@@ -799,6 +931,8 @@
           "ordinary_payment_usd": 7349809472.515156,
           "higher_of_payment_usd": 7349809472.515156,
           "AND_payment_usd_if_in_force": 7349809472.515156,
+          "baseline_payment_usd": 7349809472.515156,
+          "A_extra_AND_vs_baseline_usd": 0.0,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 7349809472.515156
         }
@@ -810,11 +944,13 @@
     "input": {
       "growth": "medium",
       "cost": 0.65,
-      "nits": 0.0
+      "nits": 0.0,
+      "baseline": "embedded"
     },
     "reference": {
       "assumptions": {
         "growth_scenario": "medium",
+        "baseline": "embedded",
         "capex_per_mw": 650000.0,
         "nits_per_mw_year": 0,
         "load_factor": 0.8,
@@ -833,6 +969,11 @@
       "endpoint_2056_twh": 1096.3972365254417,
       "effective_new_billing_gw_2056": 85.2308686350002,
       "metrics": {
+        "A_extra_AND_vs_baseline_usd": {
+          "constant_2026_billion": 74.5925364538903,
+          "nominal_billion": 120.45586760379629,
+          "pv_2026_billion": 43.94514277994051
+        },
         "A_extra_AND_vs_higher_of_usd": {
           "constant_2026_billion": 0.0,
           "nominal_billion": 0.0,
@@ -854,6 +995,8 @@
           "ordinary_payment_usd": 2060998.5829106092,
           "higher_of_payment_usd": 286304967.8793862,
           "AND_payment_usd_if_in_force": 286304967.8793862,
+          "baseline_payment_usd": 2060998.5829106092,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -866,6 +1009,8 @@
           "ordinary_payment_usd": 9776126.766533628,
           "higher_of_payment_usd": 626211988.7087526,
           "AND_payment_usd_if_in_force": 626211988.7087526,
+          "baseline_payment_usd": 9776126.766533628,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -878,6 +1023,8 @@
           "ordinary_payment_usd": 26172533.247940987,
           "higher_of_payment_usd": 1029756445.7430017,
           "AND_payment_usd_if_in_force": 1029756445.7430017,
+          "baseline_payment_usd": 26172533.247940987,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -890,6 +1037,8 @@
           "ordinary_payment_usd": 55534764.99428933,
           "higher_of_payment_usd": 1508852547.9821413,
           "AND_payment_usd_if_in_force": 1508852547.9821413,
+          "baseline_payment_usd": 55534764.99428933,
+          "A_extra_AND_vs_baseline_usd": 1453317782.9878519,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -902,6 +1051,8 @@
           "ordinary_payment_usd": 66482432.28601558,
           "higher_of_payment_usd": 1653804735.6934297,
           "AND_payment_usd_if_in_force": 1653804735.6934297,
+          "baseline_payment_usd": 66482432.28601558,
+          "A_extra_AND_vs_baseline_usd": 1587322303.4074142,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -914,6 +1065,8 @@
           "ordinary_payment_usd": 78961666.04539695,
           "higher_of_payment_usd": 1805672815.3551216,
           "AND_payment_usd_if_in_force": 1805672815.3551216,
+          "baseline_payment_usd": 78961666.04539695,
+          "A_extra_AND_vs_baseline_usd": 1726711149.3097246,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -926,6 +1079,8 @@
           "ordinary_payment_usd": 93131955.9410342,
           "higher_of_payment_usd": 1964786754.8154075,
           "AND_payment_usd_if_in_force": 1964786754.8154075,
+          "baseline_payment_usd": 93131955.9410342,
+          "A_extra_AND_vs_baseline_usd": 1871654798.8743734,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -938,6 +1093,8 @@
           "ordinary_payment_usd": 109167224.91161597,
           "higher_of_payment_usd": 2131492265.1963212,
           "AND_payment_usd_if_in_force": 2131492265.1963212,
+          "baseline_payment_usd": 109167224.91161597,
+          "A_extra_AND_vs_baseline_usd": 2022325040.2847052,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -950,6 +1107,8 @@
           "ordinary_payment_usd": 127256979.6539784,
           "higher_of_payment_usd": 2306151552.0295615,
           "AND_payment_usd_if_in_force": 2306151552.0295615,
+          "baseline_payment_usd": 127256979.6539784,
+          "A_extra_AND_vs_baseline_usd": 2178894572.375583,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -962,6 +1121,8 @@
           "ordinary_payment_usd": 144733081.04261383,
           "higher_of_payment_usd": 2464051774.187967,
           "AND_payment_usd_if_in_force": 2464051774.187967,
+          "baseline_payment_usd": 144733081.04261383,
+          "A_extra_AND_vs_baseline_usd": 2319318693.145353,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -974,6 +1135,8 @@
           "ordinary_payment_usd": 160902505.72902665,
           "higher_of_payment_usd": 2602327267.1973104,
           "AND_payment_usd_if_in_force": 2602327267.1973104,
+          "baseline_payment_usd": 160902505.72902665,
+          "A_extra_AND_vs_baseline_usd": 2441424761.4682837,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -986,6 +1149,8 @@
           "ordinary_payment_usd": 175088459.5774855,
           "higher_of_payment_usd": 2718360814.376378,
           "AND_payment_usd_if_in_force": 2718360814.376378,
+          "baseline_payment_usd": 175088459.5774855,
+          "A_extra_AND_vs_baseline_usd": 2543272354.7988925,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -998,6 +1163,8 @@
           "ordinary_payment_usd": 186669490.52010638,
           "higher_of_payment_usd": 2809863991.211868,
           "AND_payment_usd_if_in_force": 2809863991.211868,
+          "baseline_payment_usd": 186669490.52010638,
+          "A_extra_AND_vs_baseline_usd": 2623194500.6917615,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1010,6 +1177,8 @@
           "ordinary_payment_usd": 195117272.67143634,
           "higher_of_payment_usd": 2874950587.789233,
           "AND_payment_usd_if_in_force": 2874950587.789233,
+          "baseline_payment_usd": 195117272.67143634,
+          "A_extra_AND_vs_baseline_usd": 2679833315.117797,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1022,6 +1191,8 @@
           "ordinary_payment_usd": 203869478.7413873,
           "higher_of_payment_usd": 2941013483.3152595,
           "AND_payment_usd_if_in_force": 2941013483.3152595,
+          "baseline_payment_usd": 203869478.7413873,
+          "A_extra_AND_vs_baseline_usd": 2737144004.573872,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1034,6 +1205,8 @@
           "ordinary_payment_usd": 212935192.3621941,
           "higher_of_payment_usd": 3008067322.274175,
           "AND_payment_usd_if_in_force": 3008067322.274175,
+          "baseline_payment_usd": 212935192.3621941,
+          "A_extra_AND_vs_baseline_usd": 2795132129.911981,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1046,6 +1219,8 @@
           "ordinary_payment_usd": 222323736.53527465,
           "higher_of_payment_usd": 3076126968.8174753,
           "AND_payment_usd_if_in_force": 3076126968.8174753,
+          "baseline_payment_usd": 222323736.53527465,
+          "A_extra_AND_vs_baseline_usd": 2853803232.282201,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1058,6 +1233,8 @@
           "ordinary_payment_usd": 232044679.10798723,
           "higher_of_payment_usd": 3145207510.0589256,
           "AND_payment_usd_if_in_force": 3145207510.0589256,
+          "baseline_payment_usd": 232044679.10798723,
+          "A_extra_AND_vs_baseline_usd": 2913162830.950938,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1070,6 +1247,8 @@
           "ordinary_payment_usd": 242107838.34839073,
           "higher_of_payment_usd": 3215324259.418997,
           "AND_payment_usd_if_in_force": 3215324259.418997,
+          "baseline_payment_usd": 242107838.34839073,
+          "A_extra_AND_vs_baseline_usd": 2973216421.070606,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1082,6 +1261,8 @@
           "ordinary_payment_usd": 252523288.61879992,
           "higher_of_payment_usd": 3286492760.019469,
           "AND_payment_usd_if_in_force": 3286492760.019469,
+          "baseline_payment_usd": 252523288.61879992,
+          "A_extra_AND_vs_baseline_usd": 3033969471.400669,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1094,6 +1275,8 @@
           "ordinary_payment_usd": 263301366.14889202,
           "higher_of_payment_usd": 3358728788.128949,
           "AND_payment_usd_if_in_force": 3358728788.128949,
+          "baseline_payment_usd": 263301366.14889202,
+          "A_extra_AND_vs_baseline_usd": 3095427421.9800572,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1106,6 +1289,8 @@
           "ordinary_payment_usd": 274452674.9090932,
           "higher_of_payment_usd": 3432048356.660071,
           "AND_payment_usd_if_in_force": 3432048356.660071,
+          "baseline_payment_usd": 274452674.9090932,
+          "A_extra_AND_vs_baseline_usd": 3157595681.7509775,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1118,6 +1303,8 @@
           "ordinary_payment_usd": 285988092.5849415,
           "higher_of_payment_usd": 3506467718.719159,
           "AND_payment_usd_if_in_force": 3506467718.719159,
+          "baseline_payment_usd": 285988092.5849415,
+          "A_extra_AND_vs_baseline_usd": 3220479626.1342177,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1130,6 +1317,8 @@
           "ordinary_payment_usd": 297918776.6530837,
           "higher_of_payment_usd": 3582003371.209134,
           "AND_payment_usd_if_in_force": 3582003371.209134,
+          "baseline_payment_usd": 297918776.6530837,
+          "A_extra_AND_vs_baseline_usd": 3284084594.5560503,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1142,6 +1331,8 @@
           "ordinary_payment_usd": 310256170.55952984,
           "higher_of_payment_usd": 3658672058.486459,
           "AND_payment_usd_if_in_force": 3658672058.486459,
+          "baseline_payment_usd": 310256170.55952984,
+          "A_extra_AND_vs_baseline_usd": 3348415887.926929,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1154,6 +1345,8 @@
           "ordinary_payment_usd": 323012010.00075436,
           "higher_of_payment_usd": 3736490776.0729427,
           "AND_payment_usd_if_in_force": 3736490776.0729427,
+          "baseline_payment_usd": 323012010.00075436,
+          "A_extra_AND_vs_baseline_usd": 3413478766.0721884,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1166,6 +1359,8 @@
           "ordinary_payment_usd": 336198329.308187,
           "higher_of_payment_usd": 3815476774.4232244,
           "AND_payment_usd_if_in_force": 3815476774.4232244,
+          "baseline_payment_usd": 336198329.308187,
+          "A_extra_AND_vs_baseline_usd": 3479278445.1150374,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1178,6 +1373,8 @@
           "ordinary_payment_usd": 349827467.9366018,
           "higher_of_payment_usd": 3895647562.7487597,
           "AND_payment_usd_if_in_force": 3895647562.7487597,
+          "baseline_payment_usd": 349827467.9366018,
+          "A_extra_AND_vs_baseline_usd": 3545820094.812158,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1190,6 +1387,8 @@
           "ordinary_payment_usd": 363912077.0568682,
           "higher_of_payment_usd": 3977020912.8991795,
           "AND_payment_usd_if_in_force": 3977020912.8991795,
+          "baseline_payment_usd": 363912077.0568682,
+          "A_extra_AND_vs_baseline_usd": 3613108835.8423114,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         },
@@ -1202,6 +1401,8 @@
           "ordinary_payment_usd": 378465126.2534807,
           "higher_of_payment_usd": 4059614863.301854,
           "AND_payment_usd_if_in_force": 4059614863.301854,
+          "baseline_payment_usd": 378465126.2534807,
+          "A_extra_AND_vs_baseline_usd": 3681149737.048373,
           "A_extra_AND_vs_higher_of_usd": 0.0,
           "B_above_incremental_transmission_cost_usd": 0.0
         }
@@ -1213,11 +1414,13 @@
     "input": {
       "growth": "medium",
       "cost": 1.5,
-      "nits": 20.0
+      "nits": 20.0,
+      "baseline": "embedded"
     },
     "reference": {
       "assumptions": {
         "growth_scenario": "medium",
+        "baseline": "embedded",
         "capex_per_mw": 1500000,
         "nits_per_mw_year": 20000,
         "load_factor": 0.8,
@@ -1236,6 +1439,11 @@
       "endpoint_2056_twh": 1096.3972365254417,
       "effective_new_billing_gw_2056": 85.2308686350002,
       "metrics": {
+        "A_extra_AND_vs_baseline_usd": {
+          "constant_2026_billion": 172.13662258590068,
+          "nominal_billion": 277.9750790856838,
+          "pv_2026_billion": 101.4118679537089
+        },
         "A_extra_AND_vs_higher_of_usd": {
           "constant_2026_billion": 31.321132125731243,
           "nominal_billion": 50.578976448538874,
@@ -1257,6 +1465,8 @@
           "ordinary_payment_usd": 124109149.43502961,
           "higher_of_payment_usd": 660703772.0293527,
           "AND_payment_usd_if_in_force": 780056770.8884346,
+          "baseline_payment_usd": 124109149.43502961,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -1269,6 +1479,8 @@
           "ordinary_payment_usd": 281399447.18824816,
           "higher_of_payment_usd": 1445104589.3278904,
           "AND_payment_usd_if_in_force": 1703943743.977984,
+          "baseline_payment_usd": 281399447.18824816,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -1281,6 +1493,8 @@
           "ordinary_payment_usd": 481799352.9761449,
           "higher_of_payment_usd": 2376361028.637696,
           "AND_payment_usd_if_in_force": 2797762227.964746,
+          "baseline_payment_usd": 481799352.9761449,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -1293,6 +1507,8 @@
           "ordinary_payment_usd": 738399949.9454397,
           "higher_of_payment_usd": 3481967418.4203253,
           "AND_payment_usd_if_in_force": 4092210218.3789434,
+          "baseline_payment_usd": 738399949.9454397,
+          "A_extra_AND_vs_baseline_usd": 3353810268.4335036,
           "A_extra_AND_vs_higher_of_usd": 610242799.9586182,
           "B_above_incremental_transmission_cost_usd": 610242799.9586182
         },
@@ -1305,6 +1521,8 @@
           "ordinary_payment_usd": 819931803.5519686,
           "higher_of_payment_usd": 3816472466.9848375,
           "AND_payment_usd_if_in_force": 4482983272.953693,
+          "baseline_payment_usd": 819931803.5519686,
+          "A_extra_AND_vs_baseline_usd": 3663051469.401725,
           "A_extra_AND_vs_higher_of_usd": 666510805.9688559,
           "B_above_incremental_transmission_cost_usd": 666510805.9688559
         },
@@ -1317,6 +1535,8 @@
           "ordinary_payment_usd": 907258899.8116051,
           "higher_of_payment_usd": 4166937266.204127,
           "AND_payment_usd_if_in_force": 4891976936.680201,
+          "baseline_payment_usd": 907258899.8116051,
+          "A_extra_AND_vs_baseline_usd": 3984718036.8685956,
           "A_extra_AND_vs_higher_of_usd": 725039670.4760737,
           "B_above_incremental_transmission_cost_usd": 725039670.4760737
         },
@@ -1329,6 +1549,8 @@
           "ordinary_payment_usd": 1000820874.9672865,
           "higher_of_payment_usd": 4534123280.343248,
           "AND_payment_usd_if_in_force": 5320024256.985071,
+          "baseline_payment_usd": 1000820874.9672865,
+          "A_extra_AND_vs_baseline_usd": 4319203382.017785,
           "A_extra_AND_vs_higher_of_usd": 785900976.6418228,
           "B_above_incremental_transmission_cost_usd": 785900976.6418228
         },
@@ -1341,6 +1563,8 @@
           "ordinary_payment_usd": 1101091222.8740735,
           "higher_of_payment_usd": 4918828304.299203,
           "AND_payment_usd_if_in_force": 5767995161.992624,
+          "baseline_payment_usd": 1101091222.8740735,
+          "A_extra_AND_vs_baseline_usd": 4666903939.118551,
           "A_extra_AND_vs_higher_of_usd": 849166857.6934214,
           "B_above_incremental_transmission_cost_usd": 849166857.6934214
         },
@@ -1353,6 +1577,8 @@
           "ordinary_payment_usd": 1208579782.2850559,
           "higher_of_payment_usd": 5321888196.991296,
           "AND_payment_usd_if_in_force": 6236798026.228709,
+          "baseline_payment_usd": 1208579782.2850559,
+          "A_extra_AND_vs_baseline_usd": 5028218243.943653,
           "A_extra_AND_vs_higher_of_usd": 914909829.2374134,
           "B_above_incremental_transmission_cost_usd": 914909829.2374134
         },
@@ -1365,6 +1591,8 @@
           "ordinary_payment_usd": 1307872819.6502144,
           "higher_of_payment_usd": 5686273325.049154,
           "AND_payment_usd_if_in_force": 6660146726.908722,
+          "baseline_payment_usd": 1307872819.6502144,
+          "A_extra_AND_vs_baseline_usd": 5352273907.258508,
           "A_extra_AND_vs_higher_of_usd": 973873401.8595676,
           "B_above_incremental_transmission_cost_usd": 973873401.8595676
         },
@@ -1377,6 +1605,8 @@
           "ordinary_payment_usd": 1396458766.289218,
           "higher_of_payment_usd": 6005370616.609178,
           "AND_payment_usd_if_in_force": 7030515908.139103,
+          "baseline_payment_usd": 1396458766.289218,
+          "A_extra_AND_vs_baseline_usd": 5634057141.849885,
           "A_extra_AND_vs_higher_of_usd": 1025145291.5299253,
           "B_above_incremental_transmission_cost_usd": 1025145291.5299253
         },
@@ -1389,6 +1619,8 @@
           "ordinary_payment_usd": 1471961013.2802463,
           "higher_of_payment_usd": 6273140340.868565,
           "AND_payment_usd_if_in_force": 7341051062.816153,
+          "baseline_payment_usd": 1471961013.2802463,
+          "A_extra_AND_vs_baseline_usd": 5869090049.535906,
           "A_extra_AND_vs_higher_of_usd": 1067910721.947588,
           "B_above_incremental_transmission_cost_usd": 1067910721.947588
         },
@@ -1401,6 +1633,8 @@
           "ordinary_payment_usd": 1532245484.8585494,
           "higher_of_payment_usd": 6484301518.181233,
           "AND_payment_usd_if_in_force": 7585771255.685691,
+          "baseline_payment_usd": 1532245484.8585494,
+          "A_extra_AND_vs_baseline_usd": 6053525770.827142,
           "A_extra_AND_vs_higher_of_usd": 1101469737.5044575,
           "B_above_incremental_transmission_cost_usd": 1101469737.5044575
         },
@@ -1413,6 +1647,8 @@
           "ordinary_payment_usd": 1575522796.9251463,
           "higher_of_payment_usd": 6634501356.436691,
           "AND_payment_usd_if_in_force": 7759753524.120062,
+          "baseline_payment_usd": 1575522796.9251463,
+          "A_extra_AND_vs_baseline_usd": 6184230727.194916,
           "A_extra_AND_vs_higher_of_usd": 1125252167.6833706,
           "B_above_incremental_transmission_cost_usd": 1125252167.6833706
         },
@@ -1425,6 +1661,8 @@
           "ordinary_payment_usd": 1619784743.584764,
           "higher_of_payment_usd": 6786954192.265983,
           "AND_payment_usd_if_in_force": 7936270907.986007,
+          "baseline_payment_usd": 1619784743.584764,
+          "A_extra_AND_vs_baseline_usd": 6316486164.401243,
           "A_extra_AND_vs_higher_of_usd": 1149316715.720024,
           "B_above_incremental_transmission_cost_usd": 1149316715.720024
         },
@@ -1437,6 +1675,8 @@
           "ordinary_payment_usd": 1665054622.046967,
           "higher_of_payment_usd": 6941693820.632711,
           "AND_payment_usd_if_in_force": 8115359537.228461,
+          "baseline_payment_usd": 1665054622.046967,
+          "A_extra_AND_vs_baseline_usd": 6450304915.181494,
           "A_extra_AND_vs_higher_of_usd": 1173665716.5957499,
           "B_above_incremental_transmission_cost_usd": 1173665716.5957499
         },
@@ -1449,6 +1689,8 @@
           "ordinary_payment_usd": 1711356273.6389797,
           "higher_of_payment_usd": 7098754543.424943,
           "AND_payment_usd_if_in_force": 8297056040.444058,
+          "baseline_payment_usd": 1711356273.6389797,
+          "A_extra_AND_vs_baseline_usd": 6585699766.8050785,
           "A_extra_AND_vs_higher_of_usd": 1198301497.0191154,
           "B_above_incremental_transmission_cost_usd": 1198301497.0191154
         },
@@ -1461,6 +1703,8 @@
           "ordinary_payment_usd": 1758714095.528249,
           "higher_of_payment_usd": 7258171177.059059,
           "AND_payment_usd_if_in_force": 8481397551.568876,
+          "baseline_payment_usd": 1758714095.528249,
+          "A_extra_AND_vs_baseline_usd": 6722683456.0406275,
           "A_extra_AND_vs_higher_of_usd": 1223226374.5098171,
           "B_above_incremental_transmission_cost_usd": 1223226374.5098171
         },
@@ -1473,6 +1717,8 @@
           "ordinary_payment_usd": 1807153052.6507661,
           "higher_of_payment_usd": 7419979060.197684,
           "AND_payment_usd_if_in_force": 8668421716.659857,
+          "baseline_payment_usd": 1807153052.6507661,
+          "A_extra_AND_vs_baseline_usd": 6861268664.00909,
           "A_extra_AND_vs_higher_of_usd": 1248442656.4621725,
           "B_above_incremental_transmission_cost_usd": 1248442656.4621725
         },
@@ -1485,6 +1731,8 @@
           "ordinary_payment_usd": 1856698689.8469656,
           "higher_of_payment_usd": 7584214061.583389,
           "AND_payment_usd_if_in_force": 8858166700.771585,
+          "baseline_payment_usd": 1856698689.8469656,
+          "A_extra_AND_vs_baseline_usd": 7001468010.92462,
           "A_extra_AND_vs_higher_of_usd": 1273952639.1881962,
           "B_above_incremental_transmission_cost_usd": 1273952639.1881962
         },
@@ -1497,6 +1745,8 @@
           "ordinary_payment_usd": 1907377144.2069337,
           "higher_of_payment_usd": 7750912587.989882,
           "AND_payment_usd_if_in_force": 9050671194.930141,
+          "baseline_payment_usd": 1907377144.2069337,
+          "A_extra_AND_vs_baseline_usd": 7143294050.723207,
           "A_extra_AND_vs_higher_of_usd": 1299758606.940259,
           "B_above_incremental_transmission_cost_usd": 1299758606.940259
         },
@@ -1509,6 +1759,8 @@
           "ordinary_payment_usd": 1959215157.6266224,
           "higher_of_payment_usd": 7920111592.292471,
           "AND_payment_usd_if_in_force": 9245974423.205801,
+          "baseline_payment_usd": 1959215157.6266224,
+          "A_extra_AND_vs_baseline_usd": 7286759265.579179,
           "A_extra_AND_vs_higher_of_usd": 1325862830.91333,
           "B_above_incremental_transmission_cost_usd": 1325862830.91333
         },
@@ -1521,6 +1773,8 @@
           "ordinary_payment_usd": 2012240089.5767217,
           "higher_of_payment_usd": 8091848581.659597,
           "AND_payment_usd_if_in_force": 9444116149.886454,
+          "baseline_payment_usd": 2012240089.5767217,
+          "A_extra_AND_vs_baseline_usd": 7431876060.309732,
           "A_extra_AND_vs_higher_of_usd": 1352267568.2268562,
           "B_above_incremental_transmission_cost_usd": 1352267568.2268562
         },
@@ -1533,6 +1787,8 @@
           "ordinary_payment_usd": 2066479930.085746,
           "higher_of_payment_usd": 8266161625.867232,
           "AND_payment_usd_if_in_force": 9645136686.753555,
+          "baseline_payment_usd": 2066479930.085746,
+          "A_extra_AND_vs_baseline_usd": 7578656756.6678095,
           "A_extra_AND_vs_higher_of_usd": 1378975060.886323,
           "B_above_incremental_transmission_cost_usd": 1378975060.886323
         },
@@ -1545,6 +1801,8 @@
           "ordinary_payment_usd": 2121963312.9388587,
           "higher_of_payment_usd": 8443089365.737981,
           "AND_payment_usd_if_in_force": 9849076900.46254,
+          "baseline_payment_usd": 2121963312.9388587,
+          "A_extra_AND_vs_baseline_usd": 7727113587.523681,
           "A_extra_AND_vs_higher_of_usd": 1405987534.7245588,
           "B_above_incremental_transmission_cost_usd": 1405987534.7245588
         },
@@ -1557,6 +1815,8 @@
           "ordinary_payment_usd": 2178719529.093882,
           "higher_of_payment_usd": 8622671021.70679,
           "AND_payment_usd_if_in_force": 10055978220.029701,
+          "baseline_payment_usd": 2178719529.093882,
+          "A_extra_AND_vs_baseline_usd": 7877258690.93582,
           "A_extra_AND_vs_higher_of_usd": 1433307198.3229103,
           "B_above_incremental_transmission_cost_usd": 1433307198.3229103
         },
@@ -1569,6 +1829,8 @@
           "ordinary_payment_usd": 2236778540.3158636,
           "higher_of_payment_usd": 8804946402.515133,
           "AND_payment_usd_if_in_force": 10265882644.427488,
+          "baseline_payment_usd": 2236778540.3158636,
+          "A_extra_AND_vs_baseline_usd": 8029104104.111625,
           "A_extra_AND_vs_higher_of_usd": 1460936241.9123554,
           "B_above_incremental_transmission_cost_usd": 1460936241.9123554
         },
@@ -1581,6 +1843,8 @@
           "ordinary_payment_usd": 2296170993.0315127,
           "higher_of_payment_usd": 8989955914.035599,
           "AND_payment_usd_if_in_force": 10478832750.290339,
+          "baseline_payment_usd": 2296170993.0315127,
+          "A_extra_AND_vs_baseline_usd": 8182661757.258825,
           "A_extra_AND_vs_higher_of_usd": 1488876836.2547398,
           "B_above_incremental_transmission_cost_usd": 1488876836.2547398
         },
@@ -1593,6 +1857,8 @@
           "ordinary_payment_usd": 2356928232.404734,
           "higher_of_payment_usd": 9177740568.228876,
           "AND_payment_usd_if_in_force": 10694871699.733145,
+          "baseline_payment_usd": 2356928232.404734,
+          "A_extra_AND_vs_baseline_usd": 8337943467.328411,
           "A_extra_AND_vs_higher_of_usd": 1517131131.5042686,
           "B_above_incremental_transmission_cost_usd": 1517131131.5042686
         },
@@ -1605,8 +1871,480 @@
           "ordinary_payment_usd": 2419082316.6344094,
           "higher_of_payment_usd": 9368341992.235048,
           "AND_payment_usd_if_in_force": 10914043248.284502,
+          "baseline_payment_usd": 2419082316.6344094,
+          "A_extra_AND_vs_baseline_usd": 8494960931.650093,
           "A_extra_AND_vs_higher_of_usd": 1545701256.0494537,
           "B_above_incremental_transmission_cost_usd": 1545701256.0494537
+        }
+      ]
+    }
+  },
+  {
+    "name": "higher_of_high_cost",
+    "input": {
+      "growth": "medium",
+      "cost": 1.5,
+      "nits": 95.1,
+      "baseline": "higher_of"
+    },
+    "reference": {
+      "assumptions": {
+        "growth_scenario": "medium",
+        "baseline": "higher_of",
+        "capex_per_mw": 1500000,
+        "nits_per_mw_year": 95100.0,
+        "load_factor": 0.8,
+        "effective_chargeable_fraction": 0.75,
+        "incumbent_pool_mw": 829000.0,
+        "asset_life": 40,
+        "real_financing_rate": 0.05,
+        "real_om_fraction": 0.015,
+        "charging_start": 2030,
+        "start": 2027,
+        "end": 2056,
+        "inflation": 0.025,
+        "real_discount": 0.03
+      },
+      "annual_incremental_cost_per_mw": 109917.24174905245,
+      "endpoint_2056_twh": 1096.3972365254417,
+      "effective_new_billing_gw_2056": 85.2308686350002,
+      "metrics": {
+        "A_extra_AND_vs_baseline_usd": {
+          "constant_2026_billion": 148.93198325785207,
+          "nominal_billion": 240.50303301280223,
+          "pv_2026_billion": 87.74118135547971
+        },
+        "A_extra_AND_vs_higher_of_usd": {
+          "constant_2026_billion": 148.93198325785207,
+          "nominal_billion": 240.50303301280223,
+          "pv_2026_billion": 87.74118135547971
+        },
+        "B_above_incremental_transmission_cost_usd": {
+          "constant_2026_billion": 148.93198325785207,
+          "nominal_billion": 240.50303301280223,
+          "pv_2026_billion": 87.74118135547971
+        }
+      },
+      "annual": [
+        {
+          "year": 2027,
+          "total_facility_twh": 356.16603862692443,
+          "effective_new_billing_gw": 6.01092022976503,
+          "share": 0.0071986127176768425,
+          "incremental_cost_usd": 660703772.0293527,
+          "ordinary_payment_usd": 572279660.1508827,
+          "higher_of_payment_usd": 660703772.0293527,
+          "AND_payment_usd_if_in_force": 1228227281.6042879,
+          "baseline_payment_usd": 660703772.0293527,
+          "A_extra_AND_vs_baseline_usd": 0,
+          "A_extra_AND_vs_higher_of_usd": 0,
+          "B_above_incremental_transmission_cost_usd": 0
+        },
+        {
+          "year": 2028,
+          "total_facility_twh": 422.8474902373195,
+          "effective_new_billing_gw": 13.147205718891215,
+          "share": 0.015611529231006857,
+          "incremental_cost_usd": 1445104589.3278904,
+          "ordinary_payment_usd": 1253340472.8993502,
+          "higher_of_payment_usd": 1445104589.3278904,
+          "AND_payment_usd_if_in_force": 2675884769.689086,
+          "baseline_payment_usd": 1445104589.3278904,
+          "A_extra_AND_vs_baseline_usd": 0,
+          "A_extra_AND_vs_higher_of_usd": 0,
+          "B_above_incremental_transmission_cost_usd": 0
+        },
+        {
+          "year": 2029,
+          "total_facility_twh": 502.01305180387726,
+          "effective_new_billing_gw": 21.619547496134125,
+          "share": 0.025416236388845014,
+          "incremental_cost_usd": 2376361028.637696,
+          "ordinary_payment_usd": 2064160856.4492188,
+          "higher_of_payment_usd": 2376361028.637696,
+          "AND_payment_usd_if_in_force": 4380123731.43782,
+          "baseline_payment_usd": 2376361028.637696,
+          "A_extra_AND_vs_baseline_usd": 0,
+          "A_extra_AND_vs_higher_of_usd": 0,
+          "B_above_incremental_transmission_cost_usd": 0
+        },
+        {
+          "year": 2030,
+          "total_facility_twh": 596.0,
+          "effective_new_billing_gw": 31.67808219178082,
+          "share": 0.03680595898423511,
+          "incremental_cost_usd": 3481967418.4203253,
+          "ordinary_payment_usd": 3029861663.7900505,
+          "higher_of_payment_usd": 3481967418.4203253,
+          "AND_payment_usd_if_in_force": 6383671932.223555,
+          "baseline_payment_usd": 3481967418.4203253,
+          "A_extra_AND_vs_baseline_usd": 2901704513.8032293,
+          "A_extra_AND_vs_higher_of_usd": 2901704513.8032293,
+          "B_above_incremental_transmission_cost_usd": 2901704513.8032293
+        },
+        {
+          "year": 2031,
+          "total_facility_twh": 624.4360772163731,
+          "effective_new_billing_gw": 34.72132675688924,
+          "share": 0.04019968672912278,
+          "incremental_cost_usd": 3816472466.9848375,
+          "ordinary_payment_usd": 3322679879.9650216,
+          "higher_of_payment_usd": 3816472466.9848375,
+          "AND_payment_usd_if_in_force": 6985731349.366747,
+          "baseline_payment_usd": 3816472466.9848375,
+          "A_extra_AND_vs_baseline_usd": 3169258882.3819094,
+          "A_extra_AND_vs_higher_of_usd": 3169258882.3819094,
+          "B_above_incremental_transmission_cost_usd": 3169258882.3819094
+        },
+        {
+          "year": 2032,
+          "total_facility_twh": 654.228883438544,
+          "effective_new_billing_gw": 37.9097692036113,
+          "share": 0.043729775058870546,
+          "incremental_cost_usd": 4166937266.204127,
+          "ordinary_payment_usd": 3629782862.4492617,
+          "higher_of_payment_usd": 4166937266.204127,
+          "AND_payment_usd_if_in_force": 7614500899.317858,
+          "baseline_payment_usd": 4166937266.204127,
+          "A_extra_AND_vs_baseline_usd": 3447563633.113731,
+          "A_extra_AND_vs_higher_of_usd": 3447563633.113731,
+          "B_above_incremental_transmission_cost_usd": 3447563633.113731
+        },
+        {
+          "year": 2033,
+          "total_facility_twh": 685.4431502953224,
+          "effective_new_billing_gw": 41.250337146331596,
+          "share": 0.04740054141386146,
+          "incremental_cost_usd": 4534123280.343248,
+          "ordinary_payment_usd": 3951879042.2573323,
+          "higher_of_payment_usd": 4534123280.343248,
+          "AND_payment_usd_if_in_force": 8271082424.275117,
+          "baseline_payment_usd": 4534123280.343248,
+          "A_extra_AND_vs_baseline_usd": 3736959143.9318686,
+          "A_extra_AND_vs_higher_of_usd": 3736959143.9318686,
+          "B_above_incremental_transmission_cost_usd": 3736959143.9318686
+        },
+        {
+          "year": 2034,
+          "total_facility_twh": 718.1466978611476,
+          "effective_new_billing_gw": 44.75028872657829,
+          "share": 0.05121633641094218,
+          "incremental_cost_usd": 4918828304.299203,
+          "ordinary_payment_usd": 4289712773.512871,
+          "higher_of_payment_usd": 4918828304.299203,
+          "AND_payment_usd_if_in_force": 8956616712.63142,
+          "baseline_payment_usd": 4918828304.299203,
+          "A_extra_AND_vs_baseline_usd": 4037788408.332217,
+          "A_extra_AND_vs_higher_of_usd": 4037788408.332217,
+          "B_above_incremental_transmission_cost_usd": 4037788408.332217
+        },
+        {
+          "year": 2035,
+          "total_facility_twh": 752.4105820105821,
+          "effective_new_billing_gw": 48.41722838298181,
+          "share": 0.055181533729638924,
+          "incremental_cost_usd": 5321888196.991296,
+          "ordinary_payment_usd": 4644066191.071544,
+          "higher_of_payment_usd": 5321888196.991296,
+          "AND_payment_usd_if_in_force": 9672284435.015196,
+          "baseline_payment_usd": 5321888196.991296,
+          "A_extra_AND_vs_baseline_usd": 4350396238.0239,
+          "A_extra_AND_vs_higher_of_usd": 4350396238.0239,
+          "B_above_incremental_transmission_cost_usd": 4350396238.0239
+        },
+        {
+          "year": 2036,
+          "total_facility_twh": 783.3867471908003,
+          "effective_new_billing_gw": 51.732314553809964,
+          "share": 0.05873784088417172,
+          "incremental_cost_usd": 5686273325.049154,
+          "ordinary_payment_usd": 4964767443.632889,
+          "higher_of_payment_usd": 5686273325.049154,
+          "AND_payment_usd_if_in_force": 10317041350.891396,
+          "baseline_payment_usd": 5686273325.049154,
+          "A_extra_AND_vs_baseline_usd": 4630768025.842241,
+          "A_extra_AND_vs_higher_of_usd": 4630768025.842241,
+          "B_above_incremental_transmission_cost_usd": 4630768025.842241
+        },
+        {
+          "year": 2037,
+          "total_facility_twh": 810.5130200565635,
+          "effective_new_billing_gw": 54.6353831396151,
+          "share": 0.0618302347122995,
+          "incremental_cost_usd": 6005370616.609178,
+          "ordinary_payment_usd": 5245879335.984089,
+          "higher_of_payment_usd": 6005370616.609178,
+          "AND_payment_usd_if_in_force": 10879936477.833975,
+          "baseline_payment_usd": 6005370616.609178,
+          "A_extra_AND_vs_baseline_usd": 4874565861.224797,
+          "A_extra_AND_vs_higher_of_usd": 4874565861.224797,
+          "B_above_incremental_transmission_cost_usd": 4874565861.224797
+        },
+        {
+          "year": 2038,
+          "total_facility_twh": 833.2759666486188,
+          "effective_new_billing_gw": 57.07148615674431,
+          "share": 0.06440957309695944,
+          "incremental_cost_usd": 6273140340.868565,
+          "ordinary_payment_usd": 5481965774.193438,
+          "higher_of_payment_usd": 6273140340.868565,
+          "AND_payment_usd_if_in_force": 11351055823.729343,
+          "baseline_payment_usd": 6273140340.868565,
+          "A_extra_AND_vs_baseline_usd": 5077915482.860779,
+          "A_extra_AND_vs_higher_of_usd": 5077915482.860779,
+          "B_above_incremental_transmission_cost_usd": 5077915482.860779
+        },
+        {
+          "year": 2039,
+          "total_facility_twh": 851.2266539967808,
+          "effective_new_billing_gw": 58.99257855273767,
+          "share": 0.06643363917397212,
+          "incremental_cost_usd": 6484301518.181233,
+          "ordinary_payment_usd": 5668264349.187788,
+          "higher_of_payment_usd": 6484301518.181233,
+          "AND_payment_usd_if_in_force": 11721790120.01493,
+          "baseline_payment_usd": 6484301518.181233,
+          "A_extra_AND_vs_baseline_usd": 5237488601.833697,
+          "A_extra_AND_vs_higher_of_usd": 5237488601.833697,
+          "B_above_incremental_transmission_cost_usd": 5237488601.833697
+        },
+        {
+          "year": 2040,
+          "total_facility_twh": 863.9950538067324,
+          "effective_new_billing_gw": 60.35905969678215,
+          "share": 0.0678680438892262,
+          "incremental_cost_usd": 6634501356.436691,
+          "ordinary_payment_usd": 5800844686.576202,
+          "higher_of_payment_usd": 6634501356.436691,
+          "AND_payment_usd_if_in_force": 11985075413.771118,
+          "baseline_payment_usd": 6634501356.436691,
+          "A_extra_AND_vs_baseline_usd": 5350574057.334427,
+          "A_extra_AND_vs_higher_of_usd": 5350574057.334427,
+          "B_above_incremental_transmission_cost_usd": 5350574057.334427
+        },
+        {
+          "year": 2041,
+          "total_facility_twh": 876.9549796138333,
+          "effective_new_billing_gw": 61.7460380579873,
+          "share": 0.06931946415681689,
+          "incremental_cost_usd": 6786954192.265983,
+          "ordinary_payment_usd": 5935469011.113454,
+          "higher_of_payment_usd": 6786954192.265983,
+          "AND_payment_usd_if_in_force": 12251955175.514698,
+          "baseline_payment_usd": 6786954192.265983,
+          "A_extra_AND_vs_baseline_usd": 5465000983.248715,
+          "A_extra_AND_vs_higher_of_usd": 5465000983.248715,
+          "B_above_incremental_transmission_cost_usd": 5465000983.248715
+        },
+        {
+          "year": 2042,
+          "total_facility_twh": 890.1093043080406,
+          "effective_new_billing_gw": 63.15382109461051,
+          "share": 0.0707880408079463,
+          "incremental_cost_usd": 6941693820.632711,
+          "ordinary_payment_usd": 6072169387.864007,
+          "higher_of_payment_usd": 6941693820.632711,
+          "AND_payment_usd_if_in_force": 12522474303.045502,
+          "baseline_payment_usd": 6941693820.632711,
+          "A_extra_AND_vs_baseline_usd": 5580780482.41279,
+          "A_extra_AND_vs_higher_of_usd": 5580780482.41279,
+          "B_above_incremental_transmission_cost_usd": 5580780482.41279
+        },
+        {
+          "year": 2043,
+          "total_facility_twh": 903.4609438726611,
+          "effective_new_billing_gw": 64.58272087678309,
+          "share": 0.07227391417485617,
+          "incremental_cost_usd": 7098754543.424943,
+          "ordinary_payment_usd": 6210978394.945758,
+          "higher_of_payment_usd": 7098754543.424943,
+          "AND_payment_usd_if_in_force": 12796678161.750835,
+          "baseline_payment_usd": 7098754543.424943,
+          "A_extra_AND_vs_baseline_usd": 5697923618.325892,
+          "A_extra_AND_vs_higher_of_usd": 5697923618.325892,
+          "B_above_incremental_transmission_cost_usd": 5697923618.325892
+        },
+        {
+          "year": 2044,
+          "total_facility_twh": 917.0128580307511,
+          "effective_new_billing_gw": 66.03305415568825,
+          "share": 0.073777224035574,
+          "incremental_cost_usd": 7258171177.059059,
+          "ordinary_payment_usd": 6351929131.812612,
+          "higher_of_payment_usd": 7258171177.059059,
+          "AND_payment_usd_if_in_force": 13074612587.85324,
+          "baseline_payment_usd": 7258171177.059059,
+          "A_extra_AND_vs_baseline_usd": 5816441410.79418,
+          "A_extra_AND_vs_higher_of_usd": 5816441410.79418,
+          "B_above_incremental_transmission_cost_usd": 5816441410.79418
+        },
+        {
+          "year": 2045,
+          "total_facility_twh": 930.7680509012122,
+          "effective_new_billing_gw": 67.50514243377698,
+          "share": 0.07529810955742895,
+          "incremental_cost_usd": 7419979060.197684,
+          "ordinary_payment_usd": 6495055227.666222,
+          "higher_of_payment_usd": 7419979060.197684,
+          "AND_payment_usd_if_in_force": 13356323891.675312,
+          "baseline_payment_usd": 7419979060.197684,
+          "A_extra_AND_vs_baseline_usd": 5936344831.477628,
+          "A_extra_AND_vs_higher_of_usd": 5936344831.477628,
+          "B_above_incremental_transmission_cost_usd": 5936344831.477628
+        },
+        {
+          "year": 2046,
+          "total_facility_twh": 944.7295716647302,
+          "effective_new_billing_gw": 68.99931203603705,
+          "share": 0.07683670923933635,
+          "incremental_cost_usd": 7584214061.583389,
+          "ordinary_payment_usd": 6640390849.998644,
+          "higher_of_payment_usd": 7584214061.583389,
+          "AND_payment_usd_if_in_force": 13641858860.923264,
+          "baseline_payment_usd": 7584214061.583389,
+          "A_extra_AND_vs_baseline_usd": 6057644799.339874,
+          "A_extra_AND_vs_higher_of_usd": 6057644799.339874,
+          "B_above_incremental_transmission_cost_usd": 6057644799.339874
+        },
+        {
+          "year": 2047,
+          "total_facility_twh": 958.9005152397012,
+          "effective_new_billing_gw": 70.51589418233104,
+          "share": 0.0783931608528504,
+          "incremental_cost_usd": 7750912587.989882,
+          "ordinary_payment_usd": 6787970713.267609,
+          "higher_of_payment_usd": 7750912587.989882,
+          "AND_payment_usd_if_in_force": 13931264763.990818,
+          "baseline_payment_usd": 7750912587.989882,
+          "A_extra_AND_vs_baseline_usd": 6180352176.000936,
+          "A_extra_AND_vs_higher_of_usd": 6180352176.000936,
+          "B_above_incremental_transmission_cost_usd": 6180352176.000936
+        },
+        {
+          "year": 2048,
+          "total_facility_twh": 973.2840229682967,
+          "effective_new_billing_gw": 72.05522506081942,
+          "share": 0.07996760138198615,
+          "incremental_cost_usd": 7920111592.292471,
+          "ordinary_payment_usd": 6937830087.706178,
+          "higher_of_payment_usd": 7920111592.292471,
+          "AND_payment_usd_if_in_force": 14224589353.285357,
+          "baseline_payment_usd": 7920111592.292471,
+          "A_extra_AND_vs_baseline_usd": 6304477760.992886,
+          "A_extra_AND_vs_higher_of_usd": 6304477760.992886,
+          "B_above_incremental_transmission_cost_usd": 6304477760.992886
+        },
+        {
+          "year": 2049,
+          "total_facility_twh": 987.8832833128209,
+          "effective_new_billing_gw": 73.61764590248512,
+          "share": 0.08156016696181281,
+          "incremental_cost_usd": 8091848581.659597,
+          "ordinary_payment_usd": 7090004808.268567,
+          "higher_of_payment_usd": 8091848581.659597,
+          "AND_payment_usd_if_in_force": 14521880868.5783,
+          "baseline_payment_usd": 8091848581.659597,
+          "A_extra_AND_vs_baseline_usd": 6430032286.918703,
+          "A_extra_AND_vs_higher_of_usd": 6430032286.918703,
+          "B_above_incremental_transmission_cost_usd": 6430032286.918703
+        },
+        {
+          "year": 2050,
+          "total_facility_twh": 1002.7015325625132,
+          "effective_new_billing_gw": 75.20350305677582,
+          "share": 0.0831709928158216,
+          "incremental_cost_usd": 8266161625.867232,
+          "ordinary_payment_usd": 7244531283.713886,
+          "higher_of_payment_usd": 8266161625.867232,
+          "AND_payment_usd_if_in_force": 14823188040.381695,
+          "baseline_payment_usd": 8266161625.867232,
+          "A_extra_AND_vs_baseline_usd": 6557026414.514462,
+          "A_extra_AND_vs_higher_of_usd": 6557026414.514462,
+          "B_above_incremental_transmission_cost_usd": 6557026414.514462
+        },
+        {
+          "year": 2051,
+          "total_facility_twh": 1017.7420555509508,
+          "effective_new_billing_gw": 76.81314806838088,
+          "share": 0.08480021319207233,
+          "incremental_cost_usd": 8443089365.737981,
+          "ordinary_payment_usd": 7401446505.829578,
+          "higher_of_payment_usd": 8443089365.737981,
+          "AND_payment_usd_if_in_force": 15128560093.35326,
+          "baseline_payment_usd": 8443089365.737981,
+          "A_extra_AND_vs_baseline_usd": 6685470727.615279,
+          "A_extra_AND_vs_higher_of_usd": 6685470727.615279,
+          "B_above_incremental_transmission_cost_usd": 6685470727.615279
+        },
+        {
+          "year": 2052,
+          "total_facility_twh": 1033.008186384215,
+          "effective_new_billing_gw": 78.44693775516001,
+          "share": 0.08644796129812488,
+          "incremental_cost_usd": 8622671021.70679,
+          "ordinary_payment_usd": 7560788058.796411,
+          "higher_of_payment_usd": 8622671021.70679,
+          "AND_payment_usd_if_in_force": 15438046749.732231,
+          "baseline_payment_usd": 8622671021.70679,
+          "A_extra_AND_vs_baseline_usd": 6815375728.02544,
+          "A_extra_AND_vs_higher_of_usd": 6815375728.02544,
+          "B_above_incremental_transmission_cost_usd": 6815375728.02544
+        },
+        {
+          "year": 2053,
+          "total_facility_twh": 1048.503309179978,
+          "effective_new_billing_gw": 80.10523428724082,
+          "share": 0.08811436923476208,
+          "incremental_cost_usd": 8804946402.515133,
+          "ordinary_payment_usd": 7722594128.696758,
+          "higher_of_payment_usd": 8804946402.515133,
+          "AND_payment_usd_if_in_force": 15751698232.808382,
+          "baseline_payment_usd": 8804946402.515133,
+          "A_extra_AND_vs_baseline_usd": 6946751830.293249,
+          "A_extra_AND_vs_higher_of_usd": 6946751830.293249,
+          "B_above_incremental_transmission_cost_usd": 6946751830.293249
+        },
+        {
+          "year": 2054,
+          "total_facility_twh": 1064.2308588176775,
+          "effective_new_billing_gw": 81.78840526730284,
+          "share": 0.08979956792851261,
+          "incremental_cost_usd": 8989955914.035599,
+          "ordinary_payment_usd": 7886903513.168057,
+          "higher_of_payment_usd": 8989955914.035599,
+          "AND_payment_usd_if_in_force": 16069565270.426884,
+          "baseline_payment_usd": 8989955914.035599,
+          "A_extra_AND_vs_baseline_usd": 7079609356.391285,
+          "A_extra_AND_vs_higher_of_usd": 7079609356.391285,
+          "B_above_incremental_transmission_cost_usd": 7079609356.391285
+        },
+        {
+          "year": 2055,
+          "total_facility_twh": 1080.1943216999427,
+          "effective_new_billing_gw": 83.49682381206583,
+          "share": 0.09150368706298367,
+          "incremental_cost_usd": 9177740568.228876,
+          "ordinary_payment_usd": 8053755631.203266,
+          "higher_of_payment_usd": 9177740568.228876,
+          "AND_payment_usd_if_in_force": 16391699098.531677,
+          "baseline_payment_usd": 9177740568.228876,
+          "A_extra_AND_vs_baseline_usd": 7213958530.302801,
+          "A_extra_AND_vs_higher_of_usd": 7213958530.302801,
+          "B_above_incremental_transmission_cost_usd": 7213958530.302801
+        },
+        {
+          "year": 2056,
+          "total_facility_twh": 1096.3972365254417,
+          "effective_new_billing_gw": 85.2308686350002,
+          "share": 0.09322685500901413,
+          "incremental_cost_usd": 9368341992.235048,
+          "ordinary_payment_usd": 8223190533.100111,
+          "higher_of_payment_usd": 9368341992.235048,
+          "AND_payment_usd_if_in_force": 16718151464.750204,
+          "baseline_payment_usd": 9368341992.235048,
+          "A_extra_AND_vs_baseline_usd": 7349809472.515156,
+          "A_extra_AND_vs_higher_of_usd": 7349809472.515156,
+          "B_above_incremental_transmission_cost_usd": 7349809472.515156
         }
       ]
     }
@@ -1616,11 +2354,13 @@
     "input": {
       "growth": "low",
       "cost": 0.65,
-      "nits": 95.1
+      "nits": 95.1,
+      "baseline": "embedded"
     },
     "reference": {
       "assumptions": {
         "growth_scenario": "low",
+        "baseline": "embedded",
         "capex_per_mw": 650000.0,
         "nits_per_mw_year": 95100.0,
         "load_factor": 0.8,
@@ -1639,6 +2379,11 @@
       "endpoint_2056_twh": 500.2521805869801,
       "effective_new_billing_gw_2056": 21.431098093640845,
       "metrics": {
+        "A_extra_AND_vs_baseline_usd": {
+          "constant_2026_billion": 21.591542969671014,
+          "nominal_billion": 34.63272318446735,
+          "pv_2026_billion": 12.819870836586977
+        },
         "A_extra_AND_vs_higher_of_usd": {
           "constant_2026_billion": 21.591542969671014,
           "nominal_billion": 34.63272318446735,
@@ -1660,6 +2405,8 @@
           "ordinary_payment_usd": 192020451.12109917,
           "higher_of_payment_usd": 192020451.12109917,
           "AND_payment_usd_if_in_force": 288076512.9391993,
+          "baseline_payment_usd": 192020451.12109917,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -1672,6 +2419,8 @@
           "ordinary_payment_usd": 395622309.5435794,
           "higher_of_payment_usd": 395622309.5435794,
           "AND_payment_usd_if_in_force": 593271611.1341981,
+          "baseline_payment_usd": 395622309.5435794,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -1684,6 +2433,8 @@
           "ordinary_payment_usd": 611473093.1580544,
           "higher_of_payment_usd": 611473093.1580544,
           "AND_payment_usd_if_in_force": 916539539.2095357,
+          "baseline_payment_usd": 611473093.1580544,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -1696,6 +2447,8 @@
           "ordinary_payment_usd": 840275171.2395217,
           "higher_of_payment_usd": 840275171.2395217,
           "AND_payment_usd_if_in_force": 1258880243.2136846,
+          "baseline_payment_usd": 840275171.2395217,
+          "A_extra_AND_vs_baseline_usd": 418605071.9741628,
           "A_extra_AND_vs_higher_of_usd": 418605071.9741628,
           "B_above_incremental_transmission_cost_usd": 835789832.7997733
         },
@@ -1708,6 +2461,8 @@
           "ordinary_payment_usd": 936254072.7918652,
           "higher_of_payment_usd": 936254072.7918652,
           "AND_payment_usd_if_in_force": 1402387662.0479956,
+          "baseline_payment_usd": 936254072.7918652,
+          "A_extra_AND_vs_baseline_usd": 466133589.25613034,
           "A_extra_AND_vs_higher_of_usd": 466133589.25613034,
           "B_above_incremental_transmission_cost_usd": 930685604.9053934
         },
@@ -1720,6 +2475,8 @@
           "ordinary_payment_usd": 1034503334.7303917,
           "higher_of_payment_usd": 1034503334.7303917,
           "AND_payment_usd_if_in_force": 1549229016.2111003,
+          "baseline_payment_usd": 1034503334.7303917,
+          "A_extra_AND_vs_baseline_usd": 514725681.4807086,
           "A_extra_AND_vs_higher_of_usd": 514725681.4807086,
           "B_above_incremental_transmission_cost_usd": 1027704918.2267523
         },
@@ -1732,6 +2489,8 @@
           "ordinary_payment_usd": 1135073933.4265397,
           "higher_of_payment_usd": 1135073933.4265397,
           "AND_payment_usd_if_in_force": 1699476191.4708967,
+          "baseline_payment_usd": 1135073933.4265397,
+          "A_extra_AND_vs_baseline_usd": 564402258.0443571,
           "A_extra_AND_vs_higher_of_usd": 564402258.0443571,
           "B_above_incremental_transmission_cost_usd": 1126889520.6119795
         },
@@ -1744,6 +2503,8 @@
           "ordinary_payment_usd": 1238017867.822601,
           "higher_of_payment_usd": 1238017867.822601,
           "AND_payment_usd_if_in_force": 1853202369.2516084,
+          "baseline_payment_usd": 1238017867.822601,
+          "A_extra_AND_vs_baseline_usd": 615184501.4290073,
           "A_extra_AND_vs_higher_of_usd": 615184501.4290073,
           "B_above_incremental_transmission_cost_usd": 1228281705.1535797
         },
@@ -1756,6 +2517,8 @@
           "ordinary_payment_usd": 1343388174.7613866,
           "higher_of_payment_usd": 1343388174.7613866,
           "AND_payment_usd_if_in_force": 2010482038.5969872,
+          "baseline_payment_usd": 1343388174.7613866,
+          "A_extra_AND_vs_baseline_usd": 667093863.8356006,
           "A_extra_AND_vs_higher_of_usd": 667093863.8356006,
           "B_above_incremental_transmission_cost_usd": 1331924303.4669306
         },
@@ -1768,6 +2531,8 @@
           "ordinary_payment_usd": 1434009982.9523108,
           "higher_of_payment_usd": 1434009982.9523108,
           "AND_payment_usd_if_in_force": 2145691061.9280882,
+          "baseline_payment_usd": 1434009982.9523108,
+          "A_extra_AND_vs_baseline_usd": 711681078.9757774,
           "A_extra_AND_vs_higher_of_usd": 711681078.9757774,
           "B_above_incremental_transmission_cost_usd": 1420947451.0156927
         },
@@ -1780,6 +2545,8 @@
           "ordinary_payment_usd": 1508849366.7126238,
           "higher_of_payment_usd": 1508849366.7126238,
           "AND_payment_usd_if_in_force": 2257313106.2816296,
+          "baseline_payment_usd": 1508849366.7126238,
+          "A_extra_AND_vs_baseline_usd": 748463739.5690057,
           "A_extra_AND_vs_higher_of_usd": 748463739.5690057,
           "B_above_incremental_transmission_cost_usd": 1494387970.0284262
         },
@@ -1792,6 +2559,8 @@
           "ordinary_payment_usd": 1567027490.7237291,
           "higher_of_payment_usd": 1567027490.7237291,
           "AND_payment_usd_if_in_force": 2344060473.7142878,
+          "baseline_payment_usd": 1567027490.7237291,
+          "A_extra_AND_vs_baseline_usd": 777032982.9905586,
           "A_extra_AND_vs_higher_of_usd": 777032982.9905586,
           "B_above_incremental_transmission_cost_usd": 1551429522.5110712
         },
@@ -1804,6 +2573,8 @@
           "ordinary_payment_usd": 1607836800.9375157,
           "higher_of_payment_usd": 1607836800.9375157,
           "AND_payment_usd_if_in_force": 2404896965.343923,
+          "baseline_payment_usd": 1607836800.9375157,
+          "A_extra_AND_vs_baseline_usd": 797060164.4064074,
           "A_extra_AND_vs_higher_of_usd": 797060164.4064074,
           "B_above_incremental_transmission_cost_usd": 1591415933.875041
         },
@@ -1816,6 +2587,8 @@
           "ordinary_payment_usd": 1630754496.1364455,
           "higher_of_payment_usd": 1630754496.1364455,
           "AND_payment_usd_if_in_force": 2439056882.7821407,
+          "baseline_payment_usd": 1630754496.1364455,
+          "A_extra_AND_vs_baseline_usd": 808302386.6456952,
           "A_extra_AND_vs_higher_of_usd": 808302386.6456952,
           "B_above_incremental_transmission_cost_usd": 1613862233.9195185
         },
@@ -1828,6 +2601,8 @@
           "ordinary_payment_usd": 1653780221.4432862,
           "higher_of_payment_usd": 1653780221.4432862,
           "AND_payment_usd_if_in_force": 2473374460.7433286,
+          "baseline_payment_usd": 1653780221.4432862,
+          "A_extra_AND_vs_baseline_usd": 819594239.3000424,
           "A_extra_AND_vs_higher_of_usd": 819594239.3000424,
           "B_above_incremental_transmission_cost_usd": 1636407626.3999972
         },
@@ -1840,6 +2615,8 @@
           "ordinary_payment_usd": 1676914457.0609713,
           "higher_of_payment_usd": 1676914457.0609713,
           "AND_payment_usd_if_in_force": 2507850367.430798,
+          "baseline_payment_usd": 1676914457.0609713,
+          "A_extra_AND_vs_baseline_usd": 830935910.3698268,
           "A_extra_AND_vs_higher_of_usd": 830935910.3698268,
           "B_above_incremental_transmission_cost_usd": 1659052486.6793547
         },
@@ -1852,6 +2629,8 @@
           "ordinary_payment_usd": 1700157685.0730236,
           "higher_of_payment_usd": 1700157685.0730236,
           "AND_payment_usd_if_in_force": 2542485273.3462534,
+          "baseline_payment_usd": 1700157685.0730236,
+          "A_extra_AND_vs_baseline_usd": 842327588.2732298,
           "A_extra_AND_vs_higher_of_usd": 842327588.2732298,
           "B_above_incremental_transmission_cost_usd": 1681797190.954657
         },
@@ -1864,6 +2643,8 @@
           "ordinary_payment_usd": 1723510389.4488258,
           "higher_of_payment_usd": 1723510389.4488258,
           "AND_payment_usd_if_in_force": 2577279851.2930064,
+          "baseline_payment_usd": 1723510389.4488258,
+          "A_extra_AND_vs_baseline_usd": 853769461.8441806,
           "A_extra_AND_vs_higher_of_usd": 853769461.8441806,
           "B_above_incremental_transmission_cost_usd": 1704642116.253056
         },
@@ -1876,6 +2657,8 @@
           "ordinary_payment_usd": 1746973056.048888,
           "higher_of_payment_usd": 1746973056.048888,
           "AND_payment_usd_if_in_force": 2612234776.3791456,
+          "baseline_payment_usd": 1746973056.048888,
+          "A_extra_AND_vs_baseline_usd": 865261720.3302577,
           "A_extra_AND_vs_higher_of_usd": 865261720.3302577,
           "B_above_incremental_transmission_cost_usd": 1727587640.4276001
         },
@@ -1888,6 +2671,8 @@
           "ordinary_payment_usd": 1770546172.6301224,
           "higher_of_payment_usd": 1770546172.6301224,
           "AND_payment_usd_if_in_force": 2647350726.0206833,
+          "baseline_payment_usd": 1770546172.6301224,
+          "A_extra_AND_vs_baseline_usd": 876804553.3905609,
           "A_extra_AND_vs_higher_of_usd": 876804553.3905609,
           "B_above_incremental_transmission_cost_usd": 1750634142.152984
         },
@@ -1900,6 +2685,8 @@
           "ordinary_payment_usd": 1794230228.8511024,
           "higher_of_payment_usd": 1794230228.8511024,
           "AND_payment_usd_if_in_force": 2682628379.944642,
+          "baseline_payment_usd": 1794230228.8511024,
+          "A_extra_AND_vs_baseline_usd": 888398151.0935397,
           "A_extra_AND_vs_higher_of_usd": 888398151.0935397,
           "B_above_incremental_transmission_cost_usd": 1773782000.9212084
         },
@@ -1912,6 +2699,8 @@
           "ordinary_payment_usd": 1818025716.2773387,
           "higher_of_payment_usd": 1818025716.2773387,
           "AND_payment_usd_if_in_force": 2718068420.1921206,
+          "baseline_payment_usd": 1818025716.2773387,
+          "A_extra_AND_vs_baseline_usd": 900042703.9147818,
           "A_extra_AND_vs_higher_of_usd": 900042703.9147818,
           "B_above_incremental_transmission_cost_usd": 1797031597.037174
         },
@@ -1924,6 +2713,8 @@
           "ordinary_payment_usd": 1841933128.386539,
           "higher_of_payment_usd": 1841933128.386539,
           "AND_payment_usd_if_in_force": 2753671531.1213055,
+          "baseline_payment_usd": 1841933128.386539,
+          "A_extra_AND_vs_baseline_usd": 911738402.7347665,
           "A_extra_AND_vs_higher_of_usd": 911738402.7347665,
           "B_above_incremental_transmission_cost_usd": 1820383311.6141887
         },
@@ -1936,6 +2727,8 @@
           "ordinary_payment_usd": 1865952960.5738747,
           "higher_of_payment_usd": 1865952960.5738747,
           "AND_payment_usd_if_in_force": 2789438399.410452,
+          "baseline_payment_usd": 1865952960.5738747,
+          "A_extra_AND_vs_baseline_usd": 923485438.8365772,
           "A_extra_AND_vs_higher_of_usd": 923485438.8365772,
           "B_above_incremental_transmission_cost_usd": 1843837526.5694036
         },
@@ -1948,6 +2741,8 @@
           "ordinary_payment_usd": 1890085710.1572378,
           "higher_of_payment_usd": 1890085710.1572378,
           "AND_payment_usd_if_in_force": 2825369714.0608096,
+          "baseline_payment_usd": 1890085710.1572378,
+          "A_extra_AND_vs_baseline_usd": 935284003.9035718,
           "A_extra_AND_vs_higher_of_usd": 935284003.9035718,
           "B_above_incremental_transmission_cost_usd": 1867394624.6191607
         },
@@ -1960,6 +2755,8 @@
           "ordinary_payment_usd": 1914331876.3825054,
           "higher_of_payment_usd": 1914331876.3825054,
           "AND_payment_usd_if_in_force": 2861466166.399524,
+          "baseline_payment_usd": 1914331876.3825054,
+          "A_extra_AND_vs_baseline_usd": 947134290.0170188,
           "A_extra_AND_vs_higher_of_usd": 947134290.0170188,
           "B_above_incremental_transmission_cost_usd": 1891054989.2742712
         },
@@ -1972,6 +2769,8 @@
           "ordinary_payment_usd": 1938691960.4287968,
           "higher_of_payment_usd": 1938691960.4287968,
           "AND_payment_usd_if_in_force": 2897728450.082487,
+          "baseline_payment_usd": 1938691960.4287968,
+          "A_extra_AND_vs_baseline_usd": 959036489.6536903,
           "A_extra_AND_vs_higher_of_usd": 959036489.6536903,
           "B_above_incremental_transmission_cost_usd": 1914819004.8352118
         },
@@ -1984,6 +2783,8 @@
           "ordinary_payment_usd": 1963166465.4137285,
           "higher_of_payment_usd": 1963166465.4137285,
           "AND_payment_usd_if_in_force": 2934157261.0971365,
+          "baseline_payment_usd": 1963166465.4137285,
+          "A_extra_AND_vs_baseline_usd": 970990795.683408,
           "A_extra_AND_vs_higher_of_usd": 970990795.683408,
           "B_above_incremental_transmission_cost_usd": 1938687056.3872294
         },
@@ -1996,6 +2797,8 @@
           "ordinary_payment_usd": 1987755896.3986695,
           "higher_of_payment_usd": 1987755896.3986695,
           "AND_payment_usd_if_in_force": 2970753297.765234,
+          "baseline_payment_usd": 1987755896.3986695,
+          "A_extra_AND_vs_baseline_usd": 982997401.3665645,
           "A_extra_AND_vs_higher_of_usd": 982997401.3665645,
           "B_above_incremental_transmission_cost_usd": 1962659529.7953815
         },
@@ -2008,6 +2811,8 @@
           "ordinary_payment_usd": 2012460760.393991,
           "higher_of_payment_usd": 2012460760.393991,
           "AND_payment_usd_if_in_force": 3007517260.7455773,
+          "baseline_payment_usd": 2012460760.393991,
+          "A_extra_AND_vs_baseline_usd": 995056500.3515863,
           "A_extra_AND_vs_higher_of_usd": 995056500.3515863,
           "B_above_incremental_transmission_cost_usd": 1986736811.6994798
         }
@@ -2019,11 +2824,13 @@
     "input": {
       "growth": "high",
       "cost": 0.65,
-      "nits": 95.1
+      "nits": 95.1,
+      "baseline": "embedded"
     },
     "reference": {
       "assumptions": {
         "growth_scenario": "high",
+        "baseline": "embedded",
         "capex_per_mw": 650000.0,
         "nits_per_mw_year": 95100.0,
         "load_factor": 0.8,
@@ -2042,6 +2849,11 @@
       "endpoint_2056_twh": 2504.71132844673,
       "effective_new_billing_gw_2056": 235.94941443137088,
       "metrics": {
+        "A_extra_AND_vs_baseline_usd": {
+          "constant_2026_billion": 166.35273191162764,
+          "nominal_billion": 271.69779129793466,
+          "pv_2026_billion": 96.46424202153149
+        },
         "A_extra_AND_vs_higher_of_usd": {
           "constant_2026_billion": 166.35273191162764,
           "nominal_billion": 271.69779129793466,
@@ -2063,6 +2875,8 @@
           "ordinary_payment_usd": 835486337.2779065,
           "higher_of_payment_usd": 835486337.2779065,
           "AND_payment_usd_if_in_force": 1251718455.3217795,
+          "baseline_payment_usd": 835486337.2779065,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -2075,6 +2889,8 @@
           "ordinary_payment_usd": 1888282923.028491,
           "higher_of_payment_usd": 1888282923.028491,
           "AND_payment_usd_if_in_force": 2822685667.503293,
+          "baseline_payment_usd": 1888282923.028491,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -2087,6 +2903,8 @@
           "ordinary_payment_usd": 3211146433.7346816,
           "higher_of_payment_usd": 3211146433.7346816,
           "AND_payment_usd_if_in_force": 4786654440.7815895,
+          "baseline_payment_usd": 3211146433.7346816,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -2099,6 +2917,8 @@
           "ordinary_payment_usd": 4867722313.319019,
           "higher_of_payment_usd": 4867722313.319019,
           "AND_payment_usd_if_in_force": 7230406034.621823,
+          "baseline_payment_usd": 4867722313.319019,
+          "A_extra_AND_vs_baseline_usd": 2362683721.302804,
           "A_extra_AND_vs_higher_of_usd": 2362683721.302804,
           "B_above_incremental_transmission_cost_usd": 4717350946.259675
         },
@@ -2111,6 +2931,8 @@
           "ordinary_payment_usd": 5638494269.778425,
           "higher_of_payment_usd": 5638494269.778425,
           "AND_payment_usd_if_in_force": 8361514255.317173,
+          "baseline_payment_usd": 5638494269.778425,
+          "A_extra_AND_vs_baseline_usd": 2723019985.538748,
           "A_extra_AND_vs_higher_of_usd": 2723019985.538748,
           "B_above_incremental_transmission_cost_usd": 5436800867.439901
         },
@@ -2123,6 +2945,8 @@
           "ordinary_payment_usd": 6479772745.945613,
           "higher_of_payment_usd": 6479772745.945613,
           "AND_payment_usd_if_in_force": 9591810494.65276,
+          "baseline_payment_usd": 6479772745.945613,
+          "A_extra_AND_vs_baseline_usd": 3112037748.7071466,
           "A_extra_AND_vs_higher_of_usd": 3112037748.7071466,
           "B_above_incremental_transmission_cost_usd": 6213516471.24588
         },
@@ -2135,6 +2959,8 @@
           "ordinary_payment_usd": 7397333582.631046,
           "higher_of_payment_usd": 7397333582.631046,
           "AND_payment_usd_if_in_force": 10928582288.933146,
+          "baseline_payment_usd": 7397333582.631046,
+          "A_extra_AND_vs_baseline_usd": 3531248706.302099,
           "A_extra_AND_vs_higher_of_usd": 3531248706.302099,
           "B_above_incremental_transmission_cost_usd": 7050516019.540283
         },
@@ -2147,6 +2973,8 @@
           "ordinary_payment_usd": 8397325476.910686,
           "higher_of_payment_usd": 8397325476.910686,
           "AND_payment_usd_if_in_force": 12379427903.090708,
+          "baseline_payment_usd": 8397325476.910686,
+          "A_extra_AND_vs_baseline_usd": 3982102426.1800222,
           "A_extra_AND_vs_higher_of_usd": 3982102426.1800222,
           "B_above_incremental_transmission_cost_usd": 7950693729.707113
         },
@@ -2159,6 +2987,8 @@
           "ordinary_payment_usd": 9486283697.103777,
           "higher_of_payment_usd": 9486283697.103777,
           "AND_payment_usd_if_in_force": 13952239380.299854,
+          "baseline_payment_usd": 9486283697.103777,
+          "A_extra_AND_vs_baseline_usd": 4465955683.196077,
           "A_extra_AND_vs_higher_of_usd": 4465955683.196077,
           "B_above_incremental_transmission_cost_usd": 8916758547.971033
         },
@@ -2171,6 +3001,8 @@
           "ordinary_payment_usd": 10493327514.161718,
           "higher_of_payment_usd": 10493327514.161718,
           "AND_payment_usd_if_in_force": 15400170234.596607,
+          "baseline_payment_usd": 10493327514.161718,
+          "A_extra_AND_vs_baseline_usd": 4906842720.434889,
           "A_extra_AND_vs_higher_of_usd": 4906842720.434889,
           "B_above_incremental_transmission_cost_usd": 9797036709.43621
         },
@@ -2183,6 +3015,8 @@
           "ordinary_payment_usd": 11383749262.047482,
           "higher_of_payment_usd": 11383749262.047482,
           "AND_payment_usd_if_in_force": 16675188014.973976,
+          "baseline_payment_usd": 11383749262.047482,
+          "A_extra_AND_vs_baseline_usd": 5291438752.926495,
           "A_extra_AND_vs_higher_of_usd": 5291438752.926495,
           "B_above_incremental_transmission_cost_usd": 10564923854.653255
         },
@@ -2195,6 +3029,8 @@
           "ordinary_payment_usd": 12124826733.474371,
           "higher_of_payment_usd": 12124826733.474371,
           "AND_payment_usd_if_in_force": 17732627839.448547,
+          "baseline_payment_usd": 12124826733.474371,
+          "A_extra_AND_vs_baseline_usd": 5607801105.974176,
           "A_extra_AND_vs_higher_of_usd": 5607801105.974176,
           "B_above_incremental_transmission_cost_usd": 11196575155.271473
         },
@@ -2207,6 +3043,8 @@
           "ordinary_payment_usd": 12687577958.44628,
           "higher_of_payment_usd": 12687577958.44628,
           "AND_payment_usd_if_in_force": 18533361625.07998,
+          "baseline_payment_usd": 12687577958.44628,
+          "A_extra_AND_vs_baseline_usd": 5845783666.633699,
           "A_extra_AND_vs_higher_of_usd": 5845783666.633699,
           "B_above_incremental_transmission_cost_usd": 11671732810.7792
         },
@@ -2219,6 +3057,8 @@
           "ordinary_payment_usd": 13048406736.917982,
           "higher_of_payment_usd": 13048406736.917982,
           "AND_payment_usd_if_in_force": 19045761676.068607,
+          "baseline_payment_usd": 13048406736.917982,
+          "A_extra_AND_vs_baseline_usd": 5997354939.150625,
           "A_extra_AND_vs_higher_of_usd": 5997354939.150625,
           "B_above_incremental_transmission_cost_usd": 11974361080.228329
         },
@@ -2231,6 +3071,8 @@
           "ordinary_payment_usd": 13416850033.277443,
           "higher_of_payment_usd": 13416850033.277443,
           "AND_payment_usd_if_in_force": 19568154537.751648,
+          "baseline_payment_usd": 13416850033.277443,
+          "A_extra_AND_vs_baseline_usd": 6151304504.474205,
           "A_extra_AND_vs_higher_of_usd": 6151304504.474205,
           "B_above_incremental_transmission_cost_usd": 12281737865.833384
         },
@@ -2243,6 +3085,8 @@
           "ordinary_payment_usd": 13793047305.112736,
           "higher_of_payment_usd": 13793047305.112736,
           "AND_payment_usd_if_in_force": 20100688046.37023,
+          "baseline_payment_usd": 13793047305.112736,
+          "A_extra_AND_vs_baseline_usd": 6307640741.257496,
           "A_extra_AND_vs_higher_of_usd": 6307640741.257496,
           "B_above_incremental_transmission_cost_usd": 12593879896.47203
         },
@@ -2255,6 +3099,8 @@
           "ordinary_payment_usd": 14177140076.026707,
           "higher_of_payment_usd": 14177140076.026707,
           "AND_payment_usd_if_in_force": 20643510888.38581,
+          "baseline_payment_usd": 14177140076.026707,
+          "A_extra_AND_vs_baseline_usd": 6466370812.359104,
           "A_extra_AND_vs_higher_of_usd": 6466370812.359104,
           "B_above_incremental_transmission_cost_usd": 12910801473.558176
         },
@@ -2267,6 +3113,8 @@
           "ordinary_payment_usd": 14569271972.818094,
           "higher_of_payment_usd": 14569271972.818094,
           "AND_payment_usd_if_in_force": 21196772592.747902,
+          "baseline_payment_usd": 14569271972.818094,
+          "A_extra_AND_vs_baseline_usd": 6627500619.929808,
           "A_extra_AND_vs_higher_of_usd": 6627500619.929808,
           "B_above_incremental_transmission_cost_usd": 13232514381.367598
         },
@@ -2279,6 +3127,8 @@
           "ordinary_payment_usd": 14969588765.036102,
           "higher_of_payment_usd": 14969588765.036102,
           "AND_payment_usd_if_in_force": 21760623525.8613,
+          "baseline_payment_usd": 14969588765.036102,
+          "A_extra_AND_vs_baseline_usd": 6791034760.825199,
           "A_extra_AND_vs_higher_of_usd": 6791034760.825199,
           "B_above_incremental_transmission_cost_usd": 13559027798.014511
         },
@@ -2291,6 +3141,8 @@
           "ordinary_payment_usd": 15378238407.071142,
           "higher_of_payment_usd": 15378238407.071142,
           "AND_payment_usd_if_in_force": 22335214889.527306,
+          "baseline_payment_usd": 15378238407.071142,
+          "A_extra_AND_vs_baseline_usd": 6956976482.456163,
           "A_extra_AND_vs_higher_of_usd": 6956976482.456163,
           "B_above_incremental_transmission_cost_usd": 13890348207.302366
         },
@@ -2303,6 +3155,8 @@
           "ordinary_payment_usd": 15795371082.949682,
           "higher_of_payment_usd": 15795371082.949682,
           "AND_payment_usd_if_in_force": 22920698722.142887,
+          "baseline_payment_usd": 15795371082.949682,
+          "A_extra_AND_vs_baseline_usd": 7125327639.193205,
           "A_extra_AND_vs_higher_of_usd": 7125327639.193205,
           "B_above_incremental_transmission_cost_usd": 14226479311.680344
         },
@@ -2315,6 +3169,8 @@
           "ordinary_payment_usd": 16221139254.006458,
           "higher_of_payment_usd": 16221139254.006458,
           "AND_payment_usd_if_in_force": 23517227903.45066,
+          "baseline_payment_usd": 16221139254.006458,
+          "A_extra_AND_vs_baseline_usd": 7296088649.444202,
           "A_extra_AND_vs_higher_of_usd": 7296088649.444202,
           "B_above_incremental_transmission_cost_usd": 14567421946.544577
         },
@@ -2327,6 +3183,8 @@
           "ordinary_payment_usd": 16655697709.612118,
           "higher_of_payment_usd": 16655697709.612118,
           "AND_payment_usd_if_in_force": 24124956163.141327,
+          "baseline_payment_usd": 16655697709.612118,
+          "A_extra_AND_vs_baseline_usd": 7469258453.529209,
           "A_extra_AND_vs_higher_of_usd": 7469258453.529209,
           "B_above_incremental_transmission_cost_usd": 14913173996.13061
         },
@@ -2339,6 +3197,8 @@
           "ordinary_payment_usd": 17099203621.139133,
           "higher_of_payment_usd": 17099203621.139133,
           "AND_payment_usd_if_in_force": 24744038093.617954,
+          "baseline_payment_usd": 17099203621.139133,
+          "A_extra_AND_vs_baseline_usd": 7644834472.478821,
           "A_extra_AND_vs_higher_of_usd": 7644834472.478821,
           "B_above_incremental_transmission_cost_usd": 15263730311.249992
         },
@@ -2351,6 +3211,8 @@
           "ordinary_payment_usd": 17551816599.35329,
           "higher_of_payment_usd": 17551816599.35329,
           "AND_payment_usd_if_in_force": 25374629167.239334,
+          "baseline_payment_usd": 17551816599.35329,
+          "A_extra_AND_vs_baseline_usd": 7822812567.886044,
           "A_extra_AND_vs_higher_of_usd": 7822812567.886044,
           "B_above_incremental_transmission_cost_usd": 15619082629.130192
         },
@@ -2363,6 +3225,8 @@
           "ordinary_payment_usd": 18013698755.421947,
           "higher_of_payment_usd": 18013698755.421947,
           "AND_payment_usd_if_in_force": 26016885758.36583,
+          "baseline_payment_usd": 18013698755.421947,
+          "A_extra_AND_vs_baseline_usd": 8003187002.943882,
           "A_extra_AND_vs_higher_of_usd": 8003187002.943882,
           "B_above_incremental_transmission_cost_usd": 15979219495.62198
         },
@@ -2375,6 +3239,8 @@
           "ordinary_payment_usd": 18485014765.734436,
           "higher_of_payment_usd": 18485014765.734436,
           "AND_payment_usd_if_in_force": 26670965170.53796,
+          "baseline_payment_usd": 18485014765.734436,
+          "A_extra_AND_vs_baseline_usd": 8185950404.803524,
           "A_extra_AND_vs_higher_of_usd": 8185950404.803524,
           "B_above_incremental_transmission_cost_usd": 16344126190.043535
         },
@@ -2387,6 +3253,8 @@
           "ordinary_payment_usd": 18965931940.73277,
           "higher_of_payment_usd": 18965931940.73277,
           "AND_payment_usd_if_in_force": 27337025669.12227,
+          "baseline_payment_usd": 18965931940.73277,
+          "A_extra_AND_vs_baseline_usd": 8371093728.3895,
           "A_extra_AND_vs_higher_of_usd": 8371093728.3895,
           "B_above_incremental_transmission_cost_usd": 16713784652.933504
         },
@@ -2399,6 +3267,8 @@
           "ordinary_payment_usd": 19456620297.95443,
           "higher_of_payment_usd": 19456620297.95443,
           "AND_payment_usd_if_in_force": 28015226519.764347,
+          "baseline_payment_usd": 19456620297.95443,
+          "A_extra_AND_vs_baseline_usd": 8558606221.809917,
           "A_extra_AND_vs_higher_of_usd": 8558606221.809917,
           "B_above_incremental_transmission_cost_usd": 17088173416.988884
         },
@@ -2411,6 +3281,8 @@
           "ordinary_payment_usd": 19957252639.49096,
           "higher_of_payment_usd": 19957252639.49096,
           "AND_payment_usd_if_in_force": 28705728032.991577,
+          "baseline_payment_usd": 19957252639.49096,
+          "A_extra_AND_vs_baseline_usd": 8748475393.500618,
           "A_extra_AND_vs_higher_of_usd": 8748475393.500618,
           "B_above_incremental_transmission_cost_usd": 17467267541.46475
         }
@@ -2422,11 +3294,13 @@
     "input": {
       "growth": "medium",
       "cost": 0.65,
-      "nits": 180.0
+      "nits": 180.0,
+      "baseline": "embedded"
     },
     "reference": {
       "assumptions": {
         "growth_scenario": "medium",
+        "baseline": "embedded",
         "capex_per_mw": 650000.0,
         "nits_per_mw_year": 180000,
         "load_factor": 0.8,
@@ -2445,6 +3319,11 @@
       "endpoint_2056_twh": 1096.3972365254417,
       "effective_new_billing_gw_2056": 85.2308686350002,
       "metrics": {
+        "A_extra_AND_vs_baseline_usd": {
+          "constant_2026_billion": 74.59253645389032,
+          "nominal_billion": 120.45586760379635,
+          "pv_2026_billion": 43.94514277994052
+        },
         "A_extra_AND_vs_higher_of_usd": {
           "constant_2026_billion": 74.59253645389032,
           "nominal_billion": 120.45586760379635,
@@ -2466,6 +3345,8 @@
           "ordinary_payment_usd": 1076237988.314649,
           "higher_of_payment_usd": 1076237988.314649,
           "AND_payment_usd_if_in_force": 1360481957.6111245,
+          "baseline_payment_usd": 1076237988.314649,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -2478,6 +3359,8 @@
           "ordinary_payment_usd": 2339328518.617377,
           "higher_of_payment_usd": 2339328518.617377,
           "AND_payment_usd_if_in_force": 2955764380.5595956,
+          "baseline_payment_usd": 2339328518.617377,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -2490,6 +3373,8 @@
           "ordinary_payment_usd": 3818783327.1913943,
           "higher_of_payment_usd": 3818783327.1913943,
           "AND_payment_usd_if_in_force": 4822367239.686455,
+          "baseline_payment_usd": 3818783327.1913943,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -2502,6 +3387,8 @@
           "ordinary_payment_usd": 5547719964.621853,
           "higher_of_payment_usd": 5547719964.621853,
           "AND_payment_usd_if_in_force": 7001037747.609705,
+          "baseline_payment_usd": 5547719964.621853,
+          "A_extra_AND_vs_baseline_usd": 1453317782.987852,
           "A_extra_AND_vs_higher_of_usd": 1453317782.987852,
           "B_above_incremental_transmission_cost_usd": 5492185199.627563
         },
@@ -2514,6 +3401,8 @@
           "ordinary_payment_usd": 6065079686.005716,
           "higher_of_payment_usd": 6065079686.005716,
           "AND_payment_usd_if_in_force": 7652401989.413132,
+          "baseline_payment_usd": 6065079686.005716,
+          "A_extra_AND_vs_baseline_usd": 1587322303.4074154,
           "A_extra_AND_vs_higher_of_usd": 1587322303.4074154,
           "B_above_incremental_transmission_cost_usd": 5998597253.719702
         },
@@ -2526,6 +3415,8 @@
           "ordinary_payment_usd": 6604318700.33006,
           "higher_of_payment_usd": 6604318700.33006,
           "AND_payment_usd_if_in_force": 8331029849.639785,
+          "baseline_payment_usd": 6604318700.33006,
+          "A_extra_AND_vs_baseline_usd": 1726711149.3097248,
           "A_extra_AND_vs_higher_of_usd": 1726711149.3097248,
           "B_above_incremental_transmission_cost_usd": 6525357034.284663
         },
@@ -2538,6 +3429,8 @@
           "ordinary_payment_usd": 7166240745.717442,
           "higher_of_payment_usd": 7166240745.717442,
           "AND_payment_usd_if_in_force": 9037895544.591814,
+          "baseline_payment_usd": 7166240745.717442,
+          "A_extra_AND_vs_baseline_usd": 1871654798.8743725,
           "A_extra_AND_vs_higher_of_usd": 1871654798.8743725,
           "B_above_incremental_transmission_cost_usd": 7073108789.776406
         },
@@ -2550,6 +3443,8 @@
           "ordinary_payment_usd": 7751668944.152408,
           "higher_of_payment_usd": 7751668944.152408,
           "AND_payment_usd_if_in_force": 9773993984.437113,
+          "baseline_payment_usd": 7751668944.152408,
+          "A_extra_AND_vs_baseline_usd": 2022325040.2847052,
           "A_extra_AND_vs_higher_of_usd": 2022325040.2847052,
           "B_above_incremental_transmission_cost_usd": 7642501719.240791
         },
@@ -2562,6 +3457,8 @@
           "ordinary_payment_usd": 8361445442.790699,
           "higher_of_payment_usd": 8361445442.790699,
           "AND_payment_usd_if_in_force": 10540340015.16628,
+          "baseline_payment_usd": 8361445442.790699,
+          "A_extra_AND_vs_baseline_usd": 2178894572.3755817,
           "A_extra_AND_vs_higher_of_usd": 2178894572.3755817,
           "B_above_incremental_transmission_cost_usd": 8234188463.136719
         },
@@ -2574,6 +3471,8 @@
           "ordinary_payment_usd": 8909593697.778717,
           "higher_of_payment_usd": 8909593697.778717,
           "AND_payment_usd_if_in_force": 11228912390.924072,
+          "baseline_payment_usd": 8909593697.778717,
+          "A_extra_AND_vs_baseline_usd": 2319318693.145355,
           "A_extra_AND_vs_higher_of_usd": 2319318693.145355,
           "B_above_incremental_transmission_cost_usd": 8764860616.736105
         },
@@ -2586,6 +3485,8 @@
           "ordinary_payment_usd": 9387210129.498358,
           "higher_of_payment_usd": 9387210129.498358,
           "AND_payment_usd_if_in_force": 11828634890.96664,
+          "baseline_payment_usd": 9387210129.498358,
+          "A_extra_AND_vs_baseline_usd": 2441424761.4682827,
           "A_extra_AND_vs_higher_of_usd": 2441424761.4682827,
           "B_above_incremental_transmission_cost_usd": 9226307623.76933
         },
@@ -2598,6 +3499,8 @@
           "ordinary_payment_usd": 9786284957.105772,
           "higher_of_payment_usd": 9786284957.105772,
           "AND_payment_usd_if_in_force": 12329557311.904667,
+          "baseline_payment_usd": 9786284957.105772,
+          "A_extra_AND_vs_baseline_usd": 2543272354.798895,
           "A_extra_AND_vs_higher_of_usd": 2543272354.798895,
           "B_above_incremental_transmission_cost_usd": 9611196497.52829
         },
@@ -2610,6 +3513,8 @@
           "ordinary_payment_usd": 10099897128.060225,
           "higher_of_payment_usd": 10099897128.060225,
           "AND_payment_usd_if_in_force": 12723091628.751987,
+          "baseline_payment_usd": 10099897128.060225,
+          "A_extra_AND_vs_baseline_usd": 2623194500.691763,
           "A_extra_AND_vs_higher_of_usd": 2623194500.691763,
           "B_above_incremental_transmission_cost_usd": 9913227637.54012
         },
@@ -2622,6 +3527,8 @@
           "ordinary_payment_usd": 10322386781.82177,
           "higher_of_payment_usd": 10322386781.82177,
           "AND_payment_usd_if_in_force": 13002220096.939568,
+          "baseline_payment_usd": 10322386781.82177,
+          "A_extra_AND_vs_baseline_usd": 2679833315.117798,
           "A_extra_AND_vs_higher_of_usd": 2679833315.117798,
           "B_above_incremental_transmission_cost_usd": 10127269509.150333
         },
@@ -2634,6 +3541,8 @@
           "ordinary_payment_usd": 10547719920.221603,
           "higher_of_payment_usd": 10547719920.221603,
           "AND_payment_usd_if_in_force": 13284863924.795477,
+          "baseline_payment_usd": 10547719920.221603,
+          "A_extra_AND_vs_baseline_usd": 2737144004.5738735,
           "A_extra_AND_vs_higher_of_usd": 2737144004.5738735,
           "B_above_incremental_transmission_cost_usd": 10343850441.480217
         },
@@ -2646,6 +3555,8 @@
           "ordinary_payment_usd": 10775926641.723942,
           "higher_of_payment_usd": 10775926641.723942,
           "AND_payment_usd_if_in_force": 13571058771.635923,
+          "baseline_payment_usd": 10775926641.723942,
+          "A_extra_AND_vs_baseline_usd": 2795132129.9119816,
           "A_extra_AND_vs_higher_of_usd": 2795132129.9119816,
           "B_above_incremental_transmission_cost_usd": 10562991449.361748
         },
@@ -2658,6 +3569,8 @@
           "ordinary_payment_usd": 11007037209.707312,
           "higher_of_payment_usd": 11007037209.707312,
           "AND_payment_usd_if_in_force": 13860840441.989513,
+          "baseline_payment_usd": 11007037209.707312,
+          "A_extra_AND_vs_baseline_usd": 2853803232.282202,
           "A_extra_AND_vs_higher_of_usd": 2853803232.282202,
           "B_above_incremental_transmission_cost_usd": 10784713473.172039
         },
@@ -2670,6 +3583,8 @@
           "ordinary_payment_usd": 11241082049.69634,
           "higher_of_payment_usd": 11241082049.69634,
           "AND_payment_usd_if_in_force": 14154244880.647278,
+          "baseline_payment_usd": 11241082049.69634,
+          "A_extra_AND_vs_baseline_usd": 2913162830.9509373,
           "A_extra_AND_vs_higher_of_usd": 2913162830.9509373,
           "B_above_incremental_transmission_cost_usd": 11009037370.588352
         },
@@ -2682,6 +3597,8 @@
           "ordinary_payment_usd": 11478091746.50794,
           "higher_of_payment_usd": 11478091746.50794,
           "AND_payment_usd_if_in_force": 14451308167.578545,
+          "baseline_payment_usd": 11478091746.50794,
+          "A_extra_AND_vs_baseline_usd": 2973216421.0706043,
           "A_extra_AND_vs_higher_of_usd": 2973216421.0706043,
           "B_above_incremental_transmission_cost_usd": 11235983908.159548
         },
@@ -2694,6 +3611,8 @@
           "ordinary_payment_usd": 11718097041.312569,
           "higher_of_payment_usd": 11718097041.312569,
           "AND_payment_usd_if_in_force": 14752066512.713238,
+          "baseline_payment_usd": 11718097041.312569,
+          "A_extra_AND_vs_baseline_usd": 3033969471.400669,
           "A_extra_AND_vs_higher_of_usd": 3033969471.400669,
           "B_above_incremental_transmission_cost_usd": 11465573752.69377
         },
@@ -2706,6 +3625,8 @@
           "ordinary_payment_usd": 11961128828.611229,
           "higher_of_payment_usd": 11961128828.611229,
           "AND_payment_usd_if_in_force": 15056556250.591286,
+          "baseline_payment_usd": 11961128828.611229,
+          "A_extra_AND_vs_baseline_usd": 3095427421.980057,
           "A_extra_AND_vs_higher_of_usd": 3095427421.980057,
           "B_above_incremental_transmission_cost_usd": 11697827462.462337
         },
@@ -2718,6 +3639,8 @@
           "ordinary_payment_usd": 12207218153.129066,
           "higher_of_payment_usd": 12207218153.129066,
           "AND_payment_usd_if_in_force": 15364813834.880043,
+          "baseline_payment_usd": 12207218153.129066,
+          "A_extra_AND_vs_baseline_usd": 3157595681.7509766,
           "A_extra_AND_vs_higher_of_usd": 3157595681.7509766,
           "B_above_incremental_transmission_cost_usd": 11932765478.219973
         },
@@ -2730,6 +3653,8 @@
           "ordinary_payment_usd": 12456396206.626648,
           "higher_of_payment_usd": 12456396206.626648,
           "AND_payment_usd_if_in_force": 15676875832.760868,
+          "baseline_payment_usd": 12456396206.626648,
+          "A_extra_AND_vs_baseline_usd": 3220479626.13422,
           "A_extra_AND_vs_higher_of_usd": 3220479626.13422,
           "B_above_incremental_transmission_cost_usd": 12170408114.04171
         },
@@ -2742,6 +3667,8 @@
           "ordinary_payment_usd": 12708694324.629984,
           "higher_of_payment_usd": 12708694324.629984,
           "AND_payment_usd_if_in_force": 15992778919.186035,
+          "baseline_payment_usd": 12708694324.629984,
+          "A_extra_AND_vs_baseline_usd": 3284084594.5560513,
           "A_extra_AND_vs_higher_of_usd": 3284084594.5560513,
           "B_above_incremental_transmission_cost_usd": 12410775547.976902
         },
@@ -2754,6 +3681,8 @@
           "ordinary_payment_usd": 12964143983.080563,
           "higher_of_payment_usd": 12964143983.080563,
           "AND_payment_usd_if_in_force": 16312559871.007492,
+          "baseline_payment_usd": 12964143983.080563,
+          "A_extra_AND_vs_baseline_usd": 3348415887.9269295,
           "A_extra_AND_vs_higher_of_usd": 3348415887.9269295,
           "B_above_incremental_transmission_cost_usd": 12653887812.521034
         },
@@ -2766,6 +3695,8 @@
           "ordinary_payment_usd": 13222776794.906948,
           "higher_of_payment_usd": 13222776794.906948,
           "AND_payment_usd_if_in_force": 16636255560.979137,
+          "baseline_payment_usd": 13222776794.906948,
+          "A_extra_AND_vs_baseline_usd": 3413478766.0721893,
           "A_extra_AND_vs_higher_of_usd": 3413478766.0721893,
           "B_above_incremental_transmission_cost_usd": 12899764784.906195
         },
@@ -2778,6 +3709,8 @@
           "ordinary_payment_usd": 13484624506.519384,
           "higher_of_payment_usd": 13484624506.519384,
           "AND_payment_usd_if_in_force": 16963902951.634422,
+          "baseline_payment_usd": 13484624506.519384,
+          "A_extra_AND_vs_baseline_usd": 3479278445.115038,
           "A_extra_AND_vs_higher_of_usd": 3479278445.115038,
           "B_above_incremental_transmission_cost_usd": 13148426177.211197
         },
@@ -2790,6 +3723,8 @@
           "ordinary_payment_usd": 13749718994.229252,
           "higher_of_payment_usd": 13749718994.229252,
           "AND_payment_usd_if_in_force": 17295539089.041412,
+          "baseline_payment_usd": 13749718994.229252,
+          "A_extra_AND_vs_baseline_usd": 3545820094.8121605,
           "A_extra_AND_vs_higher_of_usd": 3545820094.8121605,
           "B_above_incremental_transmission_cost_usd": 13399891526.292652
         },
@@ -2802,6 +3737,8 @@
           "ordinary_payment_usd": 14018092260.595291,
           "higher_of_payment_usd": 14018092260.595291,
           "AND_payment_usd_if_in_force": 17631201096.437603,
+          "baseline_payment_usd": 14018092260.595291,
+          "A_extra_AND_vs_baseline_usd": 3613108835.842312,
           "A_extra_AND_vs_higher_of_usd": 3613108835.842312,
           "B_above_incremental_transmission_cost_usd": 13654180183.538424
         },
@@ -2814,6 +3751,8 @@
           "ordinary_payment_usd": 14289776430.69857,
           "higher_of_payment_usd": 14289776430.69857,
           "AND_payment_usd_if_in_force": 17970926167.746944,
+          "baseline_payment_usd": 14289776430.69857,
+          "A_extra_AND_vs_baseline_usd": 3681149737.048374,
           "A_extra_AND_vs_higher_of_usd": 3681149737.048374,
           "B_above_incremental_transmission_cost_usd": 13911311304.445091
         }
@@ -2825,11 +3764,13 @@
     "input": {
       "growth": "medium",
       "cost": 0.3,
-      "nits": 95.1
+      "nits": 95.1,
+      "baseline": "embedded"
     },
     "reference": {
       "assumptions": {
         "growth_scenario": "medium",
+        "baseline": "embedded",
         "capex_per_mw": 300000,
         "nits_per_mw_year": 95100.0,
         "load_factor": 0.8,
@@ -2848,6 +3789,11 @@
       "endpoint_2056_twh": 1096.3972365254417,
       "effective_new_billing_gw_2056": 85.2308686350002,
       "metrics": {
+        "A_extra_AND_vs_baseline_usd": {
+          "constant_2026_billion": 34.427324517180146,
+          "nominal_billion": 55.59501581713675,
+          "pv_2026_billion": 20.282373590741784
+        },
         "A_extra_AND_vs_higher_of_usd": {
           "constant_2026_billion": 34.427324517180146,
           "nominal_billion": 55.59501581713675,
@@ -2869,6 +3815,8 @@
           "ordinary_payment_usd": 568474739.6901246,
           "higher_of_payment_usd": 568474739.6901246,
           "AND_payment_usd_if_in_force": 699664263.9808058,
+          "baseline_payment_usd": 568474739.6901246,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -2881,6 +3829,8 @@
           "ordinary_payment_usd": 1235292238.8688264,
           "higher_of_payment_usd": 1235292238.8688264,
           "AND_payment_usd_if_in_force": 1519801098.2267737,
+          "baseline_payment_usd": 1235292238.8688264,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -2893,6 +3843,8 @@
           "ordinary_payment_usd": 2015842333.5299432,
           "higher_of_payment_usd": 2015842333.5299432,
           "AND_payment_usd_if_in_force": 2479034908.5276637,
+          "baseline_payment_usd": 2015842333.5299432,
+          "A_extra_AND_vs_baseline_usd": 0,
           "A_extra_AND_vs_higher_of_usd": 0,
           "B_above_incremental_transmission_cost_usd": 0
         },
@@ -2905,6 +3857,8 @@
           "ordinary_payment_usd": 2927335943.8005934,
           "higher_of_payment_usd": 2927335943.8005934,
           "AND_payment_usd_if_in_force": 3598097997.4872947,
+          "baseline_payment_usd": 2927335943.8005934,
+          "A_extra_AND_vs_baseline_usd": 670762053.6867013,
           "A_extra_AND_vs_higher_of_usd": 670762053.6867013,
           "B_above_incremental_transmission_cost_usd": 2901704513.8032293
         },
@@ -2917,6 +3871,8 @@
           "ordinary_payment_usd": 3199943081.898532,
           "higher_of_payment_usd": 3199943081.898532,
           "AND_payment_usd_if_in_force": 3932553375.7788763,
+          "baseline_payment_usd": 3199943081.898532,
+          "A_extra_AND_vs_baseline_usd": 732610293.8803444,
           "A_extra_AND_vs_higher_of_usd": 732610293.8803444,
           "B_above_incremental_transmission_cost_usd": 3169258882.3819084
         },
@@ -2929,6 +3885,8 @@
           "ordinary_payment_usd": 3484007478.980837,
           "higher_of_payment_usd": 3484007478.980837,
           "AND_payment_usd_if_in_force": 4280951086.354556,
+          "baseline_payment_usd": 3484007478.980837,
+          "A_extra_AND_vs_baseline_usd": 796943607.3737192,
           "A_extra_AND_vs_higher_of_usd": 796943607.3737192,
           "B_above_incremental_transmission_cost_usd": 3447563633.1137304
         },
@@ -2941,6 +3899,8 @@
           "ordinary_payment_usd": 3779943123.5969615,
           "higher_of_payment_usd": 3779943123.5969615,
           "AND_payment_usd_if_in_force": 4643783800.000519,
+          "baseline_payment_usd": 3779943123.5969615,
+          "A_extra_AND_vs_baseline_usd": 863840676.4035573,
           "A_extra_AND_vs_higher_of_usd": 863840676.4035573,
           "B_above_incremental_transmission_cost_usd": 3736959143.931869
         },
@@ -2953,6 +3913,8 @@
           "ordinary_payment_usd": 4088173281.368349,
           "higher_of_payment_usd": 4088173281.368349,
           "AND_payment_usd_if_in_force": 5021554069.192059,
+          "baseline_payment_usd": 4088173281.368349,
+          "A_extra_AND_vs_baseline_usd": 933380787.8237095,
           "A_extra_AND_vs_higher_of_usd": 933380787.8237095,
           "B_above_incremental_transmission_cost_usd": 4037788408.332218
         },
@@ -2965,6 +3927,8 @@
           "ordinary_payment_usd": 4409130228.633429,
           "higher_of_payment_usd": 4409130228.633429,
           "AND_payment_usd_if_in_force": 5414773877.422159,
+          "baseline_payment_usd": 4409130228.633429,
+          "A_extra_AND_vs_baseline_usd": 1005643648.7887306,
           "A_extra_AND_vs_higher_of_usd": 1005643648.7887306,
           "B_above_incremental_transmission_cost_usd": 4350396238.0239
         },
@@ -2977,6 +3941,8 @@
           "ordinary_payment_usd": 4697567909.400371,
           "higher_of_payment_usd": 4697567909.400371,
           "AND_payment_usd_if_in_force": 5768022690.852072,
+          "baseline_payment_usd": 4697567909.400371,
+          "A_extra_AND_vs_baseline_usd": 1070454781.4517012,
           "A_extra_AND_vs_higher_of_usd": 1070454781.4517012,
           "B_above_incremental_transmission_cost_usd": 4630768025.842241
         },
@@ -2989,6 +3955,8 @@
           "ordinary_payment_usd": 4948828556.176656,
           "higher_of_payment_usd": 4948828556.176656,
           "AND_payment_usd_if_in_force": 6075639984.546633,
+          "baseline_payment_usd": 4948828556.176656,
+          "A_extra_AND_vs_baseline_usd": 1126811428.369977,
           "A_extra_AND_vs_higher_of_usd": 1126811428.369977,
           "B_above_incremental_transmission_cost_usd": 4874565861.224797
         },
@@ -3001,6 +3969,8 @@
           "ordinary_payment_usd": 5158725541.12731,
           "higher_of_payment_usd": 5158725541.12731,
           "AND_payment_usd_if_in_force": 6332543551.034492,
+          "baseline_payment_usd": 5158725541.12731,
+          "A_extra_AND_vs_baseline_usd": 1173818009.9071817,
           "A_extra_AND_vs_higher_of_usd": 1173818009.9071817,
           "B_above_incremental_transmission_cost_usd": 5077915482.860779
         },
@@ -3013,6 +3983,8 @@
           "ordinary_payment_usd": 5323643751.304515,
           "higher_of_payment_usd": 5323643751.304515,
           "AND_payment_usd_if_in_force": 6534348905.469943,
+          "baseline_payment_usd": 5323643751.304515,
+          "A_extra_AND_vs_baseline_usd": 1210705154.1654282,
           "A_extra_AND_vs_higher_of_usd": 1210705154.1654282,
           "B_above_incremental_transmission_cost_usd": 5237488601.833696
         },
@@ -3025,6 +3997,8 @@
           "ordinary_payment_usd": 5440628183.182781,
           "higher_of_payment_usd": 5440628183.182781,
           "AND_payment_usd_if_in_force": 6677474328.621764,
+          "baseline_payment_usd": 5440628183.182781,
+          "A_extra_AND_vs_baseline_usd": 1236846145.438983,
           "A_extra_AND_vs_higher_of_usd": 1236846145.438983,
           "B_above_incremental_transmission_cost_usd": 5350574057.334426
         },
@@ -3037,6 +4011,8 @@
           "ordinary_payment_usd": 5559094588.821663,
           "higher_of_payment_usd": 5559094588.821663,
           "AND_payment_usd_if_in_force": 6822391821.701911,
+          "baseline_payment_usd": 5559094588.821663,
+          "A_extra_AND_vs_baseline_usd": 1263297232.880248,
           "A_extra_AND_vs_higher_of_usd": 1263297232.880248,
           "B_above_incremental_transmission_cost_usd": 5465000983.248714
         },
@@ -3049,6 +4025,8 @@
           "ordinary_payment_usd": 5679058263.503034,
           "higher_of_payment_usd": 5679058263.503034,
           "AND_payment_usd_if_in_force": 6969119246.539332,
+          "baseline_payment_usd": 5679058263.503034,
+          "A_extra_AND_vs_baseline_usd": 1290060983.0362988,
           "A_extra_AND_vs_higher_of_usd": 1290060983.0362988,
           "B_above_incremental_transmission_cost_usd": 5580780482.41279
         },
@@ -3061,6 +4039,8 @@
           "ordinary_payment_usd": 5800534573.649865,
           "higher_of_payment_usd": 5800534573.649865,
           "AND_payment_usd_if_in_force": 7117674527.010881,
+          "baseline_payment_usd": 5800534573.649865,
+          "A_extra_AND_vs_baseline_usd": 1317139953.3610163,
           "A_extra_AND_vs_higher_of_usd": 1317139953.3610163,
           "B_above_incremental_transmission_cost_usd": 5697923618.325893
         },
@@ -3073,6 +4053,8 @@
           "ordinary_payment_usd": 5923538954.997866,
           "higher_of_payment_usd": 5923538954.997866,
           "AND_payment_usd_if_in_force": 7268075646.205992,
+          "baseline_payment_usd": 5923538954.997866,
+          "A_extra_AND_vs_baseline_usd": 1344536691.208126,
           "A_extra_AND_vs_higher_of_usd": 1344536691.208126,
           "B_above_incremental_transmission_cost_usd": 5816441410.79418
         },
@@ -3085,6 +4067,8 @@
           "ordinary_payment_usd": 6048086910.715346,
           "higher_of_payment_usd": 6048086910.715346,
           "AND_payment_usd_if_in_force": 7420340643.517164,
+          "baseline_payment_usd": 6048086910.715346,
+          "A_extra_AND_vs_baseline_usd": 1372253732.801818,
           "A_extra_AND_vs_higher_of_usd": 1372253732.801818,
           "B_above_incremental_transmission_cost_usd": 5936344831.477627
         },
@@ -3097,6 +4081,8 @@
           "ordinary_payment_usd": 6174194009.471629,
           "higher_of_payment_usd": 6174194009.471629,
           "AND_payment_usd_if_in_force": 7574487611.656553,
+          "baseline_payment_usd": 6174194009.471629,
+          "A_extra_AND_vs_baseline_usd": 1400293602.1849241,
           "A_extra_AND_vs_higher_of_usd": 1400293602.1849241,
           "B_above_incremental_transmission_cost_usd": 6057644799.339875
         },
@@ -3109,6 +4095,8 @@
           "ordinary_payment_usd": 6301875883.454269,
           "higher_of_payment_usd": 6301875883.454269,
           "AND_payment_usd_if_in_force": 7730534693.598911,
+          "baseline_payment_usd": 6301875883.454269,
+          "A_extra_AND_vs_baseline_usd": 1428658810.1446419,
           "A_extra_AND_vs_higher_of_usd": 1428658810.1446419,
           "B_above_incremental_transmission_cost_usd": 6180352176.000935
         },
@@ -3121,6 +4109,8 @@
           "ordinary_payment_usd": 6431148226.335545,
           "higher_of_payment_usd": 6431148226.335545,
           "AND_payment_usd_if_in_force": 7888500079.45138,
+          "baseline_payment_usd": 6431148226.335545,
+          "A_extra_AND_vs_baseline_usd": 1457351853.1158352,
           "A_extra_AND_vs_higher_of_usd": 1457351853.1158352,
           "B_above_incremental_transmission_cost_usd": 6304477760.992886
         },
@@ -3133,6 +4123,8 @@
           "ordinary_payment_usd": 6562026791.188676,
           "higher_of_payment_usd": 6562026791.188676,
           "AND_payment_usd_if_in_force": 8048402003.250622,
+          "baseline_payment_usd": 6562026791.188676,
+          "A_extra_AND_vs_baseline_usd": 1486375212.061946,
           "A_extra_AND_vs_higher_of_usd": 1486375212.061946,
           "B_above_incremental_transmission_cost_usd": 6430032286.918702
         },
@@ -3145,6 +4137,8 @@
           "ordinary_payment_usd": 6694527388.354347,
           "higher_of_payment_usd": 6694527388.354347,
           "AND_payment_usd_if_in_force": 8210258739.687909,
+          "baseline_payment_usd": 6694527388.354347,
+          "A_extra_AND_vs_baseline_usd": 1515731351.333562,
           "A_extra_AND_vs_higher_of_usd": 1515731351.333562,
           "B_above_incremental_transmission_cost_usd": 6557026414.514462
         },
@@ -3157,6 +4151,8 @@
           "ordinary_payment_usd": 6828665883.25814,
           "higher_of_payment_usd": 6828665883.25814,
           "AND_payment_usd_if_in_force": 8374088600.762876,
+          "baseline_payment_usd": 6828665883.25814,
+          "A_extra_AND_vs_baseline_usd": 1545422717.504736,
           "A_extra_AND_vs_higher_of_usd": 1545422717.504736,
           "B_above_incremental_transmission_cost_usd": 6685470727.615279
         },
@@ -3169,6 +4165,8 @@
           "ordinary_payment_usd": 6964458194.179633,
           "higher_of_payment_usd": 6964458194.179633,
           "AND_payment_usd_if_in_force": 8539909932.366797,
+          "baseline_payment_usd": 6964458194.179633,
+          "A_extra_AND_vs_baseline_usd": 1575451738.1871643,
           "A_extra_AND_vs_higher_of_usd": 1575451738.1871643,
           "B_above_incremental_transmission_cost_usd": 6815375728.025439
         },
@@ -3181,6 +4179,8 @@
           "ordinary_payment_usd": 7101920289.97395,
           "higher_of_payment_usd": 7101920289.97395,
           "AND_payment_usd_if_in_force": 8707741110.796276,
+          "baseline_payment_usd": 7101920289.97395,
+          "A_extra_AND_vs_baseline_usd": 1605820820.8223257,
           "A_extra_AND_vs_higher_of_usd": 1605820820.8223257,
           "B_above_incremental_transmission_cost_usd": 6946751830.29325
         },
@@ -3193,6 +4193,8 @@
           "ordinary_payment_usd": 7241068187.746638,
           "higher_of_payment_usd": 7241068187.746638,
           "AND_payment_usd_if_in_force": 8877600539.198402,
+          "baseline_payment_usd": 7241068187.746638,
+          "A_extra_AND_vs_baseline_usd": 1636532351.451764,
           "A_extra_AND_vs_higher_of_usd": 1636532351.451764,
           "B_above_incremental_transmission_cost_usd": 7079609356.391283
         },
@@ -3205,6 +4207,8 @@
           "ordinary_payment_usd": 7381917950.482894,
           "higher_of_payment_usd": 7381917950.482894,
           "AND_payment_usd_if_in_force": 9049506643.948574,
+          "baseline_payment_usd": 7381917950.482894,
+          "A_extra_AND_vs_baseline_usd": 1667588693.4656801,
           "A_extra_AND_vs_higher_of_usd": 1667588693.4656801,
           "B_above_incremental_transmission_cost_usd": 7213958530.302799
         },
@@ -3217,6 +4221,8 @@
           "ordinary_payment_usd": 7524485684.632146,
           "higher_of_payment_usd": 7524485684.632146,
           "AND_payment_usd_if_in_force": 9223477870.962166,
+          "baseline_payment_usd": 7524485684.632146,
+          "A_extra_AND_vs_baseline_usd": 1698992186.33002,
           "A_extra_AND_vs_higher_of_usd": 1698992186.33002,
           "B_above_incremental_transmission_cost_usd": 7349809472.515157
         }

@@ -1,0 +1,93 @@
+[
+  {
+    "file": "pjm-projects.html",
+    "url": "https://www.pjm.com/planning/m/project-construction",
+    "bytes": 311150,
+    "sha256": "19d8e63bde10d156cc3e5f45b9a68cf3aff4815a0be23d592b2e78fb095bf08d",
+    "retrieved": "2026-10-23"
+  },
+  {
+    "file": "mtep26-draft.zip",
+    "url": "https://cdn.misoenergy.org/MTEP26%20-%20Draft784746.zip",
+    "bytes": 128889089,
+    "sha256": "d79b3e7f8bef8caa8ee0be23a9d0ad10fcb7d15a641f220b55a8c94cae41b879",
+    "retrieved": "2026-10-23"
+  },
+  {
+    "file": "mtep25.zip",
+    "url": "https://cdn.misoenergy.org/MTEP25731615.zip",
+    "bytes": 54222456,
+    "sha256": "2d46f0890a3f47c56cbfd1325c6144a59b317c50cc5929bdceeb009426bc869e",
+    "retrieved": "2026-10-23"
+  },
+  {
+    "file": "pjm-nits-august-2026.pdf",
+    "url": "https://www.pjm.com/-/media/DotCom/markets-ops/settlements/network-integration-trans-service-august-2026.pdf",
+    "bytes": 99970,
+    "sha256": "ad18a649a5905847be0890f8aa96e49c294b46e3374a103ef4f8c2f78bdf7775",
+    "retrieved": "2026-10-23"
+  },
+  {
+    "file": "miso-mtep.html",
+    "url": "https://www.misoenergy.org/planning/transmission-planning/mtep/",
+    "bytes": 152032,
+    "sha256": "0710d0161ea73e3dec5d752bbb384b4b6e84202a36cad7305f072b98d5f27e2c",
+    "retrieved": "2026-10-23"
+  },
+  {
+    "file": "pjm-projects.xml",
+    "url": "https://www.pjm.com/pjmfiles/media/planning/projectConstruction-data/projectCostUpgrades.xml",
+    "bytes": 25758333,
+    "sha256": "188f231f17822a61fd1268d13f231158cd0076d19c0184ac7386b2c34579aa0d",
+    "retrieved": "2026-10-23"
+  },
+  {
+    "file": "pjm-nits-august-2026.xlsx",
+    "url": "https://www.pjm.com/-/media/DotCom/markets-ops/settlements/network-integration-trans-service-august-2026-xls.xlsx",
+    "bytes": 16977,
+    "sha256": "103e05e174fb376d7753cde23a837a68925a1dfd48674ce0f45b95833282f78a",
+    "retrieved": "2026-10-23"
+  },
+  {
+    "file": "pjm-nspl-2026.pdf",
+    "url": "https://www.pjm.com/-/media/DotCom/markets-ops/settlements/network-service-peak-loads-2026.pdf",
+    "bytes": 85152,
+    "sha256": "f62ea48d8bc28155585a8be16f04f74141f99eca6149c630fe19249c78cbcc41",
+    "retrieved": "2026-10-23"
+  },
+  {
+    "file": "pjm-las.html",
+    "url": "https://www.pjm.com/committees-and-groups/subcommittees/las.aspx?p=1",
+    "bytes": 966380,
+    "sha256": "13600b375c358c2004e25f4f56cc6245d790ecbdd8a66f32bf6fa35896c03342",
+    "retrieved": "2026-10-23"
+  },
+  {
+    "file": "pjm-load-supplement-2026.pdf",
+    "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/load-forecast-supplement-2026.pdf",
+    "bytes": 2032385,
+    "sha256": "d739b8fa35da9d03a993cc16e6fa28956ff302c31736215d54e79e1d864ca1bd",
+    "retrieved": "2026-10-23"
+  },
+  {
+    "file": "epri-annual.html",
+    "url": "https://powering-intelligence.epri.com/annual-peak-use.html",
+    "bytes": 1950,
+    "sha256": "8f4535fd8642ed97ee550b76fba2e95a27870e85d1d1331c3d9849da9b9921f5",
+    "retrieved": "2026-10-23"
+  },
+  {
+    "file": "pjm-load-2026.xlsx",
+    "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/2026-load-report-tables.xlsx",
+    "bytes": 371564,
+    "sha256": "59a62facf819962e430101c96dd1335229d8173fb6886dd8045ced325443f607",
+    "retrieved": "2026-10-23"
+  },
+  {
+    "file": "pjm-load-2026.pdf",
+    "url": "https://www.pjm.com/-/media/DotCom/library/reports-notices/load-forecast/2026-load-report.pdf",
+    "bytes": 8750526,
+    "sha256": "9f2826cfc39357c54d6e6203e60946b6ce9ea627cfceeeaf4d4cd343066c6bc8",
+    "retrieved": "2026-10-23"
+  }
+]

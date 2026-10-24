@@ -6,24 +6,28 @@ const cases=JSON.parse(fs.readFileSync(path.join(__dirname,'data/golden.json'),'
 let count=0;
 for(const test of cases){
  const r=m.calculate(test.input),ref=test.reference;
- close(r.A,ref.metrics.A_extra_AND_vs_higher_of_usd.constant_2026_billion,test.name+' A');
+ close(r.A,ref.metrics.A_extra_AND_vs_baseline_usd.constant_2026_billion,test.name+' A');
  close(r.B,ref.metrics.B_above_incremental_transmission_cost_usd.constant_2026_billion,test.name+' B');
  close(r.endTWh,ref.endpoint_2056_twh,test.name+' demand');
  for(let i=0;i<r.rows.length;i++){
   const a=r.rows[i],b=ref.annual[i];
   assert.equal(a.year,b.year);
-  close(a.A,b.A_extra_AND_vs_higher_of_usd,test.name+' annual A');
+  close(a.A,b.A_extra_AND_vs_baseline_usd,test.name+' annual A');
   close(a.B,b.B_above_incremental_transmission_cost_usd,test.name+' annual B');
   close(a.coveredMW/1000,b.effective_new_billing_gw,test.name+' eligible MW');
   close(a.A,a.existingPaymentBefore-a.existingPaymentAND,test.name+' bill transfer');
   close(a.ANDPayment+a.existingPaymentAND,a.inheritedRequirement+a.incrementalCost,test.name+' conserved revenue');
-  assert(a.A>=-1e-4&&a.A<=a.B+1e-4,'Additional relief is part of inherited contribution');
+  assert(a.A>=-1e-4,'Additional relief is nonnegative');
+  if(r.params.baseline==='higher_of')assert(a.A<=a.B+1e-4,'Higher-of uplift cannot exceed inherited contribution');
   count++;
  }
 }
 const c=m.calculate(),z=m.calculate({cost:0}),n=m.calculate({nits:0});
 close(z.A,0,'No incremental capital means no added payment');assert(z.B>0,'Ordinary inherited contribution can remain without policy uplift');
-close(n.A,0,'No NITS means no extra above incremental-only');close(n.B,0,'No NITS means no inherited contribution');
+close(n.B,0,'No NITS means no inherited contribution');assert(n.A>0,'Embedded baseline can shift incremental cost to other customers even with zero inherited requirement');
+close(m.calculate({nits:0,baseline:'higher_of'}).A,0,'Higher-of recovers full incremental cost at zero inherited requirement');
+assert(m.calculate({cost:1.5}).A>m.calculate({cost:1.5}).B,'Embedded uplift can exceed inherited contribution when baseline under-recovers incremental cost');
+assert(m.calculate({cost:1.5,baseline:'higher_of'}).A<m.calculate({cost:1.5}).A,'Higher-of already provides some protection when new capital is expensive');
 assert(m.calculate({growth:'high'}).A>c.A,'More realized demand increases receipts');
 assert(m.calculate({growth:'low'}).A<c.A,'Less realized demand decreases receipts');
 for(const [key,p] of Object.entries(m.SCENARIOS)){

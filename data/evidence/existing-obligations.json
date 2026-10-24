@@ -1,0 +1,29 @@
+{
+  "as_of": "2026-10-23",
+  "finding": "No tariff named AND does not establish that all incremental-cost payments would be new policy revenue.",
+  "cases": [
+    {
+      "case": "AEP / SB Energy, Piketon",
+      "source": "https://www.aep.com/news/stories/view/10823/",
+      "date": "2026-03-20",
+      "reported_obligation": "SB Energy committed to paying for $4.2bn of new transmission investment; regulatory details and approvals remain prospective.",
+      "model_treatment": "Do not count already-committed funding as wholly new BAAJA receipts without reviewing the actual cost-recovery agreement."
+    },
+    {
+      "case": "Ozaukee / Oracle E-STATCOM",
+      "source": "https://psc.wi.gov/Pages/CommissionActions/CasePages/OzaukeeDIP.aspx",
+      "date": "2026-09 application",
+      "reported_obligation": "$1,099,366,000 of the $2.48-$2.72bn estimated project is to be fully paid by Oracle; other customers do not pay this equipment cost.",
+      "model_treatment": "Separate this identified funding from any unassigned shared-network investment. Do not divide the gross project bill by first-phase MW and call it wholly newly assignable."
+    },
+    {
+      "case": "Entergy / Evest (Meta)",
+      "source": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000283/etr-20260630.htm",
+      "date": "2026 Q2 Form10-Q",
+      "reported_obligation": "The agreement includes incremental-cost recovery through contributions in aid of construction, other advance payments and minimum monthly bills, with collateral and termination provisions.",
+      "additional_source": "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings",
+      "model_treatment": "A bundled generation/transmission contract cannot be treated as embedded-only without a contract-specific reconciliation. Utility-estimated customer savings are not a clean measure of transmission payments or BAAJA uplift."
+    }
+  ],
+  "limitation": "These examples establish that prior obligations exist, not their national prevalence or their precise overlap with a future BAAJA tariff. Prior-recovery sensitivities are assumptions, not empirical deductions."
+}

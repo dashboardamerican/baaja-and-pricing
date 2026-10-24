@@ -1,0 +1,64 @@
+{
+  "as_of": "2026-10-23",
+  "pjm": {
+    "inventory_records": 15838,
+    "project_type_counts": {
+      "Baseline": 5639,
+      "Network": 3438,
+      "Supplemental": 6761
+    },
+    "explicit_dc_keyword_records": 3,
+    "recent_customer_service_candidates": 816,
+    "recent_definition": "Customer Service in Driver; InitialTEACDate or PJMBoardApprovalDate in 2024-2026. Includes all statuses. Not all DCs; may contain related project components.",
+    "limitations": [
+      "No complete DC attribution flag or paired customer MW field in this export.",
+      "Keyword absence does not mean a project is unrelated to data centers.",
+      "Parent/child upgrades, cancellations, vintage, mixed drivers and upstream project scope must be reconciled before summing attributable costs."
+    ]
+  },
+  "miso25": {
+    "inventory_projects": 432,
+    "portfolio_cost_usd": 12264316370,
+    "load_growth_projects": 99,
+    "load_growth_project_cost_usd": 5053563262,
+    "explicit_dc_projects": 4,
+    "explicit_dc_with_MW_projects": 3,
+    "limitations": [
+      "Load Growth includes ordinary load growth, industrial loads and distribution-related work.",
+      "Many customer identities and MW are not disclosed in project descriptions.",
+      "Individual connection-project estimates do not establish the complete attributable upstream network cost or net customer-funded amount."
+    ]
+  },
+  "pjm_rates": {
+    "NSPL_weighted_NITS_USD_per_kW_year": 82.78904185980893,
+    "NSPL_total_GW": 165.4869,
+    "demand_growth_weighted_NITS_USD_per_kW_year": {
+      "2030": {
+        "rate": 94.74583307078329,
+        "new_load_GW": 27.336
+      },
+      "2035": {
+        "rate": 92.3181104339952,
+        "new_load_GW": 57.499
+      },
+      "2046": {
+        "rate": 93.70382551572735,
+        "new_load_GW": 75.717
+      }
+    },
+    "DOM_underground_rider_USD_per_MW_year": 518.27,
+    "sources": {
+      "rates": "https://www.pjm.com/-/media/DotCom/markets-ops/settlements/network-integration-trans-service-august-2026-xls.xlsx",
+      "peaks": "https://www.pjm.com/-/media/DotCom/markets-ops/settlements/network-service-peak-loads-2026.pdf",
+      "load": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/2026-load-report-tables.xlsx"
+    },
+    "limitations": [
+      "PJM-only; not a national rate.",
+      "Published zonal NITS rates exclude separately billed regional/service-specific charges; DOM underground rider kept separate.",
+      "ME/PENELEC share published MAIT rate; their NSPLs are kept separate; UGI load is within PPL and is not counted twice.",
+      "Table B9b includes total loads associated with adjustments, not only the adjustment above statistical embedded trends. Net increases from 2026 are used.",
+      "Large-load adjustments are mostly data centers but include other adjustments. Forecast MW is not a signed billing commitment or an observed 1CP customer peak.",
+      "Published 2026 NSPL is metered demand at each zone peak in November 2024-October 2025; using it as a fixed incumbent pool is a modeling assumption."
+    ]
+  }
+}
