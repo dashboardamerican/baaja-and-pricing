@@ -1,0 +1,145 @@
+UNREVISED FIRST PASS. Read with claude-review-followup.txt and independent-review.html. Some claims below were withdrawn or qualified.
+
+# Independent review: BAAJA §2107(a) AND-pricing model
+
+## Verdict
+
+The arithmetic holds up. The headline is the problem: the $74.6bn figure is close to a restatement of the capital assumption, not an empirical estimate. Under an embedded baseline, A = (1−s)·I, and the new-load share s never exceeds about 9%. So A is roughly 0.93 × MW-years × $0.65m/MW × 7.33%. Nothing in the packet calibrates the $0.65m/MW, the 75% coverage, the 2030 start, or the zero prior recovery to what §2107(a) would actually reach.
+
+Three corrections would change what the number means:
+
+- **Legal scope and timing.** The model likely overstates coverage. It also charges pre-rule entrants, and those cohorts produce about 35% of A.
+- **Overlap with §2107(b).** The new FPA §228 overlaps the same transmission dollars, so A cannot be credited to §2107(a) alone.
+- **Sign of the subsidy.** At the model's own inputs, data centers under embedded pricing already pay about $74bn more than their modeled incremental cost. At $0.65m/MW, AND pricing adds a premium above incremental cost; it does not correct a subsidy. That flips only above about $1.30m/MW.
+
+The published figures (OPC, WIRES, UCS) each measure something different from A. None of them corroborates it.
+
+## Validation layers
+
+| Layer | Status |
+|---|---|
+| **Arithmetic** | Confirmed independently. Annual cost factor is .05/(1−1.05⁻⁴⁰)+.015 = 0.07328, so $47.63/kW-yr (`model.js:41-42`). The JS and Python demand tapers are equivalent (`model.js:20-27`, `reference.py:41-55`). My hand path, 15,796 TWh-years above 300 TWh × 107.02 MW/TWh × $47,630, reproduces I = $80.5bn (`crosschecks.json:9`). The identities in `reference.py:84-86` hold. Higher-of does not bind in the central case. |
+| **Calibration** | None at national level for c ($/MW), coverage, start year, grandfathering, prior recovery, or pass-through. The NITS proxy is carefully built, but it does not enter A. |
+| **Causal identification** | Not established. PJM says its planning "does not attribute individual transmission facilities to discrete categories of load" (PJM-answer pp.7, 33-34). Grid Strategies says but-for determinations are model-dependent and contested (Vol.2 p.29). |
+
+## Severity-ranked findings
+
+### Critical: these change what the headline means
+
+**F1. A is a linear function of an uncalibrated input.** A = (1−s)·k·c·ΣMW. It does not depend on the NITS rate under the embedded baseline (`README:84`), and it scales one-for-one with c.
+- At central demand, coverage and factor: about **$11.5bn per $0.1m/MW** undiscounted.
+- No packet source measures BAAJA-relevant net newly assignable capital (see F6, Q4).
+- **Change:** replace the point headline with this conditional slope, plus explicit scenario values. Label $74.6bn "at an assumed $0.65m/MW."
+
+**F2. The 75% coverage has no legal-scope basis.** §2107(a)(3)(A)(i) reaches charges to "eligible customers seeking transmission service on behalf of" computational loads (BAAJA p.229).
+- Outside RTOs, FERC has not asserted jurisdiction over transmission for bundled retail sales. Pricing there is largely set by states (GridStrategies-vol2 p.22 n.91).
+- ERCOT is largely outside FERC transmission ratemaking.
+- "Transmitting utility" includes FPA §201(f) entities, but FERC's existing authority to set their rates is limited.
+- The site definition requires supply "through electrical equipment that is connected to the bulk-power system" (p.229 l.1-5). It is unclear whether that captures distribution-served or small data centers. EPRI's total includes them (`README:41`).
+- **Change:** build coverage from a jurisdiction map (RTO/OATT-unbundled, non-RTO bundled, ERCOT, public power), not a fixed 75%.
+
+**F3. Timing and grandfathering are optimistic.** The statutory clock runs 270 days to a policy statement, 270 days to a NOPR, then 1 year to a final rule (pp.229-231), followed by compliance filings. A 2030 start needs enactment around 2027 and fast compliance.
+- The model charges 2027–29 entrants from 2030 (`README:32`). PJM asks that changes be prospective only (PJM-answer pp.36-37), and FERC's show-cause order avoids disrupting existing arrangements (same pp.35).
+- §228(f) applies only to loads interconnecting on or after enactment and keeps existing approved arrangements (p.240).
+- By my hand calculation, 2027–29 cohorts are about 202 of 796 TWh × 27 charge-years, or **about 35% of in-window I**. Grandfathering them gives **A ≈ $49bn**.
+- **Change:** make start year and grandfathering explicit scenario controls.
+
+### High
+
+**F4. Attribution overlap with §2107(b) (new FPA §228).** §228(b)(1) says "no portion of the incremental cost" (which includes transmission) may be recovered from other customers, for covered loads of 20 MW or more (pp.232-235). That is effectively AND at retail for the same dollars.
+- **Change:** treat A as the transmission component of §2107 as a whole. Never add it to a §228 estimate, and state that §2107(a)'s marginal effect given §228 is unresolved.
+
+**F5. "Relief" is framed without the sign test.**
+- B − A = $148.9bn − $74.6bn = **$74.3bn**. That is what data centers already pay above modeled incremental cost under embedded pricing.
+- Under the central inputs, incumbents are better off with data-center load even under embedded pricing.
+- Embedded pricing under-recovers I only when c·k exceeds the rate, i.e. c* = 95,100/0.07328 ≈ **$1.30m/MW**. The 1994 "higher-of" baseline (WIRES p.1; Harvard-reply pp.6-8) gives the same answer as embedded below c*.
+- With front-loaded recovery, higher-of binds earlier. The script's rate-base factor in year 0 is about 12.7%, so at WIRES' $1.16m/MW the charge is about $147/kW-yr versus $95.
+- This matches JLARC (data centers "currently paying full cost of service", JLARC p.44, PDF 62) and E3 ($33.5–60.7k/MW-yr surplus, E3 p.28, PDF 29). It is the opposite of how OPC characterizes the situation.
+- **Change:** show B−A and c* next to A.
+
+**F6. Prior recovery is mis-specified.** The flat 25%/50% haircuts (`README:109`, `regional_model.py:77`) mix three different mechanisms:
+- **Contributions in aid of construction (CIAC) for network upgrades.** These reduce A.
+- **Minimum bills, TSAs (transmission security agreements), and take-or-pay terms.** These guarantee embedded revenue against stranding (80% of billing determinants at a locked rate, 8–10-year terms; OPC Aff. A96 pp.90-91; Chang concurrence, Complaint p.49). They do **not** reduce A if the load materializes.
+- **Exit fees.** These address departures, not ongoing cost sharing.
+
+TSA "transmission facilities" are rolled into formula rates (Complaint p.47). In addition, FERC's PJM show-cause order is moving toward pro forma cost-recovery agreements for network upgrades (IMM p.4 n.5, citing 195 FERC ¶61,211 P66), so the counterfactual is not static embedded pricing.
+- **Change:** use a "share of incremental network capital already directly funded and not credited back" parameter, sourced from agreements.
+
+**F7. Comparator misuse risk** (detail in the table below). OPC's crediting is mostly Order 2003 reimbursement to the funding customer, not AND pricing. WIRES models the opposite policy. UCS is total wholesale system cost.
+
+### Medium
+
+**F8. The 14% "pooling overstatement" is not an empirical correction** (`README:107`).
+- The host-zone run (`regional_model.py:56-60`) gives the lower bound of the PJM sharing factor. The pooled run gives the upper bound.
+- Actual Schedule 12 sharing (50% load-ratio plus 50% DFAX for regional facilities, 100% DFAX for lower-voltage, 100% zonal for supplemental; PJM-answer pp.13-14) lies between the two. Taking it into account would raise PJM A above $44.2bn, not lower the national figure.
+- Non-RTO utilities pool at host-utility level, so the national 829 GW pool overstates (1−s) there.
+- **Change:** report bounds. Make no national adjustment.
+
+**F9. Cost-recovery factor and "cost of service" labels.**
+- The 5% real + 1.5% O&M annuity omits the equity gross-up, income and property taxes, and the front-loading of formula rates.
+- `regional_model.py:21-24` computes a rate-base variant, but the README never reports it, and it covers federal tax at 21% only, with no state tax, ADIT or property tax.
+- **Change:** publish that variant. Rename the annuity to "levelized real carrying charge" and B to "above modeled levelized incremental cost," not "incremental CoS" (`README:80`; `reference.py:182`).
+
+**F10. Discounting.** Undiscounted sums of a 5%-return annuity overstate capital-equivalent value.
+- By my hand calculation, PV at 3% real ≈ 0.587 × A ≈ **$44bn**. `reference.py` already outputs `pv_2026_billion`.
+- WIRES' "2026$" deflates at inflation, i.e. 0% real (WIRES p.22). OPC is 10-year nominal.
+- **Change:** report PV alongside undiscounted; harmonize before comparing.
+
+**F11. Remove the ITC ratio.** The "2.4×" (`README:99`) compares a three-times repeat of a historical 10-year JCT ramp with private bill transfers.
+- A transmission ITC would also lower I, so the two interact rather than add.
+- Normalization rules spread customer benefits over asset life.
+- **Change:** keep the JCT row as context at most, with no ratio.
+
+**F12. Unmodeled terms.**
+- The non-firm discount required by §2107(a)(3)(B) (p.230).
+- Exits: Harvard cites 8–20-year contract terms (Harvard-reply p.3 n.7).
+- Coincident-peak shaving (Harvard-2025 pp.18-19).
+- Retail pass-through: states allocate LSE charges (PJM-answer pp.27-28). Dominion billed a but-for $23m project about half to residential (Harvard-2025 p.16).
+
+### Low
+
+**F13.** The fixed 829 GW pool and the NITS proxy are immaterial to A (s ≤ 9.3%). They matter only for B and c*.
+
+**F14.** The UCS "current policy" and "central" cases use identical data-center demand (UCS-appendix p.4). Their 0.1% spread (`crosschecks.json:10-56`) is not evidence of robustness.
+
+## Source reconciliation
+
+| Source (locator) | What it measures | Basis | Relation to A | Misuse to avoid |
+|---|---|---|---|---|
+| OPC complaint Tables 1-2 (pp.3, PDF 7); Aff. Q62-63 (pp.59-61) | $2.0bn capital / $1.6bn 10-yr revenue requirement allocated to Maryland under current hybrid rules for three RTEP windows | Nominal, 10-yr, gross allocation, not DC-attributable (re-study requested, p.66) | Inter-zonal embedded payment | Treating it as DC incremental cost or BAAJA relief |
+| Synapse (OPC-corrected pp.1, 31-34) | $5.4bn Maryland capital 2031-35, including $2.2bn local projects; trend × assumed 10% share | Capital, extrapolated | None directly | Calling it DC-caused |
+| OPC relief (pp.55-61, 66-67; Aff. A90-A95) | Zonal reallocation; 100% upfront funding *credited back* to the DC (≤20 yrs) plus higher-of; one Northwestern-style "embedded legacy + incremental" variant (Aff. p.88) | Proposed, not adopted; PJM moves to dismiss | Mostly financing/risk allocation; only the Northwestern variant resembles AND | Equating OPC crediting with BAAJA's ATRR crediting |
+| WIRES/Concentric (pp.1-2, 8, 13, 15 n.12, 21-23) | Forgone NITS minus upgrade payments under an **upgrades-only NITS exemption**; $1.7-2.3m/MW real; $33-47bn PJM / $120-169bn national | 2030-59 single cohort; NITS +5%/yr; 20-yr, 8% WACC; real at 0% | Closer to the model's B−A, the *opposite* policy | Citing as AND support; calling $1.16m "conservative" for A (it is high for A) |
+| UCS report pp.14-15; appendix pp.4-7 | $886-978bn wholesale system cost attributable to DC demand, 2026-50 | ReEDS, 2024$, mostly generation | None | Comparing with transmission transfers |
+| Harvard reply pp.2-4, 9-15 | Legal argument: "and" ban targets wholesale market power; four pricing options | Qualitative | Option 4 ≈ BAAJA | Reading "full costs of service" as accounting cost of service |
+| Harvard-2025 pp.15-19 | Retail pass-through and special-contract gaps | Qualitative | Pass-through risk | — |
+| PJM answer pp.7, 23-28, 33-37 | Regional-benefit presumption; no facility-to-load attribution; prospective-only | Legal | Undercuts identification of c; supports grandfathering | Ignoring network benefits in "relief" |
+| IMM pp.3-4 | Support for direct charging "when identifiable" | Qualitative | Shows the baseline is shifting | — |
+| JLARC pp.44-48 (PDF 62-66) | DCs pay fully allocated *embedded* cost of service now; +$16-18bn Dominion-zone cost by 2040 | Real 2024$, generation + transmission | Consistent with B−A > 0 | Confusing embedded cost of service with incremental cost |
+| E3/Amazon pp.26-28 | Bundled revenue minus marginal cost: +$33.5-60.7k/MW-yr; dedicated facilities paid upfront | Sponsor-funded, 4 sites | Evidence of direct funding; B−A sign | Generalizing nationally |
+| GridStrategies vol.2 pp.22, 29-30 | Jurisdiction; upfront funding with reimbursement avoids "and" | Policy | Coverage (F2) | — |
+
+## Short answers to the seven questions
+
+1. **What each source measures.** See the table. Only WIRES is mechanically comparable, and it models the reverse policy. Using OPC's $1.6bn, Synapse's $5.4bn, UCS's ~$900bn or WIRES' $120-169bn as corroboration of A would be misuse.
+2. **OPC crediting vs BAAJA.** OPC's crediting refunds the data center for upfront funding, so over time it pays embedded or higher-of, not both. BAAJA credits the *utility ATRR*, so the data center pays both permanently. Baselines, TSAs, minimum bills and exits are as in F6. Construction-period cash flows and exits are unmodeled. OPC's allegations are not adopted rules.
+3. **Ledger audit.** The identities are correct given perfect crediting to the pool that bears I. BAAJA requires embedded plus incremental, credited to the "applicable" utility's ATRR. With multi-zone Schedule 12 allocation, "applicable" is ambiguous and can mismatch who actually bears I. The NITS parameter does not affect A under embedded; it does set c*, B and the sign test. Pool size is immaterial. The 80% load factor matters linearly, and UCS uses the same 80%, so UCS is not an independent check on it. Pass-through is an unmodeled state-level variable.
+4. **Capital per MW.** No source establishes national net newly assignable capital per MW or measured prior recovery.
+   - WIRES' ratio is $23.3bn (PJM Baseline load-growth plus Supplemental customer-service projects in service by 2030) divided by 20 GW (90% of PJM peak growth assumed to be large load). Both the numerator and the denominator are author assumptions. It is gross, multi-driver, and the timing does not match. Concentric calls it "likely on the high end" (p.13).
+   - Its alternatives are $0.578m/MW (half) and $0.22m/MW (generator interconnection, AEI).
+   - The upgrades-only exemption comparator uses a 20-yr life, 8% WACC, and real dollars deflated at inflation.
+   - So $0.65m/MW is a scenario value. Only the conditional slope (F1) can be defended, not a national score or a confidence range.
+5. **Regional model.** See F8. The host-zone assumption biases PJM A down. Wider network benefits (PJM pp.24-26) mean "relief" is not net welfare. The 14% difference justifies no national adjustment.
+6. **UCS demand cross-check.** UCS is a U.S. path built by EER from IT and cooling load, half of announced projects, PUE gains, linear interpolation and an 80% load factor. Its 2030-35 growth (~5.1%/yr) is close to the IEA-transfer rate (4.8%/yr). It shares every non-demand input with the model, so it validates the order of magnitude of the demand path only, not any dollar figure. The 2026 baseline question (300 vs 339 TWh) is secondary to the grandfathering baseline in F3.
+7. **Ranked corrections.** F1 through F14 above.
+
+## Reconstruction plan (public sources only)
+
+1. **Coverage map.** Use EIA-861 ownership and BA fields, FERC-714 or EIA-930 BA-to-RTO mapping, and OATT unbundled-service status. The result is a covered-MW share by jurisdiction.
+2. **Capital.** For PJM, take the Project Status & Cost Allocation records (the same source WIRES used) and match them to large-load adjustments by zone. Combine with the MISO MTEP Appendix A and expedited-review cards already extracted, SPP provisional-load directly assigned upgrades (193 FERC ¶61,018), and filed TSA/CSA dockets (e.g. ComEd ER26-989/-990/-1031, PECO ER25-3492). Classify each item as dedicated facility, site-identified network upgrade, or multi-driver regional, and net out CIAC.
+3. **Prior-recovery coding.** For each agreement, record CIAC amount, whether it is credited back, minimum-bill percentage and term, exit fee, and rate lock.
+4. **Allocation replay.** Use PJM's annual Schedule 12 cost-responsibility assignments for the projects identified in step 2 to get host versus non-host shares.
+5. **Carrying charges.** Use PJM TO Attachment H formula-rate fixed-charge rates, including taxes.
+6. **Output.** Publish A as a surface over capital per MW, coverage, start year and grandfathering, CIAC share, and pooling bound. Show undiscounted and PV@3% values, with B−A and c* shown alongside.
+
+I used read-only file tools only and didn't modify any files. The ~$44bn PV, ~$49bn grandfathered A, and the ~$11.5bn-per-$0.1m/MW slope are my hand calculations. I did not run `reference.py`; its `pv_2026_billion` output gives the exact PV figure.

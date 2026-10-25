@@ -157,4 +157,14 @@ python3 analysis/literature_crosschecks.py
 python3 analysis/build_literature_review.py
 ```
 
-The review distinguishes customer refunds/credits in OPC's proposed remedy from credits to the utility's annual transmission revenue requirement in BAAJA. It includes contrary Virginia JLARC and E3 case-study evidence, not only sources favoring direct assignment. The requested independent Claude review remains incomplete and no Claude conclusions are claimed.
+The review distinguishes customer refunds/credits in OPC's proposed remedy from credits to the utility's annual transmission revenue requirement in BAAJA. It includes contrary Virginia JLARC and E3 case-study evidence, not only sources favoring direct assignment. The [independent Claude review](independent-review.html) is complete, with numerical checks and accepted corrections to its first pass.
+
+## Independent Claude review, October25
+
+Claude Opus5.5 at high effort completed a read-only source/model review. Its numerical findings were checked with `python3 analysis/review_checks.py`; a separate follow-up accepted corrections to overstatements about allocation bounds, pool-size dependence, jurisdiction coverage, statutory overlap and grandfathering.
+
+The central embedded baseline already collects $74.339bn above modeled incremental transmission costs. AND adds $74.593bn. At central demand, each $0.1m/MW of capital adds $11.476bn; the levelized-cost threshold for embedded under-recovery is about $1.298m/MW at the selected NITS proxy. The $74.593bn has PV$43.945bn at3%real. These are model identities/sensitivities, not observed national surplus or subsidy estimates.
+
+Grandfathering2027–2029 entrants, retaining their investment and ordinary billing demand, gives $48.734bn net additional payments by all modeled DC customers, equal to relief for2026 incumbents. Eligible-only gross extra is$50.005bn; grandfathered DC customers receive$1.271bn of shared credits. A2032 start limited to2032+entrants gives$33.204bn. None of these scope assumptions is asserted to be legally mandatory for2107(a). New section228's incremental-cost floor overlaps transmission dollars but does not itself require full permanent additive AND recovery.
+
+The original report is preserved with a warning and the correction check alongside it; use the reconciled review, not withdrawn first-pass claims. The ITC remains a conditional scale illustration, not a federal-budget equivalence or official30-year score.

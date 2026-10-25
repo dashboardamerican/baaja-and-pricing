@@ -1,0 +1,125 @@
+{
+  "status": "Completed; numerical findings checked and first-pass overstatements corrected in follow-up",
+  "date": "2026-10-25",
+  "snapshot_commit": "846e56d996f1c362e9edc932364e8cafce65de57",
+  "packet_files": [
+    {
+      "file": "BAAJA-draft.txt",
+      "bytes": 477088,
+      "sha256": "1a4d55f61d8f637d497162c4ede789caf5d8e0763dd757d4968b7730eace2137"
+    },
+    {
+      "file": "E3-Amazon.txt",
+      "bytes": 137298,
+      "sha256": "94ab44912b3f7b5a1c278f60f764593eed580c879fe4c7923267cd15b5fb9e1c"
+    },
+    {
+      "file": "GridStrategies-vol2.txt",
+      "bytes": 194674,
+      "sha256": "b9b2b9601261db5e8f2fceb86141e8b234cc241c2e24de0bfa218bf800eff1da"
+    },
+    {
+      "file": "Harvard-2025.txt",
+      "bytes": 143123,
+      "sha256": "2803f59695b53b9a63cdd1c2946283ab9e42f3a2fa7752b82ecf07e629d86f0b"
+    },
+    {
+      "file": "Harvard-reply.txt",
+      "bytes": 33068,
+      "sha256": "ed7167c16c102f6f01da9c756501bb66698b9efa4ede70d25b82d15fb11a2578"
+    },
+    {
+      "file": "IMM-comments.txt",
+      "bytes": 8834,
+      "sha256": "98f65473d6f67f3756e2c615f4405c248d739fbb90d5a19eb49ee12bd46707ab"
+    },
+    {
+      "file": "JLARC.txt",
+      "bytes": 396546,
+      "sha256": "da8f6e0643b1923f836f9e26b2d39ae7c7824bc258c4effbd9ef1001c012509a"
+    },
+    {
+      "file": "OPC-complaint.txt",
+      "bytes": 473688,
+      "sha256": "0350b5b0f7b7daa02ed6b2cf3efb3dda04ebb48cae04c5bccfcc0ecd6e73113f"
+    },
+    {
+      "file": "OPC-corrected-report.txt",
+      "bytes": 106703,
+      "sha256": "e5ed095a8f0973fc870007a2d74f74020fb35b26c36a89c8120cafac395b29d5"
+    },
+    {
+      "file": "PJM-answer.txt",
+      "bytes": 95905,
+      "sha256": "fd5d2209229b14126aa8db87199bed93a6b9b9cb23fd0a7a9ed78e324ffc1a62"
+    },
+    {
+      "file": "UCS-appendix.txt",
+      "bytes": 50280,
+      "sha256": "06f77bf75fc2b1ce7819fb7467956bdac01ee278f199c4e3a9f35a5355f635bf"
+    },
+    {
+      "file": "UCS-report.txt",
+      "bytes": 76701,
+      "sha256": "510f9088ada1d7b3460aa3b884ca6e3abf51d2e85d7bb30e44202793fcfdc9db"
+    },
+    {
+      "file": "WIRES-report.txt",
+      "bytes": 54930,
+      "sha256": "84ee83bca08ad17904fb9a7703781206a0f096a628d51dea28f310be3b9ac8af"
+    },
+    {
+      "file": "crosschecks.json",
+      "bytes": 4413,
+      "sha256": "e68164c936659832e6c3c524701b8e55da49c29a5ec58d46592afe5a2b8d7166"
+    },
+    {
+      "file": "existing-obligations.json",
+      "bytes": 2220,
+      "sha256": "e84560889f3c6ca39072d616cd290928beefe5b1e30794b1dc359d81c6fa16f7"
+    },
+    {
+      "file": "model-README.md",
+      "bytes": 16531,
+      "sha256": "66b768fde393c2fa1f87b9a076e476d60eae070581fb942968b247dc2ae59165"
+    },
+    {
+      "file": "model.js",
+      "bytes": 4022,
+      "sha256": "728cb471d4e8795c252b745a1101be17d89b67a29db36cc12fed0f7ad300a957"
+    },
+    {
+      "file": "reference.py",
+      "bytes": 12287,
+      "sha256": "9ece4e8cedfe28a41479b64bdff945b451346e97a5b47f2a24f592769b60ed91"
+    },
+    {
+      "file": "regional_model.py",
+      "bytes": 7056,
+      "sha256": "f7e3753e04dcc6f9248ad7b86a7d4d5546b202dc7715e2a3e07461604620f26d"
+    },
+    {
+      "file": "review-prompt.txt",
+      "bytes": 3724,
+      "sha256": "d0bbfada40971ec4831bf2f57d4e22b8a65eda329a35f8e66d382cd46cd111d4"
+    }
+  ],
+  "first_run": {
+    "subtype": "success",
+    "is_error": false,
+    "duration_ms": 604058,
+    "num_turns": 49,
+    "permission_denials": []
+  },
+  "followup": {
+    "subtype": "success",
+    "is_error": false,
+    "duration_ms": 47232,
+    "num_turns": 1,
+    "permission_denials": []
+  },
+  "reported_models": [
+    "claude-opus-5-5"
+  ],
+  "scope": "Public papers and published model; read-only tools in first run, no tools in follow-up"
+}

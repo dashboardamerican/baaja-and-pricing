@@ -1,0 +1,97 @@
+# Bounded correction check: BAAJA review
+
+**Scope.** I used only the public text and numerical counterexamples you provided. I used no tools and did no outside research. BAAJA is a discussion draft, not enacted law.
+
+## Agreed corrections
+
+**1. Host-zone and pooled runs are not bounds.** I accept the correction. Your counterexample is right. With A = N/(N+Q)·I, the cases work out as follows:
+
+| Allocation | New customer pays | A |
+|---|---|---|
+| Host-only | $50 | $50 |
+| Pooled | $33.33 | $66.67 |
+| 50/50 zonal | $25 | $75 |
+| 50% pooled LRS + 50% DFAX to non-host | $16.67 | $83.33 |
+
+Any allocation that sends cost to a pool excluding the new load pushes A above the pooled result. My "lower bound / upper bound" language should be withdrawn.
+
+A narrower conditional statement does hold. Suppose every incremental-cost dollar is allocated by load ratio within some pool that contains all of the new load and sits within the modeled grid. Then each dollar's new-load share Q/(N_p+Q) lies between Q/(N_grid+Q) and Q/(N_host+Q). In that case the host and pooled runs bracket A.
+
+That condition cannot be verified without actual Schedule 12 allocations. DFAX-type assignment to non-host zones is a real feature, so the condition should not be presented as likely. I agree with your recommendation:
+
+- Describe the host-zone and pooled runs as synthetic allocation comparisons, not empirical bounds.
+- Optionally state the nested-pool condition as a labeled conditional, not as a property of actual sharing.
+
+**2. Pool size matters.** I accept the correction. Calling pool size "immaterial" was wrong, because A = N/(N+Q)·I depends on N, with ∂A/∂N = QI/(N+Q)². The effect is modest nationally when Q/N is small. It can be material zonally, where Q/N can be large.
+
+What I can confirm is narrower. As specified, A depends on N, Q and I, and not on the NITS rate or ATRR level. This holds because the embedded charges and their credits do not enter the incremental-share formula.
+
+That independence is conditional on the model structure. A variant that changes how embedded revenue is credited could reintroduce NITS dependence, so the claim should be scoped to the base specification.
+
+**3. Section 228(b) does not mandate permanent additive (AND) recovery.** I accept the correction. "Effectively AND at retail" overstated the text you quoted. What the provisions do:
+
+- **228(b)(1)** sets a floor. No portion of incremental cost may be allocated to or recovered from customers other than covered load, subject to (e).
+- **228(b)(2)** permits, but does not require, recovery above incremental cost, with the excess credited to others.
+- **228(c)** permits state rates above both embedded and incremental cost.
+- **228(f)** limits (b) and (c) to post-enactment loads and preserves approved preexisting arrangements.
+- **Section 2107(a)** is the provision that separately requires embedded *and* incremental transmission charges, credited against ATRR.
+
+The more accurate description has two parts. First, 228 imposes an incremental-cost floor with permitted excess recovery, which is compatible with but not identical to additive recovery. Second, because 228's incremental cost includes transmission, overlapping transmission dollars under 2107(a) and 228 must not be double-counted. Whether actual retail rates end up additive depends on implementation and state action, which the text leaves open.
+
+**4. The direction of bias in the 75% assumption is not established.** I accept the correction. My "likely overstates" claim pointed one way, but the evidence runs both ways:
+
+- ERCOT and 201(f) exclusions suggest the figure could be too high.
+- The transmitting-utility definitions and bundled-retail reach through 228 could extend coverage, which suggests it could be too low.
+
+With no jurisdiction map in the packet, the honest label is "unmeasured/unresolved." The 75% should be presented as you now define it: modeled-grid participation, with 25% excluded from both the cost and billing pools.
+
+**5. Grandfathering is a sensitivity, not a legal requirement.** Confirmed. The prospective clause you quote is 228(f), and it applies to 228(b)/(c). Nothing in the quoted 2107(a) text carries that limitation. The $48.73bn scenario is therefore a legitimate implementation sensitivity, not a finding that 2107(a) must exclude pre-2030 entrants.
+
+One small caveat: I only have the excerpt. If 2107 has its own effective-date or transition language elsewhere in the draft, it would need checking. I am not asserting that it does.
+
+**6. The rate-base variant was already published.** I accept the correction. My "unpublished" claim was wrong. Public evidence.html §6 already reported the $84.6bn rate-base variant with stated assumptions and omissions, and my packet was incomplete. I withdraw the finding and treat the variant as an existing test. I have not re-evaluated its assumptions here.
+
+**7. A cash-flow ledger is stronger than a CIAC-only parameter.** Confirmed. The haircut is defined as the fraction of modeled uplift already collected beyond embedded charges. Inferring it from AND-tariff or TSA prevalence would be wrong when TSAs only guarantee embedded revenue the model already assumes.
+
+A mechanism-based ledger is stronger than my CIAC-only suggestion, which would omit real additional collections. Each mechanism needs specific treatment:
+
+- **CIAC:** counts to the extent it funds modeled incremental investment and is not refunded.
+- **Refundable advances:** count net of refunds, with timing reflected in PV.
+- **Minimum-bill top-ups:** count only the amount above embedded charges.
+- **Exit charges:** count on a probability-weighted, contingent basis.
+
+One guardrail: if CIAC-funded assets are already excluded from rate base and therefore from I, crediting the same CIAC again in the haircut would double-count it. Each dollar should be treated once, either as a reduction in I or as a credit, not both.
+
+## Remaining disagreement
+
+There is no substantive disagreement. I would only:
+
+- keep the nested-pool condition as a labeled conditional (point 1); and
+- scope NITS independence to the base specification (point 2).
+
+Both refine your corrections rather than dispute them.
+
+## Updated verdict
+
+**Arithmetic.** The arithmetic is sound and matches Codex's exact values:
+
+| Result | Value |
+|---|---|
+| A | $74.59253645bn |
+| PV at 3% | $43.94514278bn |
+| B−A | $74.33944680bn |
+| Capital threshold | $1,297,794.57/MW |
+| Slope | $11.47577484bn per $0.1m/MW |
+
+The grandfathering sensitivity is internally consistent. Net additional all-DC payments are $48.73441626bn, with equal incumbent relief. Eligible-only gross payments are $50.00536442bn, and the $1.27094816bn difference is shared credits to grandfathered DC customers.
+
+**Interpretation.** All of these are conditional model outputs, not calibrated estimates:
+
+- A is uncalibrated.
+- The 75% participation figure and its bias direction are unresolved.
+- Host-zone and pooled runs are synthetic comparisons, not bounds on actual Schedule 12 sharing.
+- The prior-recovery haircut should come from a mechanism-specific cash-flow ledger.
+
+**Legal reading.** Section 2107(a) requires additive transmission recovery. Section 228 sets an incremental-cost floor with permitted excess, limited to post-enactment loads. Grandfathering under 2107(a) is an implementation sensitivity, not a legal requirement.
+
+**National score.** No national figure should be presented with more precision than these unresolved inputs allow. The model is useful for structured scenario analysis of a discussion draft, not as a point estimate of statutory cost shifting.

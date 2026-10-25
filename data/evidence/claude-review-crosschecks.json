@@ -1,0 +1,65 @@
+{
+  "status": "Verified conditional model findings; not calibration or legal conclusions",
+  "reviewer": "Claude Opus 5.5, high effort, CLI-reported model claude-opus-5-5",
+  "central": {
+    "A_billion": 74.5925364538903,
+    "B_billion": 148.93198325785204,
+    "baseline_above_incremental_billion": 74.33944680396176,
+    "A_PV_2026_at_3pct_real_billion": 43.94514277994051,
+    "capital_threshold_USD_per_MW": 1297794.5746280493,
+    "A_change_per_100000_USD_per_MW_billion": 11.475774839060048
+  },
+  "scope_cases": [
+    {
+      "charges_begin": 2030,
+      "first_eligible_entry_year": 2027,
+      "net_all_DC_extra_equals_2026_incumbent_relief_billion": 74.5925364538903,
+      "eligible_DC_gross_extra_billion": 74.5925364538903,
+      "grandfathered_DC_shared_credit_billion": 0.0
+    },
+    {
+      "charges_begin": 2032,
+      "first_eligible_entry_year": 2027,
+      "net_all_DC_extra_equals_2026_incumbent_relief_billion": 71.55189636749503,
+      "eligible_DC_gross_extra_billion": 71.55189636749503,
+      "grandfathered_DC_shared_credit_billion": 0.0
+    },
+    {
+      "charges_begin": 2030,
+      "first_eligible_entry_year": 2030,
+      "net_all_DC_extra_equals_2026_incumbent_relief_billion": 48.73441626047221,
+      "eligible_DC_gross_extra_billion": 50.00536442336683,
+      "grandfathered_DC_shared_credit_billion": 1.2709481628946322
+    },
+    {
+      "charges_begin": 2032,
+      "first_eligible_entry_year": 2032,
+      "net_all_DC_extra_equals_2026_incumbent_relief_billion": 33.20361364928581,
+      "eligible_DC_gross_extra_billion": 34.594293406856806,
+      "grandfathered_DC_shared_credit_billion": 1.3906797575710008
+    },
+    {
+      "charges_begin": 2035,
+      "first_eligible_entry_year": 2035,
+      "net_all_DC_extra_equals_2026_incumbent_relief_billion": 22.597411101767193,
+      "eligible_DC_gross_extra_billion": 23.817243033344113,
+      "grandfathered_DC_shared_credit_billion": 1.2198319315769213
+    }
+  ],
+  "pre2030_share_of_central_A": 0.3466582773921678,
+  "allocation_counterexample": {
+    "host_only": 50.0,
+    "one_pooled_grid": 66.66666666666667,
+    "half_to_each_zone": 75.0,
+    "half_pooled_LRS_plus_half_DFAX_to_nonhost": 83.33333333333334
+  },
+  "qualifications": [
+    "Grandfathering here is an implementation sensitivity, not a claim that section2107(a) legally requires it.",
+    "Section228 prospective applicability appears in section2107(b), not an express grandfathering rule in section2107(a).",
+    "Section228 incremental-cost floor overlaps transmission dollars but does not itself mandate the full additive AND payment.",
+    "The national baseline-surplus finding does not establish that every project or customer covers costs.",
+    "The threshold assumes constant levelized costs and the national NITS proxy; regional rates and annual recovery profiles differ.",
+    "The pooled result is not a general upper bound; actual project allocation data are required.",
+    "A depends on pool size; it is independent of the inherited NITS rate only under the embedded comparator and fixed physical/billing assumptions."
+  ]
+}
