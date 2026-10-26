@@ -1,13 +1,13 @@
 {
-  "as_of": "2026-10-25",
+  "as_of": "2026-10-26",
   "status": "Judgmental central planning case, not a measured national expectation, fully allocated cost-of-service finding, or official fiscal score.",
   "scope": "New DC cohort2027\u20132056; policy charges2030\u20132056; constant2026USD levelized-payment equivalents; excludes cryptocurrency, generation/distribution and pre2027existingDCincremental obligations.",
-  "estimand": "Increase in positive contribution above incremental transmission service cost: sum(max(P_AND-C,0)-max(P_baseline-C,0)); costs and physical service held fixed.",
+  "estimand": "Additional DC payments versus embedded baseline, including baseline deficit repair: sum(P_AND-P_embedded); equals other-payer credits with fixed costs. Positive surplus and higher-of comparisons remain secondary fields.",
   "central_choice": "0.4m/MW residual newlyassignablecapital is author judgment informed by primary cost and funding examples. It is NOT a nationally estimated residual cost or a quantified prior-recovery fraction.",
   "rounded_central_billion_2026_USD": 50,
   "one_way_capital_scenario_range_billion_2026_USD": [
     20,
-    100
+    235
   ],
   "range_status": "Rounded one-at-a-time residual-capital scenarios only; not a confidence interval or joint bounds. Zero and wider joint cases also reported.",
   "cases": {
@@ -49,7 +49,9 @@
         "higher_of_payment_excluding_common_direct": 155.6610086336947,
         "and_payment_excluding_common_direct": 202.4721181516096,
         "nominal_new_positive_surplus": 75.44219749074573,
-        "PV3_new_positive_surplus": 27.668741989954665
+        "PV3_new_positive_surplus": 27.668741989954665,
+        "nominal_additional_payments": 75.44219749074573,
+        "PV3_additional_payments": 27.66874198995466
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -91,7 +93,9 @@
         "higher_of_payment_excluding_common_direct": 153.2966344324315,
         "and_payment_excluding_common_direct": 170.8508005016496,
         "nominal_new_positive_surplus": 28.29082405902964,
-        "PV3_new_positive_surplus": 10.375778246232995
+        "PV3_new_positive_surplus": 10.375778246232995,
+        "nominal_additional_payments": 28.29082405902964,
+        "PV3_additional_payments": 10.375778246232995
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -133,7 +137,9 @@
         "higher_of_payment_excluding_common_direct": 159.44400735571585,
         "and_payment_excluding_common_direct": 253.06622639154568,
         "nominal_new_positive_surplus": 150.88439498149145,
-        "PV3_new_positive_surplus": 55.33748397990933
+        "PV3_new_positive_surplus": 55.33748397990933,
+        "nominal_additional_payments": 150.88439498149145,
+        "PV3_additional_payments": 55.33748397990932
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -175,7 +181,9 @@
         "higher_of_payment_excluding_common_direct": 151.87800991167356,
         "and_payment_excluding_common_direct": 151.87800991167356,
         "nominal_new_positive_surplus": 0.0,
-        "PV3_new_positive_surplus": 0.0
+        "PV3_new_positive_surplus": 0.0,
+        "nominal_additional_payments": 0.0,
+        "PV3_additional_payments": 0.0
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -217,7 +225,9 @@
         "higher_of_payment_excluding_common_direct": 158.02538283495792,
         "and_payment_excluding_common_direct": 234.09343580156965,
         "nominal_new_positive_surplus": 122.59357092246181,
-        "PV3_new_positive_surplus": 44.961705733676325
+        "PV3_new_positive_surplus": 44.961705733676325,
+        "nominal_additional_payments": 122.59357092246181,
+        "PV3_additional_payments": 44.961705733676325
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -259,7 +269,9 @@
         "higher_of_payment_excluding_common_direct": 252.97054119968033,
         "and_payment_excluding_common_direct": 404.84855111135386,
         "nominal_new_positive_surplus": 244.77118650376906,
-        "PV3_new_positive_surplus": 89.77085810336612
+        "PV3_new_positive_surplus": 89.77085810336612,
+        "nominal_additional_payments": 377.2109874537286,
+        "PV3_additional_payments": 138.34370994977328
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 1.0
     },
@@ -301,7 +313,9 @@
         "higher_of_payment_excluding_common_direct": 93.43802953242485,
         "and_payment_excluding_common_direct": 121.84091129634675,
         "nominal_new_positive_surplus": 44.02210521050907,
-        "PV3_new_positive_surplus": 17.643270529648696
+        "PV3_new_positive_surplus": 17.643270529648696,
+        "nominal_additional_payments": 44.02210521050907,
+        "PV3_additional_payments": 17.643270529648696
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -343,7 +357,9 @@
         "higher_of_payment_excluding_common_direct": 253.74192209513168,
         "and_payment_excluding_common_direct": 328.61672488902826,
         "nominal_new_positive_surplus": 122.63368598683084,
-        "PV3_new_positive_surplus": 43.22508773117935
+        "PV3_new_positive_surplus": 43.22508773117935,
+        "nominal_additional_payments": 122.63368598683086,
+        "PV3_additional_payments": 43.22508773117936
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -385,7 +401,9 @@
         "higher_of_payment_excluding_common_direct": 237.63145035317328,
         "and_payment_excluding_common_direct": 308.0682228876982,
         "nominal_new_positive_surplus": 113.91229812355316,
-        "PV3_new_positive_surplus": 41.35822733199295
+        "PV3_new_positive_surplus": 41.35822733199295,
+        "nominal_additional_payments": 113.91229812355316,
+        "PV3_additional_payments": 41.35822733199295
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -427,7 +445,9 @@
         "higher_of_payment_excluding_common_direct": 111.23330203851714,
         "and_payment_excluding_common_direct": 144.91742454364856,
         "nominal_new_positive_surplus": 54.62712982089875,
-        "PV3_new_positive_surplus": 19.74409344619657
+        "PV3_new_positive_surplus": 19.74409344619657,
+        "nominal_additional_payments": 54.62712982089875,
+        "PV3_additional_payments": 19.74409344619657
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -469,7 +489,9 @@
         "higher_of_payment_excluding_common_direct": 220.66081773017072,
         "and_payment_excluding_common_direct": 286.32677386609623,
         "nominal_new_positive_surplus": 105.3017231106789,
-        "PV3_new_positive_surplus": 39.0694115522243
+        "PV3_new_positive_surplus": 39.0694115522243,
+        "nominal_additional_payments": 105.3017231106789,
+        "PV3_additional_payments": 39.0694115522243
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -511,7 +533,9 @@
         "higher_of_payment_excluding_common_direct": 77.4088056870257,
         "and_payment_excluding_common_direct": 100.97117680048957,
         "nominal_new_positive_surplus": 38.56256460663031,
-        "PV3_new_positive_surplus": 13.640739058720587
+        "PV3_new_positive_surplus": 13.640739058720587,
+        "nominal_additional_payments": 38.56256460663031,
+        "PV3_additional_payments": 13.640739058720586
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -553,7 +577,9 @@
         "higher_of_payment_excluding_common_direct": 105.56074721266137,
         "and_payment_excluding_common_direct": 137.56421159052528,
         "nominal_new_positive_surplus": 51.622521833274895,
-        "PV3_new_positive_surplus": 18.89539181940637
+        "PV3_new_positive_surplus": 18.89539181940637,
+        "nominal_additional_payments": 51.622521833274895,
+        "PV3_additional_payments": 18.89539181940637
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -595,7 +621,9 @@
         "higher_of_payment_excluding_common_direct": 184.94188835540228,
         "and_payment_excluding_common_direct": 240.29038877107757,
         "nominal_new_positive_surplus": 89.1565548081242,
-        "PV3_new_positive_surplus": 32.73594416190086
+        "PV3_new_positive_surplus": 32.73594416190086,
+        "nominal_additional_payments": 89.1565548081242,
+        "PV3_additional_payments": 32.73594416190086
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -637,7 +665,9 @@
         "higher_of_payment_excluding_common_direct": 141.1485018795065,
         "and_payment_excluding_common_direct": 188.31132022287878,
         "nominal_new_positive_surplus": 76.02849236593485,
-        "PV3_new_positive_surplus": 27.86750471459521
+        "PV3_new_positive_surplus": 27.86750471459521,
+        "nominal_additional_payments": 76.02849236593485,
+        "PV3_additional_payments": 27.86750471459521
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -679,7 +709,9 @@
         "higher_of_payment_excluding_common_direct": 130.85950728682045,
         "and_payment_excluding_common_direct": 178.2718017917777,
         "nominal_new_positive_surplus": 76.44452395451522,
-        "PV3_new_positive_surplus": 28.008421482736214
+        "PV3_new_positive_surplus": 28.008421482736214,
+        "nominal_additional_payments": 76.44452395451522,
+        "PV3_additional_payments": 28.008421482736214
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -721,7 +753,9 @@
         "higher_of_payment_excluding_common_direct": 139.14567663294028,
         "and_payment_excluding_common_direct": 181.10321954379364,
         "nominal_new_positive_surplus": 67.63930400010452,
-        "PV3_new_positive_surplus": 24.79090984736096
+        "PV3_new_positive_surplus": 24.79090984736096,
+        "nominal_additional_payments": 67.63930400010452,
+        "PV3_additional_payments": 24.79090984736096
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -763,7 +797,9 @@
         "higher_of_payment_excluding_common_direct": 153.1155306445794,
         "and_payment_excluding_common_direct": 198.79253752429565,
         "nominal_new_positive_surplus": 73.55343622246008,
-        "PV3_new_positive_surplus": 27.027022549480993
+        "PV3_new_positive_surplus": 27.027022549480993,
+        "nominal_additional_payments": 73.55343622246008,
+        "PV3_additional_payments": 27.02702254948099
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -805,7 +841,9 @@
         "higher_of_payment_excluding_common_direct": 155.95557588551915,
         "and_payment_excluding_common_direct": 208.5526145529195,
         "nominal_new_positive_surplus": 81.77249578381134,
-        "PV3_new_positive_surplus": 32.49997150507575
+        "PV3_new_positive_surplus": 32.49997150507575,
+        "nominal_additional_payments": 81.77249578381134,
+        "PV3_additional_payments": 32.499971505075756
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -847,7 +885,9 @@
         "higher_of_payment_excluding_common_direct": 90.27898110074882,
         "and_payment_excluding_common_direct": 118.28096727067242,
         "nominal_new_positive_surplus": 46.479317437242834,
-        "PV3_new_positive_surplus": 15.892368107544073
+        "PV3_new_positive_surplus": 15.892368107544073,
+        "nominal_additional_payments": 46.479317437242834,
+        "PV3_additional_payments": 15.89236810754407
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -889,7 +929,9 @@
         "higher_of_payment_excluding_common_direct": 159.81340506899227,
         "and_payment_excluding_common_direct": 207.89342418180814,
         "nominal_new_positive_surplus": 76.79532168171424,
-        "PV3_new_positive_surplus": 28.843930939132786
+        "PV3_new_positive_surplus": 28.843930939132786,
+        "nominal_additional_payments": 76.79532168171424,
+        "PV3_additional_payments": 28.843930939132786
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -931,7 +973,9 @@
         "higher_of_payment_excluding_common_direct": 144.71530753888996,
         "and_payment_excluding_common_direct": 188.2018440177431,
         "nominal_new_positive_surplus": 71.67682828681639,
-        "PV3_new_positive_surplus": 24.802980484212924
+        "PV3_new_positive_surplus": 24.802980484212924,
+        "nominal_additional_payments": 71.67682828681637,
+        "PV3_additional_payments": 24.80298048421292
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -973,7 +1017,9 @@
         "higher_of_payment_excluding_common_direct": 131.3237296454684,
         "and_payment_excluding_common_direct": 178.77004737177228,
         "nominal_new_positive_surplus": 76.56081714307386,
-        "PV3_new_positive_surplus": 28.001223838802744
+        "PV3_new_positive_surplus": 28.001223838802744,
+        "nominal_additional_payments": 76.56081714307385,
+        "PV3_additional_payments": 28.001223838802744
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -1015,7 +1061,9 @@
         "higher_of_payment_excluding_common_direct": 130.07954771555026,
         "and_payment_excluding_common_direct": 176.89065723346516,
         "nominal_new_positive_surplus": 75.44219749074573,
-        "PV3_new_positive_surplus": 27.66874198995466
+        "PV3_new_positive_surplus": 27.66874198995466,
+        "nominal_additional_payments": 75.44219749074571,
+        "PV3_additional_payments": 27.668741989954658
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -1057,7 +1105,9 @@
         "higher_of_payment_excluding_common_direct": 99.6050869943704,
         "and_payment_excluding_common_direct": 146.41619651228532,
         "nominal_new_positive_surplus": 75.44219749074573,
-        "PV3_new_positive_surplus": 27.668741989954665
+        "PV3_new_positive_surplus": 27.668741989954665,
+        "nominal_additional_payments": 75.44219749074573,
+        "PV3_additional_payments": 27.66874198995466
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -1099,7 +1149,9 @@
         "higher_of_payment_excluding_common_direct": 243.33821940289425,
         "and_payment_excluding_common_direct": 290.1493289208092,
         "nominal_new_positive_surplus": 75.44219749074571,
-        "PV3_new_positive_surplus": 27.66874198995466
+        "PV3_new_positive_surplus": 27.66874198995466,
+        "nominal_additional_payments": 75.44219749074573,
+        "PV3_additional_payments": 27.66874198995466
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -1141,7 +1193,9 @@
         "higher_of_payment_excluding_common_direct": 148.66479528879626,
         "and_payment_excluding_common_direct": 192.2568509791256,
         "nominal_new_positive_surplus": 70.11765218471113,
-        "PV3_new_positive_surplus": 25.830684597809636
+        "PV3_new_positive_surplus": 25.830684597809636,
+        "nominal_additional_payments": 70.1587898427899,
+        "PV3_additional_payments": 25.845839109290043
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.021409067983791025
     },
@@ -1183,7 +1237,9 @@
         "higher_of_payment_excluding_common_direct": 138.43911010471587,
         "and_payment_excluding_common_direct": 178.29362640618842,
         "nominal_new_positive_surplus": 63.95350424225032,
-        "PV3_new_positive_surplus": 23.688302187070157
+        "PV3_new_positive_surplus": 23.688302187070157,
+        "nominal_additional_payments": 64.00823853037791,
+        "PV3_additional_payments": 23.708538119144446
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.02997269517730743
     },
@@ -1225,7 +1281,9 @@
         "higher_of_payment_excluding_common_direct": 158.77034355194073,
         "and_payment_excluding_common_direct": 242.85095921906168,
         "nominal_new_positive_surplus": 135.2505404039444,
-        "PV3_new_positive_surplus": 49.81900838469213
+        "PV3_new_positive_surplus": 49.81900838469213,
+        "nominal_additional_payments": 140.3175796855798,
+        "PV3_additional_payments": 51.69167821858009
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.14670689925042174
     },
@@ -1267,7 +1325,9 @@
         "higher_of_payment_excluding_common_direct": 156.24670713487464,
         "and_payment_excluding_common_direct": 209.08527149761738,
         "nominal_new_positive_surplus": 87.05780192500991,
-        "PV3_new_positive_surplus": 30.431258159754442
+        "PV3_new_positive_surplus": 30.431258159754442,
+        "nominal_additional_payments": 87.05780192500991,
+        "PV3_additional_payments": 30.43125815975444
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -1309,7 +1369,9 @@
         "higher_of_payment_excluding_common_direct": 155.94763206873134,
         "and_payment_excluding_common_direct": 206.0605046432884,
         "nominal_new_positive_surplus": 81.1175366741341,
-        "PV3_new_positive_surplus": 29.459816410304732
+        "PV3_new_positive_surplus": 29.459816410304732,
+        "nominal_additional_payments": 81.1175366741341,
+        "PV3_additional_payments": 29.459816410304732
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -1351,7 +1413,9 @@
         "higher_of_payment_excluding_common_direct": 156.27263557982255,
         "and_payment_excluding_common_direct": 210.10383153396708,
         "nominal_new_positive_surplus": 87.55154050506168,
-        "PV3_new_positive_surplus": 31.459014011650776
+        "PV3_new_positive_surplus": 31.459014011650776,
+        "nominal_additional_payments": 87.55154050506168,
+        "PV3_additional_payments": 31.459014011650776
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -1393,7 +1457,9 @@
         "higher_of_payment_excluding_common_direct": 36.14745901681623,
         "and_payment_excluding_common_direct": 40.77937115289808,
         "nominal_new_positive_surplus": 7.179078696142617,
-        "PV3_new_positive_surplus": 2.8772460331916303
+        "PV3_new_positive_surplus": 2.8772460331916303,
+        "nominal_additional_payments": 7.179078696142617,
+        "PV3_additional_payments": 2.8772460331916303
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
@@ -1435,7 +1501,9 @@
         "higher_of_payment_excluding_common_direct": 308.91622735670546,
         "and_payment_excluding_common_direct": 460.1879585298702,
         "nominal_new_positive_surplus": 246.80403304001416,
-        "PV3_new_positive_surplus": 87.78765780433017
+        "PV3_new_positive_surplus": 87.78765780433017,
+        "nominal_additional_payments": 255.6250429350751,
+        "PV3_additional_payments": 90.95297979401377
       },
       "incremental_dominant_share_of_charged_billing_MW_years": 0.14670689925042174
     }

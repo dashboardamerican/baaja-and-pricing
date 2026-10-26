@@ -1,0 +1,29 @@
+Independent framing review — October 26, 2026
+
+PRIMARY ESTIMAND
+The clarified question is additional DC payments and reduction in other customers' bills under credited BAAJA AND pricing compared with embedded pricing. The correct primary measure is A=P_AND−P_embedded=(1−s)U. It remains valid when incremental cost exceeds embedded payments. Do not replace it with G=min(A,sB); G answers the different higher-of baseline / increase in positive surplus question. Common existing direct payments cancel consistently; U must remain residual newly assignable recovery, not gross project cost.
+
+RECOMMENDED SHAREABLE PRESENTATION
+Lead with: 'About $50 billion in additional data-center payments, reducing other customers' transmission bills by the same amount, in our central planning case for 2027–2056.' State constant 2026 dollars, modeled levelized recovery, charges beginning 2030, and the embedded shared-charge baseline with existing direct funding accounted for. The $47bn computed result and $50bn rounded result are consistent.
+
+Place both cost regimes in the main sensitivity table. Holding central growth, coverage and finance fixed, selected residual capital assumptions imply:
+  $0.15m/MW: $17.554bn additional payments;
+  $0.40m/MW: $46.811bn;
+  $0.80m/MW: $93.622bn;
+  $1.30m/MW: $152.136bn;
+  $2.00m/MW: $234.056bn.
+Thus, if a headline scenario span is required, use 'about $20–235bn across the selected capital scenarios, holding other central assumptions fixed.' Do not call this a confidence interval, full range of plausible outcomes, or empirical forecast distribution. Zero remains possible if all relevant costs are already directly recovered; changing demand, eligibility and other inputs can move results outside this one-dimensional span.
+
+I prefer a central estimate plus the table over presenting '$20–100bn' as the principal uncertainty range and relegating high incremental-cost cases to a footnote. The latter would visually imply the high-cost regime has been ruled out or assigned a low probability, which the evidence does not establish. '$20–100bn under the selected lower-cost assumptions' is accurate as a subsidiary statement, but not a comprehensive range. The wider span likewise does not make $50bn an empirically calibrated expected value; its central status reflects the disclosed $0.4m/MW judgment.
+
+HIGH-COST INTERPRETATION
+At $2m/MW, A=$234.0555bn consists of approximately $82.1775bn correcting baseline incremental-cost under-recovery plus $151.8780bn of further contribution above incremental cost. Both portions reduce other customers' bills versus embedded pricing. It is wrong to cap A at $151.8780bn for this clarified question. This is an allocation transfer holding physical cost and load fixed, not a measure of total economic benefit or federal revenue.
+
+50/50 CHECK
+An equal arithmetic mixture of the $0.4m/MW and $2m/MW scenarios is (46.8111095+234.0555476)/2=$140.4333286bn above the embedded baseline. The analogous mixture of the above-higher-of quantities is (46.8111095+151.8780099)/2=$99.3445597bn. Do not use the latter for the embedded-baseline result. A 50/50 weight is a hypothetical mixture, not evidence of nationwide regime frequencies or a new preferred central estimate.
+
+OUTPUT CONSISTENCY CORRECTIONS NEEDED
+At review time, score.py records additional_payments correctly, but top-level estimand text, printed case summary, and nominal/PV series still emphasize new_positive_surplus. Change the primary metadata and summaries to A and add nominal/PV series for A before publication. Preserve G as a clearly secondary higher-of comparison. The distinction does not change the central result, but materially changes high-cost and mixed-regime results.
+
+EVIDENCE LIMIT
+No UCS project totals should enter capital calibration. The residual $0.4m/MW remains a disclosed planning assumption informed by selected primary cost/funding examples, not a nationally measured mean. Regionally concentrated growth and actual contractual prior recovery remain material unresolved empirical uncertainties. These limits should accompany the point estimate without obscuring the now-settled algebra and baseline.

@@ -1,5 +1,7 @@
 # BAAJA transmission payments: central planning estimate
 
+> **October 26 update:** The [current ratepayer-transfer report](RATEPAYER_TRANSFER.md) uses all additional payments above embedded pricing as its primary outcome, including shortfall correction. This earlier assessment focuses on new positive contributions; its reference value coincides, but its high-cost interpretation differs.
+
 October 25, 2026. **Use approximately $50 billion in additional contributions above incremental transmission cost over 2027–2056, in constant 2026 dollars.** The modeled result is $46.8bn, using levelized cost recovery and charges beginning in 2030. This is a conditional planning estimate for new data-center growth, not a measured national expectation or a finding of payments exceeding fully allocated cost of service.
 
 **October 26 clarification:** [The regime analysis](REGIMES.md) models both embedded-dominant and incremental-dominant costs, crossed with embedded-only and higher-of tariff baselines. The $50bn case selects the first cost regime through its inputs. When incremental cost is higher and the baseline is higher-of, the additional AND payment is the post-credit embedded charge. The national regime mix has not been measured.

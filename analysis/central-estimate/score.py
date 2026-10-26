@@ -133,6 +133,8 @@ def calculate(**overrides):
                     row[key] += v/1e9
         row['nominal_new_positive_surplus'] = row['new_positive_surplus']*(1+p['inflation'])**(y-2026)
         row['PV3_new_positive_surplus'] = row['new_positive_surplus']/(1.03)**(y-2026)
+        row['nominal_additional_payments'] = row['additional_payments']*(1+p['inflation'])**(y-2026)
+        row['PV3_additional_payments'] = row['additional_payments']/(1.03)**(y-2026)
         rows.append(row)
     keys=[k for k in rows[0] if k not in ['year','facility_TWh','covered_new_GW','billing_new_GW',
                                          'incremental_dominant_billing_GW','embedded_dominant_billing_GW']]
@@ -203,12 +205,12 @@ def main():
     for i,expectedA,expectedG in [(15,150/11,100/11),(5,50/11,50/11)]:
         s=100/1100;pre=s*(100+i);post=i+s*100
         check(f'Hand example I={i}',math.isclose(post-pre,expectedA) and math.isclose(max(post-i,0)-max(pre-i,0),expectedG))
-    out={'as_of':'2026-10-25','status':'Judgmental central planning case, not a measured national expectation, fully allocated cost-of-service finding, or official fiscal score.',
+    out={'as_of':'2026-10-26','status':'Judgmental central planning case, not a measured national expectation, fully allocated cost-of-service finding, or official fiscal score.',
          'scope':'New DC cohort2027–2056; policy charges2030–2056; constant2026USD levelized-payment equivalents; excludes cryptocurrency, generation/distribution and pre2027existingDCincremental obligations.',
-         'estimand':'Increase in positive contribution above incremental transmission service cost: sum(max(P_AND-C,0)-max(P_baseline-C,0)); costs and physical service held fixed.',
+         'estimand':'Additional DC payments versus embedded baseline, including baseline deficit repair: sum(P_AND-P_embedded); equals other-payer credits with fixed costs. Positive surplus and higher-of comparisons remain secondary fields.',
          'central_choice':'0.4m/MW residual newlyassignablecapital is author judgment informed by primary cost and funding examples. It is NOT a nationally estimated residual cost or a quantified prior-recovery fraction.',
          'rounded_central_billion_2026_USD':50,
-         'one_way_capital_scenario_range_billion_2026_USD':[20,100],
+         'one_way_capital_scenario_range_billion_2026_USD':[20,235],
          'range_status':'Rounded one-at-a-time residual-capital scenarios only; not a confidence interval or joint bounds. Zero and wider joint cases also reported.',
          'cases':cases,'checks':tests,
          'input_sha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [ROOT/'growth-audit.json',ROOT/'capital-evidence.json',ROOT/'pjm-regional-inputs.json']}}
@@ -218,7 +220,7 @@ def main():
     with (ROOT/'sensitivity.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=['case']+list(c));w.writeheader()
         for name,r in cases.items():w.writerow({'case':name,**r['totals_billion']})
-    print(json.dumps({'central':c,'cases':{k:round(v['totals_billion']['new_positive_surplus'],3) for k,v in cases.items()},'checks':len(tests)},indent=2))
+    print(json.dumps({'central':c,'cases':{k:round(v['totals_billion']['additional_payments'],3) for k,v in cases.items()},'checks':len(tests)},indent=2))
 
 
 if __name__=='__main__':
