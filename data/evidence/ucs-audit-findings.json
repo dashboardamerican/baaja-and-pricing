@@ -1,0 +1,78 @@
+[
+  {
+    "id": "F1",
+    "type": "confirmed_customer_misclassification",
+    "finding": "UCS labels the 450MW AEP-2022-AP014 / S3143.1-.7 package as data-center-caused. AEP identifies this Mercers Bottom project as service for Nucor steel.",
+    "ucs_pdf_page": 14,
+    "primary_source": "AEP local plan PDF35-37; WVPSC Case23-0834-E-CN notice pp1-2",
+    "ucs_capital_million": 215.8,
+    "reconciled_capital_million": 212.8,
+    "source_url": "https://www.aeptransmission.com/westvirginia/MercersBottom/docs/Final%20Form%2014%20Notice%20of%20Filing_EL.pdf",
+    "qualification": "Notice describes initial70.8m phase; AEP local plan ties both phases to the same450MW need. Full package customer classification follows the matched need and project identity."
+  },
+  {
+    "id": "F2",
+    "type": "confirmed_cost_duplication",
+    "finding": "UCS S3037 is279m; RTEP S3037 is10m, while269m S3047.2 is separately included.",
+    "ucs_pdf_page": 11,
+    "primary_source": "PJM2024RTEP printed282-283",
+    "net_correction_million": -269
+  },
+  {
+    "id": "F3",
+    "type": "confirmed_group_total_duplication",
+    "finding": "UCS S3441 rows total282.8m. The unique .1-.7 components total143.7m; UCS adds the143.7m package total after already counting components.",
+    "ucs_pdf_page": 8,
+    "primary_source": "PJM2024RTEP printed229",
+    "net_correction_million": -139.1
+  },
+  {
+    "id": "F4",
+    "type": "confirmed_group_total_duplication",
+    "finding": "UCS S3442 rows total887.5m versus577.5m of unique .1-.30 components. Its378.7m entry for .16-.26 approximates the whole .1-.26 package, not the68.53m additional components.",
+    "ucs_pdf_page": 8,
+    "primary_source": "PJM2024RTEP printed230-232; .26 appears in Indiana printed145",
+    "net_correction_million": -310
+  },
+  {
+    "id": "F5",
+    "type": "confirmed_offsetting_omission",
+    "finding": "UCS S3035.1-.2 is45m, but the RTEP includes45m plus139m.",
+    "ucs_pdf_page": 11,
+    "primary_source": "PJM2024RTEP printed282",
+    "net_correction_million": 139
+  },
+  {
+    "id": "F6",
+    "type": "cost_vintage_differences",
+    "finding": "S3080 is20m in UCS versus64.5m in the cited RTEP. S3143 is215.8m in local plan/UCS versus212.8m in RTEP. Distinguish historical local-plan estimates from year-end RTEP estimates.",
+    "primary_source": "PJM2024RTEP printed285 and301",
+    "net_correction_million": 41.5
+  },
+  {
+    "id": "F7",
+    "type": "prior_year_capital",
+    "finding": "The claimed2024 subtotal includes15.1m S2881 from the2023RTEP. The appendix discloses the carry-in, but the headline labels the total as2024.",
+    "ucs_pdf_page": 6,
+    "primary_source": "PJM2023RTEP printed151",
+    "correction_for_2024_only_million": -15.1
+  },
+  {
+    "id": "F8",
+    "type": "interpretation_limit",
+    "finding": "The reconstruction measures historical planned capital, not actual expenditure, 2024 customer collections, or net costs borne by existing customers. No annual revenue, direct-funding, credit and billed-load ledger is provided.",
+    "primary_source": "UCS brief pp1,4-5 versus appendix methods and PJM project tables"
+  },
+  {
+    "id": "F9",
+    "type": "unverified_customer_identity",
+    "finding": "Some underlying records identify only new or industrial customers. This audit confirms27Dominion DC needs and one non-DC Nucor need; it does not independently certify every remaining customer.",
+    "primary_source": "Complete Dominion187p, AEP164p and ComEd30p local plans; primary-only inventory"
+  },
+  {
+    "id": "F10",
+    "type": "mixed_drivers",
+    "finding": "DeKalb175m package includes a210MW new customer and15MW of distribution load growth. This contradicts a blanket assertion that every selected scope is needed only for DC connections; exact allocation is not calculated.",
+    "primary_source": "ComEd2024local plan printed14-15"
+  }
+]

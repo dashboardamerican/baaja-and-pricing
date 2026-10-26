@@ -1,0 +1,65 @@
+{
+  "status": "Selected illustrations, not utility observations. Single pool, fixed physical build, no other revenues, direct capital funding or demand response. All amounts millions of dollars per year.",
+  "cases": {
+    "ordinary_pricing_raises_existing_bills": {
+      "inputs": {
+        "inherited_annual_cost_million": 100.0,
+        "inherited_billing_demand_MW": 1000.0,
+        "new_billing_demand_MW": 100.0,
+        "added_annual_cost_million": 15.0
+      },
+      "world0": {
+        "total_requirement_million": 100.0,
+        "DC_payment_million": 0.0,
+        "existing_payment_million": 100.0
+      },
+      "world1": {
+        "total_requirement_million": 115.0,
+        "DC_payment_million": 10.454545454545455,
+        "existing_payment_million": 104.54545454545455
+      },
+      "world2": {
+        "total_requirement_million": 115.0,
+        "DC_payment_million": 24.090909090909093,
+        "existing_payment_million": 90.9090909090909
+      },
+      "H_existing_bill_change_from_DC_million": 4.545454545454547,
+      "R_additional_policy_relief_million": 13.63636363636364,
+      "net_existing_bill_change_with_policy_million": -9.090909090909093,
+      "DC_payment_above_incremental_cost_with_policy_million": 9.090909090909093
+    },
+    "ordinary_pricing_already_reduces_existing_bills": {
+      "inputs": {
+        "inherited_annual_cost_million": 100.0,
+        "inherited_billing_demand_MW": 1000.0,
+        "new_billing_demand_MW": 100.0,
+        "added_annual_cost_million": 5.0
+      },
+      "world0": {
+        "total_requirement_million": 100.0,
+        "DC_payment_million": 0.0,
+        "existing_payment_million": 100.0
+      },
+      "world1": {
+        "total_requirement_million": 105.0,
+        "DC_payment_million": 9.545454545454545,
+        "existing_payment_million": 95.45454545454545
+      },
+      "world2": {
+        "total_requirement_million": 105.0,
+        "DC_payment_million": 14.090909090909092,
+        "existing_payment_million": 90.9090909090909
+      },
+      "H_existing_bill_change_from_DC_million": -4.545454545454547,
+      "R_additional_policy_relief_million": 4.545454545454547,
+      "net_existing_bill_change_with_policy_million": -9.090909090909093,
+      "DC_payment_above_incremental_cost_with_policy_million": 9.090909090909092
+    }
+  },
+  "checks": [
+    "Revenue conservation in both pricing worlds",
+    "H minus R equals net incumbent change",
+    "Extra DC payments equal all-other-customer relief in the specified two-group pool",
+    "Positive and negative baseline impacts against exact hand-calculated values"
+  ]
+}

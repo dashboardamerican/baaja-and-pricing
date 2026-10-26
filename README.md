@@ -6,6 +6,12 @@ A buildless HTML dashboard and one-page brief for the transmission AND-pricing p
 
 Choose **Low, Medium, or High** data-center growth through 2056. EPRI supplies the U.S. 2030 endpoints; later years use an explicit, tapered extrapolation. Medium is the default. Two sliders control attributable incremental network capital per MW and the assumed NITS-equivalent rate. The data-center load factor is fixed at **80%**. No installation, account, analytics, external script or API is required. Serve this folder or open `index.html` locally.
 
+## Current methods
+
+Use the [methods for estimating transmission bill impacts](METHODS.md) as the current research and interpretation guide. Compare three worlds: without the target new DC cohort; with that cohort under actual tariffs and contracts; and the same physical system under a specified BAAJA implementation. Report separately the effect of DC growth on existing bills, additional policy relief, and the remaining effect with policy. Extra BAAJA payments do not by themselves measure an existing subsidy.
+
+The approximately $75bn result below is a conditional calculator benchmark. The $0.65m/MW capital default is not a measured national mean. Gross planned capital, actual expenditure, annual recovery, direct funding and customer payments must be matched before an empirical national score is claimed. [UCS audit findings](data/evidence/ucs-audit-findings.json) and [numeric reconciliation](data/evidence/ucs-audit-bridge.csv) document why the paper's headline is excluded from capital calibration.
+
 ## Central case
 
 All 30-year figures are **constant 2026 dollars**, undiscounted, over **2027-2056**. Charges begin in 2030. The results are conditional planning scenarios, not forecasts or official bill scores.
@@ -77,7 +83,7 @@ higher-of alternative   = max(ordinary tariff payment, I)
 credited AND payment     = s * B0 + I
 A versus embedded      = AND - ordinary = (1 - s) * I
 A versus higher-of     = min(s * B0, (1 - s) * I)
-B: above incremental CoS= AND - I = s * B0
+B: above incremental cost = AND - I = s * B0
 other-customer relief   = A
 ```
 

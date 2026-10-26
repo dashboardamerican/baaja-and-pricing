@@ -1,0 +1,39 @@
+{
+  "as_of": "2026-10-25",
+  "scope": "UCS September2025 Connection Costs brief and14-page appendix, as currently published. Does not audit UCS January2026 generation-system modeling or the November2025 blog extension.",
+  "headline_million": 4356.3,
+  "detail_rows_million": 4356.21,
+  "reconstructed_2024_component_capital_million": 3803.85,
+  "verified_2023_carryin_million": 15.1,
+  "same_selected_scope_reconstructed_million": 3818.95,
+  "same_scope_reduction_vs_headline_million": 537.35,
+  "same_scope_reduction_percent_of_headline": 12.335009067327778,
+  "confirmed_non_DC_capital_million": 212.8,
+  "after_known_non_DC_exclusion_including_carryin_million": 3606.15,
+  "after_known_non_DC_exclusion_2024_only_million": 3591.05,
+  "headline_less_remaining_including_carryin_million": 750.15,
+  "classification": {
+    "confirmed_non_DC_Nucor_steel_mill": {
+      "components": 7,
+      "rtep2024_capital_million": 212.8
+    },
+    "customer_type_not_verified_in_this_audit": {
+      "components": 160,
+      "rtep2024_capital_million": 2262.4
+    },
+    "explicit_DC_need_link_in_Dominion_plan": {
+      "components": 32,
+      "rtep2024_capital_million": 1328.65
+    }
+  },
+  "verdict": "Material arithmetic and classification defects confirmed. Gross planned capital remains substantial; this audit does not validate the remainder as DC-only or measure incumbent net bill harm. No inference about intent.",
+  "visual_verification": [
+    "UCS PDF8,11,14",
+    "PJM2024 printed229,231,282",
+    "AEP public WVPSC notice viewed through web PDF text; direct archival download blocked403"
+  ],
+  "version_check": {
+    "ucs-appendix-current.pdf": true,
+    "ucs-brief-current.pdf": true
+  }
+}

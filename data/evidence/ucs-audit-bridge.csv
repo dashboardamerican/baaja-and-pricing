@@ -1,0 +1,12 @@
+step,change_million,remaining_million,interpretation
+Published headline,,4356.3,Claimed capital total; not measured customer payments.
+Detail-row rounding,-0.09,4356.21,Reconcile the selected physical capital scope; no subsidy estimate.
+Reconcile Ohio S3441 package,-139.1,4217.11,Reconcile the selected physical capital scope; no subsidy estimate.
+Reconcile Ohio S3442 package,-310.0,3907.11,Reconcile the selected physical capital scope; no subsidy estimate.
+Correct Rixlew S3037,-269.0,3638.11,Reconcile the selected physical capital scope; no subsidy estimate.
+Restore omitted Hornbaker S3035.2,139.0,3777.11,Reconcile the selected physical capital scope; no subsidy estimate.
+Use RTEP cost for S3080,44.5,3821.61,Reconcile the selected physical capital scope; no subsidy estimate.
+Use RTEP vintage for S3143,-3.0,3818.61,Reconcile the selected physical capital scope; no subsidy estimate.
+Other component rounding and cost differences,0.34,3818.95,Reconcile the selected physical capital scope; no subsidy estimate.
+Exclude Nucor steel-mill project,-212.8,3606.15,Confirmed customer-type exclusion; remaining identities not all verified.
+Exclude 2023 S2881 carry-in from 2024-only subtotal,-15.1,3591.05,Vintage restriction; capital remaining is not validated DC-only spending or net bill impact.
