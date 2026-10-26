@@ -1,0 +1,99 @@
+{
+  "as_of": "2026-10-26",
+  "status": "Conditional regime scenarios; no measured national mixture or independent fully allocated cost-of-service finding.",
+  "definitions": {
+    "E": "ordinary rolled-in charge before the new direct-payment credit",
+    "I": "annual incremental recovery not already directly funded; common direct payments omitted equally",
+    "E_after": "embedded charge after incremental payments are credited to shared revenue requirement",
+    "AND": "I + E_after",
+    "higher_of": "max(E,I)"
+  },
+  "formulas": {
+    "E": "s*(B+I)",
+    "E_after": "s*B = E-s*I",
+    "above_embedded": "(1-s)*I",
+    "above_higher_of": "min((1-s)*I,s*B)"
+  },
+  "threshold_capital_million_per_MW": 1.2977945746280493,
+  "threshold_scope": "Only with constant unit costs, billing proxy=physical proxy, same cost pool, stated financing and no other cohort costs. Not national empirical breakpoint.",
+  "annual_examples": [
+    {
+      "unit": "million dollars per year",
+      "inherited_requirement": 100.0,
+      "billing_share": 0.1,
+      "incremental": 5,
+      "embedded_before_credit": 10.5,
+      "embedded_after_credit": 10.0,
+      "higher_of": 10.5,
+      "AND": 15.0,
+      "additional_vs_embedded": 4.5,
+      "additional_vs_higher_of": 4.5,
+      "shortfall_under_embedded": 0.0
+    },
+    {
+      "unit": "million dollars per year",
+      "inherited_requirement": 100.0,
+      "billing_share": 0.1,
+      "incremental": 20,
+      "embedded_before_credit": 12.0,
+      "embedded_after_credit": 10.0,
+      "higher_of": 20,
+      "AND": 30.0,
+      "additional_vs_embedded": 18.0,
+      "additional_vs_higher_of": 10.0,
+      "shortfall_under_embedded": 8.0
+    }
+  ],
+  "mixture_assumptions": {
+    "low_residual_capital_million_per_MW": 0.4,
+    "high_residual_capital_million_per_MW": 2.0,
+    "pool_structure": "Independent proportional clones of the central national pool. High share is analyst-selected; it is not share of sites or a measured US fraction."
+  },
+  "mixtures": [
+    {
+      "selected_high_cost_share_of_billing_exposure": 0,
+      "totals_billion_2026_USD": {
+        "additional_payments": 46.81110951791492,
+        "additional_vs_higher_of": 46.81110951791492,
+        "deficit_repair": 4.76837158203125e-16,
+        "postpolicy_surplus": 151.87800991167356
+      }
+    },
+    {
+      "selected_high_cost_share_of_billing_exposure": 0.25,
+      "totals_billion_2026_USD": {
+        "additional_payments": 93.62221903582983,
+        "additional_vs_higher_of": 73.07783461635458,
+        "deficit_repair": 20.544384419475257,
+        "postpolicy_surplus": 151.87800991167353
+      }
+    },
+    {
+      "selected_high_cost_share_of_billing_exposure": 0.5,
+      "totals_billion_2026_USD": {
+        "additional_payments": 140.43332855374473,
+        "additional_vs_higher_of": 99.34455971479423,
+        "deficit_repair": 41.088768838950514,
+        "postpolicy_surplus": 151.87800991167353
+      }
+    },
+    {
+      "selected_high_cost_share_of_billing_exposure": 0.75,
+      "totals_billion_2026_USD": {
+        "additional_payments": 187.2444380716597,
+        "additional_vs_higher_of": 125.6112848132339,
+        "deficit_repair": 61.6331532584258,
+        "postpolicy_surplus": 151.87800991167356
+      }
+    },
+    {
+      "selected_high_cost_share_of_billing_exposure": 1,
+      "totals_billion_2026_USD": {
+        "additional_payments": 234.05554758957456,
+        "additional_vs_higher_of": 151.87800991167353,
+        "deficit_repair": 82.17753767790103,
+        "postpolicy_surplus": 151.87800991167353
+      }
+    }
+  ]
+}

@@ -87,7 +87,11 @@ def calculate(**overrides):
                    additional_payments=0., new_positive_surplus=0., deficit_repair=0.,
                    postpolicy_surplus=0., baseline_signed_surplus=0.,
                    net_incremental_recovery=0., noneligible_dc_credit=0.,
-                   inherited_customer_relief=0.)
+                   inherited_customer_relief=0., additional_vs_higher_of=0.,
+                   embedded_payment_excluding_common_direct=0.,
+                   higher_of_payment_excluding_common_direct=0.,
+                   and_payment_excluding_common_direct=0.,
+                   incremental_dominant_billing_GW=0., embedded_dominant_billing_GW=0.)
         for z,g in groups.items():
             q = qpath[y]*g['w']
             cohorts[z].append((y,(physical_path[y]-physical_path[y-1])*g['w']))
@@ -101,8 +105,10 @@ def calculate(**overrides):
             # Common already-direct D omitted equally from payments and cost.
             pre = se*(b+u)
             post = ue+se*(b+u-ue)
+            higher = max(pre,ue)
             a = post-pre
             gnew = max(post-ue,0.)-max(pre-ue,0.)
+            assert math.isclose(post-higher,gnew,abs_tol=1e-4)
             noneligible_credit = (s-se)*ue
             incumbent_relief = (1-s)*ue
             assert math.isclose(a, (1-se)*ue, abs_tol=1e-4)
@@ -113,18 +119,28 @@ def calculate(**overrides):
             if p['first_eligible']==2027:
                 assert math.isclose(gnew,min(a,s*b),abs_tol=1e-4)
             if y >= p['start']:
+                regime = 'incremental_dominant_billing_GW' if ue>pre else 'embedded_dominant_billing_GW'
+                row[regime] += qeligible/1000
                 for key,v in [('additional_payments',a),('new_positive_surplus',gnew),
                               ('deficit_repair',max(0.,a-gnew)),('postpolicy_surplus',post-ue),
                               ('baseline_signed_surplus',pre-ue),('net_incremental_recovery',ue),
                               ('noneligible_dc_credit',noneligible_credit),
-                              ('inherited_customer_relief',incumbent_relief)]:
+                              ('inherited_customer_relief',incumbent_relief),
+                              ('additional_vs_higher_of',post-higher),
+                              ('embedded_payment_excluding_common_direct',pre),
+                              ('higher_of_payment_excluding_common_direct',higher),
+                              ('and_payment_excluding_common_direct',post)]:
                     row[key] += v/1e9
         row['nominal_new_positive_surplus'] = row['new_positive_surplus']*(1+p['inflation'])**(y-2026)
         row['PV3_new_positive_surplus'] = row['new_positive_surplus']/(1.03)**(y-2026)
         rows.append(row)
-    keys=[k for k in rows[0] if k not in ['year','facility_TWh','covered_new_GW','billing_new_GW']]
+    keys=[k for k in rows[0] if k not in ['year','facility_TWh','covered_new_GW','billing_new_GW',
+                                         'incremental_dominant_billing_GW','embedded_dominant_billing_GW']]
     totals={k:sum(r[k] for r in rows) for k in keys}
-    return dict(assumptions=p,totals_billion=totals,annual=rows)
+    exposure=sum(r['incremental_dominant_billing_GW']+r['embedded_dominant_billing_GW'] for r in rows)
+    share=sum(r['incremental_dominant_billing_GW'] for r in rows)/exposure if exposure else 0.
+    return dict(assumptions=p,totals_billion=totals,annual=rows,
+                incremental_dominant_share_of_charged_billing_MW_years=share)
 
 
 def main():
@@ -134,6 +150,7 @@ def main():
         'high_residual_capital':dict(net_capital_million_per_MW=.8),
         'all_costs_already_directly_recovered':dict(net_capital_million_per_MW=0.),
         'old_065_all_newly_assignable':dict(net_capital_million_per_MW=.65),
+        'incremental_dominant_2m':dict(net_capital_million_per_MW=2.),
         'flat_after2030':dict(path='flat_after_2030'),
         'EIA_US_server_growth_shape':dict(path='eia_shape'),
         'BNEF_US_capacity_growth_shape':dict(path='bnef_shape'),
@@ -170,11 +187,15 @@ def main():
         tests.append({'check':name,'passed':True})
     c=cases['central']['totals_billion']
     check('Central payment gain equals new positive surplus; no pooled baseline deficit',math.isclose(c['additional_payments'],c['new_positive_surplus'],abs_tol=1e-8))
+    check('Central selected costs put the pooled model in the embedded-dominant regime',cases['central']['incremental_dominant_share_of_charged_billing_MW_years']==0.)
+    check('High-cost scenario puts the pooled model in the incremental-dominant regime',cases['incremental_dominant_2m']['incremental_dominant_share_of_charged_billing_MW_years']==1.)
+    check('Above-higher-of equals new positive surplus evaluated within groups',all(math.isclose(v['totals_billion']['additional_vs_higher_of'],v['totals_billion']['new_positive_surplus'],abs_tol=1e-8) for v in cases.values()))
     check('Postpolicy minus baseline signed contribution equals additional payments',math.isclose(c['postpolicy_surplus']-c['baseline_signed_surplus'],c['additional_payments'],abs_tol=1e-8))
     check('All prior direct recovery means zero additional score',cases['all_costs_already_directly_recovered']['totals_billion']['new_positive_surplus']==0)
     check('Zero growth means zero score',calculate(anchor2030=GROWTH['baseline_2026_TWh'],path='flat_after_2030')['totals_billion']['new_positive_surplus']<1e-9)
     check('Zero inherited charge leaves no above-incremental surplus',abs(calculate(rate_USD_per_MW_year=0)['totals_billion']['new_positive_surplus'])<1e-8)
     check('NITS changes do not change total uplift under fixed residual costs',math.isclose(cases['NITS60k']['totals_billion']['additional_payments'],c['additional_payments'],abs_tol=1e-8))
+    check('In incremental-dominant regime NITS changes the uplift above higher-of',calculate(net_capital_million_per_MW=2.,rate_USD_per_MW_year=60000.)['totals_billion']['additional_vs_higher_of'] < cases['incremental_dominant_2m']['totals_billion']['additional_vs_higher_of'])
     check('Billing-only coincidence change preserves physical cost',math.isclose(cases['billing90pct']['totals_billion']['net_incremental_recovery'],c['net_incremental_recovery'],abs_tol=1e-8))
     check('Higher cost case separates deficit repair from surplus',calculate(net_capital_million_per_MW=2.)['totals_billion']['deficit_repair']>0)
     check('Grandfathered DC credits reconcile to all eligible additional payments',math.isclose(cases['first_eligible2030']['totals_billion']['additional_payments'],cases['first_eligible2030']['totals_billion']['noneligible_dc_credit']+cases['first_eligible2030']['totals_billion']['inherited_customer_relief'],abs_tol=1e-8))

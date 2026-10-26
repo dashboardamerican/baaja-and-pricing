@@ -6,6 +6,8 @@ Updated October 25, 2026. This is the current interpretation and empirical resea
 
 The question is **how much existing customers pay because data centers connect, and how BAAJA changes that amount**. More investment, higher published rates, and higher data-center payments answer different parts of this question. The analysis must connect them through the same projects, customers, billing zones and years.
 
+**Regime analysis, October 26:** [Two cost regimes and two tariff baselines](REGIMES.md) explicitly separates whether embedded or incremental cost is larger from whether the actual tariff is embedded-only or higher-of. In the incremental-dominant regime, AND adds the post-credit embedded charge above higher-of. The approximately $50bn central case assumes an embedded-dominant pooled system; it does not establish the actual national regime mix.
+
 ## Compare three worlds
 
 | World | Data center growth | Pricing | Purpose |

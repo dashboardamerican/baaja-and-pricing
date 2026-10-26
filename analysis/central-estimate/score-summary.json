@@ -44,9 +44,14 @@
         "net_incremental_recovery": 50.59410823993607,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 46.81110951791492,
+        "additional_vs_higher_of": 46.81110951791492,
+        "embedded_payment_excluding_common_direct": 155.6610086336947,
+        "higher_of_payment_excluding_common_direct": 155.6610086336947,
+        "and_payment_excluding_common_direct": 202.4721181516096,
         "nominal_new_positive_surplus": 75.44219749074573,
         "PV3_new_positive_surplus": 27.668741989954665
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "low_residual_capital": {
       "assumptions": {
@@ -81,9 +86,14 @@
         "net_incremental_recovery": 18.972790589976025,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 17.5541660692181,
+        "additional_vs_higher_of": 17.55416606921809,
+        "embedded_payment_excluding_common_direct": 153.2966344324315,
+        "higher_of_payment_excluding_common_direct": 153.2966344324315,
+        "and_payment_excluding_common_direct": 170.8508005016496,
         "nominal_new_positive_surplus": 28.29082405902964,
         "PV3_new_positive_surplus": 10.375778246232995
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "high_residual_capital": {
       "assumptions": {
@@ -118,9 +128,14 @@
         "net_incremental_recovery": 101.18821647987214,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 93.62221903582984,
+        "additional_vs_higher_of": 93.62221903582984,
+        "embedded_payment_excluding_common_direct": 159.44400735571585,
+        "higher_of_payment_excluding_common_direct": 159.44400735571585,
+        "and_payment_excluding_common_direct": 253.06622639154568,
         "nominal_new_positive_surplus": 150.88439498149145,
         "PV3_new_positive_surplus": 55.33748397990933
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "all_costs_already_directly_recovered": {
       "assumptions": {
@@ -155,9 +170,14 @@
         "net_incremental_recovery": 0.0,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 0.0,
+        "additional_vs_higher_of": 0.0,
+        "embedded_payment_excluding_common_direct": 151.87800991167356,
+        "higher_of_payment_excluding_common_direct": 151.87800991167356,
+        "and_payment_excluding_common_direct": 151.87800991167356,
         "nominal_new_positive_surplus": 0.0,
         "PV3_new_positive_surplus": 0.0
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "old_065_all_newly_assignable": {
       "assumptions": {
@@ -192,9 +212,56 @@
         "net_incremental_recovery": 82.21542588989611,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 76.06805296661175,
+        "additional_vs_higher_of": 76.06805296661175,
+        "embedded_payment_excluding_common_direct": 158.02538283495792,
+        "higher_of_payment_excluding_common_direct": 158.02538283495792,
+        "and_payment_excluding_common_direct": 234.09343580156965,
         "nominal_new_positive_surplus": 122.59357092246181,
         "PV3_new_positive_surplus": 44.961705733676325
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
+    },
+    "incremental_dominant_2m": {
+      "assumptions": {
+        "path": "central",
+        "net_capital_million_per_MW": 2.0,
+        "coverage": 0.75,
+        "load_factor": 0.8,
+        "billing_multiplier": 1.0,
+        "incumbent_MW": 829000.0,
+        "rate_USD_per_MW_year": 95100.0,
+        "real_finance": 0.05,
+        "life": 40,
+        "om": 0.015,
+        "inflation": 0.025,
+        "start": 2030,
+        "first_eligible": 2027,
+        "recovery": "real_levelized",
+        "regional": false,
+        "pjm_share": 0.5,
+        "other_load_growth": 0.0,
+        "inherited_cost_growth": 0.0,
+        "terminal_protection": false,
+        "anchor2030": null,
+        "real_capital_growth": 0.0
+      },
+      "totals_billion": {
+        "additional_payments": 234.05554758957456,
+        "new_positive_surplus": 151.87800991167353,
+        "deficit_repair": 82.17753767790103,
+        "postpolicy_surplus": 151.87800991167353,
+        "baseline_signed_surplus": -82.17753767790103,
+        "net_incremental_recovery": 252.97054119968033,
+        "noneligible_dc_credit": 0.0,
+        "inherited_customer_relief": 234.0555475895746,
+        "additional_vs_higher_of": 151.87800991167353,
+        "embedded_payment_excluding_common_direct": 170.7930035217793,
+        "higher_of_payment_excluding_common_direct": 252.97054119968033,
+        "and_payment_excluding_common_direct": 404.84855111135386,
+        "nominal_new_positive_surplus": 244.77118650376906,
+        "PV3_new_positive_surplus": 89.77085810336612
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 1.0
     },
     "flat_after2030": {
       "assumptions": {
@@ -229,9 +296,14 @@
         "net_incremental_recovery": 29.688146653797347,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 28.402881763921872,
+        "additional_vs_higher_of": 28.40288176392188,
+        "embedded_payment_excluding_common_direct": 93.43802953242485,
+        "higher_of_payment_excluding_common_direct": 93.43802953242485,
+        "and_payment_excluding_common_direct": 121.84091129634675,
         "nominal_new_positive_surplus": 44.02210521050907,
         "PV3_new_positive_surplus": 17.643270529648696
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "EIA_US_server_growth_shape": {
       "assumptions": {
@@ -266,9 +338,14 @@
         "net_incremental_recovery": 85.68644278336807,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 74.87480279389659,
+        "additional_vs_higher_of": 74.87480279389658,
+        "embedded_payment_excluding_common_direct": 253.74192209513168,
+        "higher_of_payment_excluding_common_direct": 253.74192209513168,
+        "and_payment_excluding_common_direct": 328.61672488902826,
         "nominal_new_positive_surplus": 122.63368598683084,
         "PV3_new_positive_surplus": 43.22508773117935
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "BNEF_US_capacity_growth_shape": {
       "assumptions": {
@@ -303,9 +380,14 @@
         "net_incremental_recovery": 79.53706976365709,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 70.43677253452493,
+        "additional_vs_higher_of": 70.43677253452495,
+        "embedded_payment_excluding_common_direct": 237.63145035317328,
+        "higher_of_payment_excluding_common_direct": 237.63145035317328,
+        "and_payment_excluding_common_direct": 308.0682228876982,
         "nominal_new_positive_surplus": 113.91229812355316,
         "PV3_new_positive_surplus": 41.35822733199295
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "LBNL_521_anchor": {
       "assumptions": {
@@ -340,9 +422,14 @@
         "net_incremental_recovery": 35.62974594798317,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 33.68412250513145,
+        "additional_vs_higher_of": 33.68412250513144,
+        "embedded_payment_excluding_common_direct": 111.23330203851714,
+        "higher_of_payment_excluding_common_direct": 111.23330203851714,
+        "and_payment_excluding_common_direct": 144.91742454364856,
         "nominal_new_positive_surplus": 54.62712982089875,
         "PV3_new_positive_surplus": 19.74409344619657
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "LBNL_843_anchor": {
       "assumptions": {
@@ -377,9 +464,14 @@
         "net_incremental_recovery": 73.27446983867718,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 65.66595613592553,
+        "additional_vs_higher_of": 65.66595613592553,
+        "embedded_payment_excluding_common_direct": 220.66081773017072,
+        "higher_of_payment_excluding_common_direct": 220.66081773017072,
+        "and_payment_excluding_common_direct": 286.32677386609623,
         "nominal_new_positive_surplus": 105.3017231106789,
         "PV3_new_positive_surplus": 39.0694115522243
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "IEA_426_anchor": {
       "assumptions": {
@@ -414,9 +506,14 @@
         "net_incremental_recovery": 24.52338330942438,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 23.562371113463872,
+        "additional_vs_higher_of": 23.562371113463872,
+        "embedded_payment_excluding_common_direct": 77.4088056870257,
+        "higher_of_payment_excluding_common_direct": 77.4088056870257,
+        "and_payment_excluding_common_direct": 100.97117680048957,
         "nominal_new_positive_surplus": 38.56256460663031,
         "PV3_new_positive_surplus": 13.640739058720587
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "coverage50pct": {
       "assumptions": {
@@ -451,9 +548,14 @@
         "net_incremental_recovery": 33.72940549329071,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 32.00346437786392,
+        "additional_vs_higher_of": 32.003464377863914,
+        "embedded_payment_excluding_common_direct": 105.56074721266137,
+        "higher_of_payment_excluding_common_direct": 105.56074721266137,
+        "and_payment_excluding_common_direct": 137.56421159052528,
         "nominal_new_positive_surplus": 51.622521833274895,
         "PV3_new_positive_surplus": 18.89539181940637
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "coverage90pct": {
       "assumptions": {
@@ -488,9 +590,14 @@
         "net_incremental_recovery": 60.71292988792328,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 55.34850041567529,
+        "additional_vs_higher_of": 55.34850041567529,
+        "embedded_payment_excluding_common_direct": 184.94188835540228,
+        "higher_of_payment_excluding_common_direct": 184.94188835540228,
+        "and_payment_excluding_common_direct": 240.29038877107757,
         "nominal_new_positive_surplus": 89.1565548081242,
         "PV3_new_positive_surplus": 32.73594416190086
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "billing90pct": {
       "assumptions": {
@@ -525,9 +632,14 @@
         "net_incremental_recovery": 50.59410823993607,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 47.16281834337225,
+        "additional_vs_higher_of": 47.16281834337226,
+        "embedded_payment_excluding_common_direct": 141.1485018795065,
+        "higher_of_payment_excluding_common_direct": 141.1485018795065,
+        "and_payment_excluding_common_direct": 188.31132022287878,
         "nominal_new_positive_surplus": 76.02849236593485,
         "PV3_new_positive_surplus": 27.86750471459521
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "billing83pct": {
       "assumptions": {
@@ -562,9 +674,14 @@
         "net_incremental_recovery": 50.59410823993607,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 47.41229450495725,
+        "additional_vs_higher_of": 47.41229450495725,
+        "embedded_payment_excluding_common_direct": 130.85950728682045,
+        "higher_of_payment_excluding_common_direct": 130.85950728682045,
+        "and_payment_excluding_common_direct": 178.2718017917777,
         "nominal_new_positive_surplus": 76.44452395451522,
         "PV3_new_positive_surplus": 28.008421482736214
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "effective_facility_load_factor90pct": {
       "assumptions": {
@@ -599,9 +716,14 @@
         "net_incremental_recovery": 44.972540657720955,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 41.95754291085338,
+        "additional_vs_higher_of": 41.95754291085338,
+        "embedded_payment_excluding_common_direct": 139.14567663294028,
+        "higher_of_payment_excluding_common_direct": 139.14567663294028,
+        "and_payment_excluding_common_direct": 181.10321954379364,
         "nominal_new_positive_surplus": 67.63930400010452,
         "PV3_new_positive_surplus": 24.79090984736096
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "effective_pool75pct": {
       "assumptions": {
@@ -636,9 +758,14 @@
         "net_incremental_recovery": 50.59410823993607,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 45.67700687971625,
+        "additional_vs_higher_of": 45.67700687971625,
+        "embedded_payment_excluding_common_direct": 153.1155306445794,
+        "higher_of_payment_excluding_common_direct": 153.1155306445794,
+        "and_payment_excluding_common_direct": 198.79253752429565,
         "nominal_new_positive_surplus": 73.55343622246008,
         "PV3_new_positive_surplus": 27.027022549480993
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "nominal_rate_base_profile": {
       "assumptions": {
@@ -673,9 +800,14 @@
         "net_incremental_recovery": 56.67460464124593,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 52.59703866740032,
+        "additional_vs_higher_of": 52.59703866740031,
+        "embedded_payment_excluding_common_direct": 155.95557588551915,
+        "higher_of_payment_excluding_common_direct": 155.95557588551915,
+        "and_payment_excluding_common_direct": 208.5526145529195,
         "nominal_new_positive_surplus": 81.77249578381134,
         "PV3_new_positive_surplus": 32.49997150507575
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "first_eligible2030": {
       "assumptions": {
@@ -710,9 +842,14 @@
         "net_incremental_recovery": 29.396057882507975,
         "noneligible_dc_credit": 0.8764387724182191,
         "inherited_customer_relief": 27.125547397505386,
+        "additional_vs_higher_of": 28.001986169923605,
+        "embedded_payment_excluding_common_direct": 90.27898110074882,
+        "higher_of_payment_excluding_common_direct": 90.27898110074882,
+        "and_payment_excluding_common_direct": 118.28096727067242,
         "nominal_new_positive_surplus": 46.479317437242834,
         "PV3_new_positive_surplus": 15.892368107544073
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "start2028": {
       "assumptions": {
@@ -747,9 +884,14 @@
         "net_incremental_recovery": 51.89845430024474,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 48.08001911281588,
+        "additional_vs_higher_of": 48.08001911281588,
+        "embedded_payment_excluding_common_direct": 159.81340506899227,
+        "higher_of_payment_excluding_common_direct": 159.81340506899227,
+        "and_payment_excluding_common_direct": 207.89342418180814,
         "nominal_new_positive_surplus": 76.79532168171424,
         "PV3_new_positive_surplus": 28.843930939132786
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "start2033": {
       "assumptions": {
@@ -784,9 +926,14 @@
         "net_incremental_recovery": 47.110366238692194,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 43.486536478853154,
+        "additional_vs_higher_of": 43.48653647885315,
+        "embedded_payment_excluding_common_direct": 144.71530753888996,
+        "higher_of_payment_excluding_common_direct": 144.71530753888996,
+        "and_payment_excluding_common_direct": 188.2018440177431,
         "nominal_new_positive_surplus": 71.67682828681639,
         "PV3_new_positive_surplus": 24.802980484212924
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "other_load_grows1pct": {
       "assumptions": {
@@ -821,9 +968,14 @@
         "net_incremental_recovery": 50.59410823993607,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 47.44631772630386,
+        "additional_vs_higher_of": 47.44631772630386,
+        "embedded_payment_excluding_common_direct": 131.3237296454684,
+        "higher_of_payment_excluding_common_direct": 131.3237296454684,
+        "and_payment_excluding_common_direct": 178.77004737177228,
         "nominal_new_positive_surplus": 76.56081714307386,
         "PV3_new_positive_surplus": 28.001223838802744
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "inherited_cost_declines1pct": {
       "assumptions": {
@@ -858,9 +1010,14 @@
         "net_incremental_recovery": 50.59410823993607,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 46.81110951791492,
+        "additional_vs_higher_of": 46.811109517914915,
+        "embedded_payment_excluding_common_direct": 130.07954771555026,
+        "higher_of_payment_excluding_common_direct": 130.07954771555026,
+        "and_payment_excluding_common_direct": 176.89065723346516,
         "nominal_new_positive_surplus": 75.44219749074573,
         "PV3_new_positive_surplus": 27.66874198995466
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "NITS60k": {
       "assumptions": {
@@ -895,9 +1052,14 @@
         "net_incremental_recovery": 50.59410823993607,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 46.81110951791492,
+        "additional_vs_higher_of": 46.81110951791492,
+        "embedded_payment_excluding_common_direct": 99.6050869943704,
+        "higher_of_payment_excluding_common_direct": 99.6050869943704,
+        "and_payment_excluding_common_direct": 146.41619651228532,
         "nominal_new_positive_surplus": 75.44219749074573,
         "PV3_new_positive_surplus": 27.668741989954665
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "NITS150k": {
       "assumptions": {
@@ -932,9 +1094,14 @@
         "net_incremental_recovery": 50.59410823993607,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 46.81110951791492,
+        "additional_vs_higher_of": 46.81110951791492,
+        "embedded_payment_excluding_common_direct": 243.33821940289425,
+        "higher_of_payment_excluding_common_direct": 243.33821940289425,
+        "and_payment_excluding_common_direct": 290.1493289208092,
         "nominal_new_positive_surplus": 75.44219749074571,
         "PV3_new_positive_surplus": 27.66874198995466
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "regional_PJM50pct": {
       "assumptions": {
@@ -969,9 +1136,14 @@
         "net_incremental_recovery": 50.59410823993607,
         "noneligible_dc_credit": 2.1873906759159838e-17,
         "inherited_customer_relief": 43.61763096622058,
+        "additional_vs_higher_of": 43.59205569032935,
+        "embedded_payment_excluding_common_direct": 148.639220012905,
+        "higher_of_payment_excluding_common_direct": 148.66479528879626,
+        "and_payment_excluding_common_direct": 192.2568509791256,
         "nominal_new_positive_surplus": 70.11765218471113,
         "PV3_new_positive_surplus": 25.830684597809636
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.021409067983791025
     },
     "regional_PJM70pct": {
       "assumptions": {
@@ -1006,9 +1178,14 @@
         "net_incremental_recovery": 50.59410823993606,
         "noneligible_dc_credit": -1.086468726401202e-16,
         "inherited_customer_relief": 39.88859836238953,
+        "additional_vs_higher_of": 39.85451630147255,
+        "embedded_payment_excluding_common_direct": 138.4050280437989,
+        "higher_of_payment_excluding_common_direct": 138.43911010471587,
+        "and_payment_excluding_common_direct": 178.29362640618842,
         "nominal_new_positive_surplus": 63.95350424225032,
         "PV3_new_positive_surplus": 23.688302187070157
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.02997269517730743
     },
     "regional_high_cost": {
       "assumptions": {
@@ -1043,9 +1220,14 @@
         "net_incremental_recovery": 101.18821647987214,
         "noneligible_dc_credit": 4.3747813518319676e-17,
         "inherited_customer_relief": 87.23526193244116,
+        "additional_vs_higher_of": 84.08061566712092,
+        "embedded_payment_excluding_common_direct": 155.6156972866205,
+        "higher_of_payment_excluding_common_direct": 158.77034355194073,
+        "and_payment_excluding_common_direct": 242.85095921906168,
         "nominal_new_positive_surplus": 135.2505404039444,
         "PV3_new_positive_surplus": 49.81900838469213
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.14670689925042174
     },
     "protection_ends20years": {
       "assumptions": {
@@ -1080,9 +1262,14 @@
         "net_incremental_recovery": 57.20726158594384,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 52.838564362742744,
+        "additional_vs_higher_of": 52.838564362742744,
+        "embedded_payment_excluding_common_direct": 156.24670713487464,
+        "higher_of_payment_excluding_common_direct": 156.24670713487464,
+        "and_payment_excluding_common_direct": 209.08527149761738,
         "nominal_new_positive_surplus": 87.05780192500991,
         "PV3_new_positive_surplus": 30.431258159754442
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "real_construction_cost_growth1pct": {
       "assumptions": {
@@ -1117,9 +1304,14 @@
         "net_incremental_recovery": 54.18249473161485,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 50.11287257455708,
+        "additional_vs_higher_of": 50.11287257455707,
+        "embedded_payment_excluding_common_direct": 155.94763206873134,
+        "higher_of_payment_excluding_common_direct": 155.94763206873134,
+        "and_payment_excluding_common_direct": 206.0605046432884,
         "nominal_new_positive_surplus": 81.1175366741341,
         "PV3_new_positive_surplus": 29.459816410304732
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "real_construction_cost_growth2pct": {
       "assumptions": {
@@ -1154,9 +1346,14 @@
         "net_incremental_recovery": 58.22582162229354,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 53.83119595414453,
+        "additional_vs_higher_of": 53.831195954144526,
+        "embedded_payment_excluding_common_direct": 156.27263557982255,
+        "higher_of_payment_excluding_common_direct": 156.27263557982255,
+        "and_payment_excluding_common_direct": 210.10383153396708,
         "nominal_new_positive_surplus": 87.55154050506168,
         "PV3_new_positive_surplus": 31.459014011650776
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "joint_low": {
       "assumptions": {
@@ -1191,9 +1388,14 @@
         "net_incremental_recovery": 4.711748510732974,
         "noneligible_dc_credit": 0.0,
         "inherited_customer_relief": 4.631912136081855,
+        "additional_vs_higher_of": 4.631912136081855,
+        "embedded_payment_excluding_common_direct": 36.14745901681623,
+        "higher_of_payment_excluding_common_direct": 36.14745901681623,
+        "and_payment_excluding_common_direct": 40.77937115289808,
         "nominal_new_positive_surplus": 7.179078696142617,
         "PV3_new_positive_surplus": 2.8772460331916303
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.0
     },
     "joint_high": {
       "assumptions": {
@@ -1228,14 +1430,31 @@
         "net_incremental_recovery": 205.64746268008335,
         "noneligible_dc_credit": 2.288494071784417e-16,
         "inherited_customer_relief": 156.69884754412135,
+        "additional_vs_higher_of": 151.27173117316468,
+        "embedded_payment_excluding_common_direct": 303.4891109857488,
+        "higher_of_payment_excluding_common_direct": 308.91622735670546,
+        "and_payment_excluding_common_direct": 460.1879585298702,
         "nominal_new_positive_surplus": 246.80403304001416,
         "PV3_new_positive_surplus": 87.78765780433017
-      }
+      },
+      "incremental_dominant_share_of_charged_billing_MW_years": 0.14670689925042174
     }
   },
   "checks": [
     {
       "check": "Central payment gain equals new positive surplus; no pooled baseline deficit",
+      "passed": true
+    },
+    {
+      "check": "Central selected costs put the pooled model in the embedded-dominant regime",
+      "passed": true
+    },
+    {
+      "check": "High-cost scenario puts the pooled model in the incremental-dominant regime",
+      "passed": true
+    },
+    {
+      "check": "Above-higher-of equals new positive surplus evaluated within groups",
       "passed": true
     },
     {
@@ -1256,6 +1475,10 @@
     },
     {
       "check": "NITS changes do not change total uplift under fixed residual costs",
+      "passed": true
+    },
+    {
+      "check": "In incremental-dominant regime NITS changes the uplift above higher-of",
       "passed": true
     },
     {

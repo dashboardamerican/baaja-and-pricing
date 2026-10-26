@@ -2,6 +2,8 @@
 
 October 25, 2026. **Use approximately $50 billion in additional contributions above incremental transmission cost over 2027–2056, in constant 2026 dollars.** The modeled result is $46.8bn, using levelized cost recovery and charges beginning in 2030. This is a conditional planning estimate for new data-center growth, not a measured national expectation or a finding of payments exceeding fully allocated cost of service.
 
+**October 26 clarification:** [The regime analysis](REGIMES.md) models both embedded-dominant and incremental-dominant costs, crossed with embedded-only and higher-of tariff baselines. The $50bn case selects the first cost regime through its inputs. When incremental cost is higher and the baseline is higher-of, the additional AND payment is the post-credit embedded charge. The national regime mix has not been measured.
+
 The estimate counts the contribution newly created by BAAJA. It excludes amounts data centers would contribute under their existing obligations and excludes payments that merely close an existing incremental-cost deficit. It covers transmission; it does not score generation, distribution, cryptocurrency, or the entire bill's other provisions.
 
 The policy scenario implements the embedded-plus-incremental transmission charges and credits in [introduced S.5653, section 2107(a)](https://www.govinfo.gov/content/pkg/BILLS-119s5653is/xhtml/BILLS-119s5653is.html). Separate retail provisions do not supply a uniform national surcharge. The modeled start date and eligibility convention are assumptions about implementation.
