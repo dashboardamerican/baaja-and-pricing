@@ -1,0 +1,35 @@
+CAPITAL CALIBRATION AUDIT — 25 OCTOBER 2026
+
+Recommendation
+Retain $0.65m/MW only as a judgmental GROSS full-network planning assumption. The independent primary records make this a plausible central engineering scenario, not a statistically estimated national mean. Use $0.3m-$1.0m/MW as a deliberately broad engineering sensitivity. Do not label $0.65m/MW “newly assignable after existing funding.” That description is contradicted by documented large customer-funded projects. A national prior-funding fraction is not identified by the available records; any central fraction must be explicitly judgmental.
+
+If the requested outcome is total AND payments ABOVE INCREMENTAL CAUSAL TRANSMISSION COST, then under correctly credited AND the amount is the ordinary inherited-network contribution. The new-capital assumption cancels. It matters critically for additional payments compared with existing tariffs, or for payments above fully allocated embedded cost. Do not silently switch between those outcomes to manufacture a defensible number.
+
+Primary-record calibration, independent of UCS
+1. Full Dominion2024 plan scan:27 explicitly identified DC needs,32 linked unique components,$1,328.65m historical estimated capital. Sum of the maximum published seasonal site/DP forecasts is4,032.5MW: descriptive $0.3295m/MW. Removing Youngs Branch, an addition to an existing transformer site whose forecast is clearly not all new load, gives26needs,$1,327.9m/3,890.9MW=$0.3413m/MW. These totals still omit regional baseline projects, mix forecast years2027-29, and do not establish net incremental load at all sites. Current XML costs sum$1,399.75m, but S3047.1 shows unexplained zero so the historical vintage is cleaner. These ratios are cross-checks, not suitable national calibration by themselves.
+Sources: research/primary-records-2026-10-25/explicit-dc-needs.csv and explicit-dc-project-components.csv, independently selected from Dominion's original local plan, linked to PJM RTEP2024. Current XML snapshot2026-10-23.
+
+2. MISO2026 four identified computational packages:1,630MW,$420.81m high package estimates=$0.2582m/MW. Contains150MW crypto and small50MW connection, plus430MWHannover and1,000MWCannoli. Excluding crypto/small case leaves$416.8m/1,430MW=$0.2915m/MW. These are incomplete local/study packages, including some shared/earlier-work uncertainty.
+Source: sites/baaja-and-pricing-github/data/evidence/miso26-matched-packages.csv; original MISO monthly EPR cost cards and load statistics.
+
+3. MISO2025 LEAP initial+additional phase explicitly matches1,200MW and$567.2m=$0.4727m/MW. Better network-package scope than Merom's$0.0206m/MW one-mile connection or Marble Hill's$0.0661m/MW ring bus. Never average these partial connections as full cost. Source:MTEP25AppendixA and data/evidence/miso25-matched-components.csv.
+
+4. AEP's March20,2026 announcement explicitly pairs10GW Piketon with$4.2bn new765kV transmission=$0.420m/MW. SB Energy commits to paying the announced transmission investment. The commitment is prospective and detailed recovery/approval filings were still forthcoming in the announcement, so this is evidence of material baseline funding, not proof of realized collections.
+https://www.aep.com/news/stories/view/10823/
+
+5. PJM2024RTEP printed63 identifies$4.65bn competitive regional+$1.27bn local/noncompetitive solutions and forecast increases of10GW in2029/15GW in2032 since the2022study. The implied$0.395-$0.592m/MW window ratios are context only: mixed DC/electrification/EV demand and over2GW generator retirements; denominator is forecast revision, not a matched newDCcohort. Adding this ratio directly to Dominion local ratios would imply unjustified attribution and could overlap.
+https://www.pjm.com/-/media/DotCom/library/reports-notices/2024-rtep/2024-rtep-report.pdf
+
+Material NEW funding evidence: Entergy / Meta Evest
+March2026 sworn company testimony by Daniel Kline identifies three projects. West Fork Creek interconnection and Smalling-El Dorado are fully customer funded through CIAC; WFC-StLandry is recovered from ESA revenue during the20year original term. Printed33,Q55 expects100%of transmission revenue requirements offset during the agreement. Printed34 identifies residual postterm costs; thus20yearprotection is not lifetimezero risk. The public capacity and detailed cost are redacted. This is testimony about contractual arrangements, not an independent finding of realized payment adequacy.
+Mapping to MTEP26Chapter3 published estimates gives$1.1bn interconnection+$0.9bn Smalling-ElDorado direct-funded and$1.487bn WFC-StLandry recovered through ESA. The September EPR cards total$3.480bn, a different cost vintage. Public load statistics report4.5GW but one cost card reports1MW; MTEP26Chapter3 separately acknowledges4.5GW South load excluded from its chart. Retain the discrepancy rather than silently replacing it. Conditional gross ratio at4.5GW is$0.775m/MW. It must not be treated as wholly unassigned capital.
+https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=AUl4qI5mSHA%3D
+Downloaded local:entergy-kline-evest-transmission-testimony-2026-03.pdf; rendered PDF35/printed33 to kline-funding-page33.png and visually checked.
+
+Additional quantified funding: Wisconsin PSC states$1,099.366m Oracle-funded E-STATCOM within$2,480.770m-$2,724.689m Ozaukee package, leaving$1,381.404m-$1,625.323m remaining project costs. The remaining balance is not proven newly unassigned to DCs; actual ESA/retail recovery still needs review. Do not divide by a first-phaseMWdenominator without matching fullscope.
+https://psc.wi.gov/Pages/CommissionActions/CasePages/OzaukeeDIP.aspx
+
+What this supports
+Costs are geographically heterogeneous and complete network packages reasonably can exceed local-connection estimates. A rounded$0.65m gross scenario is defensible as explicit expert judgment because it lies above observed local packages and below the largeEvest conditional fullpackage; it is not defensible to say the data estimate$0.65m nationally. No observed national residual$perMWcan be produced from these records without an assumption about regional shares, cost causation, and prior funding. The $22bn OPC headline cannot fix this: it aggregates procurement windows with different futureload/retirementbases and disputed allocation, not paired marginalDCMWor actual payments.
+
+Computations:capital-calculations.py generates capital-evidence.json. No UCS list, cost total, or project classification used for this calibration.

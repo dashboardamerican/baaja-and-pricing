@@ -1,0 +1,71 @@
+{
+  "status": "Arithmetic of nonrandom primary-record samples, NOT a calibrated national mean or full incremental network cost.",
+  "dominion_explicit_dc": {
+    "distinct_needs": 27,
+    "sum_forecast_max_season_MW": 4032.5,
+    "historical_planned_cost_million": 1328.65,
+    "latest_reported_planned_cost_million": 1399.75,
+    "historic_ratio_million_per_MW": 0.32948543087414756,
+    "current_ratio_million_per_MW": 0.3471171729696218,
+    "exclude_Youngs_Branch_existing_transformer_addition": {
+      "needs": 26,
+      "MW": 3890.9,
+      "cost_million": 1327.9,
+      "ratio_million_per_MW": 0.3412835076717469
+    },
+    "current_zero_cost_components": [
+      "s3047.1"
+    ],
+    "limitations": [
+      "Need forecasts are total site/DP peak, not necessarily incremental above a measured baseline.",
+      "Forecast years differ 2027-2029.",
+      "Regional baseline and other upstream upgrades absent.",
+      "Known customer funding not quantified.",
+      "Current zero cost s3047.1 unresolved; use historical vintage for consistent arithmetic."
+    ]
+  },
+  "MISO26_computational": {
+    "MW": 1630,
+    "package_million": 420.81,
+    "ratio_million_per_MW": 0.2581656441717791
+  },
+  "MISO25_LEAP_two_phase": {
+    "MW": 1200,
+    "package_million": 567.2,
+    "ratio_million_per_MW": 0.4726666666666667
+  },
+  "AEP_Piketon": {
+    "MW": 10000,
+    "transmission_million": 4200,
+    "ratio_million_per_MW": 0.42,
+    "prior_funding": "SB Energy commits to full announced transmission investment; prospective detailed cost-recovery filings."
+  },
+  "MISO26_West_Fork": {
+    "MISO26_report_package_million": 3487,
+    "EPR_card_package_million": 3480,
+    "conditional_MW": 4500,
+    "conditional_ratio_million_per_MW": 0.7748888888888888,
+    "known_direct_funding_million_by_MISO_component": 2000,
+    "ESA_recovered_project_million": 1487,
+    "funding_mapping": "Kline primary testimony states WFC interconnection and Smalling-El Dorado fully CIAC funded; WFC-St Landry ESA revenues offset costs during original20yearterm. Future postterm liability not zero.",
+    "capacity_conflict": "MISO EPR statistics4500MW; costcard1MW; independent MTEP26chapter3 acknowledges4500MW South omittedfromfigure. Testimonycapacityredacted. Retain conflict."
+  },
+  "PJM2024_window_context": {
+    "regional_plus_local_million": 5920,
+    "incremental_forecast_2029_MW": 10000,
+    "incremental_forecast_2032_MW": 15000,
+    "ratio_2029_million_per_MW": 0.592,
+    "ratio_2032_million_per_MW": 0.39466666666666667,
+    "limitation": "Mixed drivers data centers/electrification/EVs and2GWretirements; not matched DC causal ratio; cannot add directly to local ratios."
+  },
+  "recommendation": {
+    "gross_engineering_central_million_per_MW": 0.65,
+    "interpretation": "Judgmental gross full-network planning scenario, not measured national mean. Evidence packages are often .25-.47m/MW before unmatched wider grid impacts, and large new bulk-network packages reach .77m/MW.",
+    "gross_sensitivity_million_per_MW": [
+      0.3,
+      1.0
+    ],
+    "net_unassigned_central_million_per_MW": null,
+    "why_no_net_point": "No representative national coverage/amount data on CIAC and annual direct recovery. Known largest packages already have material funding. Any uniform discount must be explicitly a policy-assessment assumption."
+  }
+}

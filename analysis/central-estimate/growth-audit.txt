@@ -1,0 +1,43 @@
+GROWTH AND BILLING AUDIT — 25 October 2026
+
+RECOMMENDATION
+Use the latest LBNL U.S. facility-electricity reference case to anchor near-term central demand: 192 TWh in 2024 (historical modeled estimate), 464 in 2028 and 649 in 2030 (projections). Interpolate geometrically to a 2026 baseline of 298.476 TWh, then 3% annual growth in 2031–40 and 1.5% in 2041–56. These later rates are conservative planning judgments. The entire resulting series must not be described as a published LBNL projection or a probability-weighted expected value.
+
+Central anchors, TWh/year: 2030 649; 2035 752.37; 2040 872.20; 2050 1,012.23; 2056 1,106.81. Annual paths and exact source metadata are in growth-audit.json. build_growth_audit.py regenerates them and validates interpolation and source totals.
+
+The new path happens to end near the old 1,096 TWh central path, but is anchored to the newer national-lab reference case and a visible conservative judgment rather than transferring the global IEA scenario growth rate to the U.S. It remains a scenario estimate. No source establishes total U.S. DC electricity consumption in 2056.
+
+PRIMARY DEMAND EVIDENCE
+1. LBNL, United States Data Center Energy Usage Report: 2025 Update, published June18,2026, printed pp8–9. https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update
+Archived lbnl-2025-update.pdf and .txt. Excludes cryptocurrency. 2030 reference649TWh; compounded sensitivity521–843TWh. Based on equipment shipments and device/facility modeling, not actual billed load. 2024 is the last historical year;2025 already includes projections. It does not model major changes in grid availability or industry trajectory. The national-lab label does not make proprietary shipment inputs independently reproducible.
+
+2. EPRI, Powering Intelligence2026, February24,2026. https://powering-intelligence.epri.com/annual-peak-use.html and https://powering-intelligence.epri.com/dashboard/
+Earlier narrative gives383/596/793TWh in2030; live state-dashboard exact totals383.684/596.350/793.701. Includes cryptocurrency, unlike LBNL. Medium scenario assumes all construction,75%advancedplanning,10%earlyplanning become fully operational by2030, followed by operational ramps. Use as a lower near-term sensitivity and regional-distribution cross-check, not as independent observations to average with LBNL.
+
+3. IEA, Key Questions on Energy and AI, April2026, TableA.4, printed110. https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf
+Actual U.S. energy projection is426TWh2030. Prior model borrowedGLOBAL945→1193TWh2030–35growth, not U.S. forecast. Do not call that domestic evidence. Different forecast models are sufficiently divergent that averaging endpoint values hides substantive differences.
+
+4. EIA AEO2026 Counterfactual Baseline Table5, cb2026.d021826b, row33, annual headersrow10. https://www.eia.gov/outlooks/aeo/excel/aeotab5.xlsx
+Archived aeo2026-commercial.xlsx. Server electricity only,0.607868quadrillionBtu2030 (~178TWh),1.5204612050 (~446TWh). These are not total facility use. EIA May19explanation: https://www.eia.gov/TodayinEnergy/detail.php?id=67704
+For a high-growth cross-check, normalize the annual U.S. server growth shape to649TWh2030, assuming facility overhead/storage/networking track servers. This gives941TWh2035,1,623TWh2050,1,746TWh2056 with terminal2049–50growth continued sixyears. This splice is analyst-created. Long-run EIA improvements after2040 explicitly slow server growth. Do not substitute446TWhserveronly for649TWhfacilitytotal.
+
+5. BNEF author's July29,2026 public summary of July21forecast: https://about.bnef.com/insights/data-centers/six-things-to-know-about-bnefs-new-us-data-center-capacity-outlook/
+118GWinstalled2030 and194GW2035. Scope is installed capacity, not billed coincident grid load. A stress path applies194/118capacity growth to649TWh2030, then3%2036–40,1.5%after2040. It yields1,067TWh2035 and1,570TWh2056. Constant energy-per-installedcapacity is an explicit conversion assumption. No official BNEF annual energy series was obtained; use neither194GW×8760 nor a guessed utilization as an observed forecast. Full subscriber model not inspected.
+
+BILLING PEAK: MATERIAL ISSUE
+80% load factor was requested by user; retain it as the visible conversion convention, but calibrate a separate effective-billing multiplier transparently. EPRI documents measured own-peak load factors94% for a studied hyperscale facility and88%average for studied colocation facilities. Relative to E/(8760×0.8), these imply multipliers0.851–0.909. A selected0.90 central multiplier is equivalent to88.89%effective load factor. Sensitivities0.8/0.9/1.0 cover this issue without assuming measured national tariff peaks.
+
+EPRI live dashboard medium2030 is596.35TWh with70.651GW aggregate state noncoincident peak: implied96.36%load factor and0.830multiplier relative80%conversion. Their narrative specifies this peak is summed calculated state peaks, not utility CP billing determinants. The discrepancy is another reason to avoid treating80%as measured national billing demand. Installed/nameplate capacity utilization is a different quantity; LBNL capacity discussion must not be used to assert that its facility peak is simply nameplate.
+
+Do not apply the multiplier once as a load-factor correction and again as a separate coincidence adjustment unless the mechanisms are independently measured. Minimum contracted billing demand can exceed realized peaks; it needs actual contract data.
+
+COVERAGE AND REGIONAL SHARE
+Extracted EPRI public dashboard array into epri-state-inputs.json. The source asset is https://powering-intelligence.epri.com/assets/index.html-BnOKIAPk.js . Sums of state energy reconcile to published US row within rounding; US row is excluded from state summation to prevent double count.
+Texas medium2030=93.545TWh,15.686%ofUS; low15.985%, high16.524%. Thus25%exclusion cannot be called measured ERCOT share. StateTexas is not identical to ERCOT, and crypto inclusion matters. Onsite generation, FERC jurisdiction, grandfathering and electricity procurement are distinct filters. The current75%effective scope remains a judgment rather than an observed national coverage estimate.
+BNEF48GWonsite gas requirement under a10GW/year grid-connections scenario is generation capacity, not measured48GWoffgridDCload; generator reserve/overbuild, gridbackup, timing andjurisdiction can overlap. Do not derive coverage as1−48/194 or multiply an additional onsite haircut into75%without a consistent eligibility ledger.
+
+NITS RATE AND BILLING POOL
+The95,080.87USD/MW-year2026 proxy is EIA national modeled transmission expenditure divided by829GW summed planning peaks, inflated to2026dollars. It is not an observed demand-weighted national NITS tariff.829GW is not national12CPbillingdeterminant. No new representative observed national average was established.
+Archived actual PJM August2026NITS plus official2026NSPL/large-load projections give useful reproducible cross-checks: allNSPLweighted82,789USD/MW-year;2030positive-new-large-loadweighted94,746;2035weighted92,318;2046weighted93,704. These match the magnitude of95,100 but validate only PJM scale, not national coverage or tariffscope. Large-load forecast includes nonDCs; rates exclude some riders. Growth-weighted tariffs are relevant to newDCs; all-customer demand weighting is a different question.
+
+The central growth path is defensible as an explicit conservative planning choice. It cannot fix uncertainty in newly assigned incremental capital, crediting mechanisms, actual preexisting obligations, or the distinction between incremental and fully allocated cost of service. Those determine what can honestly be called BAAJA payments above cost.

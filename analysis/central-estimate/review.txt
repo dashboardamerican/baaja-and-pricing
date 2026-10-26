@@ -1,0 +1,28 @@
+Independent numerical review — October 25, 2026
+
+CENTRAL RESULT: PASS
+I recomputed the central result without importing score.py or its annual path. Baseline=√(192×464)=298.4761296988421 TWh; 2030=649 TWh; subsequent growth=3% annually to 2040 and 1.5% thereafter; physical facility peak-equivalent demand uses 80% load factor, 75% coverage. Annual cost factor=0.05/(1−1.05^−40)+0.015=0.07327816116603497. For each year 2030–2056 I independently calculated Q, s=Q/(829000+Q), U=400000×factor×Q, baseline=s(B+U), AND=U+sB, and increase in positive surplus.
+Independent totals, billions:
+  New positive surplus / additional payments: 46.811109517914936
+  Post-policy contribution above incremental cost: 151.87800991167353
+  Baseline contribution above incremental cost: 105.06690039375866
+  Nominal, 2.5% inflation: 75.44219749074571
+  PV to 2026, 3% real: 27.66874198995467
+These match saved central outputs to floating-point tolerance. Rounded $50bn is arithmetically reasonable; it remains conditional on judgmental inputs.
+
+SENSITIVITY BUG — CORRECTED AND RECHECKED
+The initial score.py applied billing_multiplier inside qpath, then used qpath to construct capital cohorts. That changed physical network investment along with billing coincidence. The author corrected this by separating physical_path from billing qpath, deriving capital cohorts from physical MW and applying the multiplier only to shares. I inspected the corrected code and reran it successfully. Corrected 90%-billing gain is $47.16281834337226bn, matching my independent fixed-capital calculation. Corrected joint_low is $4.631912136081855bn. Central multiplier=1 remains unchanged. An invariant now verifies that billing-only changes leave physical cost unchanged. Facility-load-factor sensitivity is correctly separate.
+
+ALGEBRA AND GROUPING
+Grandfathering formula is consistent: noneligible costs remain in shared recovery; only eligible Ue is reassigned; eligible extra payments equal credits to other DCs plus inherited customers. G is computed as difference in positive surplus, not merely all additional payments. The regional mode correctly applies the positive-part operation separately by zone, avoiding the pooled-minimum problem. PJM weights and remaining national pool are explicitly a stress scenario, not an empirical regional attribution. Numerical reconciliation checks cover conservation, inherited/noneligible credit distribution, zero residual costs, zero growth, zero inherited charges, and hand examples. The central baseline exceeds incremental cost within the selected pooled model, which is not proof about every actual customer or region.
+
+DOLLAR AND TIME CONVENTIONS
+Real levelized central recovery is internally consistent as a financing proxy; it is not a filed utility revenue requirement or actual cash billing profile. The synthetic nominal rate-base alternative converts vintage nominal recovery back to real dollars consistently, but omits utility-specific tax/deferred-tax and financing details as disclosed. The horizon is 2027–2056, with policy receipts only in 2030–2056 (27 charged calendar years); say '30-year window' rather than implying 30 full years of charges. No terminal recovery after 2056 is counted. Capital enters in its cohort year with full-year recovery and no delay or retirement before the 40-year life—an explicit coarse annual approximation.
+
+The central $46.81bn specifically sums modeled real levelized payment equivalents within the window. Inflation-indexing those equivalents produces the $75.44bn nominal scenario; it does not convert them into observed or approved annual utility cash receipts. The nominal rate-base recovery sensitivity is a separate synthetic cash-timing approximation, yielding approximately $52.60bn in constant dollars. Therefore describe the headline as 'modeled additional payments using levelized cost recovery' and document that convention, rather than calling it an audited cash-flow score.
+
+ADDITIONAL CAVEAT
+The protection_ends20years scenario can represent expiration of an annual direct-payment protection. It must not suggest that irrevocable upfront CIAC financing automatically returns to shared rate base after 20 years. The extra $0.25m/MW in that stress is another assumed residual amount, not evidence of actual expiring national agreements.
+
+INTERPRETATION
+One-way capital and joint scenarios are not confidence intervals or exhaustive bounds. National inherited rate and pool proxies, 75% participation, growth after the forecast horizon, and $0.4m/MW residual capital remain planning assumptions. The arithmetic supports a rounded conditional $50bn central case; it does not establish a measured national expected value or payments above fully allocated cost of service.

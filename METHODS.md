@@ -2,6 +2,8 @@
 
 Updated October 25, 2026. This is the current interpretation and empirical research method for the AND-pricing dashboard. It supersedes earlier use of gross project totals as customer harm, a national capital default as a measured mean, and “above cost of service” when only incremental transmission cost was measured. Existing calculator outputs remain conditional scenarios.
 
+**Current planning assessment:** [The central estimate](CENTRAL_ESTIMATE.md) is approximately $50bn of new contributions above incremental transmission cost over 2027–2056 ($46.8bn calculated). It uses an updated LBNL demand anchor and an explicitly judgmental residual-cost input. This is a conditional working estimate, not completion of the national empirical validation requirements below. The interactive calculator retains its earlier defaults.
+
 The question is **how much existing customers pay because data centers connect, and how BAAJA changes that amount**. More investment, higher published rates, and higher data-center payments answer different parts of this question. The analysis must connect them through the same projects, customers, billing zones and years.
 
 ## Compare three worlds
@@ -29,6 +31,8 @@ Remaining effect with BAAJA:                O2 - O0 = H - R
 Positive `H` means those customers pay more because the cohort connects. Negative `H` means they benefit under the baseline. Positive `R` measures an additional reduction under BAAJA. It does not by itself show that ordinary pricing undercharged data centers.
 
 Also report the DC cohort's actual payments in Worlds 1 and 2 and its incremental cost of service, using a stated engineering and cost-recovery definition. Payments above incremental cost are a contribution toward other grid costs. They are not automatically an overcharge above fully allocated cost of service, which also assigns shared costs.
+
+To isolate **new positive contributions above incremental cost**, calculate `max(P2 − C, 0) − max(P1 − C, 0)` for each relevant billing group and year, then aggregate. This excludes additional payments that merely repair a preexisting deficit. Under fixed physical costs, the signed contribution change is simply `P2 − P1`; the positive-surplus measure equals it only when baseline incremental cost is already covered. A national pooled positive-part calculation can hide regional deficits, so report regional tests or retain that limitation explicitly.
 
 Identify customer groups before calculating changes: existing households, existing businesses, existing DCs, later noneligible loads and policy-eligible DC cohorts. Eligibility and grandfathering are explicit implementation assumptions. Extra payments by eligible DCs equal relief to **all other payers together** only if total required recovery is unchanged and receipts are fully credited. They need not equal relief to households or to the 2026 incumbent cohort alone.
 

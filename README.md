@@ -8,11 +8,13 @@ Choose **Low, Medium, or High** data-center growth through 2056. EPRI supplies t
 
 ## Current methods
 
+**Current written estimate:** approximately **$50bn** of new data-center contributions above incremental transmission cost over 2027–2056. Read the [central assessment, evidence and sensitivities](CENTRAL_ESTIMATE.md). It is a conditional planning estimate using updated demand and an explicitly judgmental net-cost input. The interactive calculator and older PDF retain the legacy scenario defaults described below.
+
 Use the [methods for estimating transmission bill impacts](METHODS.md) as the current research and interpretation guide. Compare three worlds: without the target new DC cohort; with that cohort under actual tariffs and contracts; and the same physical system under a specified BAAJA implementation. Report separately the effect of DC growth on existing bills, additional policy relief, and the remaining effect with policy. Extra BAAJA payments do not by themselves measure an existing subsidy.
 
 The approximately $75bn result below is a conditional calculator benchmark. The $0.65m/MW capital default is not a measured national mean. Gross planned capital, actual expenditure, annual recovery, direct funding and customer payments must be matched before an empirical national score is claimed. [UCS audit findings](data/evidence/ucs-audit-findings.json) and [numeric reconciliation](data/evidence/ucs-audit-bridge.csv) document why the paper's headline is excluded from capital calibration.
 
-## Central case
+## Legacy calculator central case
 
 All 30-year figures are **constant 2026 dollars**, undiscounted, over **2027-2056**. Charges begin in 2030. The results are conditional planning scenarios, not forecasts or official bill scores.
 
