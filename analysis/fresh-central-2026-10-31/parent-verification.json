@@ -1,0 +1,13 @@
+{
+  "independent_pooled_A": 59.573279718162695,
+  "independent_pooled_inherited_contribution": 153.93893432818945,
+  "pool_year_rows_checked": 594,
+  "scenario_rows_checked": 29,
+  "findings": [
+    "Independent national pooled reconstruction matches using separate cohort-cost calculation.",
+    "Every pool/year reconciles payment differences and higher-of comparison.",
+    "All scenarios reconcile P1=P0+A and P1=H+B.",
+    "Baseline shortfall equals A-B in every scenario.",
+    "Prior funding applies only to capital recovery, not automatically to ongoing O&M."
+  ]
+}

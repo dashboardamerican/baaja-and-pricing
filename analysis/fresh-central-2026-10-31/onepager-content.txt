@@ -1,0 +1,34 @@
+BAAJA transmission payments: a central 30-year projection
+October 31, 2026 | 2027–2056 growth; policy collections assumed from 2030
+
+ABOUT $55 BILLION — ADDITIONAL PAYMENTS / OTHER-RATEPAYER RELIEF
+Data centers pay $56.0bn more than under the central baseline: embedded transmission charges plus existing direct-funding obligations. With identical investment and full revenue credits, other ratepayers receive equal transmission-bill relief.
+
+ABOUT $55 BILLION — ABOVE THE HIGHER-OF SERVICE-COST BENCHMARK
+Data centers pay $55.6bn above the larger of their total baseline transmission obligation and their allocated incremental transmission service cost. This operational benchmark implements “embedded or incremental, whichever is higher,” retaining existing direct obligations. It is a selected allocation standard, not a finding of overpayment above independently established fully allocated cost of service.
+
+PAYMENT LEDGER | Billions of constant 2026 dollars
+Baseline payments $177.0 → BAAJA payments $233.0: +$56.0.
+Higher-of benchmark $177.4 → BAAJA payments $233.0: +$55.6.
+The $0.4bn difference repairs baseline payments below the benchmark. The two headline amounts overlap; do not add them. Ledger totals cover the 2030–2056 collection window and use levelized annual payment equivalents.
+
+HOW THE PROJECTION IS BUILT
+Demand follows LBNL’s 649 TWh reference for 2030, then assumed growth of 3% annually through 2040 and 1.5% thereafter, reaching 1,107 TWh in 2056. The modeled new cohort starts above an interpolated 2026 baseline of 298 TWh. Coverage is 75% of growth; an 80% load factor converts electricity to capacity.
+
+Assigned upgrades cost $0.65m/MW in 2026 dollars, rising 1% annually above inflation. This includes the data centers’ assigned portion of shared upgrades, not entire regional lines. Preexisting data-center funding is assumed to cover 35% of capital recovery; ongoing O&M remains chargeable. Recovery uses 40 years, 5% real financing and 1.5% annual O&M. These are transparent planning judgments, not measured national averages.
+
+The starting embedded-rate proxy is $95,100/MW-year. Half of covered growth uses actual PJM zonal rates and billing pools; the remainder uses a residual national pool. Existing load and inherited network recovery both grow 1% annually, keeping the pre-growth embedded rate flat in real terms. New construction adds separate costs. Required credits remove double recovery.
+
+EVIDENCE AND UNCERTAINTY
+MISO’s two LEAP phases imply about $0.47m/MW. AEP’s planned Piketon investment implies $0.42m/MW and includes a customer-funding commitment. These are useful scale checks, not a representative national sample. The $0.65m/MW judgment allows broader network scope; the funding deduction prevents counting all project costs as new policy revenue.
+
+Varying gross costs from $0.30m to $1.00m/MW gives additional payments of $26–86bn and above-benchmark payments of $26–83bn. A $2m/MW stress gives $172bn and $139bn: high costs can make incremental recovery exceed embedded charges. These are scenarios, not confidence intervals.
+
+The separate $145bn contribution above incremental cost includes inherited-network participation; it is not the above-higher-of estimate. Under a fully allocated benchmark that assigns both incremental costs and that inherited share, modeled excess is zero. Transmission only; generation, distribution and other bill provisions are excluded.
+
+PRIMARY SOURCES
+Bill §2107: https://www.govinfo.gov/content/pkg/BILLS-119s5653is/xhtml/BILLS-119s5653is.html
+LBNL demand: https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update
+PJM NITS: https://www.pjm.com/-/media/DotCom/markets-ops/settlements/network-integration-trans-service-august-2026-xls.xlsx
+MISO LEAP: https://cdn.misoenergy.org/MTEP25731615.zip
+AEP funding: https://www.aep.com/news/stories/view/10823/

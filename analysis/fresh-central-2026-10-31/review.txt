@@ -1,0 +1,9 @@
+Benchmark/accounting wording review — October 31, 2026
+
+Reviewed onepager-content.txt, ASSUMPTIONS.md, and calculate.py. The explicit common-direct-funding identities are consistent: C=D+U; P0=D+s(K+U); P1=C+sK; H=max(P0,C)=D+max(s(K+U),U). The capital-only direct-funding treatment leaves O&M in U. The one-page qualifications distinguish the selected higher-of benchmark from independently established fully allocated cost of service. No essential accounting flaw identified in this review; this was not a new empirical validation or independent model rerun.
+
+Two wording fixes recommended before delivery:
+1. In the one-pager, replace "Existing customers’ direct funding is assumed to cover 35% of capital recovery" with "Existing direct-funding obligations are assumed to cover 35% of the modeled data centers’ capital recovery". Current wording can imply incumbent customers fund the new customers’ capital, whereas D represents the modeled data centers’ obligations that exist without BAAJA.
+2. In calculate.py headline_definitions.extra_above_baseline (and regenerated JSON), replace "AND less embedded transmission payment plus common preexisting direct obligations" with "AND less the sum of embedded transmission charges and common preexisting direct obligations". Parentheses/sum are essential because the current prose can be read as P1-E+D instead of P1-(E+D).
+
+Optional clarity: describe PJM rates and billing pools as "actual starting PJM zonal rates and billing pools" because future inherited loads and recovery are projected. The about-$55bn headlines are reasonable coarse rounding of $56.0bn and $55.6bn, both disclosed immediately below.

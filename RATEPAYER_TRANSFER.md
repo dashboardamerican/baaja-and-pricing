@@ -1,5 +1,7 @@
 # BAAJA: who pays for transmission?
 
+> **October 31 update:** Use the [fresh central projection](FRESH_CENTRAL_ESTIMATE.md) and [one-page brief](baaja-central-estimate-one-pager.pdf) for the current estimate. This October 26 report remains an earlier embedded-baseline scenario assessment.
+
 *October 26, 2026. All figures from the current transfer analysis.*
 
 [Download the report](baaja-ratepayer-transfer.pdf)
