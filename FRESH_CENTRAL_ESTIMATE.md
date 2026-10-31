@@ -1,42 +1,39 @@
-# BAAJA: additional data-center transmission payments
+# BAAJA: $50-100 billion in additional transmission payments
 
-October 31, 2026 | 2027-2056 | Constant 2026 dollars
+Illustrative central-to-higher scenarios | October 31, 2026
 
 [Download the one-page brief](baaja-central-estimate-one-pager.pdf)
 
-**A. Additional other-ratepayer relief: $56.0bn.**
-**B. Payments above the selected higher-of service-cost benchmark: $55.6bn.**
+## Additional payments and customer relief
 
-**Central recommendation: about $55 billion for each measure.** The two amounts overlap; do not add them. In the central case, ordinary payments already cover allocated incremental costs in most modeled regions, so almost all extra payments also exceed the higher-of benchmark.
+BAAJA could shift roughly $50-100 billion of transmission costs from other electricity customers to data centers in central-to-higher scenarios. Our central estimate is $56 billion for new loads entering in 2027-2056, with collections beginning in 2030. These are additional payments above the modeled baseline, in constant 2026 dollars, without discounting. The range is a rounded scenario illustration, not a confidence interval or a lower and upper bound. [1, 3]
 
-| Without BAAJA | Higher-of benchmark | With BAAJA |
-| ---: | ---: | ---: |
-| $177.0bn | $177.4bn | $233.0bn |
+The bill requires embedded AND incremental transmission charges, with incremental receipts credited against the shared revenue requirement. Holding investment and demand fixed, the extra data-center payments reduce what other customers must pay by the same amount. [1]
 
-Payment ledger covers 2030-2056. Extra annual payments rise from $1.2bn in 2030 to $2.9bn in 2056.
+## Assumptions and range
 
-The larger **$145bn above incremental cost alone** includes about $89bn that customers would already contribute without BAAJA. It is not all new relief and is not our above-cost-of-service estimate.
+Demand reaches LBNL's 649 TWh in 2030, then grows at our assumed 3% annually through 2040 and 1.5% thereafter. We assume 80% load factor, 75% coverage, $650,000/MW of assigned network upgrades, 1% annual real construction-cost growth, and 35% of capital already funded by data centers. Capital recovery uses 40 years and 5% real financing, plus 1.5% annual operating costs. Embedded charges use PJM zonal tariffs and a $95,100/MW-year national starting proxy. The cost, coverage and funding shares are judgments, not measured national averages. [2-4]
 
-## How the projection is built
+The approximately $50 billion case assumes 50% prior capital funding ($47 billion calculated). The approximately $100 billion case combines a faster demand path with $750,000/MW of upgrades ($103 billion calculated). Lower outcomes remain plausible: restricting the policy to entrants from 2030 gives $35 billion; $300,000/MW upgrades give $26 billion. Each changes only the stated central assumptions. [3]
 
-**Load:** LBNL's 649 TWh in 2030; our extrapolation grows 3% annually through 2040, then 1.5%, reaching 1,107 TWh in 2056. Use 80% load factor and 75% modeled coverage. [1]
+## Comparison with the transmission ITC
 
-**Embedded charges:** $95,100/MW-year national starting proxy, cross-checked against actual PJM tariffs. Half of covered growth uses PJM zonal rates and billing pools; the remainder uses a residual U.S. pool. Inherited rates before new DC growth stay flat in real terms. [2]
+JCT scored the House-passed 2021 Build Back Better transmission investment tax credit at $11.279 billion over FY2022-2031. For a 30-year scale comparison, we normalize its annual amounts using an assumed 2.5% inflation rate and repeat that real ten-year profile three times: approximately $32 billion in 2026 dollars. This is our illustration, not an official 30-year JCT score or a forecast of a continuing program. [3, 5]
 
-**Assigned upgrades:** $650,000/MW in 2026 dollars for local/network work, including the DC share of shared upgrades; new construction rises 1% annually above inflation. Assume 35% of capital is already funded directly. Retain operating costs unless separately funded. Recover capital over 40 years at 5% real financing, plus 1.5% annual operating cost.
+The $50-100 billion BAAJA range is approximately 1.6-3.2 times that ITC illustration; the central case is 1.8 times. This compares data-center-funded customer relief with federal budget cost, not equivalent electricity-bill savings or economic benefits.
 
-## Evidence checks and uncertainty
+## What is above cost of service?
 
-Dominion's selected local DC projects imply roughly $0.34m/MW; MISO LEAP phases, $0.47m/MW. These incomplete packages support a larger full-network allowance. AEP's $0.42m/MW Piketon announcement includes a customer-funding commitment, demonstrating why prior payments matter. The $0.65m cost and 35% funding inputs are planning judgments, not measured national averages. [2-4]
-
-At $0.30m-$1.00m/MW, additional relief is **$26bn-$86bn**, holding other assumptions fixed. Faster growth raises the central-cost result to $90bn. A $2m/MW stress produces $172bn extra relief but $139bn above the higher-of benchmark. These are sensitivity cases, not confidence bounds.
-
-BENCHMARK AND SCOPE: Cost of service here means the chosen higher-of payment benchmark: the larger of ordinary transmission payments (including existing direct obligations) and allocated incremental service cost. If fully allocated cost includes incremental cost plus the inherited-network share, excess is zero by construction. The higher-of figure is not a finding of overpayment above that alternative allocation. Required revenue credits are included. Fixed demand/investment; transmission only; new 2027-2056 growth; charges start in 2030. Amounts are undiscounted annualized payment equivalents, not literal timing of upfront contributions. [5]
+The central case also exceeds the larger of ordinary payments and incremental service cost by $55.6 billion. That is not a finding of overpayment above fully allocated cost. The larger $145 billion above incremental cost alone includes $89 billion already paid under the modeled baseline. The policy comparison therefore uses additional payments, not that larger total. [3]
 
 ## Sources
 
-[1] [LBNL demand](https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update)
-[2] [Inputs, regional tariffs and full methods](https://github.com/dashboardamerican/baaja-and-pricing/tree/main/analysis/fresh-central-2026-10-31)
-[3] [MISO MTEP25](https://cdn.misoenergy.org/MTEP25731615.zip)
-[4] [AEP funding announcement](https://www.aep.com/news/stories/view/10823/)
-[5] [S.5653 section 2107(a)](https://www.govinfo.gov/content/pkg/BILLS-119s5653is/xhtml/BILLS-119s5653is.html)
+[1] [S.5653, section 2107(a)(3)](https://www.govinfo.gov/content/pkg/BILLS-119s5653is/xhtml/BILLS-119s5653is.html)
+
+[2] [LBNL, U.S. Data Center Energy Usage, 2025 Update (June 2026)](https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update)
+
+[3] [Reproducible model, assumptions, scenarios and ITC calculation](https://github.com/dashboardamerican/baaja-and-pricing/tree/main/analysis/fresh-central-2026-10-31)
+
+[4] [AEP, Piketon transmission investment and customer funding (March 2026)](https://www.aep.com/news/stories/view/10823/)
+
+[5] [JCT, JCX-46-21 (November 19, 2021), p. 2, item F.1.5; p. 8, note 7](https://www.govinfo.gov/content/pkg/GOVPUB-Y4_T19_4-PURL-gpo172711/pdf/GOVPUB-Y4_T19_4-PURL-gpo172711.pdf#page=2)

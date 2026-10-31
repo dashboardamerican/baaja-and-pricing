@@ -1,0 +1,64 @@
+{
+  "description": "Selected central-to-higher scenario band, rounded from $46.8bn to $103.4bn to approximately $50-100bn. Lower cases are explicitly disclosed; not a confidence interval or bounds. Central model unchanged.",
+  "units": "Billions of constant 2026 dollars, undiscounted annual payment equivalents",
+  "scenarios": {
+    "central": {
+      "overrides": {},
+      "additional_payments_bn": 56.019582206413666,
+      "above_higherof_bn": 55.57930745345075
+    },
+    "lower_band_50pct_prior_capital_funding": {
+      "overrides": {
+        "existing_direct_fraction": 0.5
+      },
+      "additional_payments_bn": 46.758986830006705,
+      "above_higherof_bn": 46.659386176884574
+    },
+    "upper_band_faster_growth_075m_capital": {
+      "overrides": {
+        "growth_path": "eia_shape",
+        "gross_capital_million_per_MW": 0.75
+      },
+      "additional_payments_bn": 103.43527503615927,
+      "above_higherof_bn": 102.16966271459016
+    },
+    "lower_cost_sensitivity": {
+      "overrides": {
+        "gross_capital_million_per_MW": 0.3
+      },
+      "additional_payments_bn": 25.85519178757554,
+      "above_higherof_bn": 25.85519178757554
+    },
+    "only_2030_and_later_entrants": {
+      "additional_payments_bn": 35.354409864494535,
+      "above_higherof_bn": 35.05462646502735,
+      "method": "Keep pre-2030 load in billing denominators and its residual upgrade costs in shared revenue; reprice only later entrants. Same investment and demand, collections beginning 2030."
+    }
+  },
+  "itc": {
+    "source": "https://www.govinfo.gov/content/pkg/GOVPUB-Y4_T19_4-PURL-gpo172711/pdf/GOVPUB-Y4_T19_4-PURL-gpo172711.pdf",
+    "official_historical_nominal_bn": 11.279,
+    "historical_fiscal_year_nominal_bn": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0.788,
+      "2026": 1.213,
+      "2027": 1.213,
+      "2028": 1.213,
+      "2029": 2.001,
+      "2030": 2.426,
+      "2031": 2.425
+    },
+    "assumed_inflation": 0.025,
+    "illustrative_30year_bn": 31.67392748914752,
+    "method": "Normalize each FY amount by 1.025^(year-2026), then repeat that real ten-year profile three times. This resets the historical ramp each decade. Not an official score or continuing-program forecast."
+  },
+  "comparison": {
+    "central_multiple": 1.7686339095651378,
+    "rounded_band_multiples": [
+      1.5785854159428623,
+      3.1571708318857246
+    ]
+  }
+}
