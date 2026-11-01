@@ -2,7 +2,7 @@
 
 Illustrative central-to-higher scenarios | October 31, 2026
 
-[Download the one-page brief](baaja-central-estimate-one-pager.pdf)
+[Download the two-page brief and methodology](baaja-brief-and-methodology.pdf) · [Read the methodology online](analysis/fresh-central-2026-10-31/METHODOLOGY_PAGE.md)
 
 ## Additional payments and customer relief
 

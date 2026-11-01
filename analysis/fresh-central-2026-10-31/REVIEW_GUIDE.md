@@ -2,6 +2,8 @@
 
 This package supports independent review of the [one-page brief](ONE_PAGER.md). The result is a conditional policy scenario, not an empirically estimated national tariff forecast. A reviewer can reproduce the numbers and assess the evidence without access to the original chat, paid tools, or an AI service.
 
+The [second-page methodology](METHODOLOGY_PAGE.md) prints all 15 source URLs and the core equations. The downloadable package includes the original one-page brief and the combined two-page PDF.
+
 ## Start here
 
 Download [the review package](../../baaja-review-package.zip), unzip it, and run the following inside its folder with Python 3.9 or later. The check uses the Python standard library, requires no network, and does not alter the model or expected results.

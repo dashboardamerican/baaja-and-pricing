@@ -2,7 +2,7 @@
 
 Transmission AND-pricing analysis of section 2107(a) of introduced S.5653, with a legacy HTML calculator.
 
-**[Open dashboard](https://dashboardamerican.github.io/baaja-and-pricing/)** · **[Current one-page PDF](baaja-central-estimate-one-pager.pdf)**
+**[Open dashboard](https://dashboardamerican.github.io/baaja-and-pricing/)** · **[Brief + methodology PDF](baaja-brief-and-methodology.pdf)**
 
 Choose **Low, Medium, or High** data-center growth through 2056. EPRI supplies the U.S. 2030 endpoints; later years use an explicit, tapered extrapolation. Medium is the default. Two sliders control attributable incremental network capital per MW and the assumed NITS-equivalent rate. The data-center load factor is fixed at **80%**. No installation, account, analytics, external script or API is required. Serve this folder or open `index.html` locally.
 
@@ -12,7 +12,7 @@ Choose **Low, Medium, or High** data-center growth through 2056. EPRI supplies t
 
 ## Current methods
 
-**Current estimate (October 31): [Fresh central projection](FRESH_CENTRAL_ESTIMATE.md) · [One-page PDF](baaja-central-estimate-one-pager.pdf).** A fresh Astra-led analysis recommends **about $55bn in additional transmission payments / other-ratepayer relief**, and **about $55bn above the chosen higher-of service-cost benchmark** ($56.0bn and $55.6bn calculated). These overlap; do not add them. The benchmark is the larger of ordinary total transmission obligations and allocated incremental cost, not an independent legal finding of fully allocated overpayment. The model uses explicit gross upgrade costs, prior capital funding, construction escalation and PJM zonal rates. [Assumptions and evidence](analysis/fresh-central-2026-10-31/ASSUMPTIONS.md) · [Results](analysis/fresh-central-2026-10-31/results-summary.json). The dashboard and older PDFs retain legacy assumptions; use this brief for the current projection.
+**Current estimate (October 31): [Fresh central projection](FRESH_CENTRAL_ESTIMATE.md) · [Brief + methodology PDF](baaja-brief-and-methodology.pdf).** A fresh Astra-led analysis recommends **about $55bn in additional transmission payments / other-ratepayer relief**, and **about $55bn above the chosen higher-of service-cost benchmark** ($56.0bn and $55.6bn calculated). These overlap; do not add them. The benchmark is the larger of ordinary total transmission obligations and allocated incremental cost, not an independent legal finding of fully allocated overpayment. The model uses explicit gross upgrade costs, prior capital funding, construction escalation and PJM zonal rates. [Assumptions and evidence](analysis/fresh-central-2026-10-31/ASSUMPTIONS.md) · [Results](analysis/fresh-central-2026-10-31/results-summary.json). The dashboard and older PDFs retain legacy assumptions; use this brief for the current projection.
 
 The revised plain-format brief presents **approximately $50-100bn in selected central-to-higher scenarios**, while retaining the $56bn central calculation and disclosing lower outcomes. Its 30-year transmission ITC illustration is about $32bn: the central BAAJA payment increase is **1.8 times** that amount. [Scenario calculations and comparison](analysis/fresh-central-2026-10-31/brief-scenarios.json).
 

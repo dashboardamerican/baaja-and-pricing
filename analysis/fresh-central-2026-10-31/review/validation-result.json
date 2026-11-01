@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "checks": [
-    "File integrity: 33 files",
+    "File integrity: 36 files",
     "Source-value to input-JSON agreement: 516 numeric entries (original source review remains separate)",
     "EIA cell-derived national rate proxy and explicit rounding; secondary planning-peak input identified",
     "Independent central and faster demand reconstruction",
