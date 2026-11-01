@@ -42,7 +42,7 @@ add('Sources (same numbers as page 1, with additional inputs below)','heading',4
 md+=['## Sources','']
 for n,label,url in data['sources']:
  esc=html.escape(url,quote=True)
- add(f'[{n}] {html.escape(label)}<br/><link href="{esc}">{html.escape(url)}</link>','source',3)
+ add(f'[{n}] {html.escape(label)}<br/><link href="{esc}">{html.escape(url)}</link>','source',2)
  md += [f'[{n}] {label}  ',url,'']
 c.save()
 source=OUT/'baaja-central-estimate-one-pager.pdf'
