@@ -1,0 +1,39 @@
+# BAAJA: $50-100 billion in additional transmission payments
+
+Illustrative central-to-higher scenarios | October 31, 2026
+
+[Download the one-page brief](baaja-central-estimate-one-pager.pdf)
+
+## Additional payments and customer relief
+
+BAAJA could shift roughly $50-100 billion of transmission costs from other electricity customers to data centers in central-to-higher scenarios. Our central estimate is $56 billion for new loads entering in 2027-2056, with collections beginning in 2030. These are additional payments above the modeled baseline, in constant 2026 dollars, without discounting. The range is a rounded scenario illustration, not a confidence interval or a lower and upper bound. [1, 3]
+
+The bill requires embedded AND incremental transmission charges, with incremental receipts credited against the shared revenue requirement. Holding investment and demand fixed, the extra data-center payments reduce what other customers must pay by the same amount. [1]
+
+## Assumptions and range
+
+Demand reaches LBNL's 649 TWh in 2030, then grows at our assumed 3% annually through 2040 and 1.5% thereafter. We assume 80% load factor, 75% coverage, $650,000/MW of assigned network upgrades, 1% annual real construction-cost growth, and 35% of capital already funded by data centers. Capital recovery uses 40 years and 5% real financing, plus 1.5% annual operating costs. Embedded charges use PJM zonal tariffs and a $95,100/MW-year national starting proxy. The cost, coverage and funding shares are judgments, not measured national averages. [2-4]
+
+The approximately $50 billion case assumes 50% prior capital funding ($47 billion calculated). The approximately $100 billion case combines a faster demand path with $750,000/MW of upgrades ($103 billion calculated). Lower outcomes remain plausible: restricting the policy to entrants from 2030 gives $35 billion; $300,000/MW upgrades give $26 billion. Each changes only the stated central assumptions. [3]
+
+## Comparison with the transmission ITC
+
+JCT scored the House-passed 2021 Build Back Better transmission investment tax credit at $11.279 billion over FY2022-2031. For a 30-year scale comparison, we normalize its annual amounts using an assumed 2.5% inflation rate and repeat that real ten-year profile three times: approximately $32 billion in 2026 dollars. This is our illustration, not an official 30-year JCT score or a forecast of a continuing program. [3, 5]
+
+The $50-100 billion BAAJA range is approximately 1.6-3.2 times that ITC illustration; the central case is 1.8 times. This compares data-center-funded customer relief with federal budget cost, not equivalent electricity-bill savings or economic benefits.
+
+## What is above cost of service?
+
+The central case also exceeds the larger of ordinary payments and incremental service cost by $55.6 billion. That is not a finding of overpayment above fully allocated cost. The larger $145 billion above incremental cost alone includes $89 billion already paid under the modeled baseline. The policy comparison therefore uses additional payments, not that larger total. [3]
+
+## Sources
+
+[1] [S.5653, section 2107(a)(3)](https://www.govinfo.gov/content/pkg/BILLS-119s5653is/xhtml/BILLS-119s5653is.html)
+
+[2] [LBNL, U.S. Data Center Energy Usage, 2025 Update (June 2026)](https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update)
+
+[3] [Reviewer guide: bill crosswalk, source cells, equations and reproducible checks](https://github.com/dashboardamerican/baaja-and-pricing/blob/main/analysis/fresh-central-2026-10-31/REVIEW_GUIDE.md)
+
+[4] [AEP, Piketon transmission investment and customer funding (March 2026)](https://www.aep.com/news/stories/view/10823/)
+
+[5] [JCT, JCX-46-21 (November 19, 2021), p. 2, item F.1.5; p. 8, note 7](https://www.govinfo.gov/content/pkg/GOVPUB-Y4_T19_4-PURL-gpo172711/pdf/GOVPUB-Y4_T19_4-PURL-gpo172711.pdf#page=2)

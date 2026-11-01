@@ -1,0 +1,445 @@
+Source: S.5653 IS, GovInfo; extracted pages retain physical page markers. Text extraction is a convenience; check the original PDF for legal use.
+
+=== PDF page 226 ===
+226 
+•S 5653 IS
+‘‘(2) updated not less frequently than once 1
+every 2 years. 2
+‘‘(c) COMMISSION REVIEW.—The Commission shall— 3
+‘‘(1) review each consolidated interconnection 4
+and regional transmission planning process filed 5
+pursuant to the rule under subsection (a); and 6
+‘‘(2) approve the consolidated interconnection 7
+and regional transmission planning process if the 8
+Commission finds that the process— 9
+‘‘(A) ensures that all rates, charges, terms, 10
+and conditions will be just and reasonable and 11
+not unduly discriminatory or preferential; and 12
+‘‘(B) is consistent with the public inter-13
+est.’’. 14
+SEC. 2107. RATEPAYER PROTECTION. 15
+(a) FERC P RICING POLICY FOR TRANSMISSION 16
+SERVICES PROVIDED BY PUBLIC UTILITIES AND TRANS-17
+MITTING UTILITIES.— 18
+(1) FINDINGS.—Congress finds that— 19
+(A) it is not just and reasonable within the 20
+meaning of sections 205 and 206 of the Federal 21
+Power Act (16 U.S.C. 824d, 824e) for any pub-22
+lic utility or transmitting utility to maintain 23
+rates, terms, or conditions of service that, by 24
+their terms, charge less than the embedded 25
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00226 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 227 ===
+227 
+•S 5653 IS
+costs and incremental expansion costs to eligible 1
+customers seeking transmission service from 2
+computational load owners and computational 3
+load operators; 4
+(B) transmission service costs should be 5
+fully assigned to computational load owners and 6
+computational load operators so as to minimize 7
+or avoid the cost burden on other customers; 8
+and 9
+(C) computational load owners and com-10
+putational load operators should incur the full 11
+cost of the transmission service they require. 12
+(2) DEFINITIONS.—In this subsection: 13
+(A) 1994 TRANSMISSION PRICING POLICY  14
+STATEMENT.—The term ‘‘1994 transmission 15
+pricing policy statement’’ means the policy 16
+statement issued by the Commission on October 17
+26, 1994, and published in the Federal Register 18
+on November 3, 1994, relating to ‘‘Inquiry Con-19
+cerning the Commission’s Pricing Policy for 20
+Transmission Services Provided by Public Utili-21
+ties Under the Federal Power Act; Policy State-22
+ment’’ (59 Fed. Reg. 55031). 23
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00227 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 228 ===
+228 
+•S 5653 IS
+(B) C OMMISSION.—The term ‘‘Commis-1
+sion’’ means the Federal Energy Regulatory 2
+Commission. 3
+(C) C OMPUTATIONAL LOAD OPERATOR .— 4
+The term ‘‘computational load operator’’ means 5
+the entity that operates a computational load 6
+site. 7
+(D) C OMPUTATIONAL LOAD OWNER .—The 8
+term ‘‘computational load owner’’ means the 9
+entity that owns a computational load site. 10
+(E) C OMPUTATIONAL LOAD SITE .—The 11
+term ‘‘computational load site’’ means 1 or 12
+more buildings, structures, or installations at a 13
+single location that— 14
+(i) primarily contain information tech-15
+nology infrastructure used for— 16
+(I) creating, executing, and deliv-17
+ering software applications and serv-18
+ices; 19
+(II) artificial intelligence train-20
+ing, deployment, and delivery; 21
+(III) cryptocurrency mining; or 22
+(IV) other computational activi-23
+ties at a data center; and 24
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00228 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 229 ===
+229 
+•S 5653 IS
+(ii) are supplied through electrical 1
+equipment that is connected to the bulk- 2
+power system (as defined in section 215(a) 3
+of the Federal Power Act (16 U.S.C. 4
+824o(a))). 5
+(F) P UBLIC UTILITY .—The term ‘‘public 6
+utility’’ has the meaning given the term in sec-7
+tion 201(e) of the Federal Power Act (16 8
+U.S.C. 824(e)). 9
+(G) T RANSMITTING UTILITY .—The term 10
+‘‘transmitting utility’’ has the meaning given 11
+the term in section 3 of the Federal Power Act 12
+(16 U.S.C. 796). 13
+(3) REVISION OF POLICY STATEMENT .— 14
+(A) I N GENERAL .—Not later than 270 15
+days after the date of enactment of this Act, 16
+the Commission shall revise the 1994 trans-17
+mission pricing policy statement— 18
+(i) to require public utilities and 19
+transmitting utilities to charge eligible cus-20
+tomers seeking transmission service on be-21
+half of computational load owners and 22
+computational load operators the embedded 23
+cost and the incremental cost of trans-24
+mission service; and 25
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00229 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 230 ===
+230 
+•S 5653 IS
+(ii) to ensure that any incremental 1
+costs paid are credited to the annual trans-2
+mission revenue requirement of the appli-3
+cable public utility or transmitting utility 4
+to prevent double recovery from other cus-5
+tomers. 6
+(B) R EQUIREMENT.—In revising the 1994 7
+transmission pricing policy statement under 8
+subparagraph (A), the Commission shall pro-9
+vide for a lower cost of transmission service for 10
+eligible customers seeking transmission service 11
+on behalf of computational load owners and 12
+computational load operators that elect non- 13
+firm transmission service. 14
+(4) RULEMAKING.— 15
+(A) N OTICE OF PROPOSED RULE -16
+MAKING.—Not later than 270 days after the 17
+date on which a revised transmission pricing 18
+policy statement is published in the Federal 19
+Register under paragraph (3), the Commission 20
+shall issue a notice of proposed rulemaking re-21
+quiring public utilities and transmitting utili-22
+ties— 23
+(i) to establish or revise transmission 24
+rates for eligible customers seeking trans-25
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00230 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 231 ===
+231 
+•S 5653 IS
+mission service for computational load 1
+owners and computational load operators 2
+in accordance with that revised trans-3
+mission pricing policy statement; and 4
+(ii) to require standardized analysis to 5
+identify upgrades for a computational load 6
+site and cost reduction options, as the 7
+Commission may require by rule. 8
+(B) F INAL RULE .—Not later than 1 year 9
+after the date on which the notice of proposed 10
+rulemaking described in subparagraph (A) is 11
+issued, the Commission shall issue a final rule 12
+requiring public utilities and transmitting utili-13
+ties to establish or revise transmission rates for 14
+eligible customers seeking transmission service 15
+for computational load owners and computa-16
+tional load operators. 17
+(b) R ATEPAYER PROTECTION FOR DATA CENTER 18
+AND HIGH-DENSITY COMPUTING LOAD.—Part II of the 19
+Federal Power Act (16 U.S.C. 824 et seq.) (as amended 20
+by section 2105) is amended by adding at the end the fol-21
+lowing: 22
+‘‘SEC. 228. RATEPAYER PROTECTION FOR DATA CENTER 23
+AND HIGH-DENSITY COMPUTING LOAD. 24
+‘‘(a) DEFINITIONS.—In this section: 25
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00231 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 232 ===
+232 
+•S 5653 IS
+‘‘(1) C OMMISSION.—The term ‘Commission’ 1
+means the Federal Energy Regulatory Commission. 2
+‘‘(2) C OVERED LOAD .—The term ‘covered load’ 3
+means electric load that— 4
+‘‘(A) is attributable to 1 or more data cen-5
+ters or high-density computing facilities located 6
+at a single site, or at multiple sites under com-7
+mon ownership or control; and 8
+‘‘(B) equals or exceeds 20 megawatts or, in 9
+the case of data centers or high-density com-10
+puting facilities developed in phases, is reason-11
+ably expected to equal or exceed 20 megawatts 12
+at full buildout. 13
+‘‘(3) D ATA CENTER OR HIGH -DENSITY COM -14
+PUTING FACILITY .— 15
+‘‘(A) IN GENERAL .—The term ‘data center 16
+or high-density computing facility’ means a fa-17
+cility, or group of co-located facilities, the pri-18
+mary purpose of which is to house computing, 19
+networking, or data storage equipment used to 20
+process, store, or transmit digital data, includ-21
+ing equipment used for— 22
+‘‘(i) artificial intelligence training or 23
+inference; 24
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00232 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 233 ===
+233 
+•S 5653 IS
+‘‘(ii) cloud computing or data hosting; 1
+or 2
+‘‘(iii) cryptocurrency mining or other 3
+distributed-ledger or digital-asset computa-4
+tion. 5
+‘‘(B) E XCLUSION.—The term ‘data center 6
+or other high-density computing facility’ does 7
+not include computing or data storage equip-8
+ment that is ancillary to a facility the primary 9
+purpose of which is a commercial or industrial 10
+activity other than an activity described in sub-11
+paragraph (A). 12
+‘‘(4) E MBEDDED AVERAGE COST .—The term 13
+‘embedded average cost’ means the average cost of 14
+service reflected in the rates otherwise in effect for 15
+the customer class that would apply to the applicable 16
+covered load. 17
+‘‘(5) I NCREMENTAL COST .—The term ‘incre-18
+mental cost’ means the cost that would be avoided 19
+had a specific covered load not been served by the 20
+electric utility, including all costs to construct, own, 21
+and operate power generation or storage resources 22
+and electric transmission and distribution services 23
+associated with serving the covered load, based on 24
+costs estimated by the electric utility at or around 25
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00233 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 234 ===
+234 
+•S 5653 IS
+the time that the covered load becomes operational 1
+and subject to approval by the Commission or a 2
+State, as appropriate. 3
+‘‘(6) STATE.—The term ‘State’ includes the ap-4
+plicable State commission and any other State au-5
+thority having jurisdiction over retail electric service. 6
+‘‘(7) T RANSMISSION SERVICE CATEGORY .—The 7
+term ‘transmission service category’ means a class of 8
+transmission service provided under a tariff on file 9
+with the Commission, including— 10
+‘‘(A) network integration transmission 11
+service; 12
+‘‘(B) point-to-point transmission service; 13
+and 14
+‘‘(C) any interim, non-firm, contract de-15
+mand, or other service that limits— 16
+‘‘(i) the quantity of energy a load may 17
+withdraw from the transmission system; or 18
+‘‘(ii) the conditions under which the 19
+load may withdraw energy from the trans-20
+mission system. 21
+‘‘(b) RATEPAYER PROTECTION FLOOR.— 22
+‘‘(1) NO SUBSIDY OF COVERED LOAD .—No por-23
+tion of the incremental cost may be allocated to, or 24
+recovered in the rates of, any customer other than 25
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00234 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 235 ===
+235 
+•S 5653 IS
+a covered load, subject to the limitations described 1
+in subsection (e). 2
+‘‘(2) S URPLUS PERMITTED .—Paragraph (1) 3
+does not limit the authority of the Commission or a 4
+State under subsection (c) to recover from covered 5
+loads amounts in excess of incremental cost and to 6
+credit those amounts to other customers as a rebate 7
+or a reduction to the utility costs that are used as 8
+a basis for the calculation of customer rates. 9
+‘‘(3) CONTINUING RECOVERY ON EXIT .—A rate, 10
+charge, or agreement for service to a covered load 11
+shall be designed to recover from the covered load 12
+the full incremental cost of the electric utility, and 13
+such recovery shall continue notwithstanding the ter-14
+mination by the covered load of a contract or other 15
+agreement pertaining to the sale of electric energy, 16
+or the cessation by the covered load of the purchase 17
+of electric energy, before that incremental cost has 18
+been fully recovered. 19
+‘‘(4) F INANCIAL ASSURANCE .—Before con-20
+structing, or making an upgrade to, a generation, 21
+transmission, or distribution facility necessary to 22
+serve a covered load, an electric utility shall require 23
+the covered load to provide financial assurances or 24
+contributions sufficient to cover the cost of the facil-25
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00235 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 236 ===
+236 
+•S 5653 IS
+ity or upgrade, subject to the condition that any fi-1
+nancial assurances or contributions provided by the 2
+applicable covered load to a public utility or Trans-3
+mission Organization for the same facility or up-4
+grade shall be credited against the requirement of 5
+this paragraph. 6
+‘‘(c) S TATE AUTHORITY TO HOLD OPEN SEASONS 7
+AND SET COVERED-LOAD RATES.— 8
+‘‘(1) I N GENERAL .—Notwithstanding any other 9
+provision of this Act or any rule or order of the 10
+Commission, and consistent with subsection (b)(3), a 11
+State may, with respect to retail electric service to 12
+covered loads— 13
+‘‘(A) establish rates, charges, or contract 14
+terms that recover more than the embedded av-15
+erage cost, and more than the incremental cost, 16
+of serving a covered load; 17
+‘‘(B) require that revenue collected from a 18
+covered load in excess of incremental cost be 19
+credited or applied to reduce the rates of other 20
+retail customers; 21
+‘‘(C) in effectuating the policy described in 22
+this subsection, use an open season or competi-23
+tive solicitation to allocate among covered loads 24
+the opportunity to obtain and contract for retail 25
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00236 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 237 ===
+237 
+•S 5653 IS
+electric service, making awards in such manner 1
+as returns the greatest benefit to other rate-2
+payers on a present value basis, notwith-3
+standing the order in which applications or re-4
+quests for service are received from covered 5
+loads or any other basis for making such 6
+awards, subject to the condition that each 7
+award under such an open season or competi-8
+tive solicitation shall specify the maximum 9
+quantity of firm demand awarded, in 10
+megawatts, and the transmission service cat-11
+egory on the basis of which the covered load is 12
+to be served; 13
+‘‘(D) condition the provision of retail elec-14
+tric service to a covered load on the procure-15
+ment, construction, or contracting by the cov-16
+ered load for new generation resources suffi-17
+cient to serve the demand of the covered load; 18
+and 19
+‘‘(E) condition the provision of retail elec-20
+tric service to a covered load on the covered 21
+load taking, or agreeing to take, a transmission 22
+service category that limits— 23
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00237 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 238 ===
+238 
+•S 5653 IS
+‘‘(i) the quantity of energy the covered 1
+load may withdraw from the transmission 2
+system; or 3
+‘‘(ii) the conditions under which the 4
+covered load may withdraw energy from 5
+the transmission system. 6
+‘‘(2) P RIORITY OF STATE COMPETITIVE SOLICI -7
+TATIONS.— 8
+‘‘(A) B ROAD DISCRETION .—For purposes 9
+of an open solicitation, a State shall, with re-10
+spect to retail electric service to a covered load, 11
+be afforded broad discretion to conduct, to au-12
+thorize an electric utility to conduct, or to re-13
+quire an electric utility to conduct, a competi-14
+tive solicitation or open season to allocate the 15
+opportunity to interconnect, or to obtain service 16
+for, a covered load. 17
+‘‘(B) ELECTRIC UTILITY FILING .—An elec-18
+tric utility may file to conduct a solicitation or 19
+open season described in subparagraph (A). 20
+‘‘(C) A UTHORITY TO REQUIRE .—A State 21
+may require an electric utility to conduct an 22
+open season described in subparagraph (A). 23
+‘‘(d) P ROTECTION OF AMERICAN INDUSTRY.—A 24
+State may treat covered loads as a separate class of serv-25
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00238 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 239 ===
+239 
+•S 5653 IS
+ice, and may establish rates, charges, terms, conditions, 1
+and interconnection or service priorities for covered loads 2
+that differ from, and that are less favorable than, those 3
+applicable to other large industrial, manufacturing, or 4
+commercial loads. 5
+‘‘(e) RULES OF CONSTRUCTION.— 6
+‘‘(1) S TATE AND FEDERAL AUTHORITY .—Ex-7
+cept as expressly provided in subsection (c), nothing 8
+in this section expands or diminishes the jurisdiction 9
+of the Commission or of any State, including State 10
+authority over retail electric service, rate design, and 11
+resource planning. 12
+‘‘(2) R ECOGNITION OF RESERVED STATE AU -13
+THORITY.— 14
+‘‘(A) I N GENERAL .—The authority de-15
+scribed in subsection (c)(1) is an attribute of 16
+the reserved authority of the States over retail 17
+electric service. 18
+‘‘(B) CLARIFICATION.—This section— 19
+‘‘(i) recognizes and confirms the au-20
+thority described in subparagraph (A); and 21
+‘‘(ii) is not the source of that author-22
+ity. 23
+‘‘(f) APPLICABILITY.— 24
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00239 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+
+=== PDF page 240 ===
+240 
+•S 5653 IS
+‘‘(1) P ROSPECTIVE APPLICATION .—Subsections 1
+(b) and (c) apply to a covered load that intercon-2
+nects on or after the date of enactment of this sec-3
+tion. 4
+‘‘(2) E XISTING ARRANGEMENTS .—An arrange-5
+ment to serve a covered load that was approved by 6
+the Commission or by a State before the date of en-7
+actment of this section shall remain in effect.’’. 8
+SEC. 2108. DISPATCHABLE ENERGY SYSTEMS MARKET AC-9
+CESS. 10
+(a) D EFINITIONS.—Section 3 of the Federal Power 11
+Act (16 U.S.C. 796) is amended by adding at the end the 12
+following: 13
+‘‘(30) Q UALIFYING BEHIND -THE-METER DIS -14
+TRIBUTED ENERGY SYSTEM FACILITY ; QUALIFYING 15
+BTM DES FACILITY.—The term ‘qualifying behind- 16
+the-meter distributed energy system facility’ or 17
+‘qualifying BTM DES facility’ means a facility 18
+that— 19
+‘‘(A) is an energy storage system (includ-20
+ing a battery energy storage system), a fuel cell 21
+system, a generator, or other resource— 22
+‘‘(i) that can be brought online within 23
+15 minutes of being called on for deploy-24
+ment; and 25
+VerDate Sep 11 2014 02:32 Oct 02, 2026 Jkt 079200 PO 00000 Frm 00240 Fmt 6652 Sfmt 6201 E:\BILLS\S5653.IS S5653kjohnson on DSK7ZCZBW3PROD with $$_JOB
+

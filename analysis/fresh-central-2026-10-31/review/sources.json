@@ -1,0 +1,123 @@
+{
+  "bill_version": "119th Congress S.5653 introduced 2026-09-30",
+  "review_as_of": "2026-10-31",
+  "sources": [
+    {
+      "id": "BILL",
+      "title": "S.5653 introduced September 30, 2026",
+      "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5653is/pdf/BILLS-119s5653is.pdf",
+      "locator": "Section 2107, physical/printed pp.226-240; AND pp.229-230; rulemaking pp.230-231; separate section 228 applicability p.240",
+      "evidence_scope": "Statutory text, not enacted law; mathematical implementation and eligibility scenario require interpretation.",
+      "original_filename": "S-5653-BAAJA-IS.pdf",
+      "archived_sha256": "d0cd5b563122cba5be5a7bd5e795466c63ed6daaf1b994140a11b1c0998febdf"
+    },
+    {
+      "id": "LBNL",
+      "title": "Smith et al., U.S. Data Center Energy Usage Report: 2025 Update, June 18 2026; DOI 10.71468/P1RP4F",
+      "url": "https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update",
+      "locator": "Printed p.8 = physical PDF p.10 (anchors); printed p.9 = physical p.11 (compounded scenarios)",
+      "evidence_scope": "Modeled historical and near-term forecast facility TWh; not measured tariff billing MW or a 2056 projection. CC BY 4.0 report.",
+      "original_filename": "lbnl-2025-update.pdf",
+      "archived_sha256": "7ba1c9c838aafc6ad72869df9b3e125b2bf3bfeac0e24405163b7af8c0cb28b3"
+    },
+    {
+      "id": "EIA_GROWTH",
+      "title": "EIA AEO2026 Counterfactual Baseline Table 5",
+      "url": "https://www.eia.gov/outlooks/aeo/excel/aeotab5.xlsx",
+      "locator": "Sheet cb2026.d021826b; C10:AB10 year labels, C33:AB33 server-energy values",
+      "evidence_scope": "Server energy, quadrillion Btu. Facility rebasing and post-2050 extension are analyst choices.",
+      "original_filename": "aeo2026-commercial.xlsx",
+      "archived_sha256": "c6c44413610a1496920c0c5e6b9fddc6c4ade7fbb770291cb5ffd9c79c634430"
+    },
+    {
+      "id": "PJM_RATES",
+      "title": "pjm-nits-august-2026.xlsx",
+      "url": "https://www.pjm.com/-/media/DotCom/markets-ops/settlements/network-integration-trans-service-august-2026-xls.xlsx",
+      "locator": "Sheet August 2026, column E; exact cells in source-values.csv",
+      "evidence_scope": "Zonal base NITS vintage as of August 1 2026, not a national average or complete tariff bill.",
+      "original_filename": "pjm-nits-august-2026.xlsx",
+      "archived_sha256": "103e05e174fb376d7753cde23a837a68925a1dfd48674ce0f45b95833282f78a"
+    },
+    {
+      "id": "PJM_PEAKS",
+      "title": "pjm-nspl-2026.pdf",
+      "url": "https://www.pjm.com/-/media/DotCom/markets-ops/settlements/network-service-peak-loads-2026.pdf",
+      "locator": "Physical PDF p.1, Zonal Peak (MW) column",
+      "evidence_scope": "Metered demand coincident with each zonal peak, 11/1/24-10/31/25; not a 2026 nationwide billing determinant.",
+      "original_filename": "pjm-nspl-2026.pdf",
+      "archived_sha256": "f62ea48d8bc28155585a8be16f04f74141f99eca6149c630fe19249c78cbcc41"
+    },
+    {
+      "id": "PJM_GROWTH",
+      "title": "pjm-load-2026.xlsx",
+      "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/2026-load-report-tables.xlsx",
+      "locator": "Table B9b, B7:V7 years; zone rows 8-31",
+      "evidence_scope": "Total load associated with adjustments, mostly but not exclusively DCs; not actual billings or signed commitments.",
+      "original_filename": "pjm-load-2026.xlsx",
+      "archived_sha256": "59a62facf819962e430101c96dd1335229d8173fb6886dd8045ced325443f607"
+    },
+    {
+      "id": "EIA_RATE",
+      "title": "EIA AEO2026 supplemental Table 54",
+      "url": "https://www.eia.gov/outlooks/aeo/supplement/excel/suptab_54.xlsx",
+      "locator": "C81, C136, D136, D140, as detailed in national-rate-proxy.json",
+      "evidence_scope": "Modeled expenditure proxy numerator, not actual NITS receipts.",
+      "original_filename": "aeo2026_table54.xlsx",
+      "archived_sha256": "99ae243afc74537954b7cca4bc0880bb0c5aa5aa838ce7b8c2767b5d7cc31b1a"
+    },
+    {
+      "id": "PEAK_PROXY",
+      "title": "Grid Strategies national load growth report 2025",
+      "url": "https://gridstrategiesllc.com/wp-content/uploads/Grid-Strategies-National-Load-Growth-Report-2025.pdf",
+      "locator": "Printed p.33; aggregated utility forecast 2025 summer peak 829 GW",
+      "evidence_scope": "Secondary aggregation of utility planning forecasts. Not a measured national 1CP/12CP billing pool; retained methodological limitation.",
+      "original_filename": null,
+      "archived_sha256": null
+    },
+    {
+      "id": "AEP",
+      "title": "AEP Piketon announcement, March 20 2026",
+      "url": "https://www.aep.com/news/stories/view/10823/",
+      "locator": "Announcement pairing 10 GW and $4.2bn new 765kV transmission; SB Energy funding commitment",
+      "evidence_scope": "Prospective project commitment. Not a realized payment, audited all-in cost or national prior-funding share.",
+      "original_filename": null,
+      "archived_sha256": null
+    },
+    {
+      "id": "DOMINION",
+      "title": "Dominion local supplemental plan, October 8 2024",
+      "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/teac/2024/20241008/20241008-informational-only---dom-local-plan-submission-of-supplemental-projects-2024.pdf",
+      "locator": "Selected needs and source page references in capital-evidence.json and pjm-explicit-dc-records.csv",
+      "evidence_scope": "Incomplete local packages; forecasts can include preexisting load; no measured full national cost or funding fraction.",
+      "original_filename": null,
+      "archived_sha256": null
+    },
+    {
+      "id": "MISO",
+      "title": "MTEP25 Appendix A",
+      "url": "https://cdn.misoenergy.org/MTEP25731615.zip",
+      "locator": "Appendix A New Local Reliability Projects workbook, project IDs 50208 and 50628",
+      "evidence_scope": "LEAP phases total $567.2m/1200MW; partial network package, not national mean or proof of newly unassigned cost.",
+      "original_filename": null,
+      "archived_sha256": null
+    },
+    {
+      "id": "ENTERGY",
+      "title": "Daniel Kline testimony, March 2026",
+      "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=AUl4qI5mSHA%3D",
+      "locator": "Printed pp.33-34, Q55 and following; physical PDF pp.35-36",
+      "evidence_scope": "Two CIAC-funded projects; service agreement offsets another during its term. Redactions, capacity discrepancy and post-term exposure remain.",
+      "original_filename": "entergy-kline-evest-transmission-testimony-2026-03.pdf",
+      "archived_sha256": "f598dde577393b51b4cfa001c80326c5991a760f6263194458278c78ec590d2a"
+    },
+    {
+      "id": "JCT",
+      "title": "JCX-46-21, November 19 2021, House-passed BBB",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-Y4_T19_4-PURL-gpo172711/pdf/GOVPUB-Y4_T19_4-PURL-gpo172711.pdf",
+      "locator": "Physical/printed p.2, Subtitle F Part1 item5; p.8 note7",
+      "evidence_scope": "Official nominal FY2022-2031 budget score; 30-year repetition is analyst arithmetic. Source inspected through GovInfo web PDF; original binary download unavailable, so no archived hash claimed.",
+      "original_filename": null,
+      "archived_sha256": null
+    }
+  ]
+}

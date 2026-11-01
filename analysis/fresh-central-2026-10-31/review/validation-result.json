@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": [
+    "File integrity: 33 files",
+    "Source-value to input-JSON agreement: 516 numeric entries (original source review remains separate)",
+    "EIA cell-derived national rate proxy and explicit rounding; secondary planning-peak input identified",
+    "Independent central and faster demand reconstruction",
+    "594 region-year rows and all central annual/national payment columns independently reconstructed; conservation in each row",
+    "All 28 published sensitivity cases independently reconstructed",
+    "All five brief scenarios, including entrant-date sensitivity, independently reconstructed",
+    "JCT annual total, inflation normalization, 30-year repetition and all comparison ratios"
+  ],
+  "limitations": "Reproducibility and arithmetic only. Transcription cross-checks use archived extracted source values; source documents, legal implementation and empirical representativeness require separate review.",
+  "central_additional_bn": 56.01958220641369,
+  "central_above_higherof_bn": 55.57930745345075
+}

@@ -32,7 +32,7 @@ The central case also exceeds the larger of ordinary payments and incremental se
 
 [2] [LBNL, U.S. Data Center Energy Usage, 2025 Update (June 2026)](https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update)
 
-[3] [Reproducible model, assumptions, scenarios and ITC calculation](https://github.com/dashboardamerican/baaja-and-pricing/tree/main/analysis/fresh-central-2026-10-31)
+[3] [Reviewer guide: bill crosswalk, source cells, equations and reproducible checks](https://github.com/dashboardamerican/baaja-and-pricing/blob/main/analysis/fresh-central-2026-10-31/REVIEW_GUIDE.md)
 
 [4] [AEP, Piketon transmission investment and customer funding (March 2026)](https://www.aep.com/news/stories/view/10823/)
 

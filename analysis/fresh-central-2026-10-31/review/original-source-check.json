@@ -1,0 +1,24 @@
+{
+  "status": "PASS_FOR_ARCHIVED_FILES",
+  "matched_original_hashes": [
+    "BILL",
+    "LBNL",
+    "EIA_GROWTH",
+    "PJM_RATES",
+    "PJM_PEAKS",
+    "PJM_GROWTH",
+    "EIA_RATE",
+    "ENTERGY"
+  ],
+  "missing_files": [],
+  "changed_originals": [],
+  "workbook_cells_verified": 492,
+  "sources_without_archived_binary": [
+    "PEAK_PROXY",
+    "AEP",
+    "DOMINION",
+    "MISO",
+    "JCT"
+  ],
+  "limits": "Hash and XLSX-cell verification only. PDF pages, unarchived web sources, and evidence representativeness require manual review. A source refresh may change a hash without making either vintage wrong."
+}

@@ -6,6 +6,10 @@ Transmission AND-pricing analysis of section 2107(a) of introduced S.5653, with 
 
 Choose **Low, Medium, or High** data-center growth through 2056. EPRI supplies the U.S. 2030 endpoints; later years use an explicit, tapered extrapolation. Medium is the default. Two sliders control attributable incremental network capital per MW and the assumed NITS-equivalent rate. The data-center load factor is fixed at **80%**. No installation, account, analytics, external script or API is required. Serve this folder or open `index.html` locally.
 
+## Independent review
+
+[Start with the reviewer guide](analysis/fresh-central-2026-10-31/REVIEW_GUIDE.md) or [download the review package](baaja-review-package.zip). It maps 18 claims to bill provisions, source pages/cells, equations and output fields. An independent offline checker reconstructs the results without calling the production model. Original-source checks and remaining judgment calls are documented separately.
+
 ## Current methods
 
 **Current estimate (October 31): [Fresh central projection](FRESH_CENTRAL_ESTIMATE.md) · [One-page PDF](baaja-central-estimate-one-pager.pdf).** A fresh Astra-led analysis recommends **about $55bn in additional transmission payments / other-ratepayer relief**, and **about $55bn above the chosen higher-of service-cost benchmark** ($56.0bn and $55.6bn calculated). These overlap; do not add them. The benchmark is the larger of ordinary total transmission obligations and allocated incremental cost, not an independent legal finding of fully allocated overpayment. The model uses explicit gross upgrade costs, prior capital funding, construction escalation and PJM zonal rates. [Assumptions and evidence](analysis/fresh-central-2026-10-31/ASSUMPTIONS.md) · [Results](analysis/fresh-central-2026-10-31/results-summary.json). The dashboard and older PDFs retain legacy assumptions; use this brief for the current projection.

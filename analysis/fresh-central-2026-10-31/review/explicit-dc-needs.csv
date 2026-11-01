@@ -1,0 +1,99 @@
+need_id,identity,evidence_pages,dc_statement,forecast_years,seasonal_load_strings,direct_project_ids,actual_customer_load_MW,actual_customer_transmission_payments_USD,direct_customer_funding_USD,reason_missing
+DOM-2019-0021,explicit data center in utility plan,159,"DEV Distribution has submitted a DP Request for a new substation (Bermuda 
+Hundred) to serve a data center in Chesterfield County with a total load in excess of 
+100 MW.  The requested in-service date is Q4 2026.",2028,Summer: 300.0 MW || Winter: 300.0 MW,s3509.1,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0017,explicit data center in utility plan,24,"NOVEC has submitted a DP Request for a new substation (Dawkins Branch) to serve a data 
+center complex in Prince William County with a total load in excess of 100 MW.  Requested in-
+service date is 07/01/2023.",2027,Summer: 73.0 MW || Winter: 76.8 MW,s3018,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0020,explicit data center in utility plan,28,"DEV Distribution has submitted a DP Request to add a 2nd distribution transformer at Youngs 
+Branch Substation in Prince William County. The new transformer is being driven by datacenter 
+load growth.  Requested in-service date is 10/15/2023.",2027,Summer: 141.6 MW || Winter: 124.5 MW,s3020,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0027,explicit data center in utility plan,34,"DEV Distribution has submitted a delivery point request (Roanoke DP) for a new delivery point 
+to serve a data center customer in La Crosse, VA. The total load is in excess of 100 MW. The 
+customer requests service by August 1, 2025.",2027,Summer: 126.0 MW || Winter: 98.0 MW,s3021,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0028,explicit data center in utility plan,36,"DEV Distribution has submitted a delivery point request (Hillcrest DP) for a new delivery point to 
+serve a data center customer in South Hill, VA. The total load is in excess of 100 MW. The 
+customer requests service by August 1, 2025.",2027,Summer: 77.0 MW || Winter: 59.0 MW,s3022,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0029,explicit data center in utility plan,38;39,"DEV Distribution has submitted a delivery point request (Interstate DP) for a new delivery point 
+to serve a data center customer in La Crosse, VA. The total load is less than 100 MW. The 
+customer requests service by August 1, 2025. || Dominion Local Plan - 2024
+Dominion Transmission Zone M-3 Process
+Raines 230kV Delivery - DEV
+Need Number: DOM-2022-0029
+Process Stage:
+Submission of Supplemental Project for Inclusion in the Local Plan – 02/21/2024
+Selected Solution:  
+Construct Raines 230kV substation with four breaker 230kV breaker ring bus to terminate two 
+230kV lines. Construct one new 230kV transmission line for approximately 8 miles from Tunstall 
+Sub to Raines Substation. New right-of-way will be needed for the transmission line. New 
+conductor to have a minimum summer normal rating of 1573 MVA.  
+Due to the total load requested less than 100 MW, the data center customer will be required to pay 
+excess facilities for all equipment required for the ring bus configuration above a T-tap. 
+Estimated Cost: $20.0M (Total)
+Transmission Line $15M
+230kV Substation $5M",2027,Summer: 37.0 MW || Winter: 25.0 MW,s3023,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0032,explicit data center in utility plan,74,"ODEC on behalf of Mecklenburg Electric Coop (MEC) has submitted a delivery point 
+request (Lakeside DP) for a new delivery point to serve a data center customer in 
+Clarksville, VA. The total load is in excess of 100 MW. The customer requests service 
+by Jan 1, 2025.",2028,Summer: 103.0 MW || Winter: 103.0 MW,s3061,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0034,explicit data center in utility plan,40,"Rappahannock Electric Cooperative (REC) has submitted a two DP Requests. One to increase 
+capacity at their existing 115kV Mountain Run DP and one for a new substation in the vicinity of 
+the Mountain Run DP to serve a new data center complex in Culpeper County with a total 
+projected load of 350 MW.  The requested in-service date is 06/01/2024.",2027,Summer: 140.7 MW || Winter: 140.7 MW,s3044,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0038,explicit data center in utility plan,48,"DEV Distribution has submitted a delivery point request at White Oak Substation to serve a data 
+center customer in Henrico, VA. The total load is in excess of 100 MW. The customer requests 
+service by March 1, 2023.",2027,Summer: 146.5 MW || Winter: 136.5 MW,s3030.1;s3030.2,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0039,explicit data center in utility plan,50,"DEV Distribution has submitted a new delivery point request for Techpark Place (TPP) Substation 
+to serve a data center customer in Henrico, VA. The total load is in excess of 100 MW. The 
+customer requests service by January 1, 2024.",2027,Summer: 283.6 MW || Winter: 283.6 MW,s3031,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0045,explicit data center in utility plan,58,"NOVEC has submitted a DP Request for a new substation (Hornbaker) to serve a data center 
+complex in Prince William County with a total load in excess of 100 MW.  Requested in-service 
+date is 12/30/2025.",2027,Summer: 150.0 MW || Winter: 150.0 MW,s3035.1,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0046,explicit data center in utility plan,62,"NOVEC has submitted a DP Request for a new substation (Mint Springs) to serve a data center 
+complex in Prince William County with a total load in excess of 100 MW.  Requested in-service 
+date is 01/02/2026.",2027,Summer: 50.0 MW || Winter: 50.0 MW,s3036,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0047,explicit data center in utility plan,64,"NOVEC has submitted a DP Request for a new substation (Rixlew) to serve a data center complex 
+in Manassas with a total load in excess of 100 MW.  Requested in-service date is 12/31/2024.",2027,Summer: 95.0 MW || Winter: 103.0 MW,s3037,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2022-0059,explicit data center in utility plan,163,"DEV Distribution has submitted a DP request for a new substation (Edsall) to serve a 
+data center complex in Fairfax County with a total load in excess of 100 MW. 
+Requested in-service date is 09/01/2025.",2029,Summer: 112.0 MW || Winter: 94.0 MW,s3504.1,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2023-0008,explicit data center in utility plan,113,"The City of Manassas has submitted a DP Request for a new substation (Foster Drive) to serve a 
+data center complex in Manassas with a total load in excess of 100 MW.
+Requested in-service date is 03/31/2025.",2028,Summer: 260.0 MW || Winter: 260.0 MW,s3064,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2023-0009,explicit data center in utility plan,115,"DEV Distribution has submitted a DP Request for a new substation (Daves Store) to serve 
+a data center complex in Gainesville with a total load in excess of 100 MW.
+Requested in-service date is 06/01/2025.",2028,Summer: 264.0 MW || Winter: 228.0 MW,s3068.1,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2023-0010,explicit data center in utility plan,119,"DEV Distribution has submitted a DP Request for a new substation (Gemini) to serve a 
+data center complex in Gainesville with a total load in excess of 100 MW.
+Requested in-service date is 08/01/2026.",2028,Summer: 258.0 MW || Winter: 210.0 MW,s3069,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2023-0011,explicit data center in utility plan,121,"DEV Distribution has submitted a DP Request for a new substation (Atlas) to serve a data 
+center complex in Gainesville with a total load in excess of 100 MW.
+Requested in-service date is 04/01/2028.",2028,Summer: 70.0 MW || Winter: 0.0 MW,s3070,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2023-0012,explicit data center in utility plan,123,"NOVEC has submitted a DP Request for a new substation (Trident) to serve a data center 
+complex in Bristow with a total load in excess of 100 MW.
+Requested in-service date is 09/01/2025.",2028,Summer: 153.3 MW || Winter: 125.3 MW,s3071,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2023-0017,explicit data center in utility plan,129,"Rappahannock Electric Cooperative (REC) has submitted a DP Request for a new substation 
+(Southall) to serve a data center in Louisa County with a total load in excess of 100 MW.  The 
+requested in-service date is 05/01/2025.",2028,Summer: 220.0 MW || Winter: 193.0 MW,s3072,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2023-0018,explicit data center in utility plan,131,"DEV Distribution has submitted a DP Request for a new substation (Spartan) to serve a new data 
+center in Stafford County with a total load in excess of 100 MW.  The requested in-service date is 
+05/02/2025.",2028,Summer: 110.0 MW || Winter: 105.0 MW,s3066,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2023-0020,explicit data center in utility plan,135,"DEV Distribution has submitted a DP Request for a new substation (Broderick Drive) to 
+serve a data center campus in Loudoun County with a total load in excess of 100 MW. 
+Requested in-service date is 03/01/2026.",2028,Summer: 112.0 MW || Winter: 72.0 MW,s3079,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2023-0033,explicit data center in utility plan,165,"DEV Distribution has submitted a DP Request for a new substation (Lost City) to 
+serve a data center in Henrico County with a total load in excess of 100 MW.  The 
+requested in-service date is 04/30/2025.",2028,Summer: 192.0 MW || Winter: 180.0 MW,s3502.1,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2023-0041,explicit data center in utility plan,147,"ODEC on behalf of Mecklenburg Electric Coop (MEC) has submitted a delivery point (DP) 
+request to serve a Data Center load at Mecklenburg County, VA. Final load is 48 MW, and 
+the requested service date is 01/01/2025.",2028,Summer: 48.0 MW || Winter: 48.0 MW,s3081,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2023-0052,explicit data center in utility plan,169,"ODEC on behalf of Mecklenburg Electric Coop (MEC) has submitted a DP request for 
+a new 230 kV delivery point (Allen Creek Sub) to serve a data center customer in 
+Mecklenburg County with a total load in excess of 100 MW. Requested in-service 
+date is 12/30/2025.",2028,Summer: 80.0 MW || Winter: 110.0 MW,s3511.1,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2024-0001,explicit data center in utility plan,171,"DEV Distribution has submitted a DP Request for a new substation (Decoy Airfield) to 
+serve a data center in Henrico County with a total load in excess of 100 MW.  The 
+requested in-service date is 01/01/2026.",2029,Summer: 288.0 MW || Winter: 288.0 MW,s3508.1,,,,Not disclosed in this planning document; do not infer zero.
+DOM-2024-0022,explicit data center in utility plan,181,"DEV Distribution has submitted a DP Request for a new substation (Sloan Drive) to 
+serve a data center in Chesterfield County with a total load in excess of 100 MW.  The 
+requested in-service date is Q2 2027.",2029,Summer: 100.0 MW || Winter: 100.0 MW,s3510.1,,,,Not disclosed in this planning document; do not infer zero.

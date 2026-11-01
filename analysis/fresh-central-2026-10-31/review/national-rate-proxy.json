@@ -1,0 +1,79 @@
+{
+  "as_of": "2026-10-23",
+  "recommendation": {
+    "central_2026_dollars_per_MW_year": 100000,
+    "sensitivity": [
+      60000,
+      150000
+    ],
+    "status": "Rounded planning proxy; not an observed national NITS average",
+    "label": "National transmission cost / peak-demand proxy"
+  },
+  "national_proxy": {
+    "source_price": "https://www.eia.gov/outlooks/aeo/supplement/excel/suptab_54.xlsx",
+    "table": "AEO2026 Counterfactual Baseline Table54, United States",
+    "cells": {
+      "2025_sales_TWh": "C81",
+      "2025_transmission_cents_kWh": "C136",
+      "2026_real_transmission_cents_kWh": "D136",
+      "2026_nominal_transmission_cents_kWh": "D140"
+    },
+    "sales_2025_TWh": 4069.278076171875,
+    "transmission_2025_cents_per_kWh": 1.885088443756104,
+    "implied_transmission_revenue_2025_dollars": 76709490758.21672,
+    "peak_source": "https://gridstrategiesllc.com/wp-content/uploads/Grid-Strategies-National-Load-Growth-Report-2025.pdf",
+    "peak_source_page": 33,
+    "aggregated_utility_forecast_2025_summer_peak_GW": 829,
+    "rate_2025_dollars_per_MW_year": 92532.5582125654,
+    "EIA_implied_2026_over_2025_deflator": 1.027539581379692,
+    "rate_2026_dollars_per_MW_year": 95080.86612973142,
+    "formula": "transmission cents/kWh * sales TWh * 1e7 / (national peak GW * 1000) * dollar deflator",
+    "weighting": "Ratio of national transmission-service expenditure proxy to summed utility planning peaks; equivalent to peak weighting if regional costs and peaks are aligned. Not an arithmetic utility average. National numerator and denominator drawn from different sources; both modeled/forecast, not audited tariff receipts.",
+    "limitations": [
+      "Annual summer planning peaks are not 12CP/1CP tariff billing determinants.",
+      "EIA service category cost differs in scope from individual NITS schedules and is modeled rather than observed tariff collection.",
+      "AEO is national including implicit Alaska/Hawaii quantities; FERC planning-area aggregation primarily contiguous US. Small coverage mismatch remains.",
+      "National total-demand weighting does not identify future data-center geographic weights.",
+      "No national observed tariff-billing-demand-weighted NITS average was established in this bounded review."
+    ],
+    "status": "AEO modeled expenditure divided by FERC714-based aggregated utility forecast peak. This is a national cost-intensity proxy, not tariff survey or measured billing-demand-weighted rate."
+  },
+  "incorrect_conversion_warning": {
+    "2026_EIA_nominal_transmission_cents_kWh": 1.983915567398071,
+    "2026_energy_charge_at_DC80LF_dollars_MW_year": 139032.8029632568,
+    "meaning": "Valid bill equivalent only if charging a DC the national average volumetric transmission price; not a measured demand-based NITS tariff. Do not use DC load factor to infer system billing-demand denominator."
+  },
+  "miso_cross_check": {
+    "source": "https://www.oasis.oati.com/woa/docs/MISO/MISOdocs/Zonal_Rates_and_Determinants__2026_OCT01-OCT31_OASIS.xlsx",
+    "effective": "2026-10-01",
+    "base_systemwide_rate_dollars_per_MW_year": 65558.72375868556,
+    "cell": "Schedule 7 Rate Determinants!D331",
+    "note": "MISO published systemwide point-to-point rate, not exact network-zone weighted tariff; incorporates adjustments including flowgate factor. Schedule9 generally shares zone base rates but special subzone treatment matters.",
+    "network_upgrade_systemwide_rate": 4207.832877395565,
+    "network_upgrade_cell": "Schedule 26 Rate Determinants!D5559",
+    "MVP_annual_revenue_requirement": 991451633.75,
+    "MVP_cell": "Schedule 26 A Rate Determinants!F32",
+    "MVP_note": "Schedule26A additional volumetric charge, regional applicability and billing energy must be applied before adding to any individual network customer. Do not call base Schedule9 full transmission bill."
+  },
+  "rejected_shortcuts": [
+    "Unweighted mean of selected utility rates",
+    "Calling PJM-only national",
+    "Multiplying all-customer transmission cents/kWh by DC80% LF and calling result observed NITS",
+    "Annual transmission capital investment divided by peak MW (investment is not revenue requirement)",
+    "FERC/EIA transmission O&M alone divided by peak (excludes capital revenue requirement)"
+  ],
+  "methodology_source": {
+    "url": "https://www.eia.gov/outlooks/aeo/nems/documentation/electricity/pdf/EMM_AEO2025.pdf",
+    "pages_printed": [
+      160,
+      162,
+      163
+    ],
+    "pdf_pages": [
+      168,
+      170,
+      171
+    ],
+    "note": "Average revenues equal revenue requirements / kWh sales; transmission remains cost of service and includes return on rate base, fixed O&M, annual depreciation."
+  }
+}
